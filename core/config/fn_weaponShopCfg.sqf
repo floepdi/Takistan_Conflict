@@ -44,7 +44,7 @@ switch(_shop) do
 						["arifle_mas_mp5",nil,1000],
 						["30Rnd_mas_9x21_Stanag",nil,100],
 
-                        ["arifle_mas_m4",nil,1500],
+                				  ["arifle_mas_m4",nil,1500],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						
 						["hgun_P07_F",nil,250],
@@ -52,7 +52,7 @@ switch(_shop) do
 						
 						["tf_rf7800str",nil,500],
 						["tf_anprc152",nil,500],
-                   		["ItemGPS",nil,100],
+                   				["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Binocular",nil,300],
@@ -109,10 +109,10 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
+                				["arifle_mas_m16_gl",nil,5000],
+                				["arifle_mas_hk416_v",nil,5000],
 
-                        ["UGL_FlareWhite_F",nil,500],
+                				["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
@@ -121,7 +121,7 @@ switch(_shop) do
 						["optic_mas_acog",nil,500],
 						["optic_Holosight_smg",nil,500],
 
-                        ["NVGoggles_mas_h",nil,2500]
+                				["NVGoggles_mas_h",nil,2500]
 
 					]
 				];
@@ -148,8 +148,8 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
+                				["arifle_mas_m16_gl",nil,5000],
+                	   			["arifle_mas_hk416_v",nil,5000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
