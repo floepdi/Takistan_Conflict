@@ -1,18 +1,18 @@
 #include <macro.h>
 /*
 	File: fn_weaponShopCfg.sqf
-	Author: Bryan "Tonic" Boardwine
+	 	Author: Bryan "Tonic" Boardwine
 
-	Description:
-	Master configuration file for the weapon shops.
+		Description:
+				Master configuration file for the weapon shops.
 
 	Return:
 	String: Close the menu
-	Array:
+					Array:
 	[Shop Name,
-	[ //Array of items to add to the store
+			[ //Array of items to add to the store
 		[classname,Custom Name (set nil for default),price]
-	]]
+				]]
 */
 private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
