@@ -37,51 +37,51 @@ switch (_shop) do
 			["C_Kart_01_Vrana_F",80000]
 		];
 	};
+	*/
+	
 	case "med_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",10000],
-			["I_Truck_02_medical_F",25000],
-			["O_Truck_03_medical_F",45000],
-			["C_SUV_01_F",10000],
-			["B_Truck_01_medical_F",60000]
+			
 		];
 	};
 
-	case "med_air_hs": {
+	case "med_air_hs1": {
 		_return = [
 
-			["O_Heli_Light_02_unarmed_F",20000],
-			["O_Heli_Transport_04_medevac_F",30000]
+			["RHS_UH60M_MEV",5000]
 		];
 	};
-	*/
 	
 	case "cop_car":
 	{
 		_return pushBack
-		["B_mas_cars_LR_Unarmed",5000];
-		/*
+		["rhsusf_m998_d_2dr",7500];
+
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 		_return pushBack
-		["B_mas_cars_LR_Mk19",10000];
+		["DAR_MK23ADT",10000];
 		};
-		*/
+		
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 		_return pushBack
-		["B_mas_HMMWV_UNA",20000];
+		["DAR_M1151WoodlandUA",20000];
+		_return pushBack
+		["rhsusf_m1025_d",20000];
 		};
 		if(__GETC__(life_coplevel) >= 6) then
 		{
 		_return pushBack
-		["B_mas_HMMWV_M2",25000];
+		["rhsusf_m1025_d_m2",25000];
+		_return pushBack
+		["DAR_M1151_Deploy",25000];
 		};
 		if(license_cop_swat) then
 		{
 		_return pushBack
-		["B_mas_HMMWV_SOV_M134",25000];
+		["DAR_M1165_GMV",25000];
 		};
 	};
 
@@ -148,6 +148,11 @@ switch (_shop) do
 			_return pushBack
 			["B_Heli_Light_01_F",10000];
 		};
+		if(__GETC__(life_coplevel) >= 3) then
+		{
+			_return pushBack
+			["B_mas_UH1Y_UNA_F",15000];
+		};
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_return pushBack
@@ -155,6 +160,12 @@ switch (_shop) do
 			_return pushBack
 			["B_mas_CH_47F",40000];
 		};
+		if(__GETC__(life_coplevel) >= 6) then
+		{
+			_return pushBack
+			["B_Heli_Light_01_armed_F",20000];
+		};
+
 		if(license_cop_swat) then
 		{
 		_return pushBack
@@ -169,8 +180,6 @@ switch (_shop) do
 		_return =
 		[
 			["C_Rubberboat",25000],
-
-
 			["C_Boat_Civil_01_F",35000]
 		];
 	};
@@ -245,19 +254,50 @@ case "civ_car":
 	{
 		_return =
 		[
-			["O_mas_cars_UAZ_Unarmed",10000],
+			["RDS_Lada_Civ_01",5000],
+			["RDS_Gaz24_Civ_01",6000],
+			["RDS_S1203_Civ_01",7500],
+			["RHS_Ural_Open_Civ_01",8500],
+			["RDS_Ikarus_Civ_02",10000],
+			["O_mas_cars_UAZ_Unarmed",12500],
 			["isc_is_hilux_Unarmed_o",25000]
 		];
 	};
 	
 case "level_car":
 	{
+		if(call life_fnc_getLevel >= 100) then
+		{
+		_return pushBack
+		["B_G_Offroad_01_F",10000];
+		_return pushBack
+		["rhs_gaz66_vmf",15000];
+		};
+		
+		if(call life_fnc_getLevel >= 200) then
+		{
+		_return pushBack
+		["Tal_Wrangler_Black",20000];
+		_return pushBack
+		["Tal_Wrangler_Pink",20000];
+		_return pushBack
+		["Tal_Wrangler_Blue",20000];
+		_return pushBack
+		["Tal_Wrangler_Grey",20000];
+		};
+	
 		if(call life_fnc_getLevel >= 300) then
 		{
 		_return pushBack
-		["I_mas_cars_UAZ_MG",25000];
+		["I_mas_cars_UAZ_MG",30000];
 		_return pushBack
 		["isc_is_hilux_MG_o",50000];
+		};
+		
+		if(call life_fnc_getLevel >= 400) then
+		{
+		_return pushBack
+		["rhs_tigr_vv",50000];
 		};
 		
 		if(call life_fnc_getLevel >= 500) then

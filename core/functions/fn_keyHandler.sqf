@@ -248,6 +248,27 @@ switch (_code) do
 				};
 			};
 		};
+		
+		//MEDIC KANN RESTRAINEN
+		if(playerSide == independent) then
+		{
+
+			if(_shift && playerSide == independent && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
+			{
+
+
+				if([false,"zipties",1] call life_fnc_handleInv) then
+				{
+					[] call life_fnc_restrainAction;
+
+				}
+				else
+				{
+					hint "Du hast keine Kabelbinder!";
+				};
+			};
+		};
+		
 	};
 
 	//Knock out, this is experimental and yeah...

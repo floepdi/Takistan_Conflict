@@ -19,6 +19,7 @@ switch (_filter) do
 	{
 		[
 		["TRYK_U_taki_COY","Einheimische Kleidung",2500],
+		["rhs_uniform_df15","Overall",2500],
 		["IS_uniform_machinegunner_i","Kampfanzug",2500],
 		["IS_uniform_team_leader_o","Kampfanzug 2",2500],
 		["U_IG_Guerilla1_1","Guerilla",5000],

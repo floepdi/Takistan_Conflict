@@ -33,6 +33,7 @@ if(_level > 0) then
 			if(_level >= 20) then
 			{
 				_ret pushBack ["SAA_uniform_machinegunner_o",nil,3500];
+				_ret pushBack ["rhs_uniform_mflora_patchless",nil,3500];
 			
 			if(_level >= 40) then
 			{
@@ -48,19 +49,9 @@ if(_level > 0) then
 		//Hats
 		case 1:
 		{
-			if(_level >= 500) then
+			if(_level >= 40) then
 			{
-				//_ret pushBack ["rds_Profiteer_cap1","Cap",200];
-
-			if(_level >= 3000) then
-			{
-				//_ret pushBack ["rds_Villager_cap1","Mütze",200];
-
-			if(_level >= 3000) then
-			{
-
-			};
-			};
+				_ret pushBack ["rhs_6b27m_ml","Cap",1000];
 			};
 		};
 
@@ -102,6 +93,7 @@ if(_level > 0) then
 		{
 			if(_level >= 10) then
 			{
+				_ret pushBack ["rhs_assault_umbts_demo",nil,4000],
 				_ret pushBack ["TRYK_B_Coyotebackpack",nil,5000],
 				_ret pushBack ["TRYK_B_Coyotebackpack_OD",nil,5000],
 			

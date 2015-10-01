@@ -85,7 +85,6 @@ class FSM
        "	{" \n
        "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 1500] call life_fnc_numberText];" \n
        "		life_atmcash = life_atmcash + (call life_paycheck) + 1500;" \n
-       "    life_exp = life_exp + 250;" \n
        "	}" \n
        "		else" \n
        "	{" \n

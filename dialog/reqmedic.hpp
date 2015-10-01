@@ -40,7 +40,7 @@ class controls {
 		class reqMedicEditText : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Anfordern von Medic erhöht Respawnzeit auf 10 Minuten";
+			text = "Anfordern von Pararescue erhöht Respawnzeit auf 10 Minuten";
 			x = 0.12;
             y = 0.25;
 			w = 0.5;
@@ -51,7 +51,7 @@ class controls {
 		class ReqMedicDescription : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Möchten Sie einen Medic anfordern?!";
+			text = "Möchten Sie einen PJ anfordern?!";
 			x = 0.12;
             y = 0.35;
 			w = 0.5;

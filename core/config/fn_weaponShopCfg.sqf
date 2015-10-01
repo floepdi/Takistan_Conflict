@@ -1,18 +1,18 @@
 #include <macro.h>
 /*
 	File: fn_weaponShopCfg.sqf
-	 	Author: Bryan "Tonic" Boardwine
+	Author: Bryan "Tonic" Boardwine
 
-		Description:
-				Master configuration file for the weapon shops.
+	Description:
+	Master configuration file for the weapon shops.
 
 	Return:
 	String: Close the menu
-					Array:
+	Array:
 	[Shop Name,
-			[ //Array of items to add to the store
+	[ //Array of items to add to the store
 		[classname,Custom Name (set nil for default),price]
-				]]
+	]]
 */
 private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
@@ -44,7 +44,7 @@ switch(_shop) do
 						["arifle_mas_mp5",nil,1000],
 						["30Rnd_mas_9x21_Stanag",nil,100],
 
-                				  ["arifle_mas_m4",nil,1500],
+                        ["arifle_mas_m4",nil,1500],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						
 						["hgun_P07_F",nil,250],
@@ -52,13 +52,19 @@ switch(_shop) do
 						
 						["tf_rf7800str",nil,500],
 						["tf_anprc152",nil,500],
-                   				["ItemGPS",nil,100],
+						["tf_mr3000_multicam",nil,500],
+                   		["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Binocular",nil,300],
 						["Chemlight_green",nil,300],
 						["Chemlight_blue",nil,300],
-						["acc_flashlight",nil,100]
+						["SmokeShell",nil,300],
+						["SmokeShellRed",nil,300],
+						["SmokeShellGreen",nil,300],
+						["acc_flashlight",nil,100],
+						
+						["FHQ_optic_AC12136",nil,500]
 
 					]
 				];
@@ -87,8 +93,8 @@ switch(_shop) do
 						["arifle_mas_l119_d",nil,1000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 
-						["optic_mas_acog",nil,500],
-						["optic_Holosight_smg",nil,500]
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_AC12136",nil,500]
 
 					]
 				];
@@ -109,19 +115,19 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                				["arifle_mas_m16_gl",nil,5000],
-                				["arifle_mas_hk416_v",nil,5000],
+                        ["arifle_mas_m16_gl",nil,5000],
+                        ["arifle_mas_hk416_v",nil,5000],
 
-                				["UGL_FlareWhite_F",nil,500],
+                        ["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
 						["30Rnd_mas_556x45_Stanag",nil,200],
 
-						["optic_mas_acog",nil,500],
-						["optic_Holosight_smg",nil,500],
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_AC12136",nil,500],
 
-                				["NVGoggles_mas_h",nil,2500]
+                        ["NVGoggles_mas_h",nil,2500]
 
 					]
 				];
@@ -148,17 +154,16 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                				["arifle_mas_m16_gl",nil,5000],
-                	   			["arifle_mas_hk416_v",nil,5000],
+                        ["arifle_mas_m16_gl",nil,5000],
+                        ["arifle_mas_hk416_v",nil,5000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
-						["optic_mas_aim",nil,1000],
-						["optic_mas_aim_c",nil,1000],
-						["optic_mas_acog",nil,1000],
-						["optic_Holosight_smg",nil,500],
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_ACOG",nil,1000],
+						["FHQ_optic_AC12136",nil,500],
 
 						["HandGrenade_Stone","Flashbang",2500],
 						["NVGoggles_mas_h",nil,2500]
@@ -195,11 +200,10 @@ switch(_shop) do
 						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
-						["optic_mas_aim",nil,1000],
-						["optic_mas_aim_c",nil,1000],
-						["optic_mas_acog_rd",nil,1000],
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_ACOG",nil,1000],
 						["optic_mas_zeiss",nil,1000],
-						["optic_Holosight_smg",nil,1000],
+						["FHQ_optic_AC12136",nil,1000],
 						["optic_SOS",nil,10000],
 
 						["Rangefinder",nil,5000],
@@ -242,11 +246,10 @@ switch(_shop) do
 						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
-						["optic_mas_aim",nil,1000],
-						["optic_mas_aim_c",nil,1000],
-						["optic_mas_acog_rd",nil,1000],
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_ACOG",nil,1000],
 						["optic_mas_zeiss",nil,1000],
-						["optic_Holosight_smg",nil,1000],
+						["FHQ_optic_AC12136",nil,1000],
 						["optic_SOS",nil,10000],
 						["optic_LRPS",nil,10000],
 						["optic_mas_DMS_c",nil,10000],
@@ -294,11 +297,10 @@ switch(_shop) do
 						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
-						["optic_mas_aim",nil,1000],
-						["optic_mas_aim_c",nil,1000],
-						["optic_mas_acog_rd",nil,1000],
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_ACOG",nil,1000],
 						["optic_mas_zeiss",nil,1000],
-						["optic_Holosight_smg",nil,1000],
+						["FHQ_optic_AC12136",nil,1000],
 						["optic_SOS",nil,10000],
 						["optic_LRPS",nil,10000],
 						["optic_mas_DMS_c",nil,10000],
@@ -351,11 +353,10 @@ switch(_shop) do
 						["1Rnd_HE_Grenade_shell",nil,500],
 
 						["optic_LRPS",nil,10000],
-						["optic_mas_aim",nil,1000],
-						["optic_mas_aim_c",nil,1000],
-						["optic_mas_acog_rd",nil,1000],
+						["FHQ_optic_AimM_BLK",nil,500],
+						["FHQ_optic_ACOG",nil,1000],
 						["optic_mas_zeiss",nil,1000],
-						["optic_Holosight_smg",nil,1000],
+						["FHQ_optic_AC12136",nil,1000],
 						["optic_SOS",nil,10000],
 						["optic_mas_DMS_c",nil,10000],
 
@@ -379,19 +380,19 @@ switch(_shop) do
 			{
 				["Delta Force",
 					[
-						["srifle_mas_m107",nil,1000],
-						["5Rnd_mas_127x99_Stanag",nil,1000],
+						["srifle_mas_lrr",nil,1000],
+						["10Rnd_mas_338_Stanag",nil,1000],
+						["10Rnd_mas_338_T_Stanag",nil,1000],
 
 						["srifle_DMR_05_blk_F",nil,1000],
 						["10Rnd_93x64_DMR_05_Mag",nil,1000],
 
+						["optic_mas_zeiss_eo",nil,1000],
 						["optic_AMS",nil,1000],
-						["optic_NVS",nil,1000],
-						["optic_DMS",nil,1000],
 						["optic_LRPS",nil,1000],
 						
 						["muzzle_mas_snds_SMc",nil,5000],
-						["muzzle_snds_B",nil,5000],
+						["muzzle_mas_snds_SH",nil,5000],
 						["muzzle_snds_93mmg",nil,5000],
 						["bipod_02_F_blk",nil,5000],
 
@@ -405,6 +406,9 @@ switch(_shop) do
 						["TRYK_R_CAP_BLK",nil,500],
 						["H_Watchcap_blk",nil,500],
 						["G_mas_wpn_gog",nil,500],
+						
+						["TRYK_U_taki_wh",nil,500],
+						["TRYK_H_pakol",nil,500],
 
 						["Rangefinder",nil,5000],
 						["HandGrenade_Stone","Flashbang",2500],
@@ -471,7 +475,7 @@ case "gun":
 					["hgun_mas_sa61_F",nil,5000],
 					["20Rnd_mas_765x17_Mag",nil,500],
 
-					["arifle_mas_aks74u",nil,10000],
+					["arifle_mas_aks74u",nil,12000],
 					["30Rnd_mas_545x39_mag",nil,500],
 					
 					["acc_flashlight",nil,500]
@@ -516,12 +520,16 @@ case "level20":
 			{
 				["Level 20",
 					[
-						["arifle_mas_akm",nil,75000],
-						["30Rnd_mas_762x39_mag",nil,5000],
-					
+						["LMG_mas_rpk_F",nil,50000],
+						["100Rnd_mas_545x39_T_mag",nil,1000],
+						
+						["arifle_mas_lee",nil,50000],
+						["5Rnd_mas_762x51_Stanag",nil,1000],
+						
 						["arifle_mas_fal",nil,40000],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
 						
+						["FHQ_optic_VCOG",nil,6000],
 						["optic_Aco",nil,5000],
 						["optic_ACO_grn",nil,5000]
 					]
@@ -546,9 +554,17 @@ case "level30":
 						["arifle_mas_akm",nil,75000],
 						["30Rnd_mas_762x39_mag",nil,5000],
 						
+						["LMG_mas_rpk_F",nil,50000],
+						["100Rnd_mas_545x39_T_mag",nil,1000],
+						
+						["arifle_mas_lee",nil,50000],
+						["5Rnd_mas_762x51_Stanag",nil,1000],
+						
 						["arifle_mas_fal",nil,40000],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
 						
+						["optic_mas_PSO_day",nil,10000],
+						["FHQ_optic_VCOG",nil,6000],
 						["optic_Aco",nil,5000],
 						["optic_ACO_grn",nil,5000],
 						["NVGoggles",nil,25000]
@@ -574,10 +590,15 @@ case "level40":
 						
 						["arifle_mas_akm",nil,75000],
 						["30Rnd_mas_762x39_mag",nil,5000],
+						["LMG_mas_rpk_F",nil,50000],
+						["100Rnd_mas_545x39_T_mag",nil,1000],
+						["arifle_mas_lee",nil,50000],
+						["5Rnd_mas_762x51_Stanag",nil,1000],
 						["arifle_mas_fal",nil,40000],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
 						
-						["optic_mas_pso",nil,10000],
+						["optic_mas_PSO_day",nil,10000],
+						["FHQ_optic_VCOG",nil,6000],
 						["optic_Aco",nil,5000],
 						["optic_ACO_grn",nil,5000],
 						["NVGoggles",nil,25000],
@@ -612,10 +633,15 @@ case "level50":
 						["10Rnd_mas_762x54_mag",nil,10000],
 						["arifle_mas_akm",nil,75000],
 						["30Rnd_mas_762x39_mag",nil,5000],
+						["LMG_mas_rpk_F",nil,50000],
+						["100Rnd_mas_545x39_T_mag",nil,1000],
+						["arifle_mas_lee",nil,50000],
+						["5Rnd_mas_762x51_Stanag",nil,1000],
 						["arifle_mas_fal",nil,40000],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
 						
-						["optic_mas_PSO_eo",nil,10000],
+						["optic_mas_PSO_eo",nil,25000],
+						["FHQ_optic_VCOG",nil,6000],
 						["optic_Aco",nil,5000],
 						["optic_ACO_grn",nil,5000],
 						["NVGoggles",nil,25000],
@@ -626,5 +652,40 @@ case "level50":
 			};
 		};
 	};
-
+	
+	case "med_basic":
+	{
+		switch (true) do
+		{
+			case (playerSide != independent): {"Du bist kein PJ"};
+			default {
+				["PJ Shop",
+					[
+						["hlc_smg_MP5N",nil,1000],
+						["hlc_30Rnd_9x19_B_MP5",nil,150],
+						["FHQ_optic_AC11704",nil,250],
+						["acc_flashlight",nil,100],
+					
+						["TRYK_H_woolhat",nil,100],
+						["TRYK_H_PASGT_BLK",nil,100],
+						["rhsusf_hgu56p",nil,100],
+						["TRYK_V_tacv1LC_BK",nil,100],
+						["TRYK_B_Medbag_BK",nil,500],
+						["ToolKit",nil,250],
+						["FirstAidKit",nil,150],
+						["Medikit",nil,250],
+						["NVGoggles_mas_h",nil,500],
+						["ItemGPS",nil,100],
+						["Binocular",nil,100],
+						["Chemlight_green",nil,100],
+						["Chemlight_blue",nil,100],
+						["SmokeShell",nil,100],
+						["SmokeShellRed",nil,100],
+						["SmokeShellGreen",nil,100],
+						["tf_anprc148jem",nil,100]
+					]
+				];
+			};
+		};
+	};
 };

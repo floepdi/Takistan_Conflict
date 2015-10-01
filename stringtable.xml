@@ -272,7 +272,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>You already have an uniform ! Put it on the ground before crafting a new.</Italian>
 			<Portuguese>You already have an uniform ! Put it on the ground before crafting a new.</Portuguese>
 		</Key>
-	</Package>
+	</Package>  
 
 	<Package name="Global">
 		<Key ID="STR_Global_Close">
@@ -603,12 +603,12 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Mensagem:</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_TextPolice">
-			<Original>Text NATO</Original>
-			<English>Text NATO</English>
-			<German>An die NATO</German>
-			<French>Text NATO</French>
-			<Italian>Msg NATO</Italian>
-			<Portuguese>NATO</Portuguese>
+			<Original>Text ARMY</Original>
+			<English>Text ARMY</English>
+			<German>An die ARMY</German>
+			<French>Text ARMY</French>
+			<Italian>Msg ARMY</Italian>		
+			<Portuguese>ARMY</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
@@ -631,16 +631,16 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Admin Msg All</English>
 			<German>An Alle</German>
 			<French>Admin Msg ALL</French>
-			<Italian>Admin Msg</Italian>
+			<Italian>Admin Msg</Italian>			
 			<Portuguese>Admin Msg ALL</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_EMSRequest">
-			<Original>Request EMS</Original>
-			<English>Request EMS</English>
-			<German>An die Sanitäter</German>
-			<French>Requête Medecin</French>
-			<Italian>Msg medici</Italian>
-			<Portuguese>Chamar SAMU</Portuguese>
+			<Original>Pararescue</Original>
+			<English>Pararescue</English>
+			<German>Pararescue</German>
+			<French>Pararescue</French>
+			<Italian>Pararescue</Italian>
+			<Portuguese>Pararescue</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Chop_Shop">
@@ -763,13 +763,13 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Disband Gang</English>
 			<German>Gang auflösen</German>
 			<French>Dissoudre Gang</French>
-			<Italian>Sciogli Gang</Italian>
+			<Italian>Sciogli Gang</Italian>		
 			<Portuguese>Desfazer Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_Invitation">
 			<Original>Gang Invitation</Original>
 			<English>Gang Invitation</English>
-			<German>Gang Einladung</German>
+			<German>Gang Einladung</German>	
 			<French>Invitation de Gang</French>
 			<Italian>Invito Gang</Italian>
 			<Portuguese>Convite para Gangue</Portuguese>
@@ -777,7 +777,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_Gang_Transfer">
 			<Original>Transfer Gang Leadership</Original>
 			<English>Transfer Gang Leadership</English>
-			<German>Gangleitung übertragen</German>
+			<German>Gangleitung übertragen</German>	
 			<French>Transfert du commandement du Gang</French>
 			<Italian>Trasferisci Comando</Italian>
 			<Portuguese>Transferir Liderança</Portuguese>
@@ -785,7 +785,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_Gang_UpgradeMax">
 			<Original>Upgrade Maximum Allowed Gang Members</Original>
 			<English>Upgrade Maximum Allowed Gang Members</English>
-			<German>Maximale Anzahl an Gangmitgliedern erhöhen</German>
+			<German>Maximale Anzahl an Gangmitgliedern erhöhen</German>	
 			<French>Augmentation du nombre de membre acceptés</French>
 			<Italian>Aumenta numero massimo membri della Gang</Italian>
 			<Portuguese>Atualizar limite máximo de membros</Portuguese>
@@ -795,7 +795,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_GNOTF_CreateGang">
 			<Original>You must create a gang first before capturing it!</Original>
 			<English>You must create a gang first before capturing it!</English>
-			<German>Du musst erst in einer Gang sein, um einnehmen zu können!</German>
+			<German>Du musst erst in einer Gang sein, um einnehmen zu können!</German>	
 			<French>Vous devez créer un gang avant de le capturer!</French>
 			<Italian>Devi creare una gang prima di catturarla!</Italian>
 			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo!</Portuguese>
@@ -803,7 +803,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_GNOTF_Controlled">
 			<Original>Your gang already has control over this hideout!</Original>
 			<English>Your gang already has control over this hideout!</English>
-			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>
+			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>	
 			<French>Votre bande a déjà le contrôle de cette cachette!</French>
 			<Italian>La tua Gang ha già il controllo di questo Covo</Italian>
 			<Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
@@ -811,7 +811,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_GNOTF_Captured">
 			<Original>Only one person shall capture at once!</Original>
 			<English>Only one person shall capture at once!</English>
-			<German>Nur eine Person kann das Versteck einnehmen!</German>
+			<German>Nur eine Person kann das Versteck einnehmen!</German>	
 			<French>Une seule personne doit capturer à la fois!</French>
 			<Italian>Può conquistare solo una persona alla volta!</Italian>
 			<Portuguese>Somente uma pessoa pode capturar!</Portuguese>
@@ -867,7 +867,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_GNOTF_IncorrectChar">
 			<Original>You have invalid characters in your gang name. It can only consist of Numbers and letters with an underscore</Original>
 			<English>You have invalid characters in your gang name. It can only consist of Numbers and letters with an underscore</English>
-			<German>Du hast ein ungültiges Zeichen in deinem Gangnamen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>
+			<German>Du hast ein ungültiges Zeichen in deinem Gangnamen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>	
 			<French>Vous avez des caractères non valides dans le nom de votre gang. Il ne peut être constitué de chiffres amd lettres avec un trait de soulignement</French>
 			<Italian>Hai inserito caratteri non validi nel nome della Gang. Puoi inserire solo numeri e lettere con un underscore</Italian>
 			<Portuguese>O nome da sua gangue tem caracteres inválidos. O nome so pode conter caracteres e números separados por sublinhado</Portuguese>
@@ -1119,13 +1119,13 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Vehicle Garage</English>
 			<German>Fahrzeug Garage</German>
 			<French>Garage Vehicule</French>
-			<Italian>Garage Veicoli</Italian>
+			<Italian>Garage Veicoli</Italian>			
 			<Portuguese>Garagem de Veículos</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_GetVehicle">
 			<Original>Get Vehicle</Original>
 			<English>Get Vehicle</English>
-			<German>Ausparken</German>
+			<German>Ausparken</German>	
 			<French>Récupérer</French>
 			<Italian>Ritira Veicolo</Italian>
 			<Portuguese>Pegar Veiculo</Portuguese>
@@ -1158,8 +1158,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>No vehicles found in garage.</Original>
 			<English>No vehicles found in garage.</English>
 			<German>Keine Fahrzeuge in der Garage gefunden.</German>
-			<French>Aucuns Vehicules.</French>
-			<Italian>Non hai veicoli nel Garage.</Italian>
+			<French>Aucuns Vehicules.</French>	
+			<Italian>Non hai veicoli nel Garage.</Italian>			
 			<Portuguese>Nenhum veiculo encontrado na garagem.</Portuguese>
 		</Key>
 		<Key ID="STR_Garage_CashError">
@@ -1237,7 +1237,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_Garage_Store_Server">
 			<Original>The server is trying to store the vehicle...</Original>
 			<English>The server is trying to store the vehicle...</English>
-			<German>Der Server versucht, das Fahrzeug zu speichern...</German>
+			<German>Der Server versucht, das Fahrzeug zu speichern...</German>	
 			<French>Le serveur tente de stocker le véhicule ...</French>
 			<Italian>Il server cercando di depositare il veicolo...</Italian>
 			<Portuguese>O servidor está guardando o veiculo...</Portuguese>
@@ -1245,7 +1245,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_Garage_Selection_Error">
 			<Original>The selection had a error...</Original>
 			<English>The selection had a error...</English>
-			<German>Die Auswahl hat einen Fehler...</German>
+			<German>Die Auswahl hat einen Fehler...</German>	
 			<French>La selection à une erreur...</French>
 			<Italian>La selezione ha avuto un errore...</Italian>
 			<Portuguese>Erro ao selecionar....</Portuguese>
@@ -1437,7 +1437,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Player Tags</English>
 			<German>Spielernamen</German>
 			<French>Tags Joueurs</French>
-			<Italian>Tag Giocatore</Italian>
+			<Italian>Tag Giocatore</Italian>			
 			<Portuguese>Tags de Jogadores</Portuguese>
 		</Key>
 		<Key ID="STR_SM_TagsON">
@@ -1476,8 +1476,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>Sidechat ON</Original>
 			<English>Sidechat ON</English>
 			<German>Sidechat AN</German>
-			<French>Sidechat ON</French>
-			<Italian>Chat fazione ON</Italian>
+			<French>Sidechat ON</French>	
+			<Italian>Chat fazione ON</Italian>			
 			<Portuguese>Sidechat ON</Portuguese>
 		</Key>
 	</Package>
@@ -1495,7 +1495,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Your Inventory</English>
 			<German>Eigenes Inventar</German>
 			<French>Ton Inventaire</French>
-			<Italian>Inventario Personale</Italian>
+			<Italian>Inventario Personale</Italian>	
 			<Portuguese>Seu Inventário</Portuguese>
 		</Key>
 		<Key ID="STR_VS_BuyItem">
@@ -1597,7 +1597,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Take</English>
 			<German>Nehmen</German>
 			<French>Récupérer</French>
-			<Italian>Prendi</Italian>
+			<Italian>Prendi</Italian>		
 			<Portuguese>Pegar</Portuguese>
 		</Key>
 		<Key ID="STR_Trunk_Store">
@@ -1641,7 +1641,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Ornate</English>
 			<German>Ornate</German>
 			<French>Ornate</French>
-			<Italian>Orata</Italian>
+			<Italian>Orata</Italian>			
 			<Portuguese>Ornamentado</Portuguese>
 		</Key>
 		<Key ID="STR_ANIM_Mackerel">
@@ -1715,7 +1715,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>You bought a %1 for $%2</English>
 			<German>Du hast einen %1 für $%2 gekauft</German>
 			<French>Tu as acheté cet élément : %1 pour %2$</French>
-			<Italian>Hai comprato un %1 per €%2</Italian>
+			<Italian>Hai comprato un %1 per €%2</Italian>		
 			<Portuguese>Você comprou %1 por R$%2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_Arrested_1">
@@ -1835,7 +1835,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Du hast es nicht geschafft, die Information abzuliefern, da du gestorben bist.</English>
 			<German>Du hast es nicht geschafft, die Information abzuliefern, da du gestorben bist.</German>
 			<French>Du hast es nicht geschafft, die Information abzuliefern, da du gestorben bist.</French>
-			<Italian>Du hast es nicht geschafft, die Information abzuliefern, da du gestorben bist.</Italian>
+			<Italian>Du hast es nicht geschafft, die Information abzuliefern, da du gestorben bist.</Italian>			
 			<Portuguese>Du hast es nicht geschafft, die Information abzuliefern, da du gestorben bist.</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_HS_NoCash">
@@ -2094,7 +2094,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>%1 ha rapinato %2 di €%3</Italian>
 			<Portuguese>%1 roubou R$%3 de %2</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_NOTF_RobFail">
 			<Original>%1 doesn't have any money.</Original>
 			<English>%1 doesn't have any money.</English>
@@ -2103,7 +2103,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>%1 non ha alcun soldo.</Italian>
 			<Portuguese>%1 não tem nenhum dinheiro.</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_NOTF_Tazed">
 			<Original>%1 was tazed by %2</Original>
 			<English>%1 was tazed by %2</English>
@@ -2473,7 +2473,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Hai rubato €%1</Italian>
 			<Portuguese>Você roubou R$%1</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Civ_Eingetrieben">
 			<Original>Du hast $%1 eingetrieben!</Original>
 			<English>Du hast $%1 eingetrieben!</English>
@@ -2482,7 +2482,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Hai rubato €%1</Italian>
 			<Portuguese>Você roubou R$%1</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Civ_VaultEmpty">
 			<Original>The safe is empty!</Original>
 			<English>The safe is empty!</English>
@@ -2581,8 +2581,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>La multa non può essere più di €200.000!</Italian>
 			<Portuguese>A multa não pode ser maior que R$200.000!</Portuguese>
 		</Key>
-
-
+		
+		
 		<Key ID="STR_Civ_SchutzgeldFordern">
 			<Original>%1 gave a ticket of $%2 to %3</Original>
 			<English>%1 hat ein Schutzgeld von %3 über $%2 gefordert!</English>
@@ -2590,8 +2590,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>%1 a mis une contravention de $%2 à %3</French>
 			<Italian>%1 ha dato una multa di €%2 a %3</Italian>
 			<Portuguese>%1 deu uma multa de R$%2 para %3</Portuguese>
-		</Key>
-
+		</Key>	
+		
 		<Key ID="STR_Cop_TicketGive">
 			<Original>%1 hat %3 ein Schmiergeld über $%2 angeboten</Original>
 			<English>%1 hat %3 ein Schmiergeld über $%2 angeboten</English>
@@ -2599,7 +2599,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>%1 a mis une contravention de $%2 à %3</French>
 			<Italian>%1 ha dato una multa di €%2 a %3</Italian>
 			<Portuguese>%1 deu uma multa de R$%2 para %3</Portuguese>
-		</Key>
+		</Key>	
 		<Key ID="STR_Cop_Ticket_NotEnough">
 			<Original>Du hast nicht genug Geld auf deinem Bankkonto, um das Schmiergeld bezahlen zu können.</Original>
 			<English>Du hast nicht genug Geld auf deinem Bankkonto, um das Schmiergeld bezahlen zu können.</English>
@@ -3197,7 +3197,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>O dono da casa não está online, você não pode vasculhar a casa!</Portuguese>
 		</Key>
 		<Key ID="STR_House_Raid_DoorUnlocked">
-			<Original>The door is already unlocked!</Original>
+			<Original>The door is already unlocked!</Original>			
 			<English>The door is already unlocked!</English>
 			<German>Die Tür ist bereits offen!</German>
 			<French>La porte est déjà débloqué!</French>
@@ -3367,8 +3367,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Mela</Italian>
 			<Portuguese>Maçã</Portuguese>
 		</Key>
-
-
+		
+		
 			<Key ID="STR_Item_Barrier">
 			<Original>Barrier</Original>
 			<English>Barrier</English>
@@ -3391,8 +3391,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Mela</Italian>
 			<Portuguese>Maçã</Portuguese>
 		</Key>
-
-
+		
+		
 		<Key ID="STR_Item_Apples">
 			<Original>Apples</Original>
 			<English>Apples</English>
@@ -3424,7 +3424,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>Heroïne</French>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
-		</Key>
+		</Key>		
 		<Key ID="STR_Item_Malz">
 			<Original>Malz</Original>
 			<English>Malz</English>
@@ -3449,7 +3449,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_Item_Schnaps">
 			<Original>Schnaps</Original>
 			<English>Schnaps</English>
@@ -3458,7 +3458,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
-
+		
 					<Key ID="STR_Item_MagicMushrooms">
 			<Original>MagicMushrooms</Original>
 			<English>MagicMushrooms</English>
@@ -3467,7 +3467,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
-
+		
 							<Key ID="STR_Item_Schlafmittel">
 			<Original>Schlafmittel</Original>
 			<English>Schlafmittel</English>
@@ -3476,7 +3476,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Eroina</Italian>
 			<Portuguese>Heroína</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Item_Oil">
 			<Original>Oil</Original>
 			<English>Oil</English>
@@ -3509,7 +3509,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Olio non processato</Italian>
 			<Portuguese>Petróleo não Refinado</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Item_Steel">
 			<Original>Steel</Original>
 			<English>Steel</English>
@@ -3518,7 +3518,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Olio processato</Italian>
 			<Portuguese>Petróleo Refinado</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_Item_Bluesyn">
 			<Original>Bluesyn</Original>
 			<English>Bluesyn</English>
@@ -3527,7 +3527,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Olio processato</Italian>
 			<Portuguese>Petróleo Refinado</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Item_OilP">
 			<Original>Processed Oil</Original>
 			<English>Processed Oil</English>
@@ -3607,7 +3607,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>Filet de Mulet</French>
 			<Italian>Carne di Triglia</Italian>
 			<Portuguese>Peixe Mullet</Portuguese>
-		</Key>
+		</Key> 
 		<Key ID="STR_Item_CatSharkMeat">
 			<Original>Cat Shark Meat</Original>
 			<English>Cat Shark Meat</English>
@@ -3687,7 +3687,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>ZipTies</French>
 			<Italian>ZipTies</Italian>
 			<Portuguese>ZipTies</Portuguese>
-
+		
 		</Key>
 		<Key ID="STR_Item_Coffee">
 			<Original>Coffee</Original>
@@ -3761,7 +3761,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Minerale di Ferro</Italian>
 			<Portuguese>Pepita de Ferro</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Item_IronIngot">
 			<Original>Iron Ingot</Original>
 			<English>Iron Ingot</English>
@@ -3939,7 +3939,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Contenitore grande</Italian>
 			<Portuguese>Caixa Grande</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_Item_StorageBL1">
 			<Original>Large Storage Box</Original>
 			<English>Large Storage Box</English>
@@ -3948,8 +3948,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Contenitore grande</Italian>
 			<Portuguese>Caixa Grande</Portuguese>
 		</Key>
-
-
+		
+		
 		<Key ID="STR_Item_CocaineU">
 			<Original>Unprocessed Cocaine</Original>
 			<English>Unprocessed Cocaine</English>
@@ -3992,7 +3992,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Licenza da Pilota</Italian>
 			<Portuguese>Licença de Piloto</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_License_Pilot1">
 			<Original>Pilot License(Plane)</Original>
 			<English>Pilot License</English>
@@ -4001,7 +4001,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Licenza da Pilota</Italian>
 			<Portuguese>Licença de Piloto</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_License_Heroin">
 			<Original>Heroin Training</Original>
 			<English>Heroin Training</English>
@@ -4010,7 +4010,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
 		</Key>
-
+		
 				<Key ID="STR_License_Bier">
 			<Original>Beer Training</Original>
 			<English>Beer Training</English>
@@ -4027,7 +4027,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
 		</Key>
-
+		
 				<Key ID="STR_License_Pilze">
 			<Original>MagicShrooms Training</Original>
 			<English>MagicShrooms Training</English>
@@ -4036,9 +4036,9 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
 		</Key>
-
-
-
+		
+		
+		
 		<Key ID="STR_License_Oil">
 			<Original>Oil Processing</Original>
 			<English>Oil Processing</English>
@@ -4047,7 +4047,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
 		</Key>
-
+		
 				<Key ID="STR_License_Steel">
 			<Original>Steel Processing</Original>
 			<English>Steel Processing</English>
@@ -4056,7 +4056,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_License_BlueSyn">
 			<Original>BlueSyn Processing</Original>
 			<English>BlueSyn Processing</English>
@@ -4065,7 +4065,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_License_Plastic">
 			<Original>Plastic Processing</Original>
 			<English>Plastic Processing</English>
@@ -4074,7 +4074,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_License_Diving">
 			<Original>Diving License</Original>
 			<English>Diving License</English>
@@ -4417,8 +4417,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>You can't mine from inside a car!</Original>
 			<English>You can't mine from inside a car!</English>
 			<German>Du kannst nicht in deinem Auto abbauen!</German>
-			<French>Vous ne pouvez pas miner à l'intérieur d'une voiture!</French>
-			<Italian>Non puoi piazzare mine da dentro un veicolo!</Italian>
+			<French>Vous ne pouvez pas miner à l'intérieur d'une voiture!</French>	
+			<Italian>Non puoi piazzare mine da dentro un veicolo!</Italian>			
 			<Portuguese>Você não pode minerar de dentro do carro!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Pick_Success">
@@ -4519,10 +4519,10 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
-
-
-
-
+		
+		
+		
+		
 			<Key ID="STR_Process_Steel">
 			<Original>Processing Steel</Original>
 			<English>Processing Steel</English>
@@ -4531,7 +4531,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_Process_Bier">
 			<Original>Beer Steel</Original>
 			<English>Beer Steel</English>
@@ -4540,7 +4540,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_Process_Schnaps">
 			<Original>Processing Schnaps</Original>
 			<English>Processing Schnaps</English>
@@ -4549,7 +4549,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
-
+		
 					<Key ID="STR_Process_Pilze">
 			<Original>Processing Pilze</Original>
 			<English>Processing Pilze</English>
@@ -4558,8 +4558,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
-
-
+		
+		
 			<Key ID="STR_Process_Bluesyn">
 			<Original>Processing Bluesyn</Original>
 			<English>Processing Bluesyn</English>
@@ -4568,8 +4568,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
 		</Key>
-
-
+		
+		
 		<Key ID="STR_Process_Diamond">
 			<Original>Cutting Diamonds</Original>
 			<English>Cutting Diamonds</English>
@@ -4610,7 +4610,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando Ferro</Italian>
 			<Portuguese>Processando Ferro</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Process_Plastic">
 			<Original>Processing Plastic</Original>
 			<English>Processing Plastic</English>
@@ -4619,7 +4619,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Processando Ferro</Italian>
 			<Portuguese>Processando Ferro</Portuguese>
 		</Key>
-
+		
 		<Key ID="STR_Process_Sand">
 			<Original>Processing Sand</Original>
 			<English>Processing Sand</English>
@@ -4718,7 +4718,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Raccogli Eroina</Italian>
 			<Portuguese>Colher Heroina</Portuguese>
 		</Key>
-
+		
 			<Key ID="STR_Gather_Malz">
 			<Original>Gather Malz</Original>
 			<English>Gather Malz</English>
@@ -4734,8 +4734,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Raccogli Eroina</Italian>
 			<Portuguese>Colher Heroina</Portuguese>
 		</Key>
-
-
+		
+		
 		<Key ID="STR_Gather_Cannabis">
 			<Original>Gather Cannabis</Original>
 			<English>Gather Cannabis</English>
@@ -4755,28 +4755,28 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 	</Package>
 	<Package name="Medical_Strings">
 		<Key ID="STR_Medic_Online">
-			<Original>Medics Online: %1</Original>
-			<English>Medics Online: %1</English>
-			<German>Sanitäter online: %1</German>
-			<French>Medics en ligne: %1</French>
-			<Italian>Medici Online: %1</Italian>
-			<Portuguese>Médicos Online: %1</Portuguese>
+			<Original>PJs Online: %1</Original>
+			<English>PJs Online: %1</English>
+			<German>PJs online: %1</German>
+			<French>PJs en ligne: %1</French>
+			<Italian>PJs Online: %1</Italian>
+			<Portuguese>PJs Online: %1</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_Near">
-			<Original>Medics Nearby: %1</Original>
-			<English>Medics Nearby: %1</English>
-			<German>Sanitäter in der Nähe: %1</German>
-			<French>Medics à proximité: %1</French>
-			<Italian>Medici Vicini: %1</Italian>
-			<Portuguese>Médicos por perto: %1</Portuguese>
+			<Original>PJs Nearby: %1</Original>
+			<English>PJs Nearby: %1</English>
+			<German>PJs in der Nähe: %1</German>
+			<French>PJs à proximité: %1</French>
+			<Italian>PJs Vicini: %1</Italian>
+			<Portuguese>PJs por perto: %1</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_Request">
-			<Original>%1 is requesting EMS Revive.</Original>
-			<English>%1 is requesting EMS Revive.</English>
+			<Original>%1 is requesting Pararescue.</Original>
+			<English>%1 is requesting Pararescue.</English>
 			<German>%1 benötigt medizinische Hilfe</German>
-			<French>%1 demande de l'aide d'un EMS.</French>
-			<Italian>%1 sta richiedendo l'intervento medico.</Italian>
-			<Portuguese>%1 requisitou o resgate do SAMU</Portuguese>
+			<French>%1 is requesting Pararescue..</French>
+			<Italian>%1 is requesting Pararescue.</Italian>
+			<Portuguese>%1 is requesting Pararescue.</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_Respawn">
 			<Original>Respawn Available in: %1</Original>
@@ -5150,8 +5150,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>Push Boat</Original>
 			<English>Push Boat</English>
 			<German>Schieben</German>
-			<French>Pousser bateau</French>
-			<Italian>Spingi Barca</Italian>
+			<French>Pousser bateau</French>	
+			<Italian>Spingi Barca</Italian>			
 			<Portuguese>Empurar Barco</Portuguese>
 		</Key>
 		<Key ID="STR_vInAct_Repair">
@@ -5723,9 +5723,9 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_FSM_Paycheck">
 			<Original>You will receive your next paycheck in %1 minutes</Original>
 			<English>You will receive your next paycheck in %1 minutes</English>
-			<German>Deinen nächsten Payday (Geld + Exp) erhälst du in %1 Minuten</German>
+			<German>Du erhältst deinen nächsten Gehaltsscheck in %1 Minuten</German>
 			<French>Vous recevrez votre prochain chèque de paie dans %1 minutes</French>
-			<Italian>Riceverai il tuo prossimo stipendio in %1 minuti</Italian>
+			<Italian>Riceverai il tuo prossimo stipendio in %1 minuti</Italian>		
 			<Portuguese>Você vai receber seu próximo pagamento em %1 minutos</Portuguese>
 		</Key>
 		<Key ID="STR_FSM_MissedPay">
@@ -5745,8 +5745,8 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Você recebeu seu pagamento de R$%1</Portuguese>
 		</Key>
 	</Package>
-
-
+	
+	
 	<Package name="Smartphone">
 		<Key ID="STR_PM_Smartphone">
 			<Original>Smartphone</Original>
@@ -5782,25 +5782,25 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
 		</Key>
 	</Package>
-
-
+	
+	
 	<Package name="Player_Actions">
 		<Key ID="STR_pAct_DropFishingNet">
 			<Original>Drop Fishing Net</Original>
 			<English>Drop Fishing Net</English>
 			<German>Fischernetz auswerfen</German>
 			<French>Drop Fishing Net</French>
-			<Italian>Drop Fishing Net</Italian>
+			<Italian>Drop Fishing Net</Italian>		
 			<Portuguese>Jogar Rede de Pesca</Portuguese>
 		</Key>
-
-
+		
+		
 		<Key ID="STR_pAct_RobPerson">
 			<Original>Rob Person</Original>
 			<English>Rob Person</English>
 			<German>Person ausrauben</German>
 			<French>Rob Person</French>
-			<Italian>Rob Person</Italian>
+			<Italian>Rob Person</Italian>		
 			<Portuguese>Roubar Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_pAct_SchutzgeldEintreiben">
@@ -5808,7 +5808,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<English>Schutzgeld eintreiben</English>
 			<German>Schutzgeld eintreiben</German>
 			<French>Rob Person</French>
-			<Italian>Rob Person</Italian>
+			<Italian>Rob Person</Italian>		
 			<Portuguese>Roubar Jogador</Portuguese>
 		</Key>
 	</Package>

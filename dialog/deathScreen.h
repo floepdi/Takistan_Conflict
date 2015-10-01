@@ -11,12 +11,11 @@ class DeathScreen
 	
 	class Controls
 	{
-		/*
 		class MedicsOnline : Life_RscText
 		{
 			idc = 7304;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Online: 1";
+			text = "PJs Online: 1";
 			x = 0.000874975 * safezoneW + safezoneX;
 			y = 0.0556 * safezoneH + safezoneY;
 			w = 0.8;
@@ -27,7 +26,7 @@ class DeathScreen
 		{
 			idc = 7305;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Nearby: No";
+			text = "PJ Nearby: No";
 			x = 0.00190622 * safezoneW + safezoneX;
 			y = 0.0776 * safezoneH + safezoneY;
 			w = 0.8;
@@ -38,13 +37,12 @@ class DeathScreen
 		{
 			idc = 7306;
 			colorBackground[] = {0,0,0,0};
-			text = "Medics Distance: 0";
+			text = "PJ Distance: 0";
 			x = 0.002937465 * safezoneW + safezoneX;
 			y = 0.0996 * safezoneH + safezoneY;
 			w = 0.8;
 			h = (1 / 25);
 		};
-		*/
 		
 		class RespawnBtn : Life_RscButtonMenu
 		{
@@ -62,7 +60,6 @@ class DeathScreen
 			};
 		};
 		
-		/*
 		class MedicBtn : Life_RscButtonMenu
 		{
 			idc = 7303;
@@ -71,14 +68,13 @@ class DeathScreen
 			w = (9 / 40);
 			h = (1 / 25);
 			onButtonClick = "createDialog ""reqmedic"";";
-			text = "Request Medic";
+			text = "Pararescue";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
 			class Attributes 
 			{
 				align = "center";
 			};
 		};
-		*/
 		
 		class respawnTime : Life_RscText
 		{

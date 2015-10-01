@@ -361,7 +361,6 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
-		/*
 		class EMSReq : life_RscButtonMenu
 		{
 			idc = 888899;
@@ -374,7 +373,6 @@ class Life_smartphone_notruf {
 			w = 0.2;
 			h = (1 / 25);
 		};
-		*/
 		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;

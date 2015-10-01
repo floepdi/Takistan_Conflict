@@ -47,11 +47,9 @@ setTerrainGrid 50;
 enableEnvironment false;
 
 //TaskForceRadio controls
-//Stop spawning new long range radios
 tf_no_auto_long_range_radio = true;
-//Give out personal radios
 TF_give_personal_radio_to_regular_soldier = false;
+TF_give_microdagr_to_soldier = false;
 
-//Same frequencies for everyone
 tf_same_sw_frequencies_for_side = true;
 tf_same_lr_frequencies_for_side = true;

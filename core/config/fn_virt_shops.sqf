@@ -20,7 +20,8 @@ switch (_shop) do
 	case "buerger": {["Bürger Markt",["ziegenmilch","dattel","fladenbrot","redgull","lockpick","zipties","pickaxe","fuelF","sprengstoff","guertel","zipties"]]};
 	};
 	*/
-	case "tankstelle": {["Tankstelle",["ziegenmilch","dattel","fladenbrot","fuelF","zipties"]]};
+	case "tankstelle": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","zipties","lockpick"]]};
+	case "tankstelle_med": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","zipties","lockpick"]]};
 	case "bandit": {["Küche",["ziegenmilch","dattel","fladenbrot","redgull","zipties","schlafmittel"]]};
 	case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
