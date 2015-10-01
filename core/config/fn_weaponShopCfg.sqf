@@ -184,8 +184,8 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
+                        			["arifle_mas_m16_gl",nil,5000],
+                        			["arifle_mas_hk416_v",nil,5000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
@@ -231,8 +231,8 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
+                        			["arifle_mas_m16_gl",nil,5000],
+                        			["arifle_mas_hk416_v",nil,5000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
@@ -283,8 +283,8 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
+                        			["arifle_mas_m16_gl",nil,5000],
+                        			["arifle_mas_hk416_v",nil,5000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
@@ -339,8 +339,8 @@ switch(_shop) do
 
 						["arifle_mas_g36c",nil,1000],
 						["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
+                        			["arifle_mas_m16_gl",nil,5000],
+                        			["arifle_mas_hk416_v",nil,5000],
 						["30Rnd_mas_556x45_Stanag",nil,200],
 						["UGL_FlareWhite_F",nil,500],
 						["1Rnd_Smoke_Grenade_shell",nil,250],
