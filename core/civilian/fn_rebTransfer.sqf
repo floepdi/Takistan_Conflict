@@ -67,6 +67,5 @@ if (_coplevel == 8) then{
 }
 else
 {
-[format["<img size= '5' image='textures\level1.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
 [] call life_fnc_profSetup;
 };

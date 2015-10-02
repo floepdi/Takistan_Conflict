@@ -104,7 +104,7 @@ life_fnc_garageRefund = compileFinal
 	if(_unit != player) exitWith {};
 	life_atmcash = life_atmcash + _price;
 ";
-{_x setMarkerAlphaLocal 0} foreach ["Gebiet1","Gebiet2","Gebiet3"];
+{_x setMarkerAlphaLocal 0} foreach ["Chanam","Garmsar","Zavarak"];
 [] execVM "core\init_survival.sqf";
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.

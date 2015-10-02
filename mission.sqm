@@ -11718,7 +11718,7 @@ class Mission
 		class Item20
 		{
 			position[]={10825.654,280.83231,6322.7603};
-			name="Gebiet2";
+			name="Garmsar";
 			text="Garmsar";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -11731,7 +11731,7 @@ class Mission
 		class Item21
 		{
 			position[]={9857.5127,117.47081,11435.444};
-			name="Gebiet1";
+			name="Zavarak";
 			text="Zavarak";
 			markerType="ELLIPSE";
 			type="Empty";
@@ -11744,7 +11744,7 @@ class Mission
 		class Item22
 		{
 			position[]={563.09369,243.22665,2826.7275};
-			name="Gebiet3";
+			name="Chanam";
 			text="Chaman";
 			markerType="ELLIPSE";
 			type="Empty";

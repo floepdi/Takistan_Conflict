@@ -384,7 +384,7 @@ switch (_code) do
 	};
 		case 61:
 	{
-			[] spawn life_fnc_territorycount;
+			[] spawn life_fnc_startTerritory;
 	};
 		case 62:
 	{

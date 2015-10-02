@@ -8,7 +8,7 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
-LoadScreen = "textures\loadScreen_ca.jpg";
+// LoadScreen = "textures\loadScreen_ca.jpg";
 
 class Header
 {

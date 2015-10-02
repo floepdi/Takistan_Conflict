@@ -302,7 +302,7 @@ class Life_Client_Core
 		class comDis{};
 		class emptyFuel{};
 		class Tanke{};
-		class territorycount{};
+		class startTerritory{};
 
 
 	};
