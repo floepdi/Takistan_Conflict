@@ -20,7 +20,7 @@ _role3names = ["Phil","Jester","xydra"];
 _role4 = "Koordination";
 _role4names = ["Largo","Sechmoo","steini","di Mentana"];
 _role5 = "Support";
-_role5names = ["-Joe","Harris","Yahell","Ben"];
+_role5names = ["-Joe-","Harris","Yahell","Ben"];
 _role6 = "Website:";
 _role6names = ["www.synced-gaming.de"];
 _role7 = "Teamspeak:";
@@ -53,9 +53,9 @@ sleep (_onScreenTime);
 [_role1, _role1names],
 [_role2, _role2names],
 [_role3, _role3names],
-//[_role4, _role4names],
+[_role4, _role4names],
 [_role5, _role5names],
 [_role6, _role6names],
-[_role7, _role7names]
-//[_role8, _role7names]
+[_role7, _role7names],
+[_role8, _role8names]
 ];

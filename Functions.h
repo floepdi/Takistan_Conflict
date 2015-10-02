@@ -375,6 +375,10 @@ class Life_Client_Core
 		class seizePlayerWeste {};
 		class seizePlayerWeaponAction {};
 		class seizePlayerWesteAction {};
+		class sack {};
+		class sackAction {};
+		class sackremove {};
+		class sackremoveAction {};
 		class copMarkers {};
 		class copLights {};
 		class vehInvSearch {};
