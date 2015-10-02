@@ -10,25 +10,23 @@
 _onScreenTime = 8;
 
 sleep 15; //Wait in seconds before the credits start after player is in-game
- 
+
 _role1 = "Willkommen auf dem Takistan Server von:";
 _role1names = ["synced-gaming.de"];
-_role2 = "Eure Admins";
+_role2 = "Administration";
 _role2names = ["Phil","Largo","Jester"];
-_role3 = "Community Manager";
-_role3names = ["Joe","Lukas","Charly","Xydra","Marius","Bommel"];
-
-/*
-_role4 = "Event Manager";
-_role4names = ["Warrior"];
-*/
-
-_role5 = "Website:";
-_role5names = ["www.synced-gaming.de"];
-_role6 = "Teamspeak:";
-_role6names = ["ts3.synced-gaming.de"];
-_role7 = "Regeln:";
-_role7names = ["Lest die Regeln unter synced-gaming.de!"];
+_role3 = "Entwickler";
+_role3names = ["Phil","Jester","xydra"];
+_role4 = "Koordination";
+_role4names = ["Largo","Sechmoo","steini","di Mentana"];
+_role5 = "Support";
+_role5names = ["-Joe","Harris","Yahell","Ben"];
+_role6 = "Website:";
+_role6names = ["www.synced-gaming.de"];
+_role7 = "Teamspeak:";
+_role7names = ["ts3.synced-gaming.de"];
+_role8 = "Regeln:";
+_role8names = ["Lest die Regeln unter synced-gaming.de!"];
 /*
 _role8 = "Wiki:";
 _role7names = ["Alle Informationen unter synced-gaming.enjin.com/wiki/"];

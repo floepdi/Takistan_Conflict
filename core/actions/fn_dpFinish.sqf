@@ -21,41 +21,36 @@ if ((_dis < 1001) AND (_dis > 0)) then {
 };
 if ((_dis < 2001) AND (_dis > 1002)) then {
 	_level = 15;
-	[format["<img size= '5' image='textures\reward150.paa'/>"],0.5,0.3,4,0,0.1,1]
-	spawn BIS_fnc_dynamicText;
+	[format["<img size= '5' image='textures\reward150.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
 	_price = 15000;
 	["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 3001) AND (_dis > 2002)) then {
 	_level = 20;
-	[format["<img size= '5' image='textures\reward200.paa'/>"],0.5,0.3,4,0,0.1,1]
-	spawn BIS_fnc_dynamicText;
+	[format["<img size= '5' image='textures\reward200.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
 	_price = 20000;
 	["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 4001) AND (_dis > 3002)) then {
 	_level = 25;
-	[format["<img size= '5' image='textures\reward250.paa'/>"],0.5,0.3,4,0,0.1,1]
-	spawn BIS_fnc_dynamicText;
+	[format["<img size= '5' image='textures\reward250.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
 	_price = 25000;
 	["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 5001) AND (_dis > 4002)) then {
-	_level = 30;
-	[format["<img size= '5' image='textures\reward300.paa'/>"],0.5,0.3,4,0,0.1,1]
+	_level = 30; [format["<img size= '5' image='textures\reward300.paa'/>"],0.5,0.3,4,0,0.1,1]
 	spawn BIS_fnc_dynamicText;
 	_price = 30000;
 	["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 
-if (_dis < 5001) then {
+if (_dis > 5001) then {
 	_level = 35;
-	[format["<img size= '5' image='textures\reward350.paa'/>"],0.5,0.3,4,0,0.1,1]
-	spawn BIS_fnc_dynamicText;
+	[format["<img size= '5' image='textures\reward350.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
 	_price = 35000;
 	["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;

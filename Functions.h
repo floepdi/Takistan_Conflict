@@ -42,7 +42,7 @@ class Life_Client_Core
 		class execute {};
 		class ASrefund {};
 	};
-	
+
 	class Master_Directory
 	{
 		file = "core";
@@ -53,19 +53,19 @@ class Life_Client_Core
 		class initMedic {};
 		class welcomeNotification {};
 	};
-	
+
 	class Admin
 	{
 		file = "core\admin";
 		class admininfo {};
-		
+
 		class adminid {};
 		class admingetID {};
 		class adminMenu {};
 		class adminQuery {};
-	
+
 	};
-	
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -84,7 +84,7 @@ class Life_Client_Core
 		class medicLights {};
 		class medicSiren {};
 	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -127,8 +127,8 @@ class Life_Client_Core
 		class giveItemAction2{};
 		class showLicenseAction{};
 
-		class surrender {}; 
-		
+		class surrender {};
+
 		class giveMoneyAction{};
 		class giveKeyAction{};
 		class packUpBarrier{};
@@ -136,9 +136,9 @@ class Life_Client_Core
 		class packUpStrahler{};
 
 		class robFederal{};
- 		
+
         	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -158,7 +158,7 @@ class Life_Client_Core
 		class displayStats {};
 		class swapItem {};
 	};
-	
+
 	class Config
 	{
 		file = "core\config";
@@ -181,7 +181,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
-		
+
 		//Clothing Store Configs
 		class clothing_cop {};
 		class clothing_bruce {};
@@ -232,9 +232,9 @@ class Life_Client_Core
 		class newMsg {};
 		class showMsg {};
 		class AAN {};
-		
+
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -282,7 +282,7 @@ class Life_Client_Core
 		class loadGear {};
 		class stripDownPlayer {};
 		class setPaycheck {};
-		
+
 
 		class profSetUp {};
 		class addExp {};
@@ -302,10 +302,11 @@ class Life_Client_Core
 		class comDis{};
 		class emptyFuel{};
 		class Tanke{};
+		class territorycount{};
 
-		
+
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -320,7 +321,7 @@ class Life_Client_Core
 		class setTexture {};
 		class say3D {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -348,7 +349,7 @@ class Life_Client_Core
 		class robReserve{};
 		class rebTransfer {};
 		};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -364,7 +365,7 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
@@ -404,9 +405,9 @@ class Life_Client_Core
 		class copOpener {};
 
 
-	
+
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -426,7 +427,7 @@ class Life_Client_Core
 		class keyGiveGang{};
 		class keyTakeGang{};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -450,7 +451,7 @@ class Life_Client_Core
 		class chopShopSelection {};
 		class chopShopSell {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -473,7 +474,7 @@ class Life_Client_Core
 		class barricade{};
 		class strahler{};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";

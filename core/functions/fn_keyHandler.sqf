@@ -248,7 +248,7 @@ switch (_code) do
 				};
 			};
 		};
-		
+
 		//MEDIC KANN RESTRAINEN
 		if(playerSide == independent) then
 		{
@@ -268,7 +268,7 @@ switch (_code) do
 				};
 			};
 		};
-		
+
 	};
 
 	//Knock out, this is experimental and yeah...
@@ -384,7 +384,7 @@ switch (_code) do
 	};
 		case 61:
 	{
-			_handled = true;
+			[] spawn life_fnc_territorycount;
 	};
 		case 62:
 	{
