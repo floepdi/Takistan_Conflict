@@ -89,5 +89,14 @@ switch (_item) do
 	case "antenne": {5};
 	case "gehaeuse": {5};
 	case "behaelter": {10};
+	case "pistolenlieferung": {10};
+	case "nahrungsmittel": {10};
+	case "munitionslieferung": {15};
+	case "aklieferung": {20};
+	case "gestohlenevisiere": {15};
+	case "uniformen": {15};
+	case "koran": {20};
+	case "kondome": {25};
+	case "sniperkiste": {25};
 	default {1};
 };
