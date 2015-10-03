@@ -93,6 +93,15 @@ switch (_var) do
 	case "life_inv_antenne": {"Antenne"};
 	case "life_inv_gehaeuse": {"Gehaeuse"};
 	case "life_inv_behaelter": {"Behaelter"};
+	case "life_inv_pistolenlieferung": {"Pistolenlieferung"};
+	case "life_inv_nahrungsmittel": {"Kiste mit Nahrungsvorräten"};
+	case "life_inv_munitionslieferung": {"Kiste mit Munition"};
+	case "life_inv_aklieferung": {"Kiste mit AK47s"};
+	case "life_inv_gestohlenevisiere": {"gestohlene Visiere"};
+	case "life_inv_uniformen": {"Offiziersuniformen"};
+	case "life_inv_koran": {"Bündel heiliger Schriften"};
+	case "life_inv_kondome": {"Schafsdarmkondome"};
+	case "life_inv_sniperkiste": {"Kiste mit schweren Scharfschützengewehren"};
 
 
 
