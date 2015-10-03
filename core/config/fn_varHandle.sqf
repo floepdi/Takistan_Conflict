@@ -97,7 +97,15 @@ switch (_mode) do
 			case "antenne": {"life_inv_antenne"};
 			case "gehaeuse": {"life_inv_gehaeuse"};
 			case "behaelter": {"life_inv_behaelter"};
-		};
+			case "pistolenlieferung": {"life_inv_pistolenlieferung"};
+			case "nahrungsmittel": {"life_inv_nahrungsmittel"};
+			case "munitionslieferung": {"life_inv_munitionslieferung"};
+			case "aklieferung": {"life_inv_aklieferung"};
+			case "gestohlenevisiere": {"life_inv_gestohlenevisiere"};
+			case "uniformen": {"life_inv_uniformen"};
+			case "koran": {"life_inv_koran"};
+			case "kondome": {"life_inv_kondome"};
+			case "sniperkiste": {"life_inv_sniperkiste"};
 	};
 
 	case 1:
@@ -185,6 +193,15 @@ switch (_mode) do
 			case "life_inv_gehaeuse": {"gehaeuse"};
 			case "life_inv_antenne": {"antenne"};
 			case "life_inv_behaelter": {"behaelter"};
+			case "life_inv_pistolenlieferung": {"pistolenlieferung"};
+			case "life_inv_nahrungsmittel": {"nahrungsmittel"};
+			case "life_inv_munitionslieferung": {"munitionslieferung"};
+			case "life_inv_aklieferung": {"aklieferung"};
+			case "life_inv_gestohlenevisiere": {"gestohlenevisiere"};
+			case "life_inv_uniformen": {"uniformen"};
+			case "life_inv_koran": {"koran"};
+			case "life_inv_kondome": {"kondome"};
+			case "life_inv_sniperkiste": {"sniperkiste"};
 		};
 	};
 };
