@@ -231,6 +231,15 @@ life_inv_items =
 	"life_inv_gehaeuse",
 	"life_inv_pipe",
 	"life_inv_behaelter"
+	"life_inv_pistolenlieferung"
+	"life_inv_nahrungsmittel"
+	"life_inv_munitionslieferung"
+	"life_inv_aklieferung"
+	"life_inv_gestohlenevisiere"
+	"life_inv_uniformen"
+	"life_inv_koran"
+	"life_inv_kondome"
+	"life_inv_sniperkiste"
 ];
 
 
@@ -308,7 +317,7 @@ life_prof =
 
 life_dp_points = ["di_1","di_2","di_3","di_4","di_5","di_6","di_7","di_8","di_9","di_10","di_11"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["cannabis",1500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["bluesyn",6000],["pilze",1200],["magicmushrooms",1200],["schlafmittel",5000],["goldbar",25000],["sprengstoff",5000],["sprengsatz",5000],["spikeStrip",5000]];
+life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["cannabis",1500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500],["bluesyn",6000],["pilze",1200],["magicmushrooms",1200],["schlafmittel",5000],["goldbar",25000],["sprengstoff",5000],["sprengsatz",5000],["spikeStrip",5000],["munitionslieferung",5000],["aklieferung",10000],["gestohlenevisiere",15000],["uniformen",10000],["kondome",25000]];
 
 
 /*
@@ -376,6 +385,15 @@ sell_array =
 	["antenne",0],
 	["schlafmittel",0],
 	["behaelter",0]
+	["pistolenlieferung",0]
+	["nahrungsmittel",0]
+	["munitionslieferung",0]
+	["aklieferung",0]
+	["gestohlenevisiere",0]
+	["uniformen",0]
+	["koran",0]
+	["kondome",0]
+	["sniperkiste",0]
 ];};
 //__CONST__(sell_array,sell_array);
 
