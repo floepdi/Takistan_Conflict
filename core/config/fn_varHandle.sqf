@@ -106,6 +106,9 @@ switch (_mode) do
 			case "koran": {"life_inv_koran"};
 			case "kondome": {"life_inv_kondome"};
 			case "sniperkiste": {"life_inv_sniperkiste"};
+			case "carbomb1": {"life_inv_carbomb1"};
+			case "carbomb2": {"life_inv_carbomb2"};
+			case "carfernzuender": {"life_inv_carfernzuender"};
 		};
 	};
 
@@ -203,6 +206,9 @@ switch (_mode) do
 			case "life_inv_koran": {"koran"};
 			case "life_inv_kondome": {"kondome"};
 			case "life_inv_sniperkiste": {"sniperkiste"};
+			case "life_inv_carbomb1" : {"carbomb1"};
+			case "life_inv_carbomb2" : {"carbomb2"};
+			case "life_inv_carfernzuender" : {"carfernzuender"};
 		};
 	};
 };

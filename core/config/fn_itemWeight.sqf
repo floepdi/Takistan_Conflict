@@ -1,7 +1,7 @@
 /*
 	File: fn_itemWeight.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Gets the items weight and returns it.
 */
@@ -98,5 +98,8 @@ switch (_item) do
 	case "koran": {20};
 	case "kondome": {25};
 	case "sniperkiste": {25};
+	case "carbomb1": {5};
+	case "carbomb2": {5};
+	case "carfernzuender": {2};
 	default {1};
 };

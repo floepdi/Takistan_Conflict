@@ -349,7 +349,8 @@ class Life_Client_Core
 		class showLicense{};
 		class robReserve{};
 		class rebTransfer {};
-		};
+		class carBomb {};
+	};
 
 	class Vehicle
 	{

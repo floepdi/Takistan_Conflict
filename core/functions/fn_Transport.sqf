@@ -516,8 +516,66 @@ if (3 == _paket) then // Schwere Jobs
 					};
 				};
 			};
+/*
+if (4 == _paket) then // Schwächung der Nato
+	{
+		if (life_level < 40) exitWith {hint "Mit Neulingen mache ich keine Geschäfte";};
+		if (0 == _progress) then //// Schwächung der Nato 100%
+			{
+				_r = random 100;
+				if (_r < 101) then {_nr = 1;};
+			};
 
-	/*
+
+			if (_nr == 1) then // Schwächung der Nato
+			{
+				if ((side _user) == civilian) then
+					{
+					if (_progress == 0) then //Missionstart
+							{
+								_user setVariable ["transport", 31, false];
+								[format[" Du siehst mir aus wie ein fähiger Mann. "],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
+								sleep 6;
+								[format[" Wenn du mir eine Kiste mit schweren Waffen beschaffen kannst, dann wird es sich sicher für dich lohnen. "],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
+								sleep 6;
+								[format[" Neue Quest - Schwächung der Nato "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
+								sleep 6;
+								[format ["<t align='left'><t size='0.8' font='Zeppelin33' shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6' font='Zeppelin33' shadow='1' color='#EFFBEF'> + Koran erhalten <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								//Marker
+								"Transport_3_1" setMarkerAlphaLocal 1;
+
+							};
+					if (_progress == 1) then
+							{
+							_p = _user getVariable "transport";
+								if (_p == 31) then
+								{
+									if ([false,"koran",1] call life_fnc_handleInv) then
+										{
+											_user setVariable ["transport", 0, false];
+											[format["Allah dankt dir für das Sichern der Heiligen Schriften!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
+											sleep 6;
+											"Transport_3_1" setMarkerAlphaLocal 0;
+											_reward  = 30000;
+											life_cash = life_cash + _reward;
+											_level = 50;
+											["Level_Prof",_level,1] call life_fnc_addLevel;
+											[] call life_fnc_profSetup;
+											[format ["<t align='left'><t size='0.8' font='Zeppelin33' shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6' font='Zeppelin33' shadow='1' color='#EFFBEF'> + 30000$ <br /> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+
+										};
+								}
+								else
+								{
+									hint "Du kannst hier nichts abgeben";
+
+								};
+							};
+					};
+			};
+		};
+
+
 	};
 	case 4: //Mehr Aks für den Heiligen Krieg
 	{

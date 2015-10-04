@@ -102,6 +102,9 @@ switch (_var) do
 	case "life_inv_koran": {"Bündel heiliger Schriften"};
 	case "life_inv_kondome": {"Schafsdarmkondome"};
 	case "life_inv_sniperkiste": {"Kiste mit schweren Scharfschützengewehren"};
+	case "life_inv_carbomb1": {"AutoBombe (Motor)"};
+	case "life_inv_carbomb2": {"AutoBombe (Zuender)"};
+	case "life_inv_carfernzuender": {"Fernzuender (Autobombe)"};
 
 
 
