@@ -25,15 +25,17 @@ if(count life_spawn_point == 0) then
 
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
-switch (playerSide) do {
-    case west: {
-	player say2d "welcomeblue";
-    };
-    case civilian: {
-	player say2d "welcome";
-    };
-};
-	[] execVM "scripts\spawncam.sqf";
+	/*
+	switch (playerSide) do {
+    	case west: {
+			player say2d "welcomeblue";
+    	};
+    	case civilian: {
+			player say2d "welcome";
+    	};
+	};
+		[] execVM "scripts\spawncam.sqf";
+	*/
 	[] call life_fnc_welcomeNotification;
 };
 

@@ -106,6 +106,7 @@ switch (_mode) do
 			case "koran": {"life_inv_koran"};
 			case "kondome": {"life_inv_kondome"};
 			case "sniperkiste": {"life_inv_sniperkiste"};
+		};
 	};
 
 	case 1:

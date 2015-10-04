@@ -303,6 +303,7 @@ class Life_Client_Core
 		class emptyFuel{};
 		class Tanke{};
 		class startTerritory{};
+		class Transport{};
 
 
 	};
