@@ -41,9 +41,9 @@ _units = _units - [player];
 		_distance = _pos distance player;
 		if(count _sPos > 1 && {_distance < 4 }) then {
 			_text = switch (true) do {
-				case ((headgear _x) in life_masked): {format["<t color='#848484' shadow='1'>*maskiert*</t>"];};
-				case (_x in (units grpPlayer) && playerSide == east): {format["<t color='#00FF00' shadow='1'>%1</t>",(_x getVariable ["realname",name _x])];};
-				case (_x getVariable "wanted"): {format["<t color='#FAAC58' shadow='1'>%1</t>",_x getVariable ["realname",name _x]]};
+				case ((headgear _x) in life_masked): {format["<t color='#848484'>*maskiert*</t>"];};
+				case (_x in (units grpPlayer) && playerSide == east): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
+				case (_x getVariable "wanted"): {format["<t color='#FAAC58'>%1</t>",_x getVariable ["realname",name _x]]};
 				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
 					case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
 					case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
@@ -57,7 +57,7 @@ _units = _units - [player];
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#58ACFA'  size ='0.6' shadow='1'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
 				default {
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
-						format["%1<br/><t shadow='1' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
+						format["%1<br/><t color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];
 					} else {
 						_x getVariable ["realname",name _x];
 					};

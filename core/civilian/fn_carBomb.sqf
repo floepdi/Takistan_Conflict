@@ -24,18 +24,20 @@ life_action_inUse = false;
 
 if(player distance _car > 7) exitWith {hint "Du bist zu weit entfernt!"};
 
-[format ["<t align='left'><t size='0.8' shadow='1'><t color='#F78181'><br /> Bombe angebracht"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br /> Bombe angebracht"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 _bomb = "Land_TinContainer_F" createVehicle position _car;
-_bomb attachTo [_car, [0, 1, -1], "Bombe"];
+_bomb attachTo [_car, [0, -3, -0.5], "Bombe"];
 
 
 [_car] spawn
 {
+	while {true} do {
 	_veh = _this select 0;
 	_isOn = isEngineOn _veh;
-	if (_isOn == true) then {
+	if (_isOn) then {
 	_veh setDamage 1;
-	[format ["<t align='left'><t size='0.8' shadow='1'><t color='#F78181'><br /> Eine von dir angebrachte Bombe ist explodiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br /> Eine von dir angebrachte Bombe ist explodiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 	};
+};
 };
