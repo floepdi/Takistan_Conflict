@@ -25,9 +25,9 @@ switch (playerSide) do
 
 		life_actions = life_actions + [player addAction["Aktiviere Bombe",life_fnc_suicideBomb,"",0,false,false,"",' vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")']];
 
-		life_actions = life_actions + [player addAction["Sack überziehen",life_fnc_sack,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable "restrained")']];
-		life_actions = life_actions + [player addAction["Sack selber entfernen",life_fnc_sackremove,"",0,false,false,"",'(player getVariable "Sack" == 1) && !(player getVariable "restrained")']];
-		life_actions = life_actions + [player addAction["Sack entfernen",life_fnc_sackremove,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable "Sack" == 1)']];
+		life_actions = life_actions + [player addAction["Sack überziehen",life_fnc_sack,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Sack")']];
+		life_actions = life_actions + [player addAction["Sack selber entfernen",life_fnc_sackremove,"",0,false,false,"",'(player getVariable "Sack") && !(player getVariable "restrained")']];
+		life_actions = life_actions + [player addAction["Sack entfernen",life_fnc_sackremove,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable "Sack")']];
 	};
 	case independent:
 	{
@@ -44,10 +44,10 @@ switch (playerSide) do
     //...
 	life_actions = life_actions + [player addAction["Objekte Beschlagnahmen",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'count(nearestObjects [player,["CamoNet_OPFOR_F","Land_Razorwire_F","Land_PortableLight_double_F","TapeSign_F","RoadBarrier_small_F","WeaponHolderSimulated","weaponholder","GroundWeaponHolder","Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F", "Land_Can_V3_F","Land_Money_F","Land_Suitcase_F"],3])>0']];
 
-	life_actions = life_actions + [player addAction["Sack überziehen",life_fnc_sack,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained")']];
-	life_actions = life_actions + [player addAction["Sack selber entfernen",life_fnc_sackremove,"",0,false,false,"",'(player getVariable "Sack" == 1) && !(player getVariable "restrained")']];
-	life_actions = life_actions + [player addAction["Sack entfernen",life_fnc_sackremove,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "Sack" == 1)']];
-	
+	life_actions = life_actions + [player addAction["Sack überziehen",life_fnc_sack,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Sack")']];
+	life_actions = life_actions + [player addAction["Sack selber entfernen",life_fnc_sackremove,"",0,false,false,"",'(player getVariable "Sack") && !(player getVariable "restrained")']];
+	life_actions = life_actions + [player addAction["Sack entfernen",life_fnc_sackremove,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == civilian) && (cursorTarget getVariable "Sack")']];
+
 	life_actions = life_actions + [player addAction["<t color='#00FF00'>Dienstausweis zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && player distance cursorTarget < 3.5 && isPlayer cursorTarget']];
 
 

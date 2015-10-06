@@ -1,6 +1,6 @@
 /*
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Verifies that the ticket was paid.
 */
@@ -11,4 +11,5 @@ _cop = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit OR {_unit != life_ticket_unit}) exitWith {}; //NO
 if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
+_unit setVariable["wanted",false,true]
 life_atmcash = life_atmcash + _value;

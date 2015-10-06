@@ -11,6 +11,7 @@ private["_curTarget","_isWater"];
 _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_action_gathering) exitWith{};
+if(player getVariable["restrained",false]) exitWith {};
 //if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);

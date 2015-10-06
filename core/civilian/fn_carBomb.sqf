@@ -22,22 +22,20 @@ waitUntil {animationState player != "ainvpknlmstpsnonwnondnon_medic_1"};
 
 life_action_inUse = false;
 
-hint format ["%1",_zuender];
-
 if(player distance _car > 7) exitWith {hint "Du bist zu weit entfernt!"};
 
-[format[" Bombe angebracht! "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
+[format ["<t align='left'><t size='0.8' shadow='1'><t color='#F78181'><br /> Bombe angebracht"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 _bomb = "Land_TinContainer_F" createVehicle position _car;
-_bomb attachTo [_car, [0, 1, 0], "Bombe"];
+_bomb attachTo [_car, [0, 1, -1], "Bombe"];
 
-if (_zuender == 0) then {
+
 [_car] spawn
 {
 	_veh = _this select 0;
-	waitUntil (isEngineOn _veh) {
+	_isOn = isEngineOn _veh;
+	if (_isOn == true) then {
 	_veh setDamage 1;
-	[format[" Die Autobombe ist explodiert! "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
+	[format ["<t align='left'><t size='0.8' shadow='1'><t color='#F78181'><br /> Eine von dir angebrachte Bombe ist explodiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 	};
-};
 };

@@ -73,6 +73,7 @@ player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 player setVariable["robbed",false,true];
 player setVariable["Sack",false,true];
+player setVariable["wanted",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";

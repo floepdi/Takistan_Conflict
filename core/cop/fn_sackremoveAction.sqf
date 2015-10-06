@@ -3,7 +3,7 @@
 	Author: Jester
 
 */
-player SetVariable ["Sack",0,true];
+player SetVariable ["Sack",false,true];
 
 "colorCorrections" ppEffectEnable false;
 titleText["Dir wurde der Sack wieder abgenommen.","PLAIN"];

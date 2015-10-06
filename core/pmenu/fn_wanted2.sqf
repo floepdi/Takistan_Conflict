@@ -12,3 +12,5 @@ if(isNull _unit) exitWith {ctrlShow[2001,true];};
 [[1,format["Nach %1 wird nun gefahndet.",name _unit,_amount,getPlayerUID _unit]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 
 [[getPlayerUID _unit,name _unit,_amount],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+
+_unit setVariable ["wanted",true,true];

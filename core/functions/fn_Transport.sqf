@@ -11,7 +11,7 @@ _paket = _this select 0;
 _progress = _this select 1;
 _nr = _this select 2;
 _user = player;
-_p = _user getVariable "transport";
+_p = (_user getVariable["transport",0])
 if (side _user != civilian) exitWith { hint "Mit dir will ich nichts zutun haben, Soldat!" };
 if ((_progress == 0) AND (_p != 0)) exitWith {hint "Du hast bereits eine Mission"};
 

@@ -21,7 +21,7 @@ _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 
 
-		
+
 //if(!isPlayer _curTarget && side _curTarget == civilian) exitWith {closeDialog 0;}; //Bad side check?
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
@@ -37,13 +37,13 @@ _Btn10 = _display displayCtrl Btn10;
 _Btn12 = _display displayCtrl Btn12;
 
 		_Btn5 ctrlShow false;
-		
+
 		_Btn7 ctrlShow false;
 		_Btn8 ctrlShow false;
 		_Btn9 ctrlShow false;
 		_Btn10 ctrlShow false;
 		_Btn12 ctrlShow false;
-		
+
 
 life_pInact_curTarget = _curTarget;
 
@@ -68,7 +68,7 @@ if(_curTarget getVariable["restrained",false]) then
 {
 if((_curTarget getVariable["Escorting",false])) then {
 	_Btn3 ctrlSetText localize "STR_pInAct_StopEscort";
-	_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_civInteractionMenu;";
+	_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
 } else {
 	_Btn3 ctrlSetText localize "STR_pInAct_Escort";
 	_Btn3 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
@@ -97,14 +97,14 @@ _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 if(_curTarget getVariable["restrained",false]) then {
 _Btn2 ctrlSetText "Verabreichen";
 _Btn2 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_giveItemAction2; closeDialog 0;"
- 
+
 };
 _Btn6 ctrlSetText "Schlüssel Geben";
 _Btn6 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_giveKeyAction;";
 /*
 //Check that you are near a place to jail them.
-if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 
+if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then
 {
 	_Btn6 ctrlEnable false;
 };
-	*/	
+	*/

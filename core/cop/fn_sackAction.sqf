@@ -4,7 +4,7 @@
 
 */
 
-player SetVariable ["Sack",1,true];
+player SetVariable ["Sack",true,true];
 
 "colorCorrections" ppEffectEnable true;
 "colorCorrections" ppEffectAdjust [1,1,1,[0,0,0,0],[0,0,0,0],[0,0,0,0]];
