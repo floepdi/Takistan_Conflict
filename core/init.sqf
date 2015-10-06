@@ -1,6 +1,6 @@
 #include <macro.h>
 /*
-	Master client initialization file
+    Master client initialization file
 */
 life_firstSpawn = true;
 life_session_completed = false;
@@ -32,9 +32,9 @@ diag_log "::Life Client:: Waiting for the server to be ready..";
 waitUntil{!isNil "life_server_isReady"};
 waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
 if(!isNil "life_server_extDB_notLoaded") exitWith {
-	diag_log "::Life Client:: Server did not load extDB";
-	999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
-	999999 cutFadeOut 99999999;
+    diag_log "::Life Client:: Server did not load extDB";
+    999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
+    999999 cutFadeOut 99999999;
 };
 [] call SOCK_fnc_dataQuery;
 waitUntil {life_session_completed};
@@ -46,25 +46,25 @@ waitUntil {life_session_completed};
 
 switch (playerSide) do
 {
-	case west:
-	{
-		_handle = [] spawn life_fnc_initCop;
-		waitUntil {scriptDone _handle};
-	};
+    case west:
+    {
+        _handle = [] spawn life_fnc_initCop;
+        waitUntil {scriptDone _handle};
+    };
 
-	case civilian:
-	{
-		//Initialize Civilian Settings
-		_handle = [] spawn life_fnc_initCiv;
-		waitUntil {scriptDone _handle};
-	};
+    case civilian:
+    {
+        //Initialize Civilian Settings
+        _handle = [] spawn life_fnc_initCiv;
+        waitUntil {scriptDone _handle};
+    };
 
-	case independent:
-	{
-		//Initialize Medics and blah
-		_handle = [] spawn life_fnc_initMedic;
-		waitUntil {scriptDone _handle};
-	};
+    case independent:
+    {
+        //Initialize Medics and blah
+        _handle = [] spawn life_fnc_initMedic;
+        waitUntil {scriptDone _handle};
+    };
 };
 player setVariable["tied",false,true];
 player setVariable["surrender",false,true];
@@ -72,6 +72,7 @@ player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
 player setVariable["robbed",false,true];
+player setVariable["Sack",false,true];
 
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
@@ -94,15 +95,15 @@ player setVariable["steam64ID",getPlayerUID player];
 player setVariable["realname",profileName,true];
 life_fnc_moveIn = compileFinal
 "
-	player moveInCargo (_this select 0);
+    player moveInCargo (_this select 0);
 ";
 
 life_fnc_garageRefund = compileFinal
 "
-	_price = _this select 0;
-	_unit = _this select 1;
-	if(_unit != player) exitWith {};
-	life_atmcash = life_atmcash + _price;
+    _price = _this select 0;
+    _unit = _this select 1;
+    if(_unit != player) exitWith {};
+    life_atmcash = life_atmcash + _price;
 ";
 {_x setMarkerAlphaLocal 0} foreach ["Chanam","Garmsar","Zavarak","Transport_1_1","Transport_1_2","Transport_1_3","Transport_2_1","Transport_2_2","Transport_2_3","Transport_3_1","Transport_3_2_1","Transport_3_2_2"];
 [] execVM "core\init_survival.sqf";
