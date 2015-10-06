@@ -242,7 +242,9 @@ life_inv_items =
 	"life_inv_sniperkiste",
 	"life_inv_carbomb1",
 	"life_inv_carbomb2",
-	"life_inv_carfernzuender"
+	"life_inv_carfernzuender",
+	"life_inv_golderz",
+	"life_inv_goldbarren"
 ];
 
 
@@ -282,8 +284,9 @@ life_licenses =
 	["license_civ_plastic","civ"],
 	["license_civ_bier","civ"],
 	["license_civ_schnaps","civ"],
-	["license_civ_pilze","civ"]
-];
+	["license_civ_pilze","civ"],
+	["license_civ_gold","civ"]
+	];
 
 //Setup License Variables
 {missionNamespace setVariable[(_x select 0),false];} foreach life_licenses;
