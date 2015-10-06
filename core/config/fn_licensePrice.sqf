@@ -45,5 +45,6 @@ switch (_type) do
 	case "bier": {30000};
 	case "schnaps": {30000};
 	case "pilze": {25000};
+	case "gold": {100000};
 	case "drone": {10000}; //Drohnen Lehrgang
 };

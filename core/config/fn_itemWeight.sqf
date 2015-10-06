@@ -101,5 +101,7 @@ switch (_item) do
 	case "carbomb1": {5};
 	case "carbomb2": {5};
 	case "carfernzuender": {2};
+	case "golderz": {5};
+	case "goldbarren": {3};
 	default {1};
 };

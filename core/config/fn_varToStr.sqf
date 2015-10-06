@@ -105,6 +105,8 @@ switch (_var) do
 	case "life_inv_carbomb1": {"AutoBombe (Motor)"};
 	case "life_inv_carbomb2": {"AutoBombe (Zuender)"};
 	case "life_inv_carfernzuender": {"Fernzuender (Autobombe)"};
+	case "life_inv_golderz": {"Golderz"};
+	case "life_inv_goldbarren": {"Goldbarren"};
 
 
 
@@ -160,4 +162,5 @@ switch (_var) do
 	case "license_civ_schnaps": {(localize "STR_License_Schnaps")};
 	case "license_civ_pilze": {(localize "STR_License_Pilze")};
 	case "license_cop_drone": {"Drohnen Lehrgang"};
+	case "license_civ_gold" : {"Goldschmelze"};
 };

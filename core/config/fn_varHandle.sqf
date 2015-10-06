@@ -109,6 +109,8 @@ switch (_mode) do
 			case "carbomb1": {"life_inv_carbomb1"};
 			case "carbomb2": {"life_inv_carbomb2"};
 			case "carfernzuender": {"life_inv_carfernzuender"};
+			case "golderz": {"life_inv_golderz"};
+			case "goldbarren": {"life_inv_goldbarren"};
 		};
 	};
 
@@ -209,6 +211,8 @@ switch (_mode) do
 			case "life_inv_carbomb1" : {"carbomb1"};
 			case "life_inv_carbomb2" : {"carbomb2"};
 			case "life_inv_carfernzuender" : {"carfernzuender"};
+			case "life_inv_golderz": {"golderz"};
+			case "life_inv_goldbarren": {"goldbarren"};
 		};
 	};
 };

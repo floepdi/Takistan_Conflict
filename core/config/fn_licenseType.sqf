@@ -51,6 +51,7 @@ switch (_mode) do
 			case "steel": {_var = "license_civ_steel"};
 			case "plastic": {_var = "license_civ_plastic"};
 			case "coal": {_var = "license_civ_coal"};
+			case "gold": {_var = "license_civ_gold"};
 			default {_var = ""};
 		};
 	};
@@ -92,6 +93,7 @@ switch (_mode) do
 			case "license_civ_bier": {_var = "bier"};
 			case "license_civ_schnaps": {_var = "schnaps"};
 			case "license_civ_pilze": {_var = "pilze"};
+			case "license_civ_gold": {_var = "gold"}; //Gold processing license cost
 			default {_var = ""};
 		};
 	};
