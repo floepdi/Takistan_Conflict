@@ -55,33 +55,21 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		_return pushBack
-		["rhsusf_m998_d_2dr",7500];
-
-		if(__GETC__(life_coplevel) >= 2) then
+		if(__GETC__(life_coplevel) > 1) then
 		{
-		_return pushBack
-		["DAR_MK23ADT",10000];
+			_return pushBack ["rhsusf_m998_d_2dr",550];
 		};
-		
-		if(__GETC__(life_coplevel) >= 4) then
+		if(__GETC__(life_coplevel) > 2) then
 		{
-		_return pushBack
-		["DAR_M1151WoodlandUA",20000];
-		_return pushBack
-		["rhsusf_m1025_d",20000];
+			_return pushBack ["rhsusf_m998_d_4dr",550];
 		};
-		if(__GETC__(life_coplevel) >= 6) then
+		if(__GETC__(life_coplevel) > 4) then
 		{
-		_return pushBack
-		["rhsusf_m1025_d_m2",25000];
-		_return pushBack
-		["DAR_M1151_Deploy",25000];
+			_return pushBack ["DAR_M1152",550];
 		};
-		if(license_cop_swat) then
+		if(__GETC__(life_coplevel) > 5) then
 		{
-		_return pushBack
-		["DAR_M1165_GMV",25000];
+			_return pushBack ["rhsusf_m1025_d",550];
 		};
 	};
 
