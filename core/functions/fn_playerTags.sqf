@@ -45,14 +45,34 @@ _units = _units - [player];
 				case (_x in (units grpPlayer) && playerSide == east): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
 				case (_x getVariable "wanted"): {format["<t color='#FAAC58'>%1</t>",_x getVariable ["realname",name _x]]};
 				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-					case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-					case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-					case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-					case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-					case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-					case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-					case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
 					default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                    case 2 {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                    case 3 {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                    case 4: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
+                    case 5: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
+                    case 6: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
+                    case 7: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
+                    case 8: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
+                    case 9: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
+                    case 10: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
+                    case 11: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
+                    case 12: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
+                    case 13: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
+                    case 14: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
+                    case 15: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
+                    case 16: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
+                    case 17: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
+                    case 18: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
+                    /*
+                    case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
+                    case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
+                    case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
+                    case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
+                    case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
+                    case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
+                    case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
+                    default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                    */
 					},_x getVariable ["realname",name _x]]};
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#58ACFA'  size ='0.6' shadow='1'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
 				default {
