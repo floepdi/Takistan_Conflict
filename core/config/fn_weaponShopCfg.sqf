@@ -40,20 +40,15 @@ switch(_shop) do
 			{
 				["Army Shop",
 					[
+						["rhs_weap_m16a4",nil,1000],
+						["30Rnd_mas_556x45_Stanag",nil,100],
 
-						["arifle_mas_mp5",nil,1000],
-						["30Rnd_mas_9x21_Stanag",nil,100],
+						["FHQ_optic_AC12136",nil,500],		
 
-                        			["arifle_mas_m4",nil,1500],
-						["30Rnd_mas_556x45_Stanag",nil,200],
-						
-						["hgun_P07_F",nil,250],
-						["16Rnd_9x21_Mag",nil,25],
-						
 						["tf_rf7800str",nil,500],
 						["tf_anprc152",nil,500],
 						["tf_mr3000_multicam",nil,500],
-                   				["ItemGPS",nil,100],
+                   		["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Binocular",nil,300],
@@ -62,10 +57,7 @@ switch(_shop) do
 						["SmokeShell",nil,300],
 						["SmokeShellRed",nil,300],
 						["SmokeShellGreen",nil,300],
-						["acc_flashlight",nil,100],
-						
-						["FHQ_optic_AC12136",nil,500]
-
+						["acc_flashlight",nil,100]
 					]
 				];
 			};
@@ -81,21 +73,14 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 2): {"Dir fehlen noch ein paar Abzeichen!"};
 			default
 			{
-				["Private 1st Shop",
+				["Private Shop",
 					[
+						["arifle_mas_m4c",nil,1000],
+						["30Rnd_mas_556x45_Stanag",nil,100],
 
-						["arifle_mas_g36c",nil,1000],
+						["FHQ_optic_AIM_tan",nil,500],
 
-						["arifle_mas_m4_gl",nil,2000],
-						["UGL_FlareWhite_F",nil,500],
-						["1Rnd_Smoke_Grenade_shell",nil,250],
-
-						["arifle_mas_l119_d",nil,1000],
-						["30Rnd_mas_556x45_Stanag",nil,200],
-
-						["FHQ_optic_AimM_BLK",nil,500],
-						["FHQ_optic_AC12136",nil,500]
-
+						["NVGoggles",nil,1000]
 					]
 				];
 			};
@@ -110,25 +95,13 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 3): {"Dir fehlen noch ein paar Abzeichen!"};
 			default
 			{
-				["Corporal Shop",
+				["Private 1st Class Shop",
 					[
+						["arifle_mas_m4",nil,1000],
+						["30Rnd_mas_556x45_Stanag",nil,100],
 
-						["arifle_mas_g36c",nil,1000],
-						["arifle_mas_m16",nil,3000],
-                        			["arifle_mas_m16_gl",nil,5000],
-                        			["arifle_mas_hk416_v",nil,5000],
-
-                        			["UGL_FlareWhite_F",nil,500],
-						["1Rnd_Smoke_Grenade_shell",nil,250],
-						["1Rnd_HE_Grenade_shell",nil,500],
-
-						["30Rnd_mas_556x45_Stanag",nil,200],
-
-						["FHQ_optic_AimM_BLK",nil,500],
-						["FHQ_optic_AC12136",nil,500],
-
-                        			["NVGoggles_mas_h",nil,2500]
-
+						["FHQ_optic_AimM_TAN",nil,500],
+						["FHQ_optic_HWS_tan",nil,500]
 					]
 				];
 			};
@@ -144,30 +117,14 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 4): {"Dir fehlen noch ein paar Abzeichen!"};
 			default
 			{
-				["Sergeant Shop",
+				["Specialist Shop",
 					[
-						["LMG_mas_M249_F",nil,7500],
-						["200Rnd_mas_556x45_Stanag",nil,1000],
+						["arifle_mas_g36c",nil,7500],
+						["30Rnd_mas_556x45_Stanag",nil,100],
 
-						["arifle_mas_hk417c_d",nil,10000],
-						["20Rnd_762x51_Mag",nil,500],
+						["FHQ_optic_ACOG",nil, 500],
 
-						["arifle_mas_g36c",nil,1000],
-						["arifle_mas_m16",nil,3000],
-                        			["arifle_mas_m16_gl",nil,5000],
-                        			["arifle_mas_hk416_v",nil,5000],
-						["30Rnd_mas_556x45_Stanag",nil,200],
-						["UGL_FlareWhite_F",nil,500],
-						["1Rnd_Smoke_Grenade_shell",nil,250],
-						["1Rnd_HE_Grenade_shell",nil,500],
-
-						["FHQ_optic_AimM_BLK",nil,500],
-						["FHQ_optic_ACOG",nil,1000],
-						["FHQ_optic_AC12136",nil,500],
-
-						["HandGrenade_Stone","Flashbang",2500],
-						["NVGoggles_mas_h",nil,2500]
-
+						["MiniGrenade",nil,1000]
 					]
 				];
 			};
@@ -182,34 +139,19 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 5): {"Dir fehlen noch ein paar Abzeichen!"};
 			default
 			{
-				["Master Sergeant Shop",
+				["Corporal Shop",
 					[
-
-					    	["srifle_mas_hk417",nil,15000],
-						["20Rnd_762x51_Mag",nil,500],
+					    ["arifle_mas_m4_m203_d",nil,15000],
+						["30Rnd_mas_556x45_Stanag",nil,500],
 
 						["LMG_mas_M249_F",nil,7500],
 						["200Rnd_mas_556x45_Stanag",nil,1000],
+						["hgun_mas_bhp_F",nil,1000],
 
-						["arifle_mas_g36c",nil,1000],
-						["arifle_mas_m16",nil,3000],
-                        			["arifle_mas_m16_gl",nil,5000],
-                        			["arifle_mas_hk416_v",nil,5000],
-						["30Rnd_mas_556x45_Stanag",nil,200],
-						["UGL_FlareWhite_F",nil,500],
-						["1Rnd_Smoke_Grenade_shell",nil,250],
-						["1Rnd_HE_Grenade_shell",nil,500],
+						["3Rnd_HE_Grenade_shell",nil,500],
 
-						["FHQ_optic_AimM_BLK",nil,500],
-						["FHQ_optic_ACOG",nil,1000],
-						["optic_mas_zeiss",nil,1000],
-						["FHQ_optic_AC12136",nil,1000],
-						["optic_SOS",nil,10000],
-
-						["Rangefinder",nil,5000],
-						["HandGrenade_Stone","Flashbang",2500],
-						["NVGoggles_mas_h",nil,2500]
-
+						["FHQ_optic_HWS_G33_tan",nil,500],
+						["FHQ_optic_ACOG_tan",nil,1000]
 					]
 				];
 			};
@@ -219,45 +161,21 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"FFinger weg, du bist kein Soldat!"};
+			case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
 			case (__GETC__(life_coplevel) < 6): {"Dir fehlen noch ein paar Abzeichen!"};
 			default
 			{
-				["Sergeant Major Shop",
+				["Sergeant Shop",
 					[
-						["LMG_mas_Mk48_F",nil,17500],
-						["100Rnd_mas_762x51_Stanag",nil,1000],
+						["hlc_rifle_SAMR",nil,17500],
+						["30Rnd_556x45_Stanag",nil,100],
 
 						["srifle_mas_m110",nil,20000],
 						["20Rnd_mas_762x51_Stanag",nil,1000],
 
-						["srifle_mas_hk417",nil,15000],
-						["20Rnd_762x51_Mag",nil,500],
-
-						["LMG_mas_M249_F",nil,7500],
-						["200Rnd_mas_556x45_Stanag",nil,1000],
-
-						["arifle_mas_g36c",nil,1000],
-						["arifle_mas_m16",nil,3000],
-                        			["arifle_mas_m16_gl",nil,5000],
-                        			["arifle_mas_hk416_v",nil,5000],
-						["30Rnd_mas_556x45_Stanag",nil,200],
-						["UGL_FlareWhite_F",nil,500],
-						["1Rnd_Smoke_Grenade_shell",nil,250],
 						["1Rnd_HE_Grenade_shell",nil,500],
 
-						["FHQ_optic_AimM_BLK",nil,500],
-						["FHQ_optic_ACOG",nil,1000],
-						["optic_mas_zeiss",nil,1000],
-						["FHQ_optic_AC12136",nil,1000],
-						["optic_SOS",nil,10000],
-						["optic_LRPS",nil,10000],
-						["optic_mas_DMS_c",nil,10000],
-
-						["Rangefinder",nil,5000],
-						["HandGrenade_Stone","Flashbang",2500],
-						["NVGoggles_mas_h",nil,2500]
-
+						["optic_SOS",nil,500],
 					]
 				];
 			};
