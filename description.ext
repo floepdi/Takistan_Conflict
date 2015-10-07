@@ -224,8 +224,18 @@ class CfgNotifications
 		priority = 5;
 	};
 
+};
+
 class CfgUnitInsignia
 {
+    class recruit
+    {
+        displayName = "US ARMY Recruit"; // Name displayed in Arsenal
+        author = "synced-gaming"; // Author displayed in Arsenal
+        texture = "icons\1REC.paa"; // Image path
+        textureVehicle = ""; // Does nothing currently, reserved for future use
+    };
+
     class private
     {
         displayName = "US ARMY Private"; // Name displayed in Arsenal
@@ -233,23 +243,23 @@ class CfgUnitInsignia
         texture = "icons\2PVT.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
     };
-    
+
    class private1
     {
         displayName = "US ARMY Private First Class"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\3PFC.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    };  
-    
+    };
+
    class specialist
     {
         displayName = "US ARMY Specialist"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\4SPC.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    };    
-    
+    };
+
    class corporal
     {
         displayName = "US ARMY Corporal"; // Name displayed in Arsenal
@@ -257,23 +267,23 @@ class CfgUnitInsignia
         texture = "icons\5CPL.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
     };
-    
+
    class sergeant
     {
         displayName = "US ARMY Sergeant"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\6SGT.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    }; 
-    
+    };
+
    class ssergeant
     {
         displayName = "US ARMY Staff Sergeant"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\7SSG.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    }; 
-   
+    };
+
    class sergeantfc
     {
         displayName = "US ARMY Sergeant First Class"; // Name displayed in Arsenal
@@ -281,7 +291,7 @@ class CfgUnitInsignia
         texture = "icons\8SFC.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
     };
-   
+
    class msergeant
     {
         displayName = "US ARMY Master Sergeant"; // Name displayed in Arsenal
@@ -289,15 +299,15 @@ class CfgUnitInsignia
         texture = "icons\9MSG.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
     };
-    
+
    class sergeantmj
     {
         displayName = "US ARMY Sergeant Major"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\10SGM.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    }; 
-   
+    };
+
    class csergeantm
     {
         displayName = "US ARMY Command Sergeant Major"; // Name displayed in Arsenal
@@ -305,39 +315,39 @@ class CfgUnitInsignia
         texture = "icons\11CSM.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
     };
-    
+
    class lt2
     {
         displayName = "US ARMY Second Lieutenant"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\12LT.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    }; 
-    
+    };
+
     class lt1
     {
         displayName = "US ARMY First Lieutenant"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\13LT.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    };  
-    
+    };
+
    class captain
     {
         displayName = "US ARMY Captain"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\14CPT.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    }; 
-    
+    };
+
     class major
     {
         displayName = "US ARMY Major"; // Name displayed in Arsenal
         author = "synced-gaming"; // Author displayed in Arsenal
         texture = "icons\15MAJ.paa"; // Image path
         textureVehicle = ""; // Does nothing currently, reserved for future use
-    }; 
-   
+    };
+
    class colonel
     {
         displayName = "US ARMY Colonel"; // Name displayed in Arsenal

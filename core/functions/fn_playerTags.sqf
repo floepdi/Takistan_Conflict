@@ -44,7 +44,29 @@ _units = _units - [player];
 				case ((headgear _x) in life_masked): {format["<t color='#848484'>*maskiert*</t>"];};
 				case (_x in (units grpPlayer) && playerSide == east): {format["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
 				case (_x getVariable "wanted"): {format["<t color='#FAAC58'>%1</t>",_x getVariable ["realname",name _x]]};
-				case (!isNil {(_x getVariable "rank")}): {format["<img image='%1' size='1.5'></img> %2",switch ((_x getVariable "rank")) do {
+				case (!isNil {(_x getVariable "rank")}): {format["     <t size='0.9'> %1 </t> <br /> <img image='%2' size='1.5'></img> %3",
+				switch ((_x getVariable "rank")) do {
+					case 1: {"Recruit"};
+					case 2: {"Private"};
+					case 3: {"Private First Class"};
+					case 4: {"Specialist"};
+					case 5: {"Corporal"};
+					case 6: {"Sergeant"};
+					case 7: {"Staff Sergeant"};
+					case 8: {"Sergeant First Class"};
+					case 9: {"Master Sergeant"};
+					case 10: {"Sergeant Major"};
+					case 11: {"Command Sergeant Major"};
+					case 12: {"Second Lieutenant"};
+					case 13: {"First Lieutenant"};
+					case 14: {"Captain"};
+					case 15: {"Major"};
+					case 16: {"Colonel"};
+					case 17: {"General"};
+					case 18: {"Commander"};
+					default {"unknown"};
+					}
+				,switch ((_x getVariable "rank")) do {
 					case 1: {"icons\1REC.paa"};
 					case 2: {"icons\2PVT.paa"};
 					case 3: {"icons\3PFC.paa"};

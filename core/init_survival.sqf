@@ -104,7 +104,36 @@
 		};
 	};
 };
+/*
+[] spawn
+{
+	while {true} do
+	{
+	if (playerSide != west) exitWith {};
+	switch ((player getVariable "rank")) do {
+					case 1: {[player,"recruit"] call BIS_fnc_setUnitInsignia};
+					case 2: {[player,"private"] call BIS_fnc_setUnitInsignia};
+					case 3: {[player,"private1"] call BIS_fnc_setUnitInsignia};
+					case 4: {[player,"specialist"] call BIS_fnc_setUnitInsignia};
+					case 5: {[player,"corporal"] call BIS_fnc_setUnitInsignia};
+					case 6: {[player,"sergeant"] call BIS_fnc_setUnitInsignia};
+					case 7: {[player,"ssergeant"] call BIS_fnc_setUnitInsignia};
+					case 8: {[player,"sergeantfc"] call BIS_fnc_setUnitInsignia};
+					case 9: {[player,"msergeant"] call BIS_fnc_setUnitInsignia};
+					case 10: {[player,"sergeantmj"] call BIS_fnc_setUnitInsignia};
+					case 11: {[player,"csergeantm"] call BIS_fnc_setUnitInsignia};
+					case 12: {[player,"lt2"] call BIS_fnc_setUnitInsignia};
+					case 13: {[player,"lt1"] call BIS_fnc_setUnitInsignia};
+					case 14: {[player,"captain"] call BIS_fnc_setUnitInsignia};
+					case 15: {[player,"major"] call BIS_fnc_setUnitInsignia};
+					case 16: {[player,"colonel"] call BIS_fnc_setUnitInsignia};
+					case 17: {[player,"general"] call BIS_fnc_setUnitInsignia};
+					case 18: {[player,"commander"] call BIS_fnc_setUnitInsignia};
 
+	};
+
+};
+*/
 [] spawn
 {
 	private["_walkDis","_myLastPos","_MaxWalk","_runHunger","_runDehydrate"];
