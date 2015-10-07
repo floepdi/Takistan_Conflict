@@ -19,19 +19,26 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["TRYK_U_B_TANTAN_CombatUniform","Private Uniform",25];
+		_ret pushBack ["TRYK_B_TRYK_OCP_T","Recruit Uniform",25];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["TRYK_U_B_3c","Soldaten Uniform",550];
+			_ret pushBack ["TRYK_U_B_3c","Private Uniform",550];
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret pushBack ["TRYK_U_B_3cr","Private 1st Class Uniform",550];
 		};
 		if(__GETC__(life_coplevel) > 3) then
 		{
-			_ret pushBack ["rhs_uniform_cu_ocp_patchless","Sergeant Uniform Tan",550];
-			_ret pushBack ["TRYK_U_B_ARO1_GR_CombatUniform","Sergeant Uniform Green",550];
+			_ret pushBack ["TRYK_U_B_ARO1_CombatUniform","Specialist Uniform",550];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["TRYK_U_B_ARO1R_CombatUniform","Corporal Uniform",550];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_ret pushBack ["TRYK_U_pad_hood_tan","Sergeant Major Uniform",350];
+			_ret pushBack ["TRYK_U_B_ARO1R_CombatUniform","Sergeant Uniform",550];
 		};
 		if(__GETC__(life_coplevel) > 7) then
 		{
@@ -43,18 +50,27 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		_ret set[count _ret,["TRYK_H_headsetcap_od",nil,75]];
+		_ret set[count _ret,["H_Cap_tan_specops_US",nil,75]];
 
-		if(__GETC__(life_coplevel) >= 2) then
+		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret set[count _ret,["TRYK_H_Helmet_3C",nil,100]];
+			_ret pushBack ["rhsusf_ach_bare_tan","Private Helm",550];
 		};
-		if(__GETC__(life_coplevel) >= 4) then
+		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret set[count _ret,["TRYK_H_PASGT_OD",nil,100]];
-			_ret set[count _ret,["TRYK_H_PASGT_COYO",nil,100]];
-			_ret set[count _ret,["H_Booniehat_dgtl",nil,100]];
-			_ret set[count _ret,["H_Booniehat_khk",nil,100]];
+			_ret pushBack ["H_HelmetB_sand","Private 1st Class Helm",550];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret pushBack ["H_HelmetSpecB_sand","Specialist Helm",550];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["rhsusf_ach_helmet_ocp","Corporal Helm",550];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret pushBack ["TRYK_H_Booniehat_CC","Sergeant Hut",550];
 		};
 		if(__GETC__(life_coplevel) >= 6) then
 		{
@@ -76,24 +92,18 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		_ret =
-		[
-			["G_Shades_Black",nil,25],
-			["G_Shades_Blue",nil,20],
-			["G_Sport_Blackred",nil,20],
-			["G_Sport_Checkered",nil,20],
-			["G_Sport_Blackyellow",nil,20],
-			["G_Sport_BlackWhite",nil,20],
-			["G_Aviator",nil,75],
-			["G_Squares",nil,10],
-			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55],
-			["G_Diving",nil,100],
-			["SFG_Tac_smallBeardD",nil,100],
-			["SFG_Tac_chinlessbD",nil,100],
-			["SFG_Tac_moustacheB",nil,100],
-			["SFG_Tac_moustacheD",nil,100]
-		];
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret pushBack ["G_mas_wpn_gog_m","Tactical Glasses",550];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret pushBack ["G_mas_wpn_mask","Tactical Mask",550];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["TRYK_Shemagh_ESS","Tactical Shemagh ESS",550];
+		};
 	};
 
 	//Vest
@@ -101,43 +111,54 @@ switch (_filter) do
 	{
 			if(__GETC__(life_coplevel) >= 1) then
 			{
-			_ret set[count _ret,["V_Chestrig_khk",nil,1000]];
+			_ret set[count _ret,["V_HarnessO_gry",nil,1000]];
 			};
 	
 			if(__GETC__(life_coplevel) >= 2) then
 			{
 			_ret set[count _ret,["V_TacVest_khk",nil,1000]];
-			_ret set[count _ret,["V_TacVest_oli",nil,1000]];
 			};
-		
+
 			if(__GETC__(life_coplevel) >= 4) then
 			{
-			_ret set[count _ret,["V_PlateCarrier1_rgr",nil,5000]];
+			_ret set[count _ret,["rhsusf_iotv_ucp_Repair",nil,5000]];
 			};
-		
+			
+			if(__GETC__(life_coplevel) >= 5) then
+			{
+			_ret set[count _ret,["rhsusf_iotv_ucp_Grenadier",nil,1000]];
+			};
+
 			if(__GETC__(life_coplevel) >= 6) then
 			{
-			_ret set[count _ret,["TRYK_V_ArmorVest_tan",nil,10000]];
-			_ret set[count _ret,["TRYK_V_ArmorVest_green",nil,10000]];
-			_ret set[count _ret,["TRYK_V_ArmorVest_coyo",nil,10000]];
+			_ret set[count _ret,["rhsusf_iotv_ocp_Squadleader",nil,10000]];
 			};
 	};
 
 	//Backpacks
 	case 4:
 	{
-		_ret =
-		[
-			["B_mas_Kitbag_black",nil,500],
-			["B_mas_Kitbag_des",nil,500],
-			["B_mas_Kitbag_mul",nil,500],
-			["B_Bergen_blk",nil,1000],
-			["TRYK_B_Coyotebackpack_BLK",nil,1500],
-			["TRYK_B_Coyotebackpack",nil,1500],
-			["TRYK_B_Coyotebackpack_OD",nil,1500],
-			["B_Carryall_cbr",nil,2500],
-			["TRYK_B_Carryall_blk",nil,2500]
-		];
+		_ret pushBack ["rhs_sidor","Recruiten Rucksack",25];
+		if(__GETC__(life_coplevel) > 1) then
+		{
+			_ret pushBack ["B_AssaultPack_cbr","Private Rucksack",550];
+		};
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_ret pushBack ["TRYK_B_AssaultPack_MARPAT_Desert","Private 1st Class Rucksack",550];
+		};
+		if(__GETC__(life_coplevel) > 3) then
+		{
+			_ret pushBack ["B_mas_Kitbag_des","Specialist Rucksack",550];
+		};
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_ret pushBack ["TRYK_B_Coyotebackpack","Corporal Rucksack",550];
+		};
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_ret pushBack ["B_Carryall_cbr","Sergeant Rucksack",550];
+		};
 	};
 };
 
