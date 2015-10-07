@@ -29,22 +29,16 @@ _level = [] call life_fnc_getLevel;
 switch(_shop) do
 {
 
-    case "soldier_basic":
+    case "army_equipment":
     {
         switch(true) do
         {
 
             case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-
-            default
+            case (__GETC__(life_coplevel) > 0) :
             {
-                ["Army Shop",
+                ["Army Equipment",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
-                        ["30Rnd_mas_556x45_Stanag",nil,100],
-
-                        ["FHQ_optic_AC12136",nil,500],      
-
                         ["tf_rf7800str",nil,500],
                         ["tf_anprc152",nil,500],
                         ["tf_mr3000_multicam",nil,500],
@@ -64,430 +58,955 @@ switch(_shop) do
         };
     };
 
-    case "private":
+
+    case "army_weapon": // SORTIEREN - 1. WAFFEN - 2. MUNITION - 3. VISIERE - 4. SONSTIGES
     {
         switch(true) do
         {
             case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-
-            case (__GETC__(life_coplevel) < 2): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+            case (__GETC__(life_coplevel) == 0): {"Du bist nicht als Soldat gemeldet!"};
+            case (__GETC__(life_coplevel) == 1):
             {
-                ["Private Shop",
+                ["Recruit Waffenspind",
                     [
-                        ["arifle_mas_m4c",nil,1000],
+                        ["rhs_weap_m16a4",nil,1000],
+
                         ["30Rnd_mas_556x45_Stanag",nil,100],
 
+                        ["FHQ_optic_AC12136",nil,500]
+                    ]
+                ];
+            };
+
+            case (__GETC__(life_coplevel) == 2):
+            {
+                ["Private Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+
+                        ["30Rnd_mas_556x45_Stanag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
 
                         ["NVGoggles",nil,1000]
                     ]
                 ];
             };
-        };
-    };
 
-    case "private1st":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 3): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+            case (__GETC__(life_coplevel) == 3):
             {
-                ["Private 1st Class Shop",
+                ["Private 1st Waffenspind",
                     [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
+
                         ["30Rnd_mas_556x45_Stanag",nil,100],
 
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500]
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+
+                        ["NVGoggles",nil,1000]
                     ]
                 ];
             };
-        };
-    };
 
-
-    case "specialist":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 4): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+            case (__GETC__(life_coplevel) == 4):
             {
-                ["Specialist Shop",
+                ["Specialist Waffenspind",
                     [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
                         ["30Rnd_mas_556x45_Stanag",nil,100],
 
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
 
-                        ["MiniGrenade",nil,1000]
+                        ["MiniGrenade",nil,1000],
+                        ["NVGoggles",nil,1000]
                     ]
                 ];
             };
-        };
-    };
 
-    case "corporal":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 5): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+
+            case (__GETC__(life_coplevel) == 5):
             {
-                ["Corporal Shop",
+                ["Corporal Waffenspind",
                     [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
                         ["arifle_mas_m4_m203_d",nil,15000],
                         ["30Rnd_mas_556x45_Stanag",nil,500],
 
                         ["LMG_mas_M249_F",nil,7500],
                         ["200Rnd_mas_556x45_Stanag",nil,1000],
+
                         ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["3Rnd_HE_Grenade_shell",nil,500],
-
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000]
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["NVGoggles",nil,1000]
+
+
                     ]
                 ];
             };
-        };
-    };
-    case "sergeant":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 6): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+
+            case (__GETC__(life_coplevel) == 6):
             {
-                ["Sergeant Shop",
+                ["Sergeant Waffenspind",
                     [
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
-
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["1Rnd_HE_Grenade_shell",nil,500],
-
-                        ["optic_SOS",nil,500],
-                    ]
-                ];
-            };
-        };
-    };
-    case "staffsergeant":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 7): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
-            {
-                ["Staff Sergeant Shop",
-                    [
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
-
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["1Rnd_HE_Grenade_shell",nil,500],
-
-                        ["optic_SOS",nil,500],
-                    ]
-                ];
-            };
-        };
-    };
-    case "1stsergeant":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 8): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
-            {
-                ["First Sergeant Shop",
-                    [
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
-
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["1Rnd_HE_Grenade_shell",nil,500],
-
-                        ["optic_SOS",nil,500],
-                    ]
-                ];
-            };
-        };
-    };
-    case "mastersergeant":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 9): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
-            {
-                ["Master Sergeant Shop",
-                    [
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
-
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["1Rnd_HE_Grenade_shell",nil,500],
-
-                        ["optic_SOS",nil,500],
-                    ]
-                ];
-            };
-        };
-    };
-    case "sgtmajor":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 10): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
-            {
-                ["Sergeant Major Shop",
-                    [
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
-
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["1Rnd_HE_Grenade_shell",nil,500],
-
-                        ["optic_SOS",nil,500],
-                    ]
-                ];
-            };
-        };
-    };
-    case "cmdsgtmajor":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 11): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
-            {
-                ["Command Sergeant Major Shop",
-                    [
-                        ["srifle_DMR_03_tan_F",nil,18000],
-                        ["20Rnd_762x51_Mag",nil,1000],
-
-                        ["LMG_mas_Mk48_F",nil,17500],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["srifle_mas_hk417",nil,15000],
-                        ["20Rnd_762x51_Mag",nil,500],
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
 
                         ["LMG_mas_M249_F",nil,7500],
                         ["200Rnd_mas_556x45_Stanag",nil,1000],
 
-                        ["arifle_mas_g36c",nil,1000],
-                        ["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
-                        ["30Rnd_mas_556x45_Stanag",nil,200],
-                        ["UGL_FlareWhite_F",nil,500],
-                        ["1Rnd_Smoke_Grenade_shell",nil,250],
-                        ["1Rnd_HE_Grenade_shell",nil,500],
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["FHQ_optic_AimM_BLK",nil,500],
-                        ["FHQ_optic_ACOG",nil,1000],
-                        ["optic_mas_zeiss",nil,1000],
-                        ["FHQ_optic_AC12136",nil,1000],
-                        ["optic_SOS",nil,10000],
-                        ["optic_LRPS",nil,10000],
-                        ["optic_mas_DMS_c",nil,10000],
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["Rangefinder",nil,5000],
-                        ["HandGrenade_Stone","Flashbang",2500],
-                        ["NVGoggles_mas_h",nil,2500]
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_SOS",nil,1000],
 
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["NVGoggles",nil,1000]
                     ]
                 ];
             };
-        };
-    };
-    case "2ndlt":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 12): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
-            {
-                ["Second Lieutenant Shop",
-                    [
 
-                        ["srifle_mas_m24_v",nil,20000],
+
+            case (__GETC__(life_coplevel) == 7):
+            {
+                ["Staff Sergeant Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,20000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_SOS",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+            case (__GETC__(life_coplevel) == 8):
+            {
+                ["Sergeant First Class Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+            case (__GETC__(life_coplevel) == 9):
+            {
+                ["Master Sergeant Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+             case (__GETC__(life_coplevel) == 10):
+            {
+                ["Sergeant Major Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+             case (__GETC__(life_coplevel) == 11):
+            {
+                ["Command Sgt Major Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["srifle_DMR_03_tan_F",nil,18000],
-                        ["20Rnd_762x51_Mag",nil,1000],
-
-                        ["LMG_mas_Mk48_F",nil,17500],
+                        ["LMG_mas_mk48_F_d",nil,20000],
                         ["100Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["srifle_mas_m110",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
 
-                        ["srifle_mas_hk417",nil,15000],
-                        ["20Rnd_762x51_Mag",nil,500],
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+                       case (__GETC__(life_coplevel) == 12):
+            {
+                ["Second Lieutenant Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
 
                         ["LMG_mas_M249_F",nil,7500],
                         ["200Rnd_mas_556x45_Stanag",nil,1000],
 
-                        ["arifle_mas_g36c",nil,1000],
-                        ["arifle_mas_m16",nil,3000],
-                        ["arifle_mas_m16_gl",nil,5000],
-                        ["arifle_mas_hk416_v",nil,5000],
-                        ["30Rnd_mas_556x45_Stanag",nil,200],
-                        ["UGL_FlareWhite_F",nil,500],
-                        ["1Rnd_Smoke_Grenade_shell",nil,250],
-                        ["1Rnd_HE_Grenade_shell",nil,500],
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
 
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+                       case (__GETC__(life_coplevel) == 13):
+            {
+                ["First Lieutenant Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
+                        ["srifle_mas_m110",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
-                        ["FHQ_optic_AimM_BLK",nil,500],
-                        ["FHQ_optic_ACOG",nil,1000],
-                        ["optic_mas_zeiss",nil,1000],
-                        ["FHQ_optic_AC12136",nil,1000],
-                        ["optic_SOS",nil,10000],
-                        ["optic_mas_DMS_c",nil,10000],
 
-                        ["Rangefinder",nil,5000],
-                        ["HandGrenade_Stone","Flashbang",2500],
-                        ["NVGoggles_mas_h",nil,2500]
-
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
                     ]
                 ];
             };
-        };
-    };
-    case "1stlt":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 13): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+
+                       case (__GETC__(life_coplevel) == 14):
             {
-                ["First Lieutenant Shop",
+                ["Captain Waffenspind",
                     [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["1Rnd_HE_Grenade_shell",nil,500],
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["optic_SOS",nil,500],
+                        ["rhs_weap_XM2010_d",nil,1000],
+                        ["rhsusf_5Rnd_300winmag_xm2010",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+                        ["optic_LRPS",nil,10000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
                     ]
                 ];
             };
-        };
-    };
-    case "captain":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (__GETC__(life_coplevel) < 14): {"Dir fehlen noch ein paar Abzeichen!"};
-            default
+
+                       case (__GETC__(life_coplevel) == 15):
             {
-                ["Captain Shop",
+                ["Major Waffenspind",
                     [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["1Rnd_HE_Grenade_shell",nil,500],
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["optic_SOS",nil,500],
-                    ]
-                ];
-            };
-        };
-    };
-    
-    
-    
-    //FINGER WEG VOM DELTA SHOP! -Jester
-    case "cop_marksman":
-    {
-        switch(true) do
-        {
-            case (playerSide != west): {"Finger weg, du bist kein Soldat!"};
-            case (!license_cop_swat): {"Du bist kein DELTA!"};
-            default
-            {
-                ["Delta Force",
-                    [
+                        ["rhs_weap_XM2010_d",nil,1000],
+                        ["rhsusf_5Rnd_300winmag_xm2010",nil,1000],
+
                         ["srifle_mas_lrr",nil,1000],
                         ["10Rnd_mas_338_Stanag",nil,1000],
-                        ["10Rnd_mas_338_T_Stanag",nil,1000],
 
-                        ["srifle_DMR_05_blk_F",nil,1000],
-                        ["10Rnd_93x64_DMR_05_Mag",nil,1000],
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["optic_mas_zeiss_eo",nil,1000],
-                        ["optic_AMS",nil,1000],
-                        ["optic_LRPS",nil,1000],
-                        
-                        ["muzzle_mas_snds_SMc",nil,5000],
-                        ["muzzle_mas_snds_SH",nil,5000],
-                        ["muzzle_snds_93mmg",nil,5000],
-                        ["bipod_02_F_blk",nil,5000],
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
 
-                        ["B_UAV_01_backpack_F",nil,1000],
-                        ["B_UavTerminal",nil,500],
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["TRYK_U_B_BLK",nil,500],
-                        ["TRYK_V_ArmorVest_Delta2",nil,500],
-                        ["TRYK_H_DELTAHELM_NV",nil,500],
-                        ["G_mas_wpn_bala_mask_b",nil,500],
-                        ["TRYK_R_CAP_BLK",nil,500],
-                        ["H_Watchcap_blk",nil,500],
-                        ["G_mas_wpn_gog",nil,500],
-                        
-                        ["TRYK_U_taki_wh",nil,500],
-                        ["TRYK_H_pakol",nil,500],
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+                        ["optic_LRPS",nil,10000],
 
-                        ["Rangefinder",nil,5000],
-                        ["HandGrenade_Stone","Flashbang",2500],
-                        ["NVGoggles_mas_h",nil,2500],
-
-                        ["U_B_FullGhillie_lsh",nil,5000],
-                        ["U_B_FullGhillie_ard",nil,5000],
-                        ["U_B_FullGhillie_sard",nil,5000]
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
                     ]
                 ];
             };
+
+                       case (__GETC__(life_coplevel) == 16):
+            {
+                ["Colonel Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
+                        ["srifle_mas_m110",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_XM2010_d",nil,1000],
+                        ["rhsusf_5Rnd_300winmag_xm2010",nil,1000],
+
+                        ["srifle_mas_lrr",nil,1000],
+                        ["10Rnd_mas_338_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["MMG_02_sand_F",nil,20000],
+                        ["130Rnd_338_Mag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+                        ["optic_LRPS",nil,10000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+                       case (__GETC__(life_coplevel) == 17):
+            {
+                ["General Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
+                        ["srifle_mas_m110",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_XM2010_d",nil,1000],
+                        ["rhsusf_5Rnd_300winmag_xm2010",nil,1000],
+
+                        ["srifle_mas_lrr",nil,1000],
+                        ["10Rnd_mas_338_Stanag",nil,1000],
+
+                        ["srifle_DMR_05_tan_f",nil,1000],
+                        ["10Rnd_93x64_DMR_05_Mag",nil,1000],
+
+                        ["srifle_LRR_camo_F",nil,1000],
+                        ["7Rnd_408_Mag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["MMG_02_sand_F",nil,20000],
+                        ["130Rnd_338_Mag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+                        ["optic_LRPS",nil,10000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
+                       case (__GETC__(life_coplevel) == 18):
+            {
+                ["Commander in Chief Waffenspind",
+                    [
+                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_g36c",nil,7500],
+                        ["arifle_mas_m4_m203_d",nil,15000],
+                        ["arifle_mas_mk16_l_gl",nil,15000],
+                        ["30Rnd_mas_556x45_Stanag",nil,500],
+
+                        ["LMG_mas_M249_F",nil,7500],
+                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+
+                        ["hlc_rifle_SAMR",nil,17500],
+                        ["30Rnd_556x45_Stanag",nil,100],
+
+                        ["arifle_MX_GL_F",nil,20000],
+                        ["arifle_MXC_F",nil,20000],
+                        ["arifle_MXM_F",nil,20000],
+                        ["30Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_MX_SW_F",nil,20000],
+                        ["100Rnd_65x39_caseless_mag",nil,1000],
+
+                        ["arifle_mas_mk17_gl",nil,20000],
+                        ["srifle_mas_sr25_d",nil,20000],
+                        ["arifle_mas_hk417c_d",nil,20000],
+                        ["srifle_mas_hk417_d",nil,20000],
+                        ["srifle_mas_ebr",nil,20000],
+                        ["srifle_mas_m110",nil,20000],
+                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["rhs_weap_XM2010_d",nil,1000],
+                        ["rhsusf_5Rnd_300winmag_xm2010",nil,1000],
+
+                        ["srifle_mas_lrr",nil,1000],
+                        ["10Rnd_mas_338_Stanag",nil,1000],
+
+                        ["srifle_DMR_05_tan_f",nil,1000],
+                        ["10Rnd_93x64_DMR_05_Mag",nil,1000],
+
+                        ["srifle_LRR_camo_F",nil,1000],
+                        ["7Rnd_408_Mag",nil,1000],
+
+                        ["srifle_DMR_04_Tan_F",nil,1000],
+                        ["10Rnd_127x54_Mag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["MMG_02_sand_F",nil,20000],
+                        ["130Rnd_338_Mag",nil,1000],
+
+                        ["rhs_weap_M136_hedp",nil,20000],
+                        ["rhs_m136_hedp_mag",nil,1000],
+
+                        ["hgun_mas_bhp_F",nil,1000],
+                        ["15Rnd_mas_9x21_Mag",nil,100],
+
+                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_HWS_G33_tan",nil,500],
+                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["optic_AMS_snd",nil,1000],
+                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+                        ["optic_LRPS",nil,10000],
+
+                        ["MiniGrenade",nil,1000],
+                        ["1Rnd_HE_Grenade_shell",nil,1000],
+                        ["HandGrenade",nil,1000],
+                        ["rhs_mag_mk84",nil,1000],
+                        ["bipod_01_F_snd",nil,1000],
+                        ["Rangefinder",nil,1000],
+                        ["NVGoggles",nil,1000]
+                    ]
+                ];
+            };
+
         };
     };
-
 
     case "tankstellegebraucht":
     {
@@ -536,22 +1055,22 @@ case "gun":
 
                     ["hgun_mas_glocksf_F",nil,1000],
                     ["12Rnd_mas_45acp_Mag",nil,100],
-                    
+
                     ["hgun_mas_sa61_F",nil,5000],
                     ["20Rnd_mas_765x17_Mag",nil,500],
 
                     ["arifle_mas_aks74u",nil,12000],
                     ["30Rnd_mas_545x39_mag",nil,500],
-                    
+
                     ["acc_flashlight",nil,500]
 
                     ]
                 ];
             };
         };
-    };  
+    };
 
-    
+
 //Warlord Level 10
 case "level10":
     {
@@ -565,7 +1084,7 @@ case "level10":
                     [
                         ["arifle_mas_fal",nil,40000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["acc_flashlight",nil,500],
                         ["ItemGPS",nil,10000]
                     ]
@@ -573,7 +1092,7 @@ case "level10":
             };
         };
     };
-    
+
 //Warlord Level 20
 case "level20":
     {
@@ -587,13 +1106,13 @@ case "level20":
                     [
                         ["LMG_mas_rpk_F",nil,50000],
                         ["100Rnd_mas_545x39_T_mag",nil,1000],
-                        
+
                         ["arifle_mas_lee",nil,50000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["arifle_mas_fal",nil,40000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["FHQ_optic_VCOG",nil,6000],
                         ["optic_Aco",nil,5000],
                         ["optic_ACO_grn",nil,5000]
@@ -614,20 +1133,20 @@ case "level30":
             {
                 ["Level 30",
                     [
-                        
-                        
+
+
                         ["arifle_mas_akm",nil,75000],
                         ["30Rnd_mas_762x39_mag",nil,5000],
-                        
+
                         ["LMG_mas_rpk_F",nil,50000],
                         ["100Rnd_mas_545x39_T_mag",nil,1000],
-                        
+
                         ["arifle_mas_lee",nil,50000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["arifle_mas_fal",nil,40000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["optic_mas_PSO_day",nil,10000],
                         ["FHQ_optic_VCOG",nil,6000],
                         ["optic_Aco",nil,5000],
@@ -638,7 +1157,7 @@ case "level30":
             };
         };
     };
-    
+
 //Warlord Level 40
 case "level40":
     {
@@ -649,10 +1168,10 @@ case "level40":
             default
             {
                 ["Level 40",
-                    [                   
+                    [
                         ["srifle_mas_m91",nil,100000],
                         ["10Rnd_mas_762x54_mag",nil,10000],
-                        
+
                         ["arifle_mas_akm",nil,75000],
                         ["30Rnd_mas_762x39_mag",nil,5000],
                         ["LMG_mas_rpk_F",nil,50000],
@@ -661,7 +1180,7 @@ case "level40":
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
                         ["arifle_mas_fal",nil,40000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["optic_mas_PSO_day",nil,10000],
                         ["FHQ_optic_VCOG",nil,6000],
                         ["optic_Aco",nil,5000],
@@ -672,8 +1191,8 @@ case "level40":
                 ];
             };
         };
-    };  
-    
+    };
+
 //Warlord Level 50
 case "level50":
     {
@@ -693,7 +1212,7 @@ case "level50":
                         ["5Rnd_mas_127x108_mag",nil,10000],
                         ["mas_launch_RPG7_F",nil,500000],
                         ["mas_PG7V",nil,50000],
-                        
+
                         ["srifle_mas_m91",nil,100000],
                         ["10Rnd_mas_762x54_mag",nil,10000],
                         ["arifle_mas_akm",nil,75000],
@@ -704,7 +1223,7 @@ case "level50":
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
                         ["arifle_mas_fal",nil,40000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
-                        
+
                         ["optic_mas_PSO_eo",nil,25000],
                         ["FHQ_optic_VCOG",nil,6000],
                         ["optic_Aco",nil,5000],
@@ -717,7 +1236,7 @@ case "level50":
             };
         };
     };
-    
+
     case "med_basic":
     {
         switch (true) do
@@ -730,7 +1249,7 @@ case "level50":
                         ["hlc_30Rnd_9x19_B_MP5",nil,150],
                         ["FHQ_optic_AC11704",nil,250],
                         ["acc_flashlight",nil,100],
-                    
+
                         ["TRYK_H_woolhat",nil,100],
                         ["TRYK_H_PASGT_BLK",nil,100],
                         ["rhsusf_hgu56p",nil,100],
