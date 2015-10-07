@@ -71,6 +71,30 @@ switch (_shop) do
 		{
 			_return pushBack ["rhsusf_m1025_d",550];
 		};
+		if(__GETC__(life_coplevel) > 6) then
+		{
+			_return pushBack ["rhsusf_m1025_d_m2",550];
+		};
+		if(__GETC__(life_coplevel) > 7) then
+		{
+			_return pushBack ["DAR_M1165_GMV",550];
+		};
+		if(__GETC__(life_coplevel) > 9) then
+		{
+			_return pushBack ["DAR_M1151",550];
+		};
+		if(__GETC__(life_coplevel) > 11) then
+		{
+			_return pushBack ["DAR_M1151_Deploy",550];
+		};
+		if(__GETC__(life_coplevel) > 13) then
+		{
+			_return pushBack ["DAR_M1167",550];
+		};
+		if(__GETC__(life_coplevel) > 16) then
+		{
+			_return pushBack ["rhsusf_m113d_usarmy",550];
+		};
 	};
 
 	/*
@@ -88,27 +112,21 @@ switch (_shop) do
 
 	case "cop_air":
 	{
-		if(__GETC__(life_coplevel) >= 2) then
+		if(__GETC__(life_coplevel) > 6) then
 		{
-			_return pushBack
-			["B_Heli_Light_01_F",10000];
+			_return pushBack ["B_Heli_Light_01_F",10000];
 		};
-		if(__GETC__(life_coplevel) >= 3) then
+		if(__GETC__(life_coplevel) > 8) then
 		{
-			_return pushBack
-			["B_mas_UH1Y_UNA_F",15000];
+			_return pushBack ["B_mas_UH1Y_UNA_F",15000];
 		};
-		if(__GETC__(life_coplevel) >= 4) then
+		if(__GETC__(life_coplevel) > 10) then
 		{
-			_return pushBack
-			["B_mas_UH60M",20000];
-			_return pushBack
-			["B_mas_CH_47F",40000];
+			_return pushBack  ["RHS_UH60M",20000];
 		};
-		if(__GETC__(life_coplevel) >= 6) then
+		if(__GETC__(life_coplevel) > 16) then
 		{
-			_return pushBack
-			["B_Heli_Light_01_armed_F",20000];
+			_return pushBack ["B_Heli_Light_01_armed_F",20000];
 		};
 		/*
 		if(license_cop_swat) then
