@@ -673,6 +673,7 @@ switch(_shop) do
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
+                        ["rhsusf_acc_LEUPOLDMK4_2",nil,10000],
 
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
