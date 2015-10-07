@@ -19,74 +19,112 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["TRYK_B_TRYK_OCP_T","Recruit Uniform",25];
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) == 1) then
 		{
-			_ret pushBack ["TRYK_U_B_3c","Private Uniform",550];
+			_ret pushBack ["TRYK_B_TRYK_OCP_T","Uniform",25];
+			
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) == 2) then
 		{
-			_ret pushBack ["TRYK_U_B_3cr","Private 1st Class Uniform",550];
+			_ret pushBack ["TRYK_U_B_3c","Uniform",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) == 3) then
 		{
-			_ret pushBack ["TRYK_U_B_ARO1_CombatUniform","Specialist Uniform",550];
+			_ret pushBack ["TRYK_U_B_3cr","Uniform",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 4) then
+		if(__GETC__(life_coplevel) == 4) then
 		{
-			_ret pushBack ["TRYK_U_B_ARO1R_CombatUniform","Corporal Uniform",550];
+			_ret pushBack ["TRYK_U_B_ARO1_CombatUniform","Uniform",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) == 5 OR __GETC__(life_coplevel) == 6) then
 		{
-			_ret pushBack ["TRYK_U_B_ARO1R_CombatUniform","Sergeant Uniform",550];
+			_ret pushBack ["TRYK_U_B_ARO1R_CombatUniform","Uniform",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 7) then
+		if(__GETC__(life_coplevel) == 7 OR __GETC__(life_coplevel) == 8 OR __GETC__(life_coplevel) == 9) then
 		{
-			_ret pushBack ["TRYK_U_Bts_PCUODs","Offizier Uniform",350];
-			_ret pushBack ["TRYK_U_B_ODTAN_Tshirt","Offizier Uniform 2",350];
+			_ret pushBack ["TRYK_U_B_3CD_Delta_BDU","Uniform",25];
+			
+		};
+		if(__GETC__(life_coplevel) == 10 OR __GETC__(life_coplevel) == 11) then
+		{
+			_ret pushBack ["TRYK_U_B_3CD_Delta_BDUTshirt","Uniform",550];
+			
+		};
+		if(__GETC__(life_coplevel) == 12 OR __GETC__(life_coplevel) == 13 OR __GETC__(life_coplevel) == 14) then
+		{
+			_ret pushBack ["TRYK_U_B_MARPAT_Desert_Tshirt","Uniform",550];
+			
+		};
+		if(__GETC__(life_coplevel) == 15 OR __GETC__(life_coplevel) == 16) then
+		{
+			_ret pushBack ["TRYK_U_B_MARPAT_Desert","Uniform",550];
+			
+		};
+		if(__GETC__(life_coplevel) == 17 OR __GETC__(life_coplevel) == 18) then
+		{
+			_ret pushBack ["TRYK_U_B_BLKTAN_CombatUniform","Uniform",550];
+			
 		};
 	};
 
 	//Hats
 	case 1:
 	{
-		_ret set[count _ret,["H_Cap_tan_specops_US",nil,75]];
-
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) == 1) then
 		{
-			_ret pushBack ["rhsusf_ach_bare_tan","Private Helm",550];
+			_ret pushBack ["H_Cap_tan_specops_US","Recruiten Kappe",25];
+			
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) == 2) then
 		{
-			_ret pushBack ["H_HelmetB_sand","Private 1st Class Helm",550];
+			_ret pushBack ["rhsusf_ach_bare_tan","Dein Helm",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) == 3) then
 		{
-			_ret pushBack ["H_HelmetSpecB_sand","Specialist Helm",550];
+			_ret pushBack ["H_HelmetB_sand","Dein Helm",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 4) then
+		if(__GETC__(life_coplevel) == 4) then
 		{
-			_ret pushBack ["rhsusf_ach_helmet_ocp","Corporal Helm",550];
+			_ret pushBack ["H_HelmetSpecB_sand","Dein Helm",550];
+			
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) == 5 OR __GETC__(life_coplevel) == 6) then
 		{
-			_ret pushBack ["TRYK_H_Booniehat_CC","Sergeant Hut",550];
+			_ret pushBack ["rhsusf_ach_helmet_ESS_ocp","Dein Helm",550];
+			
 		};
-		if(__GETC__(life_coplevel) >= 6) then
+		if(__GETC__(life_coplevel) == 6) then
 		{
-			_ret set[count _ret,["H_Watchcap_camo",nil,100]];
-			_ret set[count _ret,["H_Watchcap_sgg",nil,100]];
-			_ret set[count _ret,["H_Watchcap_khk",nil,100]];
-			_ret set[count _ret,["H_Beret_blk",nil,100]];
+			_ret pushBack ["TRYK_H_Booniehat_CC",nil,550];
+			
 		};
-
-			if(__GETC__(life_coplevel) >= 8) then
+		if(__GETC__(life_coplevel) == 7) then
 		{
-			_ret set[count _ret,["H_beret_02",nil,100]];
-			_ret set[count _ret,["h_beret_colonel",nil,100]];
+			_ret pushBack ["H_PilotHelmetHeli_O","Dein Helm",25];
+			_ret pushBack ["TRYK_H_Helmet_3C","Dein Helm",25];
 		};
-
-
+		if(__GETC__(life_coplevel) == 8 OR __GETC__(life_coplevel) == 9 OR __GETC__(life_coplevel) == 10 OR __GETC__(life_coplevel) == 11) then
+		{
+			_ret pushBack ["H_Beret_blk","Dein Beret",550];
+			
+		};
+	
+		if(__GETC__(life_coplevel) == 12 OR __GETC__(life_coplevel) == 13 OR __GETC__(life_coplevel) == 14 OR __GETC__(life_coplevel) == 15) then
+		{
+			_ret pushBack ["H_Beret_02","Dein Beret",550];
+			
+		};
+		if(__GETC__(life_coplevel) == 16 OR __GETC__(life_coplevel) == 17 OR __GETC__(life_coplevel) == 18) then
+		{
+			_ret pushBack ["H_Beret_Colonel","Dein Beret",550];
+			
+		};
 	};
 
 	//Glasses
@@ -109,55 +147,74 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-			if(__GETC__(life_coplevel) >= 1) then
-			{
-			_ret set[count _ret,["V_HarnessO_gry",nil,1000]];
-			};
-	
-			if(__GETC__(life_coplevel) >= 2) then
-			{
-			_ret set[count _ret,["V_TacVest_khk",nil,1000]];
-			};
-
-			if(__GETC__(life_coplevel) >= 4) then
-			{
-			_ret set[count _ret,["rhsusf_iotv_ucp_Repair",nil,5000]];
-			};
-			
-			if(__GETC__(life_coplevel) >= 5) then
-			{
-			_ret set[count _ret,["rhsusf_iotv_ucp_Grenadier",nil,1000]];
-			};
-
-			if(__GETC__(life_coplevel) >= 6) then
-			{
-			_ret set[count _ret,["rhsusf_iotv_ocp_Squadleader",nil,10000]];
-			};
+		if(__GETC__(life_coplevel) == 1) then
+		{
+			_ret pushBack ["V_HarnessO_gry","Weste",25];
+		};
+		if(__GETC__(life_coplevel) == 2 OR __GETC__(life_coplevel) == 3) then
+		{
+			_ret pushBack ["V_TacVest_khk","Weste",550];
+		};
+		if(__GETC__(life_coplevel) == 4) then
+		{
+			_ret pushBack ["rhsusf_iotv_ocp_Repair","Weste",550];
+		};
+		if(__GETC__(life_coplevel) == 5) then
+		{
+			_ret pushBack ["rhsusf_iotv_ocp_Grenadier","Weste",550];
+		};
+		if(__GETC__(life_coplevel) == 6) then
+		{
+			_ret pushBack ["rhsusf_iotv_ocp_Squadleader","Weste",550];
+		};
+		if(__GETC__(life_coplevel) == 7) then
+		{
+			_ret pushBack ["V_PlateCarrier_Kerry","Weste",25];
+		};
+		if(__GETC__(life_coplevel) == 8 OR __GETC__(life_coplevel) == 9) then
+		{
+			_ret pushBack ["TRYK_V_PlateCarrier_coyo_L","Weste",550];
+		};
+		if(__GETC__(life_coplevel) == 10 OR __GETC__(life_coplevel) == 11) then
+		{
+			_ret pushBack ["TRYK_V_tacv1LC_CY","Weste",550];
+		};
+		if(__GETC__(life_coplevel) >= 12) then
+		{
+			_ret pushBack ["TRYK_V_ArmorVest_tan","Weste",550];
+		};
 	};
 
 	//Backpacks
 	case 4:
 	{
-		_ret pushBack ["rhs_sidor","Recruiten Rucksack",25];
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) == 1) then
 		{
-			_ret pushBack ["B_AssaultPack_cbr","Private Rucksack",550];
+			_ret pushBack ["rhs_sidor","Rucksack",25];
 		};
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) == 2) then
 		{
-			_ret pushBack ["TRYK_B_AssaultPack_MARPAT_Desert","Private 1st Class Rucksack",550];
+			_ret pushBack ["B_AssaultPack_cbr","Rucksack",550];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) == 3) then
 		{
-			_ret pushBack ["B_mas_Kitbag_des","Specialist Rucksack",550];
+			_ret pushBack ["TRYK_B_AssaultPack_MARPAT_Desert","Rucksack",550];
 		};
-		if(__GETC__(life_coplevel) > 4) then
+		if(__GETC__(life_coplevel) == 4) then
 		{
-			_ret pushBack ["TRYK_B_Coyotebackpack","Corporal Rucksack",550];
+			_ret pushBack ["B_mas_Kitbag_des","Rucksack",550];
 		};
-		if(__GETC__(life_coplevel) > 5) then
+		if(__GETC__(life_coplevel) == 5) then
 		{
-			_ret pushBack ["B_Carryall_cbr","Sergeant Rucksack",550];
+			_ret pushBack ["TRYK_B_Coyotebackpack","Rucksack",550];
+		};
+		if(__GETC__(life_coplevel) == 6) then
+		{
+			_ret pushBack ["B_Carryall_cbr","Rucksack",550];
+		};
+		if(__GETC__(life_coplevel) >= 7) then
+		{
+			_ret pushBack ["mas_TitanS","Rucksack",550];
 		};
 	};
 };
