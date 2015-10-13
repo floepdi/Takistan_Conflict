@@ -245,7 +245,9 @@ life_inv_items =
     "life_inv_carfernzuender",
     "life_inv_golderz",
     "life_inv_goldbarren",
-    "life_inv_depotwaffen"
+    "life_inv_depotwaffen",
+    "life_inv_information",
+    "life_inv_abhoergeraet"
 ];
 
 
@@ -352,7 +354,9 @@ life_illegal_items =
         ["carbomb1",25000],
         ["carbomb2",25000],
         ["golderz",2500],
-        ["goldbarren",5000]
+        ["goldbarren",5000],
+        ["infomation",10000],
+        ["abhoergeraet",10000]
         ];
 
 
@@ -431,7 +435,8 @@ sell_array =
     ["kondome",0],
     ["sniperkiste",0],
     ["golderz",2500],
-    ["goldbarren",5000]
+    ["goldbarren",5000],
+    ["infomation",5000]
 ];};
 //__CONST__(sell_array,sell_array);
 

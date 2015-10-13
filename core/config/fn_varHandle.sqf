@@ -112,6 +112,8 @@ switch (_mode) do
             case "golderz": {"life_inv_golderz"};
             case "goldbarren": {"life_inv_goldbarren"};
             case "depotwaffen": {"life_inv_depotwaffen"};
+            case "information": {"life_inv_information"};
+            case "abhoergeraet": {"life_inv_abhoergeraet"};
         };
     };
 
@@ -215,6 +217,8 @@ switch (_mode) do
             case "life_inv_golderz": {"golderz"};
             case "life_inv_goldbarren": {"goldbarren"};
             case "life_inv_depotwaffen": {"depotwaffen"};
+            case "live_inv_information": {"information"};
+            case "life_inv_abhoergeraet": {"abhoergeraet"};
         };
     };
 };

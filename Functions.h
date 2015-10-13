@@ -181,6 +181,7 @@ class Life_Client_Core
         class weaponShopCfg {};
         class vehicleWeightCfg {};
         class houseConfig {};
+        class vehTypeCfg{};
 
         //Clothing Store Configs
         class clothing_cop {};
@@ -305,7 +306,6 @@ class Life_Client_Core
         class startTerritory{};
         class Transport{};
 
-
     };
 
     class Network
@@ -350,6 +350,7 @@ class Life_Client_Core
         class robReserve{};
         class rebTransfer {};
         class carBomb {};
+        class wiretapping{};
     };
 
     class Vehicle
