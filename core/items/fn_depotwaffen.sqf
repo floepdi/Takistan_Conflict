@@ -9,13 +9,15 @@
 //Close inventory
 closeDialog 0;
 
+_pos = position player;
+
 _weapon_holder = createVehicle ["groundWeaponHolder", _pos, [], 0, "can_collide"];
 _weapon_holder addWeaponCargoGlobal ["srifle_mas_hk417_d", 1];
 _weapon_holder addMagazineCargoGlobal ["20Rnd_mas_762x51_Stanag", 5];
 
 
 /*
-adduniformcargo 
+adduniformcargo
 addvestcargo
 addmagazinecargo
 addBackpackCargoGlobal
