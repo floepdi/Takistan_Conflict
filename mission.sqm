@@ -11940,14 +11940,14 @@ class Mission
 		};
 		class Item889
 		{
-			position[]={1544.3453,176.13983,12000.534};
-			azimut=-18.210501;
+			position[]={1542.9625,176.30383,12001.031};
+			azimut=-36.139599;
 			id=1052;
 			side="EMPTY";
-			vehicle="Land_Cargo20_military_green_F";
+			vehicle="Land_CargoBox_V1_F";
 			skill=0.60000002;
-			text="weapon_depot";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Container aufsprengen"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Container reparieren"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
+			text="fed_bank";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Open Container"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Container reparieren"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
 		};
 		class Item890
 		{
