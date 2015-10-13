@@ -29,48 +29,14 @@ if(_type == "Level_Prof") then
 
 	if(_vorzeichen == 1) then
 	{
-
-		switch(true) do
-		{
-			case ( _exp >= 0 ):{ _exp = _exp + _amount; };
-			case ( _exp >= -20): { _exp = _exp + _amount*2; };
-			case ( _exp >= -40): { _exp = _exp + _amount*4; };
-			case ( _exp >= -60): { _exp = _exp + _amount*6; };
-			case ( _exp >= -80): { _exp = _exp + _amount*8; };
-			case ( _exp >= -100): { _exp = _exp + _amount*10; };
-
-			default{};
-		};
-
-		//if( _exp < -10500 ) then { _exp = -10500;};
-		if( _exp > 500 ) then { _exp = 500;};
-
+		 _exp = _exp + _amount;
 		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
 	};
 
 	if(_vorzeichen == 0) then
 	{
-
-	switch (true) do
-		{
-			case ( _exp <= 0): { _exp = _exp - _amount;};
-			case ( _exp <= 20): { _exp = _exp - _amount*2;};
-			case ( _exp <= 40): { _exp = _exp - _amount*4;};
-			case ( _exp <= 60): { _exp = _exp - _amount*6;};
-			case ( _exp <= 80): { _exp = _exp - _amount*8;};
-			case ( _exp <= 100): { _exp = _exp - _amount*10;};
-
-			default{};
-		};
-
-		if(_exp > 500) then { _exp = 500;};
-		//if(_exp < -10500) then { _exp = -10500;};
-
+		_exp = _exp - _amount;
 		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
 	};
-
-
-
-
 };
 

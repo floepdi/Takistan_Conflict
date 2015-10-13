@@ -19,6 +19,8 @@ _title = format[localize "STR_UnBomb_Progress"];
 
 //Setup our progress bar
 life_action_inUse = true;
+life_failed = false;
+life_interrupted = false;
 if (license_cop_uncarbomb) then {
 	disableSerialization;
 	5 cutRsc ["life_progress","PLAIN"];
@@ -49,7 +51,7 @@ if (license_cop_uncarbomb) then {
 	if(life_interrupted) exitWith {life_failed = true;};
 	if((player getVariable["restrained",false])) exitWith {life_failed = true;};
 };
-	if (life_failed) exitWith {5 cutText ["","PLAIN"]; };
+	if (life_failed) exitWith {5 cutText ["","PLAIN"]; player playActionNow "stop"; life_action_inUse = false; life_failed = false; life_interrupted = false;};
 	life_action_inUse = false;
 	5 cutText ["","PLAIN"]; //kill progress bar
 
@@ -104,7 +106,7 @@ if (license_cop_uncarbomb) then {
 	if (!alive player) exitWith {life_failed = true;};
 	if(life_istazed) exitWith {life_failed = true;}; //Tazed
 	if(life_interrupted) exitWith {life_failed = true;};
-	if((player getVariable["restrained",false])) exitWith {life_failed = true;};
+	if((player getVariable["restrained",false])) exitWith {life_failed = true; player playActionNow "stop"; life_action_inUse = false;  life_failed = false; life_interrupted = false;};
 };
 	if (life_failed) exitWith {5 cutText ["","PLAIN"]; };
 

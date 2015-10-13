@@ -33,15 +33,7 @@ switch (true) do
         [] spawn life_fnc_weed;
     };
 
-<<<<<<< HEAD
-    case (_item == "depotwaffen"): {
-        [cursorTarget] spawn life_fnc_depotwaffen;
-        closeDialog 0;
-    };
-=======
->>>>>>> origin/master
 };
-
 
     case (_item == "depotwaffen"):
 {

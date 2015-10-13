@@ -17,6 +17,7 @@ closeDialog 0;
 if (_scharf == 1) then {
 life_action_inUse = true;
 life_failed = false;
+life_interrupted = false;
 _title = format[localize "STR_Bomb_Progress"];
 
 //Setup our progress bar
@@ -50,7 +51,7 @@ if (license_civ_carbomb) then {
 	if(life_interrupted) exitWith {life_failed = true;};
 	if((player getVariable["restrained",false])) exitWith {life_failed = true;};
 };
-	if (life_failed) exitWith {5 cutText ["","PLAIN"]; };
+	if (life_failed) exitWith {5 cutText ["","PLAIN"]; player playActionNow "stop"; life_action_inUse = false;  life_failed = false; life_interrupted = false; };
 
 	life_action_inUse = false;
 	5 cutText ["","PLAIN"]; //kill progress bar
@@ -101,7 +102,7 @@ if (license_civ_carbomb) then {
 	if(life_interrupted) exitWith {life_failed = true;};
 	if((player getVariable["restrained",false])) exitWith {life_failed = true;};
 };
-	if (life_failed) exitWith {5 cutText ["","PLAIN"]; };
+	if (life_failed) exitWith {5 cutText ["","PLAIN"]; player playActionNow "stop"; life_action_inUse = false;  life_failed = false; life_interrupted = false;};
 	life_action_inUse = false;
 
 	if(player distance _car > 7) exitWith {hint "Du bist zu weit entfernt!"};
