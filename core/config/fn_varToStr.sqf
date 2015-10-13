@@ -164,4 +164,6 @@ switch (_var) do
     case "license_civ_pilze": {(localize "STR_License_Pilze")};
     case "license_cop_drone": {"Drohnen Lehrgang"};
     case "license_civ_gold" : {"Goldschmelze"};
+    case "license_civ_carbomb": {"Sprengstoffausbildung"};
+    case "license_cop_uncarbomb" : {"Entschärfungsausbildung"};
 };

@@ -32,7 +32,7 @@ switch (true) do
     {
         [] spawn life_fnc_weed;
     };
-    
+
     case (_item == "depotwaffen"): {
         [cursorTarget] spawn life_fnc_depotwaffen;
         closeDialog 0;
@@ -100,7 +100,7 @@ switch (true) do
 {
     if(([false,_item,1] call life_fnc_handleInv)) then
     {
-        [0] spawn life_fnc_carBomb;
+        [1] spawn life_fnc_carBomb;
     };
 };
 

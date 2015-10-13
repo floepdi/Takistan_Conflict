@@ -1,7 +1,7 @@
 /*
 	File: fn_licenseType.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Returns the short-var of the license name to a long var and display name.
 */
@@ -20,7 +20,7 @@ switch (_mode) do
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost
 			case "pilot1": {_var = "license_civ_air1"};
-			
+
 			case "gun": {_var = "license_civ_gun"}; //Firearm/gun license cost
 			case "dive": {_var = "license_civ_dive"}; //Diving license cost
 			case "oil": {_var = "license_civ_oil"}; //Oil processing license cost
@@ -28,6 +28,7 @@ switch (_mode) do
 			case "drone": {_var = "license_cop_drone"}; //Cop Drone Pilot License cost
 			case "swat": {_var = "license_cop_swat"}; //Swat License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
+			case "uncarbomb": {_var = "license_cop_uncarbomb"};
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
 			case "marijuana": {_var = "license_civ_marijuana"}; //Marijuana processing license cost
 			case "medmarijuana": {_var = "license_civ_medmarijuana"}; //Medical Marijuana processing license cost
@@ -39,7 +40,7 @@ switch (_mode) do
 			case "cocaine": {_var = "license_civ_coke"};
 			case "sand": {_var = "license_civ_sand"};
 			case "bluesyn": {_var = "license_civ_bluesyn"};
-			
+
 			case "schnaps": {_var = "license_civ_schnaps"};
 			case "pilze": {_var = "license_civ_pilze"};
 			case "bier": {_var = "license_civ_bier"};
@@ -52,10 +53,11 @@ switch (_mode) do
 			case "plastic": {_var = "license_civ_plastic"};
 			case "coal": {_var = "license_civ_coal"};
 			case "gold": {_var = "license_civ_gold"};
+			case "carbomb" : {_var = "license_civ_carbomb"};
 			default {_var = ""};
 		};
 	};
-	
+
 	case 1:
 	{
 		switch (_type) do
@@ -68,8 +70,9 @@ switch (_mode) do
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
 			case "license_cop_air": {_var = "cair"};//Cop Pilot License cost
-			
+
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
+			case "license_cop_uncarbomb" : {_var = "uncarbomb"};
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost
@@ -94,6 +97,7 @@ switch (_mode) do
 			case "license_civ_schnaps": {_var = "schnaps"};
 			case "license_civ_pilze": {_var = "pilze"};
 			case "license_civ_gold": {_var = "gold"}; //Gold processing license cost
+			case "license_civ_carbomb": {_var ="carbomb"};
 			default {_var = ""};
 		};
 	};

@@ -409,6 +409,7 @@ class Life_Client_Core
         class showArrestDialog {}; //changed
         class arrestDialog_Arrest {}; //changed
         class copOpener {};
+        class uncarbomb {};
 
 
 

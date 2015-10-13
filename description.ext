@@ -115,6 +115,12 @@ class CfgSounds
 		sound[] = {"\sounds\car_lock.ogg", 0.7, 1};
 		titles[] = {};
 	};
+		class peep
+	{
+		name = "peep";
+		sound[] = {"\sounds\peep.ogg", 0.7, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing

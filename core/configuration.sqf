@@ -92,7 +92,7 @@ __CONST__(life_impound_air,1000);
 life_istazed = false;
 life_my_gang = ObjNull;
 life_muted = false;
-
+life_failed = false;
 life_bekanntschaften = [];
 
 
@@ -258,6 +258,7 @@ life_licenses =
     ["license_cop_drone","cop"],
     ["license_cop_swat","cop"],
     ["license_cop_cg","cop"],
+    ["license_cop_uncarbomb","cop"],
     ["license_civ_driver","civ"],
     ["license_civ_air","civ"],
     ["license_civ_air1","civ"],
@@ -286,7 +287,8 @@ life_licenses =
     ["license_civ_bier","civ"],
     ["license_civ_schnaps","civ"],
     ["license_civ_pilze","civ"],
-    ["license_civ_gold","civ"]
+    ["license_civ_gold","civ"],
+    ["license_civ_carbomb","civ"]
     ];
 
 //Setup License Variables
@@ -324,7 +326,7 @@ life_prof =
 
 life_dp_points = ["di_1","di_2","di_3","di_4","di_5","di_6","di_7","di_8","di_9","di_10","di_11"];
 //[shortVar,reward]
-life_illegal_items = 
+life_illegal_items =
     [
         ["heroinu",1200],
         ["heroinp",2500],
