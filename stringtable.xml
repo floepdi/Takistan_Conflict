@@ -2769,28 +2769,28 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>R$%1 que foi roubado da Reserva Federal foi retornado a ela após a morte do ladrão.</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_RepairVault">
-			<Original>Repairing vault...</Original>
-			<English>Repairing vault...</English>
-			<German>Tresor wird repariert...</German>
-			<French>Réparation du coffre...</French>
-			<Italian>Riparando il Caveau</Italian>
-			<Portuguese>Reparando Cofre...</Portuguese>
+			<Original>Repairing container...</Original>
+			<English>Repairing container...</English>
+			<German>Container wird repariert...</German>
+			<French>Repairing container...</French>
+			<Italian>Repairing container</Italian>
+			<Portuguese>Repairing container...</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultRepaired">
-			<Original>The vault is now fixed and re-secured.</Original>
-			<English>The vault is now fixed and re-secured.</English>
-			<German>Der Tresor wurde repariert.</German>
-			<French>Le coffre est de nouveau sécurisé.</French>
-			<Italian>Il Caveau è stato riparato e messo in sicurezza.</Italian>
-			<Portuguese>O Cofre foi consertado e está seguro.</Portuguese>
+			<Original>The supply container is now fixed and re-secured.</Original>
+			<English>The supply container is now fixed and re-secured.</English>
+			<German>Der Nachschubcontainer wurde repariert.</German>
+			<French>The supply container is now fixed and re-secured.</French>
+			<Italian>The supply container is now fixed and re-secured.</Italian>
+			<Portuguese>The supply container is now fixed and re-secured.</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultLocked">
-			<Original>The vault is already locked?</Original>
-			<English>The vault is already locked?</English>
-			<German>Der Tresor ist abgeschlossen?</German>
-			<French>Le coffre est déjà fermé?</French>
-			<Italian>Il Caveau è già bloccato?</Italian>
-			<Portuguese>O Cofre está trancado?</Portuguese>
+			<Original>The supply container is already locked?</Original>
+			<English>The supply container is already locked?</English>
+			<German>Der Nachschubcontainer ist abgeschlossen?</German>
+			<French>The supply container is already locked?</French>
+			<Italian>The supply container is already locked?</Italian>
+			<Portuguese>The supply container is already locked?</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultUnder1">
 			<Original>You can't enter anything below 1!</Original>
