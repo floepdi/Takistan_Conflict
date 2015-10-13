@@ -1070,6 +1070,27 @@ case "gun":
             };
         };
     };
+	
+case "lagerfight":
+    {
+        switch(true) do
+        {
+            case (playerSide != civilian): {"Du bist kein Zivilist!"};
+
+            default
+            {
+                ["Lager",
+                    [
+
+                    ["12Rnd_mas_45acp_Mag",nil,50],
+                    ["20Rnd_mas_765x17_Mag",nil,50],
+                    ["30Rnd_mas_545x39_mag",nil,50]
+
+                    ]
+                ];
+            };
+        };
+    };
 
 
 //Warlord Level 10

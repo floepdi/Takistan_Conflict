@@ -21,6 +21,7 @@ switch (_shop) do
     };
     */
     case "tankstelle": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","zipties","lockpick"]]};
+	case "miliz": {["Miliz",["redgull","fuelF","zipties","lockpick"]]};
     case "tankstelle_med": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","zipties","lockpick"]]};
     case "bandit": {["Küche",["ziegenmilch","dattel","fladenbrot","redgull","zipties","schlafmittel"]]};
     case "rebel": {["Mafia Markt",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge"]]};
@@ -45,5 +46,6 @@ switch (_shop) do
     case "plastic": {["Plastik Händler",["plastic"]]};
     case "electrostore": {["Abduls Elektronikbedarf",["battery","fernzuender","gehaeuse","antenne"]]};
     case "blackstore": {["Schwarzmarkt",["sprengsatz","sprengstoff","goldbarren"]]};
+	case "werkstoff": {["Werkstoffe",["sprengsatz","sprengstoff","goldbarren"]]};
 
 };
