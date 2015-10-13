@@ -108,6 +108,8 @@ switch (_var) do
     case "life_inv_golderz": {"Golderz"};
     case "life_inv_goldbarren": {"Goldbarren"};
     case "life_inv_depotwaffen": {"Depotwaffen"};
+    case "live_inv_information": {"Information"};
+    case "life_inv_abhoergeraet": {"Abhörgerät"};
 
 
 

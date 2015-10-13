@@ -33,13 +33,23 @@ switch (true) do
         [] spawn life_fnc_weed;
     };
 
+<<<<<<< HEAD
     case (_item == "depotwaffen"): {
         [cursorTarget] spawn life_fnc_depotwaffen;
         closeDialog 0;
     };
+=======
+>>>>>>> origin/master
 };
 
 
+    case (_item == "depotwaffen"):
+{
+    if(([false,_item,1] call life_fnc_handleInv)) then
+    {
+        [] spawn life_fnc_depotwaffen;
+    };
+};
 
 
     case (_item == "barricade"):

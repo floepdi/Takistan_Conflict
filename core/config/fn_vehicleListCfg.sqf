@@ -270,6 +270,15 @@ case "civ_car":
 		];
 	};
 	
+	case "autolieferung_car":
+	{
+		_return =
+		[
+			["isc_is_hilux_Unarmed_o",5000],
+			["isc_is_hilux_Unarmed_o",6000]
+		];
+	};
+	
 case "level_car":
 	{
 		if(call life_fnc_getLevel >= 100) then

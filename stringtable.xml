@@ -2484,36 +2484,36 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		</Key>
 
 		<Key ID="STR_Civ_VaultEmpty">
-			<Original>The safe is empty!</Original>
-			<English>The safe is empty!</English>
-			<German>Der Tresor ist leer!</German>
-			<French>Le coffre est vide</French>
-			<Italian>La cassaforte è vuota!</Italian>
-			<Portuguese>O Cofre está vazio!</Portuguese>
+			<Original>The container is empty!</Original>
+			<English>The container is empty!</English>
+			<German>Der Container ist leer!</German>
+			<French>The container is empty!</French>
+			<Italian>The container is empty!</Italian>
+			<Portuguese>The container is empty!</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_VaultInUse">
-			<Original>Someone is already accessing the safe..</Original>
-			<English>Someone is already accessing the safe..</English>
-			<German>Jemand greift bereits auf den Tresor zu..</German>
-			<French>Quelqu'un accède déjà au coffre..</French>
-			<Italian>Qualcuno sta già interagendo con la cassaforte..</Italian>
-			<Portuguese>Alguem já está acessando o cofre.</Portuguese>
+			<Original>Someone is already accessing the container..</Original>
+			<English>Someone is already accessing the container..</English>
+			<German>Jemand greift bereits auf den Container zu..</German>
+			<French>Someone is already accessing the container..</French>
+			<Italian>Someone is already accessing the container..</Italian>
+			<Portuguese>Someone is already accessing the container..</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_NotEnoughCops">
-			<Original>There needs to be 5 or more cops online to continue.</Original>
-			<English>There needs to be 5 or more cops online to continue.</English>
-			<German>Es müssen 5 oder mehr Polizisten online sein, um fortfahren zu können.</German>
-			<French>Il faut au minimum 5 flic pour continuer</French>
-			<Italian>Servono almeno 5 poliziotti online per continuare.</Italian>
-			<Portuguese>É necessário ter pelo menos 5 Policiais online para continuar.</Portuguese>
+			<Original>There needs to be 10 or more Army members online to continue.</Original>
+			<English>There needs to be 10 or more Army members online to continue.</English>
+			<German>Es müssen 10 oder mehr Army Mitglieder online sein, um fortfahren zu können.</German>
+			<French>There needs to be 10 or more Army members online to continue.</French>
+			<Italian>There needs to be 10 or more Army members online to continue.</Italian>
+			<Portuguese>There needs to be 10 or more Army members online to continue.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_SafeInv">
-			<Original>Safe Inventory</Original>
-			<English>Safe Inventory</English>
-			<German>Tresorinventar</German>
-			<French>Coffre</French>
-			<Italian>Inventario cassaforte</Italian>
-			<Portuguese>Cofre</Portuguese>
+			<Original>Container Inventory</Original>
+			<English>Container Inventory</English>
+			<German>Containerinventar</German>
+			<French>Container Inventory</French>
+			<Italian>Container Inventory</Italian>
+			<Portuguese>Container Inventory</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_SelectItem">
 			<Original>You need to select an item!</Original>
@@ -2524,12 +2524,12 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Você precisa selecionar um item!</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_IsntEnoughGold">
-			<Original>There isn't %1 gold bar(s) in the safe!</Original>
-			<English>There isn't %1 gold bar(s) in the safe!</English>
-			<German>Es sind keine %1 Goldbarren im Tresor!</German>
-			<French>Il n'y a pas %1 lingot(s) d'or dans le coffre</French>
-			<Italian>Nella cassaforte non ci sono %1 lingotti d'oro</Italian>
-			<Portuguese>Não existem %1 barra(s) de ouro no cofre!</Portuguese>
+			<Original>There aren't any weapons in the container!</Original>
+			<English>There aren't any weapons in the container!</English>
+			<German>Es sind keine Waffen im Container!</German>
+			<French>There aren't any weapons in the container!</French>
+			<Italian>There aren't any weapons in the container!</Italian>
+			<Portuguese>There aren't any weapons in the container!</Portuguese>
 		</Key>
 	</Package>
 	<Package name="Cop_Strings">
@@ -2769,28 +2769,28 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>R$%1 que foi roubado da Reserva Federal foi retornado a ela após a morte do ladrão.</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_RepairVault">
-			<Original>Repairing vault...</Original>
-			<English>Repairing vault...</English>
-			<German>Tresor wird repariert...</German>
-			<French>Réparation du coffre...</French>
-			<Italian>Riparando il Caveau</Italian>
-			<Portuguese>Reparando Cofre...</Portuguese>
+			<Original>Repairing container...</Original>
+			<English>Repairing container...</English>
+			<German>Container wird repariert...</German>
+			<French>Repairing container...</French>
+			<Italian>Repairing container</Italian>
+			<Portuguese>Repairing container...</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultRepaired">
-			<Original>The vault is now fixed and re-secured.</Original>
-			<English>The vault is now fixed and re-secured.</English>
-			<German>Der Tresor wurde repariert.</German>
-			<French>Le coffre est de nouveau sécurisé.</French>
-			<Italian>Il Caveau è stato riparato e messo in sicurezza.</Italian>
-			<Portuguese>O Cofre foi consertado e está seguro.</Portuguese>
+			<Original>The supply container is now fixed and re-secured.</Original>
+			<English>The supply container is now fixed and re-secured.</English>
+			<German>Der Nachschubcontainer wurde repariert.</German>
+			<French>The supply container is now fixed and re-secured.</French>
+			<Italian>The supply container is now fixed and re-secured.</Italian>
+			<Portuguese>The supply container is now fixed and re-secured.</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultLocked">
-			<Original>The vault is already locked?</Original>
-			<English>The vault is already locked?</English>
-			<German>Der Tresor ist abgeschlossen?</German>
-			<French>Le coffre est déjà fermé?</French>
-			<Italian>Il Caveau è già bloccato?</Italian>
-			<Portuguese>O Cofre está trancado?</Portuguese>
+			<Original>The supply container is already locked?</Original>
+			<English>The supply container is already locked?</English>
+			<German>Der Nachschubcontainer ist abgeschlossen?</German>
+			<French>The supply container is already locked?</French>
+			<Italian>The supply container is already locked?</Italian>
+			<Portuguese>The supply container is already locked?</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_VaultUnder1">
 			<Original>You can't enter anything below 1!</Original>
@@ -4214,44 +4214,44 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 	</Package>
 	<Package name="More_Item_Strings">
 		<Key ID="STR_ISTR_Blast_VaultOnly">
-			<Original>This can only be used on a vault.</Original>
-			<English>This can only be used on a vault.</English>
-			<German>Dies kann nur an einem Tresor benutzt werden.</German>
-			<French>Cela ne peut être utilisé que sur un coffre-fort.</French>
-			<Italian>Può essere usata solo sulla cassaforte.</Italian>
-			<Portuguese>Isso só pode ser usado em um cofre.</Portuguese>
+			<Original>This can only be used on a supply container.</Original>
+			<English>This can only be used on a supply container.</English>
+			<German>Dies kann nur an einem Nachschubcontainer benutzt werden.</German>
+			<French>This can only be used on a supply container.</French>
+			<Italian>This can only be used on a supply container.</Italian>
+			<Portuguese>This can only be used on a supply container.</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Blast_AlreadyPlaced">
-			<Original>There is already a charge placed on this vault.</Original>
-			<English>There is already a charge placed on this vault.</English>
-			<German>Es gibt bereits eine Sprengladung am Tresor.</German>
-			<French>Une charge de dynamite est déjà placé sur ce coffre.</French>
-			<Italian>C'è già una carica piazzata sulla cassaforte.</Italian>
-			<Portuguese>Já existe uma carga colocada sobre esse cofre.</Portuguese>
+			<Original>There is already a charge placed on this container.</Original>
+			<English>There is already a charge placed on this container.</English>
+			<German>Es gibt bereits eine Sprengladung am Container.</German>
+			<French>There is already a charge placed on this container.</French>
+			<Italian>There is already a charge placed on this container.</Italian>
+			<Portuguese>There is already a charge placed on this container.</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Blast_AlreadyOpen">
-			<Original>The vault is already opened.</Original>
-			<English>The vault is already opened.</English>
-			<German>Der Tresor ist bereits offen.</German>
-			<French>Le coffre est déjà ouvert.</French>
-			<Italian>La cassaforte è già aperta.</Italian>
-			<Portuguese>O cofre está aberto.</Portuguese>
+			<Original>The supply container is already open.</Original>
+			<English>The supply container is already open.</English>
+			<German>Der Container ist bereits offen.</German>
+			<French>The supply container is already open.</French>
+			<Italian>The supply container is already open.</Italian>
+			<Portuguese>The supply container is already open.</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Blast_Placed">
-			<Original>A blasting charge has been placed on the federal reserves vault, You have till the clock runs out to disarm the charge!</Original>
-			<English>A blasting charge has been placed on the federal reserves vault, You have till the clock runs out to disarm the charge!</English>
-			<German>Eine Sprengladung wurde am Safe angebracht. Du hast Zeit, bis die Uhr abläuft, um die Ladung zu entschärfen!</German>
-			<French>Une charge de dynamite a été placé sur le coffre des réserves fédérales, Vous avez jusqu'au temps imparti pour désarmorcer la charge!</French>
-			<Italian>Una carica esplosiva è stata piazzata sulla cassaforte della Riserva Federale, puoi cercare di disinnescarla prima che scada il tempo!</Italian>
-			<Portuguese>O explosivo foi colocado no cofre , Você tem até o tempo acabar para desarmar o explosivo.</Portuguese>
+			<Original>A blasting charge has been placed in the supply depot, you have till the clock runs out to disarm the charge!</Original>
+			<English>A blasting charge has been placed in the supply depot, you have till the clock runs out to disarm the charge!</English>
+			<German>ALARM: Eine Sprengladung wurde im Nachschublager platziert.</German>
+			<French>A blasting charge has been placed in the supply depot, you have till the clock runs out to disarm the charge!</French>
+			<Italian>A blasting charge has been placed in the supply depot, you have till the clock runs out to disarm the charge!</Italian>
+			<Portuguese>A blasting charge has been placed in the supply depot, you have till the clock runs out to disarm the charge!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Blast_KeepOff">
-			<Original>The timer is ticking! Keep the cops away from the vault!</Original>
-			<English>The timer is ticking! Keep the cops away from the vault!</English>
-			<German>Der Timer läuft! Halte die Polizei von Safe fern!</German>
-			<French>La minuterie est lancée! Gardez les flics loin de la bombe!</French>
-			<Italian>Il tempo sta scorrendo! Tieni la polizia lontana dalla cassaforte!</Italian>
-			<Portuguese>O tempo está passando, Mantenha os policiais longe do cofre</Portuguese>
+			<Original>The timer is ticking! Keep the Army away from the supply depot!</Original>
+			<English>The timer is ticking! Keep the Army away from the supply depot!</English>
+			<German>Der Timer läuft! Halte die Army vom Depot fern!</German>
+			<French>The timer is ticking! Keep the Army away from the supply depot!</French>
+			<Italian>The timer is ticking! Keep the Army away from the supply depot!</Italian>
+			<Portuguese>The timer is ticking! Keep the Army away from the supply depot!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Blast_Disarmed">
 			<Original>The charge has been disarmed!</Original>
@@ -4262,12 +4262,12 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>O explosivo foi desarmado!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Blast_Opened">
-			<Original>The vault is now opened</Original>
-			<English>The vault is now opened</English>
-			<German>Der Tresor ist jetzt offen</German>
-			<French>Le coffre est maintenant ouvert</French>
-			<Italian>La cassaforte è stata aperta</Italian>
-			<Portuguese>O cofre está aberto.</Portuguese>
+			<Original>The supply container is now open</Original>
+			<English>The supply container is now open</English>
+			<German>Der Nachschubcontainer ist jetzt offen</German>
+			<French>The supply container is now open</French>
+			<Italian>The supply container is now open</Italian>
+			<Portuguese>The supply container is now open.</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_NotNear">
 			<Original>You are not looking at a house door.</Original>
@@ -4278,12 +4278,12 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Você não esta olhando para porta.</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
-			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
-			<English>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</English>
-			<German>!!!!! JEMAND BRICHT IN DAS GOLDLAGER EIN !!!!!!</German>
-			<French>!!!!! QUELQU'UN TENTE DE S'INTRODUIRe DANS LA RÈSERVE FÈDÈRALE !!!!!!</French>
-			<Italian>!!!!!! QUALCUNO STA CERCANDO DI INTRODURSI NELLA RISERVA FEDERALE !!!!!!</Italian>
-			<Portuguese>!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!</Portuguese>
+			<Original>!!!!! SOMEONE IS BREAKING INTO THE SUPPLY DEPOT !!!!!!</Original>
+			<English>!!!!! SOMEONE IS BREAKING INTO THE SUPPLY DEPOT !!!!!!</English>
+			<German>!!!!! JEMAND BRICHT IN DAS NACHSCHUBDEPOT EIN !!!!!!</German>
+			<French>!!!!! SOMEONE IS BREAKING INTO THE SUPPLY DEPOT !!!!!!</French>
+			<Italian>!!!!!! SOMEONE IS BREAKING INTO THE SUPPLY DEPOT !!!!!!</Italian>
+			<Portuguese>!!!!! SOMEONE IS BREAKING INTO THE SUPPLY DEPOT !!!!!!</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertHouse">
 			<Original>%1 was seen breaking into a house.</Original>
@@ -4302,12 +4302,12 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Portuguese>Cortando o cadeado da porta</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Defuse_Nothing">
-			<Original>There is no charge on the vault?</Original>
-			<English>There is no charge on the vault?</English>
-			<German>Es gibt keine Sprengladung am Tresor?</German>
-			<French>Il n'y a pas de dynamite sur le coffre?</French>
-			<Italian>Non c'è alcuna carica esplosiva sulla cassaforte</Italian>
-			<Portuguese>Não há nenhum explosivo no cofre.</Portuguese>
+			<Original>There is no charge on the container?</Original>
+			<English>There is no charge on the container?</English>
+			<German>Es gibt keine Sprengladung am Container?</German>
+			<French>There is no charge on the container?</French>
+			<Italian>There is no charge on the container?</Italian>
+			<Portuguese>There is no charge on the container?</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Defuse_Process">
 			<Original>Defusing charge...</Original>

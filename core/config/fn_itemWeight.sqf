@@ -104,5 +104,7 @@ switch (_item) do
     case "golderz": {5};
     case "goldbarren": {3};
     case "depotwaffen": {10};
+    case "information": {3};
+    case "abhoergeraet": {20};
     default {1};
 };
