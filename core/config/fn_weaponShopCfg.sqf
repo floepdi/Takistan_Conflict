@@ -41,17 +41,32 @@ switch(_shop) do
                     [
                         ["tf_rf7800str",nil,500],
                         ["tf_anprc152",nil,500],
-                        ["tf_mr3000_multicam",nil,500],
-                        ["ItemGPS",nil,100],
+                        //["tf_mr3000_multicam",nil,500],
+                        ["ACE_DAGR",nil,1000],
+						["ACE_microDAGR",nil,10000],
                         ["ToolKit",nil,250],
-                        ["FirstAidKit",nil,150],
+                        //["FirstAidKit",nil,150],
                         ["Binocular",nil,300],
                         ["Chemlight_green",nil,300],
                         ["Chemlight_blue",nil,300],
                         ["SmokeShell",nil,300],
                         ["SmokeShellRed",nil,300],
                         ["SmokeShellGreen",nil,300],
-                        ["acc_flashlight",nil,100]
+                        ["acc_flashlight",nil,100],
+						["ACE_CableTie",nil,100],
+						["ACE_SpareBarrel",nil,100],
+						["ACE_RangeCard",nil,100],
+						["ACE_Altimeter",nil,100],
+						["ACE_TacticalLadder_Pack",nil,100],
+						["ACE_EarPlugs",nil,100],
+						["ACE_Flashlight_XL50",nil,100],
+						["ACE_Flashlight_KSF1",nil,1000],
+						["ACE_Flashlight_MX991",nil,1000],
+						["ACE_MapTools",nil,100],
+						["ACE_quikclot",nil,100],
+						["ACE_personalAidKit",nil,100],
+						["ACE_atropine",nil,100],
+						["ACE_epinephrine",nil,100]
                     ]
                 ];
             };
@@ -245,7 +260,7 @@ switch(_shop) do
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
                         ["HandGrenade",nil,1000],
-                        ["Rangefinder",nil,1000],
+                        ["ACE_Vector",nil,1000],
                         ["NVGoggles",nil,1000]
                     ]
                 ];
@@ -294,8 +309,10 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+                        ["NVGoggles",nil,1000],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -349,8 +366,10 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+                        ["NVGoggles",nil,1000],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -409,8 +428,13 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -474,8 +498,13 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -540,8 +569,13 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -608,8 +642,13 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -680,8 +719,13 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -754,8 +798,13 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -831,8 +880,14 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Banana",nil,100],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -914,8 +969,14 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Banana",nil,100],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -1000,8 +1061,14 @@ switch(_shop) do
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
-                        ["Rangefinder",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_Vector",nil,1000],
+						["ACE_Yardage450",nil,5000],
+                        ["NVGoggles",nil,1000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Banana",nil,100],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_HuntIR_monitor",nil,500],
+						["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -1016,8 +1083,9 @@ switch(_shop) do
         [
 
         ["ToolKit",nil,5000],
-        ["FirstAidKit",nil,1500],
-        ["zipties",nil,5000]
+        //["FirstAidKit",nil,1500],
+        ["ACE_CableTie",nil,1000],
+		["ACE_EarPlugs",nil,100]
 
 
         ]
@@ -1030,14 +1098,21 @@ switch(_shop) do
         ["Synced Gemischtwaren",
             [
                 ["Binocular",nil,300],
-                ["ItemGPS",nil,10000],
+                ["ACE_DAGR",nil,10000],
                 ["ItemMap",nil,5],
                 ["ItemCompass",nil,5],
                 ["ToolKit",nil,1000],
-                ["FirstAidKit",nil,500],
+                //["FirstAidKit",nil,500],
                 //["NVGoggles",nil,25000],
                 ["Chemlight_red",nil,300],
-                ["Chemlight_yellow",nil,300]
+                ["Chemlight_yellow",nil,300],
+				["ACE_CableTie",nil,1000],
+				["ACE_EarPlugs",nil,100],
+				["ACE_MapTools",nil,100],
+				["ACE_quikclot",nil,100],
+				["ACE_personalAidKit",nil,100],
+				["ACE_atropine",nil,100],
+				["ACE_epinephrine",nil,100]
                 //["EODS_cellphone_02",nil,5000]
             ]
         ];
@@ -1107,8 +1182,7 @@ case "level10":
                         ["arifle_mas_fal",nil,40000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["acc_flashlight",nil,500],
-                        ["ItemGPS",nil,10000]
+                        ["acc_flashlight",nil,500]
                     ]
                 ];
             };
@@ -1208,7 +1282,8 @@ case "level40":
                         ["optic_Aco",nil,5000],
                         ["optic_ACO_grn",nil,5000],
                         ["NVGoggles",nil,25000],
-                        ["Rangefinder",nil,25000]
+                        ["ACE_Vector",nil,25000],
+						["ACE_Kestrel4500",nil,500]
                     ]
                 ];
             };
@@ -1251,8 +1326,11 @@ case "level50":
                         ["optic_Aco",nil,5000],
                         ["optic_ACO_grn",nil,5000],
                         ["NVGoggles",nil,25000],
-                        ["Rangefinder",nil,25000],
-                        ["HandGrenade_Stone","Blindmacher",5000]
+                        ["ACE_Vector",nil,25000],
+						["ACE_Yardage450",nil,5000],
+                        ["HandGrenade_Stone","Blindmacher",5000],
+						["ACE_ATragMX",nil,1000],
+						["ACE_Kestrel4500",nil,500]
                     ]
                 ];
             };
@@ -1278,17 +1356,45 @@ case "level50":
                         ["TRYK_V_tacv1LC_BK",nil,100],
                         ["TRYK_B_Medbag_BK",nil,500],
                         ["ToolKit",nil,250],
-                        ["FirstAidKit",nil,150],
-                        ["Medikit",nil,250],
+                        //["FirstAidKit",nil,150],
+                        //["Medikit",nil,250],
                         ["NVGoggles_mas_h",nil,500],
-                        ["ItemGPS",nil,100],
-                        ["Binocular",nil,100],
+                        ["ACE_DAGR",nil,100],
+                        ["ACE_Vector",nil,100],
                         ["Chemlight_green",nil,100],
                         ["Chemlight_blue",nil,100],
                         ["SmokeShell",nil,100],
                         ["SmokeShellRed",nil,100],
                         ["SmokeShellGreen",nil,100],
-                        ["tf_anprc148jem",nil,100]
+                        ["tf_anprc148jem",nil,100],
+						["ACE_Altimeter",nil,100],
+						["ACE_NonSteerableParachute",nil,100],
+						["ACE_ReserveParachute",nil,100],
+						["ACE_EarPlugs",nil,100],
+						["ACE_MapTools",nil,100]
+						
+						//Medical Gear
+						["ACE_atropine",nil,100],
+						["ACE_epinephrine",nil,100],
+						["ACE_morphine",nil,100],
+						["ACE_fieldDressing",nil,100],
+						["ACE_elasticBandage",nil,100],
+						["ACE_quikclot",nil,100],
+						["ACE_bloodIV_250",nil,100],
+						["ACE_bloodIV_500",nil,100],
+						["ACE_bloodIV",nil,100],
+						["ACE_bodyBag",nil,100],
+						["ACE_packingBandage",nil,100],
+						["ACE_personalAidKit",nil,100],
+						["ACE_plasmaIV_250",nil,100],
+						["ACE_plasmaIV_500",nil,100],
+						["ACE_plasmaIV",nil,100],
+						["ACE_salineIV_250",nil,100],
+						["ACE_salineIV_500",nil,100],
+						["ACE_salineIV",nil,100],
+						["ACE_surgicalKit",nil,100],
+						["ACE_tourniquet",nil,100]
+						
                     ]
                 ];
             };
