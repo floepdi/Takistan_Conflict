@@ -13,13 +13,7 @@ switch (_shop) do
 {
 
 
-    case "market": {["Synced Markt",["ziegenmilch","dattel","fladenbrot","redgull","lockpick","fuelF","guertel","pipe","behaelter"]]};
-    /*
-    if(_level > 500) then
-    {
-    case "buerger": {["Bürger Markt",["ziegenmilch","dattel","fladenbrot","redgull","lockpick","pickaxe","fuelF","sprengstoff","guertel","zipties"]]};
-    };
-    */
+    case "market": {["Synced Markt",["ziegenmilch","dattel","fladenbrot","redgull","lockpick","fuelF","guertel","pipe","behaelter","flask","coalp"]]};
     case "tankstelle": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","lockpick"]]};
 	case "miliz": {["Miliz",["redgull","fuelF","lockpick"]]};
     case "tankstelle_med": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","lockpick"]]};
@@ -45,7 +39,12 @@ switch (_shop) do
     case "mafiacasino": {["Casino Bar",["bier","schnaps","water","coffee","apple","tbacon","redgull"]]};
     case "plastic": {["Plastik Händler",["plastic"]]};
     case "electrostore": {["Abduls Elektronikbedarf",["battery","fernzuender","gehaeuse","antenne"]]};
-    case "blackstore": {["Schwarzmarkt",["sprengsatz","sprengstoff","goldbarren"]]};
-	case "werkstoff": {["Werkstoffe",["sprengsatz","sprengstoff","goldbarren"]]};
-
+    case "blackstore": {["Schwarzmarkt",["sprengsatz","sprengstoff","goldbarren","nitroglycerin","explosive"]]};
+	case "werkstoff": {["Werkstoffe",["sprengsatz","sprengstoff","goldbarren","gunpowder","nitroglycerin","explosive","sulfurp","potassiumnitrate"]]};
+    /*
+    if(_level > 500) then
+    {
+    case "buerger": {["Bürger Markt",["ziegenmilch","dattel","fladenbrot","redgull","lockpick","pickaxe","fuelF","sprengstoff","guertel","zipties"]]};
+    };
+    */
 };
