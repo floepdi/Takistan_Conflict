@@ -79,12 +79,17 @@ life_use_atm = true;
 life_is_arrested = false;
 D41_Tankt = false;
 life_delivery_in_progress = false;
+life_transport_in_progress = false;
 life_action_in_use = false;
 life_thirst = 100;
 life_hunger = 100;
 life_exp = 0;
 life_level = 1;
-__CONST__(life_paycheck_period,5); //Five minutes
+life_quest = 0;
+life_questinfo = 0;
+life_payday = 0;
+life_paytime = 0;
+__CONST__(life_paycheck_period,50000); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,500);
 __CONST__(life_impound_boat,500);
@@ -299,7 +304,11 @@ life_licenses =
 life_prof =
 [
 
-["Level_Prof","civ"]
+["Level_Prof","civ"],
+["Quest_Prof","civ"],
+["QuestInfo_Prof","civ"],
+["Payday_Prof","civ"],
+["Paytime_Prof","civ"]
 /*
 ["Mafia_Prof","civ"],
 ["Oil_Prof","civ"],

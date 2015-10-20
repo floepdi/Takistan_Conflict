@@ -24,6 +24,39 @@ _nextLevel3 = 20 * _level;
 _nextLevel = _nextLevel + _nextLevel3 + 200;
 
 
+if(_type == "Payday_Prof") then
+{
+
+	if(_vorzeichen == 1) then
+	{
+		 _exp = _exp + _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+
+	if(_vorzeichen == 0) then
+	{
+		_exp = _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+};
+
+
+if(_type == "Paytime_Prof") then
+{
+
+	if(_vorzeichen == 1) then
+	{
+		 _exp = _exp + _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+
+	if(_vorzeichen == 0) then
+	{
+		_exp = _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+};
+
 if(_type == "Level_Prof") then
 {
 
@@ -40,3 +73,34 @@ if(_type == "Level_Prof") then
 	};
 };
 
+if(_type == "Quest_Prof") then
+{
+
+	if(_vorzeichen == 1) then
+	{
+		 _exp = _exp + _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+
+	if(_vorzeichen == 0) then
+	{
+		_exp = _exp - _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+};
+
+if(_type == "QuestInfo_Prof") then
+{
+
+	if(_vorzeichen == 1) then
+	{
+		 _exp = _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+
+	if(_vorzeichen == 0) then
+	{
+		_exp = _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+};

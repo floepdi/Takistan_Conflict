@@ -15,7 +15,7 @@ _speed = speed cursorTarget;
 _handled = false;
 _muted = false;
 
-_interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
+_interactionKey = if(count (actionKeys "User1") == 0) then {41} else {(actionKeys "User1") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
@@ -31,7 +31,7 @@ if(life_action_inUse) exitWith {
 };
 
 //Hotfix for Interaction key not being able to be bound on some operation systems.
-if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
+if(count (actionKeys "User1") != 0 && {(inputAction "User1" > 0)}) exitWith {
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	if(!life_action_inUse) then {
 		[] spawn
@@ -158,18 +158,6 @@ switch (_code) do
 		};
 		_handled = true;
 	};
-	case 5:
-	{_handled = true};
-	case 6:
-	{_handled = true};
-	case 7:
-	{_handled = true};
-	case 8:
-	{_handled = true};
-	case 9:
-	{_handled = true};
-	case 10:
-	{_handled = true};
 
 	//Map Key
 	case _mapKey:
@@ -186,7 +174,7 @@ switch (_code) do
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}}
 		};
 };
-
+/*
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -202,12 +190,14 @@ switch (_code) do
 			};
 		};
 	};
+
 	case 11:
 	{
 		[] call life_fnc_toggleSound;
 		_handled = true;
 
 	};
+	*/
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -221,7 +211,7 @@ switch (_code) do
 			};
 		};
 	};
-
+/*
 	//Restraining (Shift + R)
 	case 19:
 	{
@@ -270,7 +260,7 @@ switch (_code) do
 		};
 
 	};
-
+*/
 	//Knock out, this is experimental and yeah...
 	case 34:
 	{
@@ -368,14 +358,6 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-	case 41:
-	{
-		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
-		{
-			[] call life_fnc_p_openMenu;
-			_handled = true;
-		};
-	};
 
 
 	case 59:
@@ -384,7 +366,7 @@ switch (_code) do
 	};
 		case 61:
 	{
-			[] spawn life_fnc_startTerritory;
+			_handled = true;
 	};
 		case 62:
 	{

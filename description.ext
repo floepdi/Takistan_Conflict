@@ -158,6 +158,16 @@ class CfgDebriefing
 
 class CfgNotifications
 {
+		class Paycheck
+	{
+		title = "Paycheck erhalten";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 5;
+		sound = "taskAssigned";
+	};
+
 	class MedicalRequestEmerg
 	{
 		title = "EMS Requested";

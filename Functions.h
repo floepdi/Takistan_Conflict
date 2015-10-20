@@ -305,6 +305,7 @@ class Life_Client_Core
         class Tanke{};
         class startTerritory{};
         class Transport{};
+        class quest{};
 
     };
 

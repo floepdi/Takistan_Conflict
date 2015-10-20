@@ -131,6 +131,10 @@ switch (_var) do
     case "Malz_Prof": {(localize "STR_Prof_Malz")};
     case "Hopfen_Prof": {(localize "STR_Prof_Hopfen")};
     case "Pilze_Prof": {(localize "STR_Prof_Pilze")};
+    case "Quest_Prof": {("Quest Level")};
+    case "QuestInfo_Prof": {("Quest Info")};
+    case "Payday_Prof": {("Payday")};
+    case "Paytime_Prof": {("Paytime")};
 
 
     //License Block

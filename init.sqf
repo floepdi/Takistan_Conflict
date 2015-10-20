@@ -52,3 +52,4 @@ TF_give_microdagr_to_soldier = false;
 
 tf_same_sw_frequencies_for_side = true;
 tf_same_lr_frequencies_for_side = true;
+

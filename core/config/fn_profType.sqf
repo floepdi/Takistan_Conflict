@@ -1,20 +1,24 @@
 /*
 File: fn_profType
 Author: Jacob "PapaBear" Tyler
- 
+
 Description:
 Text changing
 */
 //convert name to prof name
 _type = [_this,0,"",[""]] call BIS_fnc_param;
- 
+
 if(_type == "" ) exitWith {[]};
- 
+
 _profName = "";
 switch ( _type ) do
 {
 //text to license
 case "level": {_profName = "Level_Prof"; };
+case "quest": {_profName = "Quest_Prof"; };
+case "questinfo": {_profName = "QuestInfo_Prof"; };
+case "payday": {_profName = "Payday_Prof"; };
+case "paytime": {_profName = "Paytime_Prof"; };
 /*
 case "mafia": { _profName = "Mafia_Prof";};
 case "heroin": {_profName = "Heroin_Prof"; };
@@ -41,9 +45,13 @@ case "hopfen": { _profName = "Hopfen_Prof";};
 case "pilze": { _profName = "Pilze_Prof";};
 */
 
- 
+
 //license to text
 case "Level_Prof": { _profName = "Level";};
+case "Quest_Prof": { _profName = "quest";};
+case "QuestInfo_Prof": { _profName = "questinfo";};
+case "Payday_Prof": {_profName = "payday";};
+case "Paytime_Prof": {_profName = "paytime";};
 /*
 case "Mafia_Prof": {_profName = "Mafia"; };
 case "Heroin_Prof": {_profName = "Heroin"; };
@@ -65,7 +73,7 @@ case "Pilze_Prof": { _profName = "Pilze";};
 
 default{""};
 };
- 
- 
- 
+
+
+
 _profName;
