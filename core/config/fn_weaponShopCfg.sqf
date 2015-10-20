@@ -1145,7 +1145,7 @@ case "gun":
             };
         };
     };
-	
+
 case "lagerfight":
     {
         switch(true) do
@@ -1371,8 +1371,8 @@ case "level50":
 						["ACE_NonSteerableParachute",nil,100],
 						["ACE_ReserveParachute",nil,100],
 						["ACE_EarPlugs",nil,100],
-						["ACE_MapTools",nil,100]
-						
+						["ACE_MapTools",nil,100],
+
 						//Medical Gear
 						["ACE_atropine",nil,100],
 						["ACE_epinephrine",nil,100],
@@ -1394,7 +1394,7 @@ case "level50":
 						["ACE_salineIV",nil,100],
 						["ACE_surgicalKit",nil,100],
 						["ACE_tourniquet",nil,100]
-						
+
                     ]
                 ];
             };

@@ -57,5 +57,7 @@ switch (__GETC__(life_donator)) do {
 
 };
 
-//[[format ["0|%1 logged something. His position is %2.",player getVariable["realname",name player],getPosATL player]],"Arma3Log",false,false] call life_fnc_MP;
+{_x setMarkerAlphaLocal 0} foreach ["Cannabisfeld","Ölfeld","Ölverarbeitung","Cannabisverarbeitung","Mohnverfeinerung","Hehler Nord","Hehler Süd","Cannabisverfeienerung","Drogendealer","Mohnverarbeitung","Mohnfeld","Goldschmelze","Goldmine","Ölhändler"];
+
+// [[format ["0|%1 logged something. His position is %2.",player getVariable["realname",name player],getPosATL player]],"Arma3Log",false,false] call life_fnc_MP;
 
