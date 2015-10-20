@@ -151,7 +151,7 @@ life_masked = [
 "G_Bandanna_beast"
 ];
 
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","C_Van_01_transport_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","C_Van_01_transport_F","DAR_4X4"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items =
@@ -471,7 +471,7 @@ sell_array =
     ["sulfurp", 2200],
     ["nitre", 150],
     ["potassiumnitrate", 2000],
-    ["nitroglycerin", 5000],
+    ["nitroglycerin", 750],
     ["gunpowder", 5000],
     ["explosive", 20000]
 ];};
@@ -526,7 +526,9 @@ buy_array =
     ["pipe",2500],
     ["gehaeuse",1500],
     ["antenne",2500],
-    ["behaelter",5000]
+    ["behaelter",5000],
+    ["flask",50],
+    ["nitroglycerin",1000]
 ];};
 //__CONST__(buy_array,buy_array);
 

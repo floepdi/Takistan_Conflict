@@ -266,7 +266,8 @@ case "civ_car":
 			["RHS_Ural_Open_Civ_01",8500],
 			["RDS_Ikarus_Civ_02",10000],
 			["O_mas_cars_UAZ_Unarmed",12500],
-			["isc_is_hilux_Unarmed_o",25000]
+			["isc_is_hilux_Unarmed_o",25000],
+			["DAR_4X4",5000]
 		];
 	};
 	
