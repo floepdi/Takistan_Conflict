@@ -33,18 +33,17 @@ _itemInfo = switch (_type) do
   case "steel": {["iron_r","steel",650,(localize "STR_Process_Steel"),true,"coalp"]};
   case "plastic": {["oilp","plastic",650,(localize "STR_Process_Plastic"),true,"coalp"]};
   case "bluesyn": {["cocainep","bluesyn",650,(localize "STR_Process_BlueSyn"),true,"heroinp"]};
-  
-
-
-
-
+  case "sulfur": {["sulfuru","sulfurp",750,(localize "STR_Process_Sulfur"),false]};
+  case "nitre": {["nitre","potassiumnitrate",750,(localize "STR_Process_Nitre"),false]};
+  case "gunpowder": {["suflurp","gunpowder",1000,(localize "STR_Process_Gunpowder"),true,"potassiumnitrate","coalp"]};
+  case "explosive": {["gunpowder","explosive",1500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
 };
 
 //Error checking
 if(count _itemInfo == 0) exitWith {};
 
 //Setup vars.
-_2var = _itemInfo select 4;  // true if process action is with 2 Items and false if processing with 1 Item.
+_moreVars = _itemInfo select 4;  // true if process action is with 2 Items and false if processing with 1 Item.
 _oldItem = _itemInfo select 0;
 _newItem = _itemInfo select 1;
 _cost = _itemInfo select 2;
@@ -52,23 +51,43 @@ _upp = _itemInfo select 3;
 
 
 
+//morevars
+if(_moreVars) then {
+  _count = count _itemInfo;
+  if (_count >= 5) {
+    _item2 = _itemInfo select 5;
+    _item2Val = missionNamespace getVariable ([_item2,0] call life_fnc_varHandle);
+  };
+  if (_count >= 6) {
+    _item3 = _itemInfo select 6;
+    _item3Val = missionNamespace getVariable ([_item3,0] call life_fnc_varHandle);
+  };
+  if (_count >= 7) {
+    _item4 = _itemInfo select 7;
+    _item3Val = missionNamespace getVariable ([_item4,0] call life_fnc_varHandle);
+  };
+};
 
-
-
-//2vars
-if(_2var) then { _oldItem2 = _itemInfo select 5; }; //set Itemname if (processing with 2 Items = true) 
 
 _hasLicense = missionNamespace getVariable (([_type,0] call life_fnc_licenseType) select 0);
 _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
-//2vars
-if(_2var) then { _oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle); }; //calculate the amount of the second Item (for example Iron)
-
-if(_2var) then { 
-       if(_oldVal !=_oldVal2) then {
-              _error = true; // True if amount of Item1 =! amount of Item 2 to prevent processing 20 FuelF with 20x oilp  and 1x iron_r)
-       };
+// True if amount of Item1 =! amount of Item 2 to prevent processing 20 FuelF with 20x oilp  and 1x iron_r)
+if (_count >= 5) {
+  if(_oldVal !=_item2Val) then {
+    _error = true; 
+  };
+};
+if (_count >= 6) {
+  if(_oldVal !=_item2Val && _oldVal !=_item3Val) then {
+    _error = true; 
+  };
+};
+if (_count >= 7) {
+  if(_oldVal !=_item2Val && _oldVal !=_item3Val %% _oldVal != _item4Val) then {
+    _error = true;
+  };
 };
 if(_error) exitWith{hint "please use equal amounts"};
 
@@ -103,11 +122,18 @@ if(player distance _vendor > 10) exitWith {};
 
 if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process.."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 
-//2vars
-if(_2var) then 
-{
-([false,_oldItem2,_oldVal2] call life_fnc_handleInv); //delete the second items (for example Iron)
+//Delete additional items
+if (_count >= 5) {
+  ([false,_item2,_item2Val] call life_fnc_handleInv);
 };
+if (_count >= 6) {
+  ([false,_item3,_item3Val] call life_fnc_handleInv);
+};
+if (_count >= 7) {
+  ([false,_item4,_item4Val] call life_fnc_handleInv);
+};
+
+
 if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
 if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};
 5 cutText ["","PLAIN"];
@@ -132,13 +158,8 @@ if(player distance _vendor > 10) exitWith {};
 
 
 if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-
 if(life_cash < _cost) exitWith {hint format["You need $%1 to process  without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-//2vars
-if(_2var) then 
-{
-([false,_oldItem2,_oldVal2] call life_fnc_handleInv); //delete the second items (for example Iron)
-};
+
 
 if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};
 if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; [true,_oldItem,_oldVal] call life_fnc_handleInv; life_is_processing = false;};

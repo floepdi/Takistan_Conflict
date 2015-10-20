@@ -3974,6 +3974,71 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Italian>Striscia Chiodata</Italian>
 			<Portuguese>Spike Strip</Portuguese>
 		</Key>
+
+		<Key ID="STR_Item_Explosive">
+			<Original>Explosives</Original>
+			<English>Explosives</English>
+			<German>Sprengstoff</German>
+			<French>Explosifs</French>
+			<Italian>Esplosivi</Italian>
+			<Portuguese>Explosivos</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Gunpowder">
+			<Original>Gunpowder</Original>
+			<English>Gunpowder</English>
+			<German>Schwarzpulver</German>
+			<French>Poudre à Canon</French>
+			<Italian>Polvere da sparo</Italian>
+			<Portuguese>Pólvora</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Flask">
+			<Original>Flask</Original>
+			<English>Flask</English>
+			<German>Kolben</German>
+			<French>Ballon</French>
+			<Italian>Pallone</Italian>
+			<Portuguese>Balão</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Nitroglycerin">
+			<Original>Nitroglycerin</Original>
+			<English>Nitroglycerin</English>
+			<German>Nitroglyzerin</German>
+			<French>Nitroglycérine</French>
+			<Italian>Nitroglicerina</Italian>
+			<Portuguese>Nitroglicerina</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Potassiumnitrate">
+			<Original>Potassiumnitrate</Original>
+			<English>Potassiumnitrate</English>
+			<German>Kaliumnitrat</German>
+			<French>Nitrate de potassium</French>
+			<Italian>Nitrato di potassio</Italian>
+			<Portuguese>Nitrato de potássio</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Nitre">
+			<Original>Saltpeter</Original>
+			<English>Saltpeter</English>
+			<German>Salpeter</German>
+			<French>Salpêtre</French>
+			<Italian>Salnitro</Italian>
+			<Portuguese>Salitre</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SulfurP">
+			<Original>Sulfurpowder</Original>
+			<English>Sulfurpowder</English>
+			<German>Schwefelpulver</German>
+			<French>Soufre en poudre</French>
+			<Italian>Polvere di zolfo</Italian>
+			<Portuguese>Enxofre em pó</Portuguese>
+		</Key>
+		<Key ID="STR_Item_SulfurU">
+			<Original>Sulfur ore</Original>
+			<English>Sulfur ore</English>
+			<German>Schwefel-Erz</German>
+			<French>Soufre en poudre</French>
+			<Italian>Lo zolfo minerale</Italian>
+			<Portuguese>Minério de enxofre</Portuguese>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -4207,10 +4272,47 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<Original>Home Owners License</Original>
 			<English>Home Owners License</English>
 			<German>Eigentumsurkunde</German>
-			<French>Droit de Propriété</French>
+			<French>Traitement de soufre</French>
 			<Italian>Licenza possesso Casa</Italian>
 			<Portuguese>Licença de Casas</Portuguese>
 		</Key>
+
+		<Key ID="STR_License_Sulfur">
+			<Original>Sulfur Processing</Original>
+			<English>Sulfur Processing</English>
+			<German>Sulfurverarbeitung</German>
+			<French>Droit de Propriété</French>
+			<Italian>Elaborazione di zolfo</Italian>
+			<Portuguese>Processamento de enxofre</Portuguese>
+		</Key>
+
+		<Key ID="STR_License_Nitre">
+			<Original>Nitric processing</Original>
+			<English>Nitric processing</English>
+			<German>Salpeterverarbeitunge</German>
+			<French>Traitement nitrique</French>
+			<Italian>Nitrico elaborazione</Italian>
+			<Portuguese>Processamento de azoto nítrico</Portuguese>
+		</Key>
+
+		<Key ID="STR_License_Gunpowder">
+			<Original>Gunpowder processing</Original>
+			<English>Gunpowder processing</English>
+			<German>Schwarzpulververarbeitung</German>
+			<French>Traitement de la poudre noire</French>
+			<Italian>Elaborazione di polvere nera</Italian>
+			<Portuguese>Processamento de pó preto</Portuguese>
+		</Key>
+
+		<Key ID="STR_License_Explosive">
+			<Original>Explosives processing</Original>
+			<English>Explosives processing</English>
+			<German>Sprengstoffherstellung</German>
+			<French>Explosifs de traitement</French>
+			<Italian>Esplosivi di elaborazione</Italian>
+			<Portuguese>Processamento de explosivos</Portuguese>
+		</Key>
+
 	</Package>
 	<Package name="More_Item_Strings">
 		<Key ID="STR_ISTR_Blast_VaultOnly">
@@ -4511,14 +4613,14 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		</Key>
 	</Package>
 		<Package name="Process_Action">
-		<Key ID="STR_Process_Oil">
+			<Key ID="STR_Process_Oil">
 			<Original>Processing Oil</Original>
 			<English>Processing Oil</English>
 			<German>Öl wird verarbeite</German>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
-		</Key>
+			</Key>
 
 
 
@@ -4530,7 +4632,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
-		</Key>
+			</Key>
 
 			<Key ID="STR_Process_Bier">
 			<Original>Beer Steel</Original>
@@ -4539,7 +4641,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
-		</Key>
+			</Key>
 
 			<Key ID="STR_Process_Schnaps">
 			<Original>Processing Schnaps</Original>
@@ -4548,16 +4650,16 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
-		</Key>
+			</Key>
 
-					<Key ID="STR_Process_Pilze">
+			<Key ID="STR_Process_Pilze">
 			<Original>Processing Pilze</Original>
 			<English>Processing Pilze</English>
 			<German>Pilze werden verarbeitet</German>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
-		</Key>
+			</Key>
 
 
 			<Key ID="STR_Process_Bluesyn">
@@ -4567,131 +4669,179 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
-		</Key>
+			</Key>
 
 
-		<Key ID="STR_Process_Diamond">
+			<Key ID="STR_Process_Diamond">
 			<Original>Cutting Diamonds</Original>
 			<English>Cutting Diamonds</English>
 			<German>Diamanten werden geschliffen</German>
 			<French>Taillage de diamant</French>
 			<Italian>Raffinando diamanti</Italian>
 			<Portuguese>Lapidando Diamante</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Heroin">
+			</Key>
+
+			<Key ID="STR_Process_Heroin">
 			<Original>Processing Heroin</Original>
 			<English>Processing Heroin</English>
 			<German>Schlafmohn wird verarbeitet</German>
 			<French>Traitement d'Heroine</French>
 			<Italian>Processando Eroina</Italian>
 			<Portuguese>Processando Heroina</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Copper">
+			</Key>
+
+			<Key ID="STR_Process_Copper">
 			<Original>Processing Copper</Original>
 			<English>Processing Copper</English>
 			<German>Kupfer wird verarbeitet</German>
 			<French>Fonte de Cuivre</French>
 			<Italian>Processando Rame</Italian>
 			<Portuguese>Processando Bronze</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Coal">
+			</Key>
+
+			<Key ID="STR_Process_Coal">
 			<Original>Processing Coal</Original>
 			<English>Processing Coal</English>
 			<German>Kohle wird verarbeitet</German>
 			<French>Fonte de Cuivre</French>
 			<Italian>Processando Rame</Italian>
 			<Portuguese>Processando Bronze</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Iron">
+			</Key>
+
+			<Key ID="STR_Process_Iron">
 			<Original>Processing Iron</Original>
 			<English>Processing Iron</English>
 			<German>Eisen wird verarbeitet</German>
 			<French>Fonte de fer</French>
 			<Italian>Processando Ferro</Italian>
 			<Portuguese>Processando Ferro</Portuguese>
-		</Key>
+			</Key>
 
-		<Key ID="STR_Process_Plastic">
+			<Key ID="STR_Process_Plastic">
 			<Original>Processing Plastic</Original>
 			<English>Processing Plastic</English>
 			<German>Plastik wird verarbeitet</German>
 			<French>Fonte de fer</French>
 			<Italian>Processando Ferro</Italian>
 			<Portuguese>Processando Ferro</Portuguese>
-		</Key>
+			</Key>
 
-		<Key ID="STR_Process_Sand">
+			<Key ID="STR_Process_Sand">
 			<Original>Processing Sand</Original>
 			<English>Processing Sand</English>
 			<German>Sand wird verarbeitet</German>
 			<French>Fonte du Sable</French>
 			<Italian>Processando Sabbia</Italian>
 			<Portuguese>Processando Areia</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Salt">
+			</Key>
+
+			<Key ID="STR_Process_Salt">
 			<Original>Processing Salt</Original>
 			<English>Processing Salt</English>
 			<German>Salz wird verarbeitet</German>
 			<French>Traitement du Sel</French>
 			<Italian>Processando Sale</Italian>
 			<Portuguese>Refinando Sal</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Cocaine">
+			</Key>
+
+			<Key ID="STR_Process_Cocaine">
 			<Original>Processing Cocain</Original>
 			<English>Processing Cocain</English>
 			<German>Cocablätter werden verarbeitet</German>
 			<French>Traitement de Cocaine</French>
 			<Italian>Processando Cocaina</Italian>
 			<Portuguese>Processando Cocaina</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Marijuana">
+			</Key>
+
+			<Key ID="STR_Process_Marijuana">
 			<Original>Processing Marijuana</Original>
 			<English>Processing Marijuana</English>
 			<German>Marihuana wird verarbeitet</German>
 			<French>Traitement de Marijuana</French>
 			<Italian>Processando Marijuana</Italian>
 			<Portuguese>Processando Erva</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Cement">
+			</Key>
+
+			<Key ID="STR_Process_Cement">
 			<Original>Mixing Cement</Original>
 			<English>Mixing Cement</English>
 			<German>Zement wird gemischt</German>
 			<French>Mélange de ciment</French>
 			<Italian>Processando Cemento</Italian>
 			<Portuguese>Misturando Cimento</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Stay">
+			</Key>
+
+			<Key ID="STR_Process_Sulfur">
+			<Original>Pulverize Sulfur</Original>
+			<English>Pulverize Sulfur</English>
+			<German>Schwefel wird verfeinert</German>
+			<French>pulvériser soufre</French>
+			<Italian>Processando Cemento</Italian>
+			<Portuguese>Pulverize Sulfur</Portuguese>
+			</Key>
+
+			<Key ID="STR_Process_Nitre">
+			<Original>Produce Potassiumnitrate</Original>
+			<English>Produce Potassiumnitrate</English>
+			<German>Kaliumnitrat wird hergestellt</German>
+			<French>Produce Potassiumnitrate</French>
+			<Italian>Produce Potassiumnitrate</Italian>
+			<Portuguese>Produce Potassiumnitrate</Portuguese>
+			</Key>
+
+			<Key ID="STR_Process_Gunpowder">
+			<Original>Mix Gunpowder</Original>
+			<English>Mix Gunpowder</English>
+			<German>Schwarzpulver mischen</German>
+			<French>Mix Gunpowder</French>
+			<Italian>Mix Gunpowder</Italian>
+			<Portuguese>Mix Gunpowder</Portuguese>
+			</Key>
+
+			<Key ID="STR_Process_Explosive">
+			<Original>Manufacture Explosives</Original>
+			<English>Manufacture Explosives</English>
+			<German>Sprengstoff herstellen</German>
+			<French>Manufacture Explosives</French>
+			<Italian>Manufacture Explosives</Italian>
+			<Portuguese>Manufacture Explosives</Portuguese>
+			</Key>
+
+			<Key ID="STR_Process_Stay">
 			<Original>You need to stay within 10m to process.</Original>
 			<English>You need to stay within 10m to process.</English>
 			<German>Du musst innerhalb von 10m bleiben, um verarbeiten zu können.</German>
 			<French>Vous devez rester à 10m pour traiter</French>
 			<Italian>Devi stare entro 10m per processare.</Italian>
 			<Portuguese>Você precisa ficar a menos de 10m para processar.</Portuguese>
-		</Key>
-		<Key ID="STR_Process_License">
+			</Key>
+
+			<Key ID="STR_Process_License">
 			<Original>You need $%1 to process without a license!</Original>
 			<English>You need $%1 to process without a license!</English>
 			<German>Du brauchst $%1, um ohne eine Lizenz verarbeiten zu können!</German>
 			<French>Vous devez $1% pour traiter sans permis!</French>
 			<Italian>Hai bisogno di €%1 per processare senza la dovuta licenza!</Italian>
 			<Portuguese>Você precisa de R$%1 para processar sem licença!</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Processed">
+			</Key>
+
+			<Key ID="STR_Process_Processed">
 			<Original>You have processed %1 into %2</Original>
 			<English>You have processed %1 into %2</English>
 			<German>Du hast %1 in %2 verarbeitet</German>
 			<French>Vous avez traité %1 en %2</French>
 			<Italian>Hai processato %1 in %2</Italian>
 			<Portuguese>Você trasformou %1 em %2</Portuguese>
-		</Key>
-		<Key ID="STR_Process_Processed2">
+			</Key>
+
+			<Key ID="STR_Process_Processed2">
 			<Original>You have processed %1 into %2 for $%3</Original>
 			<English>You have processed %1 into %2 for $%3</English>
 			<German>Du hast %1 für $%3 in %2 verarbeitet</German>
 			<French>Vous avez traité %1 en %2 pour $3%</French>
 			<Italian>Hai processato %1 in %2 al costo di €%3</Italian>
 			<Portuguese>Você trasformou %1 em %2 por R$%3</Portuguese>
-		</Key>
+			</Key>
 	</Package>
 	<Package name="Gather_Items">
 		<Key ID="STR_Gather_Apples">

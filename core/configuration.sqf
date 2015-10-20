@@ -252,7 +252,15 @@ life_inv_items =
     "life_inv_goldbarren",
     "life_inv_depotwaffen",
     "life_inv_information",
-    "life_inv_abhoergeraet"
+    "life_inv_abhoergeraet",
+    "life_inv_sulfuru",
+    "life_inv_sulfurp",
+    "life_inv_nitre",
+    "life_inv_potassiumnitrate",
+    "life_inv_gunpowder",
+    "life_inv_nitroglycerin",
+    "life_inv_flask",
+    "life_inv_explosive"
 ];
 
 
@@ -295,7 +303,11 @@ life_licenses =
     ["license_civ_schnaps","civ"],
     ["license_civ_pilze","civ"],
     ["license_civ_gold","civ"],
-    ["license_civ_carbomb","civ"]
+    ["license_civ_carbomb","civ"],
+    ["license_civ_sulfur","civ"],
+    ["license_civ_nitre","civ"],
+    ["license_civ_gunpowder","civ"],
+    ["license_civ_explosive","civ"]
     ];
 
 //Setup License Variables
@@ -367,7 +379,14 @@ life_illegal_items =
         ["golderz",2500],
         ["goldbarren",5000],
         ["infomation",10000],
-        ["abhoergeraet",10000]
+        ["abhoergeraet",10000],
+        ["sulfuru",1500],
+        ["sulfurp",3500],
+        ["nitre",1600],
+        ["potassiumnitrate",1500],
+        ["gunpowder",5000],
+        ["nitroglycerin",7500],
+        ["explosive", 12000]
         ];
 
 
@@ -447,7 +466,14 @@ sell_array =
     ["sniperkiste",0],
     ["golderz",2500],
     ["goldbarren",5000],
-    ["infomation",5000]
+    ["infomation",5000],
+    ["sulfuru",200],
+    ["sulfurp", 2200],
+    ["nitre", 150],
+    ["potassiumnitrate", 2000],
+    ["nitroglycerin", 5000],
+    ["gunpowder", 5000],
+    ["explosive", 20000]
 ];};
 //__CONST__(sell_array,sell_array);
 
@@ -455,7 +481,7 @@ buy_array =
 {[
     ["apple",150],
     ["rabbit",75],
-
+    ["coalp", 50],
     ["salema",55],
     ["ornate",50],
     ["mackerel",200],

@@ -54,6 +54,10 @@ switch (_mode) do
 			case "coal": {_var = "license_civ_coal"};
 			case "gold": {_var = "license_civ_gold"};
 			case "carbomb" : {_var = "license_civ_carbomb"};
+			case "sulfur": {_var = "license_civ_sulfur"};
+			case "nitre": {_var = "license_civ_nitre"};
+			case "gunpowder": {_var = "license_civ_gunpowder"};
+			case "explosive": {_var = "license_civ_explosive"};
 			default {_var = ""};
 		};
 	};
@@ -97,7 +101,11 @@ switch (_mode) do
 			case "license_civ_schnaps": {_var = "schnaps"};
 			case "license_civ_pilze": {_var = "pilze"};
 			case "license_civ_gold": {_var = "gold"}; //Gold processing license cost
-			case "license_civ_carbomb": {_var ="carbomb"};
+			case "license_civ_carbomb": {_var = "carbomb"};
+			case "license_civ_sulfur": {_var = "sulfur"};
+			case "license_civ_nitre": {_var = "nitre"};
+			case "license_civ_gunpowder": {_var = "gunpowder"};
+			case "license_civ_explosive": {_var = "explosive"};
 			default {_var = ""};
 		};
 	};

@@ -47,4 +47,8 @@ switch (_type) do
 	case "pilze": {25000};
 	case "gold": {100000};
 	case "drone": {10000}; //Drohnen Lehrgang
+	case "sulfur": {75000};
+	case "nitre": {75000};
+	case "gunpowder": {125000};
+	case "explosive": {250000};
 };

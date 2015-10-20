@@ -39,8 +39,8 @@ switch (_item) do
     case "pickaxe": {2};
     case "copperore": {4};
     case "ironore": {5};
-    case "coalu": {2};
-    case "coalp": {1};
+    case "coalu": {3};
+    case "coalp": {3};
     case "steel": {4};
     case "strahler": {2};
     case "barrier": {2};
@@ -106,5 +106,13 @@ switch (_item) do
     case "depotwaffen": {10};
     case "information": {3};
     case "abhoergeraet": {20};
+    case "sulfuru": {3};
+    case "sulfurp": {3};
+    case "nitre": {3};
+    case "potassiumnitrate": {3};
+    case "nitroglycerin": {6};
+    case "flask": {1};
+    case "gunpowder": {6};
+    case "explosive": {10};
     default {1};
 };

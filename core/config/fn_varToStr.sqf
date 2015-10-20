@@ -110,6 +110,14 @@ switch (_var) do
     case "life_inv_depotwaffen": {"Depotwaffen"};
     case "live_inv_information": {"Information"};
     case "life_inv_abhoergeraet": {"Abhörgerät"};
+    case "life_inv_sulfuru": {(localize "STR_Item_SulfurU")};
+    case "life_inv_sulfurp": {(localize "STR_Item_SulfurP")};
+    case "life_inv_nitre": {(localize "STR_Item_Nitre")};
+    case "life_inv_potassiumnitrate": {(localize "STR_Item_Potassiumnitrate")};
+    case "life_inv_nitroglycerin": {(localize "STR_Item_Nitroglycerin")};
+    case "life_inv_flask": {(localize "STR_Item_Flask")};
+    case "life_inv_gunpowder":{(localize "STR_Item_Gunpowder")};
+    case "life_inv_explosive": {(localize "STR_Item_Explosive")};
 
 
 
@@ -172,4 +180,8 @@ switch (_var) do
     case "license_civ_gold" : {"Goldschmelze"};
     case "license_civ_carbomb": {"Sprengstoffausbildung"};
     case "license_cop_uncarbomb" : {"Entschärfungsausbildung"};
+    case "license_civ_sulfur": {(localize "STR_License_Sulfur")};
+    case "license_civ_nitre": {(localize "STR_License_Nitre")};
+    case "license_civ_gunpowder": {(localize "STR_License_Gunpowder")};
+    case "license_civ_explosive": {(localize "STR_License_Explosive")};
 };

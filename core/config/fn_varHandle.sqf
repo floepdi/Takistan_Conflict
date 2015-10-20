@@ -114,6 +114,15 @@ switch (_mode) do
             case "depotwaffen": {"life_inv_depotwaffen"};
             case "information": {"life_inv_information"};
             case "abhoergeraet": {"life_inv_abhoergeraet"};
+            case "sulfuru": {"life_inv_sulfuru"};
+            case "sulfurp": {"life_inv_sulfurp"};
+            case "nitre": {"life_inv_nitre"};
+            case "potassiumnitrate": {"life_inv_potassiumnitrate"};
+            case "nitre": {"life_inv_nitre"};
+            case "nitroglycerin": {"life_inv_nitroglycerin"};
+            case "flask": {"life_inv_flask"};
+            case "gunpowder": {"life_inv_gunpowder"};
+            case "explosive": {"life_inv_explosive"};
         };
     };
 
@@ -219,6 +228,14 @@ switch (_mode) do
             case "life_inv_depotwaffen": {"depotwaffen"};
             case "live_inv_information": {"information"};
             case "life_inv_abhoergeraet": {"abhoergeraet"};
+            case "life_inv_sulfuru": {"sulfuru"};
+            case "life_inv_sulfurp": {"sulfurp"};
+            case "life_inv_nitre": {"nitre"};
+            case "life_inv_potassiumnitrate": {"potassiumnitrate"};
+            case "life_inv_nitroglycerin": {"nitroglycerin"};
+            case "life_inv_flask": {"flask"};
+            case "life_inv_gunpowder":{"gunpowder"};
+            case "life_inv_explosive": {"explosive"};
         };
     };
 };
