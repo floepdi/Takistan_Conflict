@@ -282,48 +282,91 @@ case "civ_car":
 	
 case "level_car":
 	{
-		if(call life_fnc_getLevel >= 100) then
-		{
-		_return pushBack
-		["B_G_Offroad_01_F",10000];
-		_return pushBack
-		["rhs_gaz66_vmf",15000];
+		if(life_level >= 1){
+			_return pushBack ["RDS_Lada_Civ_01",5000];
 		};
-		
-		if(call life_fnc_getLevel >= 200) then
-		{
-		_return pushBack
-		["Tal_Wrangler_Black",20000];
-		_return pushBack
-		["Tal_Wrangler_Pink",20000];
-		_return pushBack
-		["Tal_Wrangler_Blue",20000];
-		_return pushBack
-		["Tal_Wrangler_Grey",20000];
+		if(life_level >= 2){
+			_return pushBack ["RDS_S1203_Civ_01",6000];
 		};
-	
-		if(call life_fnc_getLevel >= 300) then
-		{
-		_return pushBack
-		["I_mas_cars_UAZ_MG",30000];
-		_return pushBack
-		["isc_is_hilux_MG_o",50000];
+		if(life_level >= 4){
+			_return pushBack ["RDS_Gaz24_Civ_01",7000];
 		};
-		
-		if(call life_fnc_getLevel >= 400) then
-		{
-		_return pushBack
-		["rhs_tigr_vv",50000];
+		if(life_level >= 5){
+			_return pushBack ["rhs_uaz_open_MSV_01",8000];
 		};
-		
-		if(call life_fnc_getLevel >= 500) then
-		{
-		_return pushBack
-		["I_mas_cars_UAZ_M2",75000];
-		//_return pushBack
-		//["isc_is_hilux_AGS30_o",100000];
+		if(life_level >= 6){
+			_return pushBack ["C_Van_01_transport_F",9000];
 		};
-		
+		if(life_level >= 7){
+			_return pushBack ["UAZ_Unarmed",10000];
+		};
+		if(life_level >= 8){
+			_return pushBack ["RDS_Octavia_Civ_01",12000];
+		};
+		if(life_level >= 9){
+			_return pushBack ["C_Quadbike_01_F",2000];
+		};
+		if(life_level >= 10){
+			_return pushBack ["RDS_Ikarus_Civ_01",10000];
+		};
+		if(life_level >= 13){
+			_return pushBack ["B_mas_cars_Hilux_Unarmed",20000];
+		};
+		if(life_level >= 15){
+			_return pushBack ["B_mas_cars_LR_Unarmed",22000];
+		};
+		if(life_level >= 16){
+			_return pushBack ["rhs_gaz66_ammo_vmf",35000];
+			_return pushBack ["rhs_gaz66_vmf",25000];
+		};
+		if(life_level >= 18){
+			_return pushBack ["I_mas_cars_UAZ_M2",50000];
+		};
+		if(life_level >= 19){
+			_return pushBack ["B_mas_cars_Hilux_M2",50000];
+		};
+		if(life_level >= 20){
+			_return pushBack ["I_mas_cars_LR_soft_M2",50000];
+		};
+		if(life_level >= 21){
+			_return pushBack ["I_mas_cars_UAZ_MG",50000];
+		};
+		if(life_level >= 23){
+			_return pushBack ["B_mas_cars_Hilux_MG",50000];
+		};
+		if(life_level >= 25){
+			_return pushBack ["RHS_Ural_Open_Civ_01",45000];
+		};
+		if(life_level >= 27){
+			_return pushBack ["RHS_Ural_Fuel_MSV_01",50000];
+		};
+		if(life_level >= 29){
+			_return pushBack ["B_G_Offroad_01_armed_F",50000];
+		};
+		if(life_level >= 30){
+			_return pushBack ["rhs_tigr_vdv",50000];
+		};
+		if(life_level >= 33){
+			_return pushBack ["C_Hatchback_01_F",50000];
+		};
+		if(life_level >= 36){
+			_return pushBack ["C_SUV_01_F",50000];
+		};
+		if(life_level >= 40){
+			_return pushBack ["I_mas_cars_UAZ_SPG9",50000];
+		};
+		if(life_level >= 42){
+			_return pushBack ["B_mas_cars_Hilux_SPG9",50000];
+		};
+		if(life_level >= 44){
+			_return pushBack ["O_MRAP_02_F",50000];
+		};
+		if(life_level >= 47){
+			_return pushBack ["B_Truck_01_ammo_F",50000];
+		};
+		if(life_level >= 49){
+			_return pushBack ["I_mas_MI8",50000];
+		};
 	};	
 
 	
