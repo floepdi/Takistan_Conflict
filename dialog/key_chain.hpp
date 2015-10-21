@@ -58,7 +58,15 @@ class Life_key_management {
 			h = (1 / 25);
 		};
 		
-			
+		class NearPlayers : Life_RscCombo {
+		
+		idc = 2702;
+		
+		x = 0.26; y = 0.645;
+		w = 0.275; h = 0.03;
+		
+		};
+		
 		class DropKey : life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Keys_DropKey";
@@ -77,28 +85,6 @@ class Life_key_management {
 			x = 0.32;
 			y = 0.69;
 			w = (6.25 / 40);
-			h = (1 / 25);
-		};
-
-	class GiveGangKey : Life_RscButtonMenu {
-			idc = 2703;
-			text = "Gangschlüssel geben";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call life_fnc_keyGiveGang";
-			x = 0.10;
-			y = 0.69;
-			w = (8.25 / 40);
-			h = (1 / 25);
-		};
-		
-		class TakeGangKey : Life_RscButtonMenu {
-			idc = 2703;
-			text = "Gangschlüssel entziehen";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
-			onButtonClick = "[] call life_fnc_keyTakeGang";
-			x = 0.48;
-			y = 0.69;
-			w = (8.25 / 40);
 			h = (1 / 25);
 		};
 	};

@@ -19,6 +19,7 @@ case "quest": {_profName = "Quest_Prof"; };
 case "questinfo": {_profName = "QuestInfo_Prof"; };
 case "payday": {_profName = "Payday_Prof"; };
 case "paytime": {_profName = "Paytime_Prof"; };
+case "abzeichen": {_profName = "Abzeichen_Prof"; };
 /*
 case "mafia": { _profName = "Mafia_Prof";};
 case "heroin": {_profName = "Heroin_Prof"; };
@@ -52,6 +53,7 @@ case "Quest_Prof": { _profName = "quest";};
 case "QuestInfo_Prof": { _profName = "questinfo";};
 case "Payday_Prof": {_profName = "payday";};
 case "Paytime_Prof": {_profName = "paytime";};
+case "Abzeichen_Prof": {_profName = "abzeichen";};
 /*
 case "Mafia_Prof": {_profName = "Mafia"; };
 case "Heroin_Prof": {_profName = "Heroin"; };

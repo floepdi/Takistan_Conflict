@@ -22,7 +22,7 @@ if(life_is_arrested) then
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
 };
 
-{_x setMarkerAlphaLocal 0} foreach ["target","target_1","target_2","target_3","target_4","target_5","target_6","target_7","Checkpoint Alpha","Checkpoint Beta","Checkpoint Charlie","Checkpoint Delta","Checkpoint Echo","Bootcamp"];
+{_x setMarkerAlphaLocal 0} foreach ["target","target_1","target_2","target_3","target_4","target_5","target_6","target_7","Checkpoint Alpha","Checkpoint Bravo","Checkpoint Charlie","Checkpoint Delta","Checkpoint Echo","Bootcamp","Sniper"];
 
 player addRating 9999999;
 

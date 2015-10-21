@@ -1,6 +1,6 @@
-class life_weapon_shop
+class life_weapon_shop_abzeichen
 {
-	idd = 38400;
+	idd = 88400;
 	movingEnabled = false;
 	enableSimulation = true;
 	
@@ -25,7 +25,7 @@ class life_weapon_shop
 		class Title : Life_RscTitle
 		{
 			colorBackground[] = {0,0,0,0};
-			idc = 38401;
+			idc = 88401;
 			text = "";
 			x = 0.1; y = 0.2;
 			w = 0.32; h = (1 / 25);
@@ -33,7 +33,7 @@ class life_weapon_shop
 		
 		class itemInfo : Life_RscStructuredText
 		{
-			idc = 38404;
+			idc = 88404;
 			text = "";
 			sizeEx = 0.035;
 			x = 0.11; y = 0.68;
@@ -42,7 +42,7 @@ class life_weapon_shop
 		
 		class FilterList : Life_RscCombo
 		{
-			idc = 38402;
+			idc = 88402;
 			onLBSelChanged = "_this call life_fnc_weaponShopFilter";
 			x = 0.11; y = 0.64;
 			w = 0.3; h = 0.035;
@@ -53,7 +53,7 @@ class life_weapon_shop
 	{
 		class itemList : Life_RscListBox
 		{
-			idc = 38403;
+			idc = 88403;
 			onLBSelChanged = "_this call life_fnc_weaponShopSelection";
 			sizeEx = 0.035;
 			x = 0.11; y = 0.25;
@@ -62,7 +62,7 @@ class life_weapon_shop
 		
 		class ButtonBuySell : Life_RscButtonMenu
 		{
-			idc = 38405;
+			idc = 39405;
 			text = "$STR_Global_Buy";
 			onButtonClick = "[] spawn life_fnc_weaponShopBuySell_Abzeichen; true";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));

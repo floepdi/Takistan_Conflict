@@ -85,6 +85,10 @@ _level50 = 1618500;
 	_profLevel = _data select 0;
 	_profExp = _data select 1;
 
+if (_profText == "abzeichen") then {
+
+  life_abzeichen = _profExp;
+};
 
 if (_profText == "paytime") then {
 

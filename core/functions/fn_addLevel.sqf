@@ -23,6 +23,22 @@ _nextLevel = _nextLevel - _nextLevel2;
 _nextLevel3 = 20 * _level;
 _nextLevel = _nextLevel + _nextLevel3 + 200;
 
+if(_type == "Abzeichen_Prof") then
+{
+
+	if(_vorzeichen == 1) then
+	{
+		 _exp = _exp + _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+
+	if(_vorzeichen == 0) then
+	{
+		_exp = _exp - _amount;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+};
+
 
 if(_type == "Payday_Prof") then
 {

@@ -8,7 +8,7 @@ disabledAI = true;
 disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
-// LoadScreen = "textures\loadScreen_ca.jpg";
+// LoadScreen = "@SG_TEXTURES\Textures\Mission\loadScreen_ca.jpg";
 
 class Header
 {
@@ -44,14 +44,14 @@ class CfgSounds
 	class welcome
 	{
     name = "welcome";
-    sound[] = {"\sounds\welcome.ogg", 0.5, 1};
+    sound[] = {"@SG_SOUNDS\Sounds\Mission\welcome.ogg", 0.5, 1};
     titles[] = {};
 	};
 
 		class welcomeblue
 	{
     name = "welcomeblue";
-    sound[] = {"\sounds\welcomeblue.ogg", 0.5, 1};
+    sound[] = {"@SG_SOUNDS\Sounds\Mission\welcomeblue.ogg", 0.5, 1};
     titles[] = {};
 	};
 
@@ -59,66 +59,202 @@ class CfgSounds
 	class tazersound
 	{
 		name = "Tazersound";
-		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
 
 	class flashbang
 	{
 		name = "flashbang";
-		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\flashbang.ogg", 1.0, 1};
 		titles[] = {};
 	};
 
 
 	class TicketPolizei {
 		name = "TicketPolizei";
-		sound[] = {"\sounds\TicketPolizei.ogg", 0.95, 0.95};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\TicketPolizei.ogg", 0.95, 0.95};
 		titles[] = {};
 	};
 
 	class Cuff {
 		name = "cuff";
-		sound[] = {"\sounds\cuff.ogg", 0.95, 0.95};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\cuff.ogg", 0.95, 0.95};
 		titles[] = {};
 	};
 		class unlock
 	{
 		name = "unlock";
-		sound[] = {"\sounds\unlock.ogg", 0.5, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\unlock.ogg", 0.5, 1};
 		titles[] = {};
 	};
 
 		class car_alarm
 	{
 		name = "car_alarm";
-		sound[] = {"\sounds\caralarm.ogg", 0.5, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\caralarm.ogg", 0.5, 1};
 		titles[] = {};
 	};
 
 	class SireneTanke
 	{
 		name = "SireneTanke";
-		sound[] = {"\sounds\SireneTanke.ogg", 0.5, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\SireneTanke.ogg", 0.5, 1};
 		titles[] = {};
 	};
 
 	class Schlag
 	{
 		name = "Schlag";
-		sound[] = {"\sounds\Schlag.ogg", 0.7, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\Schlag.ogg", 0.7, 1};
 		titles[] = {};
 	};
 		class car_lock
 	{
 		name = "car_lock";
-		sound[] = {"\sounds\car_lock.ogg", 0.7, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\car_lock.ogg", 0.7, 1};
 		titles[] = {};
 	};
 		class peep
 	{
 		name = "peep";
-		sound[] = {"\sounds\peep.ogg", 0.7, 1};
+		sound[] = {"@SG_SOUNDS\Sounds\Mission\peep.ogg", 0.7, 1};
+		titles[] = {};
+	};
+
+//transportsounds
+
+	class transport_1_1_0
+	{
+		name = "transport_1_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_1_1
+	{
+		name = "transport_1_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_2_0
+	{
+		name = "transport_1_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_2_1
+	{
+		name = "transport_1_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_3_0
+	{
+		name = "transport_1_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_1_3_1
+	{
+		name = "transport_1_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_1_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_1_0
+	{
+		name = "transport_2_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_1_1
+	{
+		name = "transport_2_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_2_0
+	{
+		name = "transport_2_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_2_1
+	{
+		name = "transport_2_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+
+	class transport_2_3_0
+	{
+		name = "transport_2_3_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_3_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_2_3_1
+	{
+		name = "transport_2_3_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_2_3_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_1_0
+	{
+		name = "transport_3_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_1_1
+	{
+		name = "transport_3_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_1_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_2_0
+	{
+		name = "transport_3_2_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_2_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_2_1
+	{
+		name = "transport_3_2_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_2_1.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_3_2_2
+	{
+		name = "transport_3_2_2";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_3_2_2.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_4_1_0
+	{
+		name = "transport_4_1_0";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_4_1_0.ogg", 1, 1};
+		titles[] = {};
+	};
+
+	class transport_4_1_1
+	{
+		name = "transport_4_1_1";
+		sound[] = {"@SG_SOUNDS\Sounds\Transport\transport_4_1_1.ogg", 1, 1};
 		titles[] = {};
 	};
 };
@@ -207,7 +343,7 @@ class CfgNotifications
 	class TextMessage
 	{
 		title = "Received A Text Message";
-		iconPicture = "icons\messagenew.paa";
+		iconPicture = "@SG_TEXTURES\Icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
 		priority = 6;
@@ -216,7 +352,7 @@ class CfgNotifications
 	class PoliceDispatch
 	{
 		title = "911 Dispatch Center";
-		iconPicture = "icons\messagepolice.paa";
+		iconPicture = "@SG_TEXTURES\Icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
 		priority = 6;
@@ -225,7 +361,7 @@ class CfgNotifications
 	class AdminDispatch
 	{
 		title = "Admin Dispatch Center";
-		iconPicture = "icons\messageadmin.paa";
+		iconPicture = "@SG_TEXTURES\Icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
 		priority = 6;
@@ -234,7 +370,7 @@ class CfgNotifications
 	class AdminMessage
 	{
 		title = "Admin Message";
-		iconPicture = "icons\messageadmin.paa";
+		iconPicture = "@SG_TEXTURES\Icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
 		priority = 5;

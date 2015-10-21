@@ -19,16 +19,13 @@ _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 
-_data = missionNamespace getVariable ("Level_Prof");
-_level = _data select 1;
-_level = [] call life_fnc_getLevel;
+[] call life_fnc_profSetup;
 
 //_data = missionNamespace getVariable ("Mafia_Prof");
 //_mafia = _data select 0;
 
 switch(_shop) do
 {
-
     case "army_equipment":
     {
         switch(true) do
@@ -1167,175 +1164,1173 @@ case "lagerfight":
         };
     };
 
-
-//Warlord Level 10
-case "level10":
+    case "civ_weapon": // SORTIEREN - 1. WAFFE - 1. MUNITION - 2. WAFFE - 2. MUNITION &&&
     {
         switch(true) do
         {
-            case (playerSide != civilian): {"Du bist kein Zivilist!"};
-            case (_level < 100): {"Dein Level ist zu niedrig!"};
-            default
-            {
-                ["Level 10",
-                    [
-                        ["arifle_mas_fal",nil,40000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+            case (playerSide != civilian): {"Finger weg, Soldat!"};
+            case ((__GETC__(life_level)) < 3): {"Hau ab, du Frischling!"};
 
-                        ["acc_flashlight",nil,500]
+            case ((__GETC__(life_level)) == 3):
+            {
+                ["Level 3 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100]
                     ]
                 ];
             };
-        };
-    };
 
-//Warlord Level 20
-case "level20":
-    {
-        switch(true) do
-        {
-            case (playerSide != civilian): {"Du bist kein Zivilist!"};
-            case (_level < 200): {"Dein Level ist zu niedrig!"};
-            default
+            case ((__GETC__(life_level)) == 4):
             {
-                ["Level 20",
+                ["Level 4 Waffenladen",
                     [
-                        ["LMG_mas_rpk_F",nil,50000],
-                        ["100Rnd_mas_545x39_T_mag",nil,1000],
-
-                        ["arifle_mas_lee",nil,50000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["arifle_mas_fal",nil,40000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["FHQ_optic_VCOG",nil,6000],
-                        ["optic_Aco",nil,5000],
-                        ["optic_ACO_grn",nil,5000]
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100]
                     ]
                 ];
             };
-        };
-    };
 
-//Warlord Level 30
-case "level30":
-    {
-        switch(true) do
-        {
-            case (playerSide != civilian): {"Du bist kein Zivilist!"};
-            case (_level < 300): {"Dein Level ist zu niedrig!"};
-            default
+            case ((__GETC__(life_level)) == 5):
             {
-                ["Level 30",
+                ["Level 5 Waffenladen",
                     [
-
-
-                        ["arifle_mas_akm",nil,75000],
-                        ["30Rnd_mas_762x39_mag",nil,5000],
-
-                        ["LMG_mas_rpk_F",nil,50000],
-                        ["100Rnd_mas_545x39_T_mag",nil,1000],
-
-                        ["arifle_mas_lee",nil,50000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["arifle_mas_fal",nil,40000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["optic_mas_PSO_day",nil,10000],
-                        ["FHQ_optic_VCOG",nil,6000],
-                        ["optic_Aco",nil,5000],
-                        ["optic_ACO_grn",nil,5000],
-                        ["NVGoggles",nil,25000]
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100]
                     ]
                 ];
             };
-        };
-    };
 
-//Warlord Level 40
-case "level40":
-    {
-        switch(true) do
-        {
-            case (playerSide != civilian): {"Du bist kein Zivilist!"};
-            case (_level < 400): {"Dein Level ist zu niedrig!"};
-            default
+            case (((__GETC__(life_level)) == 6) OR ((__GETC__(life_level)) == 7)):
             {
-                ["Level 40",
+                ["Level 6/7 Waffenladen",
                     [
-                        ["srifle_mas_m91",nil,100000],
-                        ["10Rnd_mas_762x54_mag",nil,10000],
-
-                        ["arifle_mas_akm",nil,75000],
-                        ["30Rnd_mas_762x39_mag",nil,5000],
-                        ["LMG_mas_rpk_F",nil,50000],
-                        ["100Rnd_mas_545x39_T_mag",nil,1000],
-                        ["arifle_mas_lee",nil,50000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
-                        ["arifle_mas_fal",nil,40000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["optic_mas_PSO_day",nil,10000],
-                        ["FHQ_optic_VCOG",nil,6000],
-                        ["optic_Aco",nil,5000],
-                        ["optic_ACO_grn",nil,5000],
-                        ["NVGoggles",nil,25000],
-                        ["ACE_Vector",nil,25000],
-						["ACE_Kestrel4500",nil,500]
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100]
                     ]
                 ];
             };
-        };
-    };
 
-//Warlord Level 50
-case "level50":
-    {
-        switch(true) do
-        {
-            case (playerSide != civilian): {"Du bist kein Zivilist!"};
-            case (_level < 500): {"Dein Level ist zu niedrig!"};
-            default
+            case (((__GETC__(life_level)) == 8) OR ((__GETC__(life_level)) == 9)):
             {
-                ["Level 50",
+                ["Level 8/9 Waffenladen",
                     [
-                        ["LMG_mas_pkm_F",nil,250000],
-                        ["100Rnd_mas_762x54_mag",nil,15000],
-                        ["srifle_mas_svd",nil,125000],
-                        ["10Rnd_mas_762x54_mag",nil,10000],
-                        ["srifle_mas_ksvk",nil,350000],
-                        ["5Rnd_mas_127x108_mag",nil,10000],
-                        ["mas_launch_RPG7_F",nil,500000],
-                        ["mas_PG7V",nil,50000],
-
-                        ["srifle_mas_m91",nil,100000],
-                        ["10Rnd_mas_762x54_mag",nil,10000],
-                        ["arifle_mas_akm",nil,75000],
-                        ["30Rnd_mas_762x39_mag",nil,5000],
-                        ["LMG_mas_rpk_F",nil,50000],
-                        ["100Rnd_mas_545x39_T_mag",nil,1000],
-                        ["arifle_mas_lee",nil,50000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
-                        ["arifle_mas_fal",nil,40000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
-
-                        ["optic_mas_PSO_eo",nil,25000],
-                        ["FHQ_optic_VCOG",nil,6000],
-                        ["optic_Aco",nil,5000],
-                        ["optic_ACO_grn",nil,5000],
-                        ["NVGoggles",nil,25000],
-                        ["ACE_Vector",nil,25000],
-						["ACE_Yardage450",nil,5000],
-                        ["HandGrenade_Stone","Blindmacher",5000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Kestrel4500",nil,500]
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100]
                     ]
                 ];
             };
+
+            case (((__GETC__(life_level)) == 10) OR ((__GETC__(life_level)) == 11)):
+            {
+                ["Level 10/11 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 12) OR ((__GETC__(life_level)) == 13) OR ((__GETC__(life_level)) == 14)):
+            {
+                ["Level 12/13/14 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 15) OR ((__GETC__(life_level)) == 16)):
+            {
+                ["Level 15/16 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 17) OR ((__GETC__(life_level)) == 18)):
+            {
+                ["Level 17/18 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 19):
+            {
+                ["Level 19 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 20):
+            {
+                ["Level 20 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 21) OR ((__GETC__(life_level)) == 22)):
+            {
+                ["Level 21/22 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 23) OR ((__GETC__(life_level)) == 24)):
+            {
+                ["Level 23/24 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 25) OR ((__GETC__(life_level)) == 26) OR ((__GETC__(life_level)) == 27)):
+            {
+                ["Level 25/26/27 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 28) OR ((__GETC__(life_level)) == 29)):
+            {
+                ["Level 28/29 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100]
+
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 30):
+            {
+                ["Level 30 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 31) OR ((__GETC__(life_level)) == 32)):
+            {
+                ["Level 31/32 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100]
+
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 33):
+            {
+                ["Level 33 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 34) OR ((__GETC__(life_level)) == 35)):
+            {
+                ["Level 34/35 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 36):
+            {
+                ["Level 36 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100]
+                    ]
+                ];
+            };
+
         };
     };
+    /*
+           case ((__GETC__(life_level)) == 37):
+            {
+                ["Level 37 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 38):
+            {
+                ["Level 38 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 39) OR ((__GETC__(life_level)) == 40)):
+            {
+                ["Level 39/40 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 41):
+            {
+                ["Level 41 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 42):
+            {
+                ["Level 42 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100]
+                    ]
+                ];
+            };
+
+            case (((__GETC__(life_level)) == 43) OR ((__GETC__(life_level)) == 44)):
+            {
+                ["Level 43/44 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 45):
+            {
+                ["Level 45 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_ksvk",nil,1000],
+                        ["5Rnd_mas_127x108_T_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 46):
+            {
+                ["Level 46 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_ksvk",nil,1000],
+                        ["5Rnd_mas_127x108_T_mag",nil,100],
+                        ["srifle_DMR_04_Tan_F",nil,1000],
+                        ["10Rnd_127x54_Mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 47):
+            {
+                ["Level 47 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_ksvk",nil,1000],
+                        ["5Rnd_mas_127x108_T_mag",nil,100],
+                        ["5Rnd_mas_127x108_mag",nil,100],
+                        ["srifle_DMR_04_Tan_F",nil,1000],
+                        ["10Rnd_127x54_Mag",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 48):
+            {
+                ["Level 48 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_ksvk",nil,1000],
+                        ["5Rnd_mas_127x108_T_mag",nil,100],
+                        ["5Rnd_mas_127x108_mag",nil,100],
+                        ["srifle_DMR_04_Tan_F",nil,1000],
+                        ["10Rnd_127x54_Mag",nil,100],
+                        ["LMG_mas_mg3_F",nil,1000],
+                        ["150Rnd_762x51_Box",nil,100]
+                    ]
+                ];
+            };
+
+
+            case ((__GETC__(life_level)) == 49):
+            {
+                ["Level 49 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_ksvk",nil,1000],
+                        ["5Rnd_mas_127x108_T_mag",nil,100],
+                        ["5Rnd_mas_127x108_mag",nil,100],
+                        ["5Rnd_mas_127x108_dem_mag",nil,100],
+                        ["srifle_DMR_04_Tan_F",nil,1000],
+                        ["10Rnd_127x54_Mag",nil,100],
+                        ["LMG_mas_mg3_F",nil,1000],
+                        ["150Rnd_762x51_Box",nil,100]
+                    ]
+                ];
+            };
+
+            case ((__GETC__(life_level)) == 50):
+            {
+                ["Level 50 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag",nil,100],
+                        ["rhs_rpg7_OG7V_mag",nil,100],
+                        ["rhs_rpg7_PG7VR_mag",nil,100],
+                        ["rhs_rpg7_TBG7V_mag",nil,100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
+                        ["srifle_DMR_06_olive_F",nil,1000],
+                        ["20Rnd_762x51_Mag",nil,100],
+                        ["LMG_mas_m72_F",nil,1000],
+                        ["100Rnd_mas_762x39_mag",nil,100],
+                        ["srifle_mas_ksvk",nil,1000],
+                        ["5Rnd_mas_127x108_T_mag",nil,100],
+                        ["5Rnd_mas_127x108_mag",nil,100],
+                        ["5Rnd_mas_127x108_dem_mag",nil,100],
+                        ["srifle_DMR_04_Tan_F",nil,1000],
+                        ["10Rnd_127x54_Mag",nil,100],
+                        ["LMG_mas_mg3_F",nil,1000],
+                        ["150Rnd_762x51_Box",nil,100]
+                    ]
+                ];
+            };
+};
+*/
 
     case "med_basic":
     {

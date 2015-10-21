@@ -450,8 +450,10 @@ class Life_Client_Core
         class vehicleShopBuy {};
         class weaponShopFilter {};
         class weaponShopMenu {};
+        class weaponShopMenuAbzeichen {};
         class weaponShopSelection {};
         class weaponShopBuySell {};
+        class weaponShopBuySell_Abzeichen {};
         class virt_buy {};
         class virt_menu {};
         class virt_update {};

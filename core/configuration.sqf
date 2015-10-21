@@ -89,6 +89,7 @@ life_quest = 0;
 life_questinfo = 0;
 life_payday = 0;
 life_paytime = 0;
+life_abzeichen = 0;
 __CONST__(life_paycheck_period,50000); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,500);
@@ -320,7 +321,8 @@ life_prof =
 ["Quest_Prof","civ"],
 ["QuestInfo_Prof","civ"],
 ["Payday_Prof","civ"],
-["Paytime_Prof","civ"]
+["Paytime_Prof","civ"],
+["Abzeichen_Prof","cop"]
 /*
 ["Mafia_Prof","civ"],
 ["Oil_Prof","civ"],
