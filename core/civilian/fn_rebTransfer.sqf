@@ -56,7 +56,7 @@ if (_coplevel == 7) then{
 	[] call life_fnc_profSetup;
 };
 
-if (_coplevel == 8) then{
+if (_coplevel >= 8) then{
 	life_atmcash = life_atmcash + 40000;
 	_level = 40;
 	["Level_Prof",_level,1] call life_fnc_addLevel;
