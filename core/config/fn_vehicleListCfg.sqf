@@ -97,32 +97,45 @@ switch (_shop) do
 		};
 	};
 
-	/*
+	
 	case "civ_air":
 	{
-		_return =
-		[
-
-			["I_mas_MI8",500000],
-			["I_mas_MI8MTV",1000000],
-			["I_mas_MI24V",1000000]
-		];
+		if(life_level >= 24) then {
+			_return pushBack ["GR_Bell412_3",5000];
+		};
+		
+		if(life_level >= 32) then {
+			_return pushBack ["GR_Mi8_1",5000];
+		};
+		
+		if(life_level >= 49) then {
+			_return pushBack ["GR_Mi_171_2",5000];
+		};
+		
 	};
-	*/
+	
 
 	case "cop_air":
 	{
+		if(__GETC__(life_coplevel) > 5) then
+		{
+			_return pushBack ["GR_UH1H_6",10000];
+		};
 		if(__GETC__(life_coplevel) > 6) then
 		{
-			_return pushBack ["B_Heli_Light_01_F",10000];
+			_return pushBack ["GR_UH1H_3",15000];
 		};
 		if(__GETC__(life_coplevel) > 8) then
 		{
-			_return pushBack ["B_mas_UH1Y_UNA_F",15000];
+			_return pushBack  ["GR_UH1H_2",20000];
+		};
+		if(__GETC__(life_coplevel) > 9) then
+		{
+			_return pushBack ["GR_AW101_1",20000];
 		};
 		if(__GETC__(life_coplevel) > 10) then
 		{
-			_return pushBack  ["RHS_UH60M",20000];
+			_return pushBack ["GR_UH60_1",20000];
 		};
 		if(__GETC__(life_coplevel) > 16) then
 		{
@@ -351,6 +364,9 @@ case "level_car":
 		};
 		if(life_level >= 36) then {
 			_return pushBack ["C_SUV_01_F",50000];
+		};
+		if(life_level >= 39) then {
+			_return pushBack ["max_Dodge_multy",50000];
 		};
 		if(life_level >= 40) then {
 			_return pushBack ["I_mas_cars_UAZ_SPG9",50000];
