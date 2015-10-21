@@ -10,7 +10,6 @@
 #include "bank.hpp"
 #include "veh_shop.hpp"
 #include "shops.hpp"
-#include "shops_abzeichen.hpp"
 #include "ui.hpp"
 #include "admin_menu.hpp"
 #include "cell_phone.hpp"
