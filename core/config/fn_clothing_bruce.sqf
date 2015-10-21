@@ -90,7 +90,7 @@ switch (_filter) do
 		if(life_level >= 27){
 			_return pushBack ["rhs_uniform_mflora_patchless",nil,1000];
 		};
-		if(life_level >= 30){
+		if(life_level >= 29){
 			_return pushBack ["U_I_FullGhillie_ard",nil,1000];
 		};
 		if(life_level >= 31){
@@ -183,14 +183,14 @@ switch (_filter) do
 		if(life_level >= 12){
 			_return pushBack ["TRYK_Shemagh",nil,500];
 		};
-		if(life_level >= 5){
+		if(life_level >= 16){
 			_return pushBack ["SFG_Tac_BeardD",nil,500];
 			_return pushBack ["SFG_Tac_BeardO",nil,500];
 		};
 		if(life_level >= 18){
 			_return pushBack ["G_mas_wpn_shemag_gog",nil,500];
 		};
-		if(life_level >= 13){
+		if(life_level >= 22){
 			_return pushBack ["SFG_Tac_moustacheD",nil,500];
 			_return pushBack ["SFG_Tac_moustacheO",nil,500];
 		};
@@ -243,9 +243,6 @@ switch (_filter) do
 		if(life_level >= 9){
 			_return pushBack ["B_TacticalPack_oli",nil,5000];
 		};
-		if(life_level >= 10){
-			_return pushBack ["rds_uniform_Profiteer1",nil,5000];
-		};
 		if(life_level >= 11){
 			_return pushBack ["B_mas_Kitbag_rng",nil,5000];
 		};
@@ -255,7 +252,7 @@ switch (_filter) do
 		if(life_level >= 16){
 			_return pushBack ["B_Carryall_khk",nil,5000];
 		};
-		if(life_level >= 35){
+		if(life_level >= 34){
 			_return pushBack ["B_mas_AssaultPack_rng_AT4",nil,5000];
 		};
 	};
