@@ -2356,7 +2356,7 @@ case "lagerfight":
 						["ACE_NonSteerableParachute",nil,100],
 						["ACE_ReserveParachute",nil,100],
 						["ACE_EarPlugs",nil,100],
-						["ACE_MapTools",nil,100],
+						["ACE_MapTools",nil,100]
 
 						/*
 						//Medical Gear
@@ -2382,7 +2382,7 @@ case "lagerfight":
 						["ACE_tourniquet",nil,100]
 						*/
 						["FirstAidKit",nil,150],
-                        ["Medikit",nil,250],
+                        ["Medikit",nil,250]
 
                     ]
                 ];
