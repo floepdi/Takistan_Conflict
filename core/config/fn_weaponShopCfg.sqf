@@ -42,7 +42,7 @@ switch(_shop) do
                         ["ACE_DAGR",nil,1000],
 						["ACE_microDAGR",nil,10000],
                         ["ToolKit",nil,250],
-                        //["FirstAidKit",nil,150],
+                        ["FirstAidKit",nil,150],
                         ["Binocular",nil,300],
                         ["Chemlight_green",nil,300],
                         ["Chemlight_blue",nil,300],
@@ -59,11 +59,7 @@ switch(_shop) do
 						["ACE_Flashlight_XL50",nil,100],
 						["ACE_Flashlight_KSF1",nil,1000],
 						["ACE_Flashlight_MX991",nil,1000],
-						["ACE_MapTools",nil,100],
-						["ACE_quikclot",nil,100],
-						["ACE_personalAidKit",nil,100],
-						["ACE_atropine",nil,100],
-						["ACE_epinephrine",nil,100]
+						["ACE_MapTools",nil,100]
                     ]
                 ];
             };
@@ -1080,7 +1076,7 @@ switch(_shop) do
         [
 
         ["ToolKit",nil,5000],
-        //["FirstAidKit",nil,1500],
+        ["FirstAidKit",nil,1500],
         ["ACE_CableTie",nil,1000],
 		["ACE_EarPlugs",nil,100]
 
@@ -1099,17 +1095,13 @@ switch(_shop) do
                 ["ItemMap",nil,5],
                 ["ItemCompass",nil,5],
                 ["ToolKit",nil,1000],
-                //["FirstAidKit",nil,500],
+                ["FirstAidKit",nil,500],
                 //["NVGoggles",nil,25000],
                 ["Chemlight_red",nil,300],
                 ["Chemlight_yellow",nil,300],
 				["ACE_CableTie",nil,1000],
 				["ACE_EarPlugs",nil,100],
-				["ACE_MapTools",nil,100],
-				["ACE_quikclot",nil,100],
-				["ACE_personalAidKit",nil,100],
-				["ACE_atropine",nil,100],
-				["ACE_epinephrine",nil,100]
+				["ACE_MapTools",nil,100]
                 //["EODS_cellphone_02",nil,5000]
             ]
         ];
@@ -2351,8 +2343,6 @@ case "lagerfight":
                         ["TRYK_V_tacv1LC_BK",nil,100],
                         ["TRYK_B_Medbag_BK",nil,500],
                         ["ToolKit",nil,250],
-                        //["FirstAidKit",nil,150],
-                        //["Medikit",nil,250],
                         ["NVGoggles_mas_h",nil,500],
                         ["ACE_DAGR",nil,100],
                         ["ACE_Vector",nil,100],
@@ -2368,6 +2358,7 @@ case "lagerfight":
 						["ACE_EarPlugs",nil,100],
 						["ACE_MapTools",nil,100],
 
+						/*
 						//Medical Gear
 						["ACE_atropine",nil,100],
 						["ACE_epinephrine",nil,100],
@@ -2389,6 +2380,9 @@ case "lagerfight":
 						["ACE_salineIV",nil,100],
 						["ACE_surgicalKit",nil,100],
 						["ACE_tourniquet",nil,100]
+						*/
+						["FirstAidKit",nil,150],
+                        ["Medikit",nil,250],
 
                     ]
                 ];
