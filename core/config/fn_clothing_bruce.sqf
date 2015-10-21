@@ -19,103 +19,103 @@ switch (_filter) do
 	case 0:
 	 {
 		if(life_level >= 1) then {
-			_return pushBack ["TRYK_U_B_Denim_T_BK",nil,1000];
-			_return pushBack ["U_C_Poloshirt_salmon",nil,1000];
-			_return pushBack ["U_C_Poloshirt_blue",nil,1000];
+			_return pushBack ["TRYK_U_B_Denim_T_BK","T-Shirt und Jeans",1000];
+			_return pushBack ["U_C_Poloshirt_salmon","Poloshirt Salmon",1000];
+			_return pushBack ["U_C_Poloshirt_blue","Poloshirt Blau",1000];
 		};
 		if(life_level >= 2) then {
-			_return pushBack ["rds_uniform_citizen2",nil,1000];
-			_return pushBack ["rds_uniform_citizen3",nil,1000];
-			_return pushBack ["U_C_Journalist",nil,1000];
+			_return pushBack ["rds_uniform_citizen2","Billigklamotten",1000];
+			_return pushBack ["rds_uniform_citizen3","Billigklamotten",1000];
+			_return pushBack ["U_C_Journalist","Presseoutfit",1000];
 		};
 		if(life_level >= 4) then {
-			_return pushBack ["U_BG_Guerilla2_2",nil,1000];
+			_return pushBack ["U_BG_Guerilla2_2","Guerilla Outfit",1000];
 		};
 		if(life_level >= 5) then {
-			_return pushBack ["TRYK_U_taki_wh",nil,1000];
+			_return pushBack ["TRYK_U_taki_wh","Einheimischen Klamotten Weiß",1000];
 		};
 		if(life_level >= 6) then {
-			_return pushBack ["U_BG_Guerilla2_3",nil,1000];
+			_return pushBack ["U_BG_Guerilla2_3","Guerilla Outfit(hell)",1000];
 		};
 		if(life_level >= 7) then {
-			_return pushBack ["TRYK_U_taki_COY",nil,1000];
+			_return pushBack ["TRYK_U_taki_COY","Einheimischen Klamotten Coyote",1000];
 		};
 		if(life_level >= 8) then {
-			_return pushBack ["U_BG_Guerilla2_1",nil,1000];
+			_return pushBack ["U_BG_Guerilla2_1","Guerilla Outfit(dunkel)",1000];
 		};
 		if(life_level >= 9) then {
-			_return pushBack ["TRYK_OVERALL_flesh",nil,1000];
+			_return pushBack ["TRYK_OVERALL_flesh","Overall",1000];
 		};
 		if(life_level >= 10) then {
-			_return pushBack ["rds_uniform_Profiteer1",nil,1000];
+			_return pushBack ["rds_uniform_Profiteer1","Billiganzug",1000];
 		};
 		if(life_level >= 11) then {
-			_return pushBack ["TRYK_SUITS_BLK_F",nil,1000];
-			_return pushBack ["TRYK_SUITS_BR_F",nil,1000];
+			_return pushBack ["TRYK_SUITS_BLK_F","Schwarzer Anzug",1000];
+			_return pushBack ["TRYK_SUITS_BR_F","Brauner Anzug",1000];
 		};
 		if(life_level >= 12) then {
-			_return pushBack ["TRYK_U_denim_jersey_blk",nil,1000];
-			_return pushBack ["TRYK_U_denim_jersey_blu",nil,1000];
+			_return pushBack ["TRYK_U_denim_jersey_blk","Gestreifte Jacke Schwarz",1000];
+			_return pushBack ["TRYK_U_denim_jersey_blu","Gestreifte Jacke Blau",1000];
 		};
 		if(life_level >= 13) then {
-			_return pushBack ["TRYK_U_denim_hood_mc",nil,1000];
+			_return pushBack ["TRYK_U_denim_hood_mc","Tarnklamotten mit Jeans",1000];
 		};
 		if(life_level >= 15) then {
-			_return pushBack ["U_BG_Guerilla1_1",nil,1000];
+			_return pushBack ["U_BG_Guerilla1_1","Guerilla Guarnment",1000];
 		};
 		if(life_level >= 17) then {
-			_return pushBack ["IS_uniform_squad_leader_o",nil,1000];
+			_return pushBack ["IS_uniform_squad_leader_o","Kampfanzug weiße Hose",1000];
 		};
 		if(life_level >= 18) then {
-			_return pushBack ["TRYK_U_taki_BLK",nil,1000];
+			_return pushBack ["TRYK_U_taki_BLK","Einheimischen Klamotten Schwarz",1000];
 		};
 		if(life_level >= 20) then {
-			_return pushBack ["U_BG_Guerrilla_6_1",nil,1000];
+			_return pushBack ["U_BG_Guerrilla_6_1","Guerilla Apparell",1000];
 		};
 		if(life_level >= 21) then {
-			_return pushBack ["U_Marshal",nil,1000];
+			_return pushBack ["U_Marshal","Marshall Uniform",1000];
 		};
 		if(life_level >= 22) then {
-			_return pushBack ["TRYK_C_AOR2_T",nil,1000];
+			_return pushBack ["TRYK_C_AOR2_T","AOIR T-Shirt",1000];
 		};
 		if(life_level >= 24) then {
-			_return pushBack ["U_BG_leader",nil,1000];
+			_return pushBack ["U_BG_leader","Guerilla Uniform Anführer",1000];
 		};
 		if(life_level >= 25) then {
-			_return pushBack ["TRYK_U_B_AOR2_Rollup_CombatUniform",nil,1000];
+			_return pushBack ["TRYK_U_B_AOR2_Rollup_CombatUniform","Kampfunifrom hochgekrempelt",1000];
 		};
 		if(life_level >= 26) then {
-			_return pushBack ["TRYK_U_B_AOR2_BLK_R_CombatUniform",nil,1000];
+			_return pushBack ["TRYK_U_B_AOR2_BLK_R_CombatUniform","Kampfuniform",1000];
 		};
 		if(life_level >= 27) then {
-			_return pushBack ["rhs_uniform_mflora_patchless",nil,1000];
+			_return pushBack ["rhs_uniform_mflora_patchless","Uniform Mountain Flora",1000];
 		};
 		if(life_level >= 30) then {
-			_return pushBack ["U_I_FullGhillie_ard",nil,1000];
+			_return pushBack ["U_I_FullGhillie_ard","Full Ghuillie Arid",1000];
 		};
 		if(life_level >= 31) then {
-			_return pushBack ["TRYK_U_B_fleece",nil,1000];
+			_return pushBack ["TRYK_U_B_fleece","Fließ Anzug",1000];
 		};
 		if(life_level >= 32) then {
-			_return pushBack ["SAA_uniform_medic_o",nil,1000];
+			_return pushBack ["SAA_uniform_medic_o","SAA Uniform",1000];
 		};
 		if(life_level >= 33) then {
-			_return pushBack ["SAA_uniform_officer_o",nil,1000];
+			_return pushBack ["SAA_uniform_officer_o","SAA Uniform Anführer",1000];
 		};
 		if(life_level >= 35) then {
-			_return pushBack ["TRYK_U_B_PCUGs_gry",nil,1000];
+			_return pushBack ["TRYK_U_B_PCUGs_gry","Jacke Denim",1000];
 		};
 		if(life_level >= 37) then {
-			_return pushBack ["TRYK_U_pad_hood_Blk",nil,1000];
+			_return pushBack ["TRYK_U_pad_hood_Blk","Kapuzenhoodie",1000];
 		};
 		if(life_level >= 38) then {
-			_return pushBack ["IS_uniform_irregular_o",nil,1000];
+			_return pushBack ["IS_uniform_irregular_o","Kampfanzug schwarz",1000];
 		};
 		if(life_level >= 40) then {
-			_return pushBack ["TRYK_U_B_PCUGHs",nil,1000];
+			_return pushBack ["TRYK_U_B_PCUGHs","Kapuzenhoodie (Kapuze oben)",1000];
 		};
 		if(life_level >= 50) then {
-			_return pushBack ["rds_uniform_Villager2",nil,1000];
+			_return pushBack ["rds_uniform_Villager2","ULTIMATIVE KAMPFUNIFORM",1000];
 		};
 	};
 
