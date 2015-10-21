@@ -524,4 +524,31 @@ class CfgUnitInsignia
         textureVehicle = ""; // Does nothing currently, reserved for future use
     };
 
+class CfgWeapons {
+    class InventoryOpticsItem_Base_F; // ItemInfo base class
+
+    class optic_mas_PSO_nv_day {
+        ace_scopeAdjust_vertical[] = {-4, 30};  // Maxmimum vertical adjustment limits
+        ace_scopeAdjust_horizontal[] = {-6, 6};  // Maximum horizontal adjustment limits
+        ace_scopeAdjust_verticalIncrement = 0.1;  // Vertical increment
+        ace_scopeAdjust_horizontalIncrement = 0.1;  // Horizontal increment
+        class ItemInfo: InventoryOpticsItem_Base_F {
+            class OpticsModes {
+                class Snip {
+                    discreteDistance[] = {100};
+                    discreteDistanceInitIndex = 0;
+                };
+            };
+        };
+    };
 };
+
+
+
+
+
+
+
+};
+
+
