@@ -1156,14 +1156,922 @@ case "lagerfight":
         };
     };
 
+
+    case "civ_sonstiges": // SORTIEREN - 1. VISIERE -  2. AUFSÄTZE - 3. EQUIPMENT / GEAR &&&
+    {
+        switch(true) do
+        {
+            case (playerSide != civilian): {"Finger weg, Soldat!"};
+            case ((life_level == 1) OR (life_level == 2)):
+            {
+                ["Level 1/2 Aufsätze & Equipment",
+                    [
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case ((life_level == 3) OR (life_level == 4)):
+            {
+                ["Level 3/4 Aufsätze & Equipment",
+                    [
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case ((life_level == 5) OR (life_level == 6) OR (life_level == 7) OR (life_level == 8) OR (life_level == 9)):
+            {
+                ["Level 5/6/7/8/9 Aufsätze & Equipment",
+                    [
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 10):
+            {
+                ["Level 10 Aufsätze & Equipment",
+                    [
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 11):
+            {
+                ["Level 11 Aufsätze & Equipment",
+                    [
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 12):
+            {
+                ["Level 12 Aufsätze & Equipment",
+                    [
+                                                ["optic_ACO_grn",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 13):
+            {
+                ["Level 13 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 14):
+            {
+                ["Level 14 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case ((life_level == 15) OR (life_level == 16)):
+            {
+                ["Level 15/16 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+
+            case (life_level == 17):
+            {
+                ["Level 17 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 18):
+            {
+                ["Level 18 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 19):
+            {
+                ["Level 19 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 20):
+            {
+                ["Level 20 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 21):
+            {
+                ["Level 21 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+                                                ["optic_mas_PSO_eo",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case ((life_level == 22) OR (life_level == 23) OR (life_level == 24)):
+            {
+                ["Level 22/23/24 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+                                                ["optic_mas_PSO_eo",nil,100],
+
+                                                ["muzzle_mas_snds_AK",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case ((life_level == 25) OR (life_level == 26)):
+            {
+                ["Level 25/26 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+                                                ["optic_mas_PSO_eo",nil,100],
+
+                                                ["muzzle_mas_snds_AK",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 27):
+            {
+                ["Level 27 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+                                                ["optic_mas_PSO_eo",nil,100],
+
+                                                ["muzzle_mas_snds_AK",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 28):
+            {
+                ["Level 28 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                                                ["FHQ_optic_AC12136",nil,100],
+                                                ["optic_mas_acog",nil,100],
+                                                ["optic_mas_PSO_day",nil,100],
+                                                ["optic_mas_PSO_eo",nil,100],
+                                                ["rhs_acc_pso1m2",nil,100],
+
+                                                ["muzzle_mas_snds_AK",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case (life_level == 29):
+            {
+                ["Level 29 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                        ["FHQ_optic_AC12136",nil,100],
+                        ["optic_mas_acog",nil,100],
+                        ["optic_mas_PSO_day",nil,100],
+                        ["optic_mas_PSO_eo",nil,100],
+                        ["rhs_acc_pso1m2",nil,100],
+                        ["optic_mas_PSO_nv_day",nil,100],
+
+                        ["muzzle_mas_snds_AK",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+		 case ((life_level == 30) OR (life_level == 31)):
+            {
+                ["Level 30/31 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],                      
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_Bag",nil,100],                       
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],   
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };            
+            case ((life_level == 32) OR (life_level == 33) OR (life_level == 34)):
+            {
+                ["Level 32/33/34 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],                      
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_Bag",nil,100],                       
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],   
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };           
+            case ((life_level == 35) OR (life_level == 36)):
+            {
+                ["Level 35/36 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],                         
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_Bag",nil,100],                       
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };               
+            case ((life_level == 37) OR (life_level == 38) OR (life_level == 39)):
+            {
+                ["Level 37/38/39 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],                      
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_Bag",nil,100],                       
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };               
+            case (life_level == 40):
+            {
+                ["Level 40 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],                      
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],  
+                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
+                      	["I_mas_Tripod_Bag",nil,100],                                              
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };               
+            case (life_level == 41):
+            {
+                ["Level 41 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],   
+												["ACE_optic_LRPS_PIP",nil,100],                       
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],  
+                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
+                      	["I_mas_Tripod_Bag",nil,100],                                              
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };            
+            case ((life_level == 42) OR (life_level == 43)):
+            {
+                ["Level 42/43 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],   
+												["ACE_optic_LRPS_PIP",nil,100],                       
+                      
+												["muzzle_mas_snds_AK",nil,100],                       
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],  
+                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
+                      	["I_mas_Tripod_Bag",nil,100],                                              
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],   
+                      	["Rangefinder",nil,100],                         
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            }; 
+            case ((life_level == 44) OR (life_level == 45)):
+            {
+                ["Level 44/45 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],   
+												["ACE_optic_LRPS_PIP",nil,100],                       
+                      
+												["muzzle_mas_snds_AK",nil,100],  
+												["muzzle_mas_snds_SVD",nil,100],                      
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],  
+                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
+                      	["I_mas_Tripod_Bag",nil,100],                                              
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],   
+                      	["Rangefinder",nil,100],                         
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };                
+            case (life_level == 46):
+            {
+                ["Level 46 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],   
+												["ACE_optic_LRPS_PIP",nil,100],   
+												["optic_ACO_grn_smg",nil,100],                        
+                      
+												["muzzle_mas_snds_AK",nil,100],  
+												["muzzle_mas_snds_SVD",nil,100],                      
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],  
+                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
+                      	["I_mas_Tripod_Bag",nil,100],                                              
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],   
+                      	["Rangefinder",nil,100],                         
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };           
+            case ((life_level == 47) OR (life_level == 48) OR (life_level == 49) OR (life_level == 50)):
+            {
+                ["Level 47/48/49/50 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+												["FHQ_optic_AC12136",nil,100],
+												["optic_mas_acog",nil,100],  
+												["optic_mas_PSO_day",nil,100],
+												["optic_mas_PSO_eo",nil,100], 
+												["rhs_acc_pso1m2",nil,100], 
+												["optic_mas_PSO_nv_day",nil,100],  
+												["optic_mas_PSO_nv",nil,100],       
+												["optic_KHS_old",nil,100],   
+												["ACE_optic_LRPS_PIP",nil,100],   
+												["optic_ACO_grn_smg",nil,100],                        
+                      
+												["muzzle_mas_snds_AK",nil,100],  
+												["muzzle_mas_snds_SVD",nil,100],                      
+                      
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],  
+                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
+                      	["I_mas_Tripod_Bag",nil,100],                                              
+                      
+                        ["IEDLandSmall_Remote_Mag",nil,100], 
+                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
+                        ["IEDLandBig_Remote_Mag",nil,100],   
+                        ["IEDUrbanBig_Remote_Mag",nil,100],                        
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],   
+                      	["Rangefinder",nil,100],                         
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+		};	
+	};		
+
     case "civ_weapon": // SORTIEREN - 1. WAFFE - 1. MUNITION - 2. WAFFE - 2. MUNITION &&&
     {
         switch(true) do
         {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
-            case ((__GETC__(life_level)) < 3): {"Hau ab, du Frischling!"};
+            case (life_level < 3): {"Hau ab, du Frischling!"};
 
-            case ((__GETC__(life_level)) == 3):
+            case (life_level == 3):
             {
                 ["Level 3 Waffenladen",
                     [
@@ -1173,7 +2081,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 4):
+            case (life_level == 4):
             {
                 ["Level 4 Waffenladen",
                     [
@@ -1185,7 +2093,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 5):
+            case (life_level == 5):
             {
                 ["Level 5 Waffenladen",
                     [
@@ -1199,7 +2107,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 6) OR ((__GETC__(life_level)) == 7)):
+            case ((life_level == 6) OR (life_level == 7)):
             {
                 ["Level 6/7 Waffenladen",
                     [
@@ -1215,7 +2123,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 8) OR ((__GETC__(life_level)) == 9)):
+            case ((life_level == 8) OR (life_level == 9)):
             {
                 ["Level 8/9 Waffenladen",
                     [
@@ -1233,7 +2141,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 10) OR ((__GETC__(life_level)) == 11)):
+            case ((life_level == 10) OR (life_level == 11)):
             {
                 ["Level 10/11 Waffenladen",
                     [
@@ -1254,7 +2162,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 12) OR ((__GETC__(life_level)) == 13) OR ((__GETC__(life_level)) == 14)):
+            case ((life_level == 12) OR (life_level == 13) OR (life_level == 14)):
             {
                 ["Level 12/13/14 Waffenladen",
                     [
@@ -1274,7 +2182,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 15) OR ((__GETC__(life_level)) == 16)):
+            case ((life_level == 15) OR (life_level == 16)):
             {
                 ["Level 15/16 Waffenladen",
                     [
@@ -1295,7 +2203,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 17) OR ((__GETC__(life_level)) == 18)):
+            case ((life_level == 17) OR (life_level == 18)):
             {
                 ["Level 17/18 Waffenladen",
                     [
@@ -1317,7 +2225,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 19):
+            case (life_level == 19):
             {
                 ["Level 19 Waffenladen",
                     [
@@ -1341,7 +2249,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 20):
+            case (life_level == 20):
             {
                 ["Level 20 Waffenladen",
                     [
@@ -1366,7 +2274,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 21) OR ((__GETC__(life_level)) == 22)):
+            case ((life_level == 21) OR (life_level == 22)):
             {
                 ["Level 21/22 Waffenladen",
                     [
@@ -1393,7 +2301,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 23) OR ((__GETC__(life_level)) == 24)):
+            case ((life_level == 23) OR (life_level == 24)):
             {
                 ["Level 23/24 Waffenladen",
                     [
@@ -1422,7 +2330,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 25) OR ((__GETC__(life_level)) == 26) OR ((__GETC__(life_level)) == 27)):
+            case ((life_level == 25) OR (life_level == 26) OR (life_level == 27)):
             {
                 ["Level 25/26/27 Waffenladen",
                     [
@@ -1453,7 +2361,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 28) OR ((__GETC__(life_level)) == 29)):
+            case ((life_level == 28) OR (life_level == 29)):
             {
                 ["Level 28/29 Waffenladen",
                     [
@@ -1486,7 +2394,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 30):
+            case (life_level == 30):
             {
                 ["Level 30 Waffenladen",
                     [
@@ -1521,7 +2429,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 31) OR ((__GETC__(life_level)) == 32)):
+            case ((life_level == 31) OR (life_level == 32)):
             {
                 ["Level 31/32 Waffenladen",
                     [
@@ -1558,7 +2466,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 33):
+            case (life_level == 33):
             {
                 ["Level 33 Waffenladen",
                     [
@@ -1596,7 +2504,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 34) OR ((__GETC__(life_level)) == 35)):
+            case ((life_level == 34) OR (life_level == 35)):
             {
                 ["Level 34/35 Waffenladen",
                     [
@@ -1636,7 +2544,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 36):
+            case (life_level == 36):
             {
                 ["Level 36 Waffenladen",
                     [
@@ -1679,10 +2587,8 @@ case "lagerfight":
                 ];
             };
 
-        };
-    };
-    /*
-           case ((__GETC__(life_level)) == 37):
+
+           case (life_level == 37):
             {
                 ["Level 37 Waffenladen",
                     [
@@ -1727,7 +2633,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 38):
+            case (life_level == 38):
             {
                 ["Level 38 Waffenladen",
                     [
@@ -1773,7 +2679,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 39) OR ((__GETC__(life_level)) == 40)):
+            case ((life_level == 39) OR (life_level == 40)):
             {
                 ["Level 39/40 Waffenladen",
                     [
@@ -1821,7 +2727,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 41):
+            case (life_level == 41):
             {
                 ["Level 41 Waffenladen",
                     [
@@ -1871,7 +2777,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 42):
+            case (life_level == 42):
             {
                 ["Level 42 Waffenladen",
                     [
@@ -1922,7 +2828,7 @@ case "lagerfight":
                 ];
             };
 
-            case (((__GETC__(life_level)) == 43) OR ((__GETC__(life_level)) == 44)):
+            case ((life_level == 43) OR (life_level == 44)):
             {
                 ["Level 43/44 Waffenladen",
                     [
@@ -1974,7 +2880,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 45):
+            case (life_level == 45):
             {
                 ["Level 45 Waffenladen",
                     [
@@ -2028,7 +2934,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 46):
+            case (life_level == 46):
             {
                 ["Level 46 Waffenladen",
                     [
@@ -2084,7 +2990,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 47):
+            case (life_level == 47):
             {
                 ["Level 47 Waffenladen",
                     [
@@ -2141,7 +3047,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 48):
+            case (life_level == 48):
             {
                 ["Level 48 Waffenladen",
                     [
@@ -2201,7 +3107,7 @@ case "lagerfight":
             };
 
 
-            case ((__GETC__(life_level)) == 49):
+            case (life_level == 49):
             {
                 ["Level 49 Waffenladen",
                     [
@@ -2261,7 +3167,7 @@ case "lagerfight":
                 ];
             };
 
-            case ((__GETC__(life_level)) == 50):
+            case (life_level == 50):
             {
                 ["Level 50 Waffenladen",
                     [
@@ -2321,8 +3227,8 @@ case "lagerfight":
                     ]
                 ];
             };
-};
-*/
+     };
+    };
 
     case "med_basic":
     {
