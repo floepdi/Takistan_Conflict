@@ -328,13 +328,13 @@ case "level_car":
 		if(life_level >= 20) then {
 			_return pushBack ["I_mas_cars_LR_soft_M2",50000];
 		};
-		if(life_level >= 21) then {
+		if(life_level >= 22) then {
 			_return pushBack ["I_mas_cars_UAZ_MG",50000];
 		};
 		if(life_level >= 23) then {
 			_return pushBack ["B_mas_cars_Hilux_MG",50000];
 		};
-		if(life_level >= 25) then {
+		if(life_level >= 26) then {
 			_return pushBack ["RHS_Ural_Open_Civ_01",45000];
 		};
 		if(life_level >= 27) then {
@@ -364,9 +364,7 @@ case "level_car":
 		if(life_level >= 47) then {
 			_return pushBack ["B_Truck_01_ammo_F",50000];
 		};
-		if(life_level >= 49) then {
-			_return pushBack ["I_mas_MI8",50000];
-		};
+
 	};	
 
 	
