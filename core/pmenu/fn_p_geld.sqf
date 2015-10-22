@@ -18,7 +18,7 @@ if(__GETC__(life_adminlevel) < 1) then
 
 _side = switch(playerSide) do {case west:{"cop"}; case civilian:{"civ"}; case independent:{"med"};};
 
-_dialog = findDisplay 2001;
+_dialog = findDisplay 20002;
 _inv = _dialog displayCtrl 2005;
 _lic = _dialog displayCtrl 2014;
 _near = _dialog displayCtrl 2022;
@@ -28,6 +28,7 @@ _struct = "";
 lbClear _inv;
 lbClear _near;
 lbClear _near_i;
+
 
 //Near players
 _near_units = [];
@@ -54,25 +55,3 @@ ctrlSetText[2009,format["Weight: %1 / %2", life_carryWeight, life_maxWeight]];
 		_inv lbSetData [(lbSize _inv)-1,_shrt];
 	};
 } foreach life_inv_items;
-{
-	if((_x select 1) == _side) then
-	{
-		_str = [_x select 0] call life_fnc_varToStr;
-		_val = missionNamespace getVariable (_x select 0);
-		if(_val) then
-		{
-			_struct = _struct + format["%1<br/>",_str];
-		};
-	};
-} foreach life_licenses;
-
-if(_struct == "") then
-{
-	_struct = "No Licenses";
-};
-
-_lic ctrlSetStructuredText parseText format["
-<t size='0.8px'>
-%1
-</t>
-",_struct];

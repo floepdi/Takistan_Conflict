@@ -2,7 +2,7 @@
 private["_dialog","_inv","_lic","_licenses","_near","_near_units","_mstatus","_shrt","_side"];
 disableSerialization;
 
-_dialog = findDisplay 3625;
+_dialog = findDisplay 20001;
 _inv = _dialog displayCtrl 3005;
 
 diag_log "test2";

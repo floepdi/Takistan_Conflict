@@ -215,6 +215,8 @@ class Life_Client_Core
         class giveItem2 {};
         class forceItem {};
         class giveMoney {};
+        class p_geld {};
+        class p_inventar {};
         class p_openMenu {};
         class p_updateMenu {};
         class removeItem {};
