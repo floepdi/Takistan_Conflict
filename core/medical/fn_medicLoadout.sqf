@@ -1,7 +1,7 @@
 /*
 	File: fn_medicLoadout.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Loads the medic out with the default gear.
 */
@@ -42,12 +42,8 @@ player addMagazine "hlc_30Rnd_9x19_B_MP5";
 
 player addItem "ItemMap";
 player assignItem "ItemMap";
-player addItem "ItemCompass";
-player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
-player addItem "ItemGPS";
-player assignItem "ItemGPS";
 player addItem "Medikit";
 player addItem "FirstAidKit";
 player addItem "FirstAidKit";

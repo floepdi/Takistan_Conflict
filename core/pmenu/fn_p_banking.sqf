@@ -30,6 +30,28 @@ lbClear _near;
 lbClear _near_i;
 
 
+_text = _dialog displayCtrl 2701;
+_units = _dialog displayCtrl 2703;
+
+lbClear _units;
+_text ctrlSetStructuredText parseText format["<img size='1.7' image='icons\bank.paa'/> $%1<br/><img size='1.6' image='icons\money.paa'/> $%2",[life_atmcash] call life_fnc_numberText,[life_cash] call life_fnc_numberText];
+
+{
+	if(alive _x) then
+	{
+		switch (side _x) do
+		{
+			case west: {_type = "Cop"};
+			case civilian: {_type = "Civ"};
+			case independent: {_type = "EMS"};
+		};
+		_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
+		_units lbSetData [(lbSize _units)-1,str(_x)];
+	};
+} foreach playableUnits;
+
+lbSetCurSel [2703,0];
+
 //Near players
 _near_units = [];
 { if(player distance _x < 10) then {_near_units pushBack _x};} foreach playableUnits;

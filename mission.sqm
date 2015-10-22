@@ -188,7 +188,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=103;
+		items=102;
 		class Item0
 		{
 			side="WEST";
@@ -237,7 +237,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={12727.59,314.26114,120.41797};
+					position[]={12727.893,314.27832,121.25415};
 					azimut=-794.64697;
 					id=3;
 					side="WEST";
@@ -276,7 +276,7 @@ class Mission
 				};
 				class Item6
 				{
-					position[]={12723.486,314.97482,123.01758};
+					position[]={12723.647,315.12726,125.40939};
 					azimut=-794.64697;
 					id=6;
 					side="WEST";
@@ -289,7 +289,7 @@ class Mission
 				};
 				class Item7
 				{
-					position[]={12726.111,314.61911,122.61328};
+					position[]={12719.542,314.73288,115.1586};
 					azimut=-794.64697;
 					id=7;
 					side="WEST";
@@ -447,7 +447,7 @@ class Mission
 				};
 				class Item19
 				{
-					position[]={12730.725,313.57596,116.56445};
+					position[]={12731.698,313.35797,115.14844};
 					azimut=-1143.1801;
 					offsetY=3;
 					id=19;
@@ -461,7 +461,7 @@ class Mission
 				};
 				class Item20
 				{
-					position[]={12732.299,313.48495,118.66211};
+					position[]={12733.019,313.41241,119.21982};
 					azimut=-1143.1801;
 					offsetY=3;
 					id=20;
@@ -2200,7 +2200,7 @@ class Mission
 				items=46;
 				class Item0
 				{
-					position[]={12662.807,318.47266,89.799805};
+					position[]={12798.976,312.45178,0.45806885};
 					azimut=-201.91699;
 					special="NONE";
 					id=100;
@@ -2767,7 +2767,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12615.628,319.02414,44.529236};
+					position[]={12799.509,312.45554,0.49923706};
 					azimut=182.302;
 					id=146;
 					side="GUER";
@@ -3094,7 +3094,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					position[]={12578.225,347.86621,127.04809};
@@ -3104,7 +3104,6 @@ class Mission
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
-					leader=1;
 					skill=0.60000002;
 					text="medic_3";
 					description="USAF PJ";
@@ -3160,6 +3159,21 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 				};
+				class Item4
+				{
+					position[]={12577.46,347.96725,126.28769};
+					azimut=185.11099;
+					special="NONE";
+					id=165;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+					text="medic_2";
+					description="USAF PJ";
+				};
 			};
 		};
 		class Item88
@@ -3193,7 +3207,7 @@ class Mission
 							typeName="Whitelist";
 						};
 					};
-					id=165;
+					id=166;
 					side="LOGIC";
 					vehicle="ACE_ModuleCheckPBOs";
 					leader=1;
@@ -3251,7 +3265,7 @@ class Mission
 							typeName="serverUpdateInterval";
 						};
 					};
-					id=166;
+					id=167;
 					side="LOGIC";
 					vehicle="ace_weather_ModuleSettings";
 					leader=1;
@@ -3333,7 +3347,7 @@ class Mission
 							typeName="simulationRadius";
 						};
 					};
-					id=167;
+					id=168;
 					side="LOGIC";
 					vehicle="ace_advanced_ballistics_ModuleSettings";
 					leader=1;
@@ -3385,7 +3399,7 @@ class Mission
 							typeName="MapShowCursorCoordinates";
 						};
 					};
-					id=168;
+					id=169;
 					side="LOGIC";
 					vehicle="ACE_ModuleMap";
 					leader=1;
@@ -3413,7 +3427,7 @@ class Mission
 							typeName="enable";
 						};
 					};
-					id=169;
+					id=170;
 					side="LOGIC";
 					vehicle="ACE_ModuleSitting";
 					leader=1;
@@ -3465,7 +3479,7 @@ class Mission
 							typeName="MapShowCursorCoordinates";
 						};
 					};
-					id=170;
+					id=171;
 					side="LOGIC";
 					vehicle="ACE_ModuleMap";
 					leader=1;
@@ -3493,7 +3507,7 @@ class Mission
 							typeName="enable";
 						};
 					};
-					id=171;
+					id=172;
 					side="LOGIC";
 					vehicle="ACE_moduleCargoSettings";
 					leader=1;
@@ -3551,7 +3565,7 @@ class Mission
 							typeName="SafeZoneRadius";
 						};
 					};
-					id=172;
+					id=173;
 					side="LOGIC";
 					vehicle="ACE_ModuleSwitchUnits";
 					leader=1;
@@ -3591,7 +3605,7 @@ class Mission
 							typeName="DefaultLockpickStrength";
 						};
 					};
-					id=173;
+					id=174;
 					side="LOGIC";
 					vehicle="ACE_VehicleLock_ModuleSetup";
 					leader=1;
@@ -3631,7 +3645,7 @@ class Mission
 							typeName="requireSurrender";
 						};
 					};
-					id=174;
+					id=175;
 					side="LOGIC";
 					vehicle="ace_captives_moduleSettings";
 					leader=1;
@@ -3659,7 +3673,7 @@ class Mission
 							typeName="EnableTeamManagement";
 						};
 					};
-					id=175;
+					id=176;
 					side="LOGIC";
 					vehicle="ACE_ModuleInteraction";
 					leader=1;
@@ -3735,7 +3749,7 @@ class Mission
 							typeName="wheelRepairRequiredItems";
 						};
 					};
-					id=176;
+					id=177;
 					side="LOGIC";
 					vehicle="ACE_moduleRepairSettings";
 					leader=1;
@@ -3803,7 +3817,7 @@ class Mission
 							typeName="wheelRepairRequiredItems";
 						};
 					};
-					id=177;
+					id=178;
 					side="LOGIC";
 					vehicle="ACE_moduleRepairSettings";
 					lock="UNLOCKED";
@@ -3822,7 +3836,7 @@ class Mission
 							typeName="enable";
 						};
 					};
-					id=178;
+					id=179;
 					side="LOGIC";
 					vehicle="ACE_moduleCargoSettings";
 					lock="UNLOCKED";
@@ -3873,7 +3887,7 @@ class Mission
 							typeName="showCursorTagForVehicles";
 						};
 					};
-					id=179;
+					id=180;
 					side="LOGIC";
 					vehicle="ACE_ModuleNameTags";
 					leader=1;
@@ -3893,7 +3907,7 @@ class Mission
 					position[]={12576.2,348.2854,125.88107};
 					azimut=185.11099;
 					special="NONE";
-					id=180;
+					id=181;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3922,34 +3936,11 @@ class Mission
 							typeName="role";
 						};
 					};
-					id=181;
+					id=182;
 					side="LOGIC";
 					vehicle="ACE_moduleAssignEngineerRoles";
 					lock="UNLOCKED";
 					skill=0.60000002;
-				};
-			};
-		};
-		class Item102
-		{
-			side="GUER";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={12577.46,347.96725,126.28769};
-					azimut=185.11099;
-					special="NONE";
-					id=182;
-					side="GUER";
-					vehicle="I_medic_F";
-					player="PLAY CDG";
-					leader=1;
-					rank="SERGEANT";
-					skill=0.60000002;
-					text="medic_2";
-					description="USAF PJ";
 				};
 			};
 		};
@@ -17062,15 +17053,12 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={12642.267,328.41821,123.07022};
+			position[]={12643.773,327.79648,121.56189};
 			name="spawnzone";
 			text="SPERRGEBIET";
-			markerType="ELLIPSE";
 			type="Empty";
-			colorName="ColorRed";
-			fillName="DiagGrid";
-			a=300;
-			b=200;
+			a=15;
+			b=10;
 		};
 		class Item4
 		{
