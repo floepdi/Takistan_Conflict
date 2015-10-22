@@ -203,4 +203,7 @@ switch (true) do
 };
 
 [] call life_fnc_p_updateMenu;
+[] call life_fnc_p_inventar;
+[] call life_fnc_p_geld;
+
 [] call life_fnc_hudUpdate;

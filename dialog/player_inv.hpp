@@ -51,6 +51,16 @@ class playerSettings {
 			h = 0.088 * safezoneH;
 		};
 
+		class banking_icon: life_RscPicture
+		{
+			idc = 1208;
+			text = "icons\banking.paa";
+			x = 0.33 * safezoneW + safezoneX;
+			y = 0.55 * safezoneH + safezoneY;
+			w = 0.0515624 * safezoneW;
+			h = 0.088 * safezoneH;
+		};
+
 		class schluessel_icon: life_RscPicture
 		{
 			idc = 1206;
@@ -232,6 +242,25 @@ class playerSettings {
 			onButtonClick = "if(isNil ""life_action_gangInUse"") then {if(isNil {(group player) getVariable ""gang_owner""}) then {createDialog ""Life_Create_Gang_Diag"";} else {[] spawn life_fnc_gangMenu;};};";
 		};
 
+		class banking_button: Life_RscButtonMenu
+		{
+			idc = 2407;
+			x = 0.34 * safezoneW + safezoneX;
+			y = 0.565 * safezoneH + safezoneY;
+			w = 0.03 * safezoneW;
+			h = 0.0587 * safezoneH;
+			tooltip = "Banking"; //--- ToDo: Localize;
+			colorBackground[] = {-1,-1,-1,-1};
+			colorBackgroundFocused[] = {1,1,1,0.12};
+			colorBackground2[] = {0.75,0.75,0.75,0.2};
+			color[] = {1,1,1,1};
+			colorFocused[] = {0,0,0,1};
+			color2[] = {0,0,0,1};
+			colorText[] = {1,1,1,1};
+			colorDisabled[] = {0,0,0,0.4};
+			onButtonClick = "createDialog ""banking"";";
+		};
+
 		class craft_button: Life_RscButtonMenu
 		{
 			idc = 2424;
@@ -289,14 +318,14 @@ class playerSettings {
 			onButtonClick = "[] call life_fnc_wantedMenu;";
 		};
 
-		class geld_button: Life_RscButtonMenu
+		class geldmenu_button: Life_RscButtonMenu
 		{
 			idc = 2409;
 			x = 0.4 * safezoneW + safezoneX;
 			y = 0.565 * safezoneH + safezoneY;
 			w = 0.03 * safezoneW;
 			h = 0.0587 * safezoneH;
-			tooltip = "Banking"; //--- ToDo: Localize;
+			tooltip = "Porte­mon­naie"; //--- ToDo: Localize;
 			colorBackground[] = {-1,-1,-1,-1};
 			colorBackgroundFocused[] = {1,1,1,0.12};
 			colorBackground2[] = {0.75,0.75,0.75,0.2};

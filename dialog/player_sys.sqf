@@ -12,3 +12,4 @@
 #define item_edit 2010
 #define inventar_DIALOG 20001
 #define geld_DIALOG 20002
+#define banking_DIALOG 20003

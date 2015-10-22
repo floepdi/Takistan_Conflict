@@ -1,18 +1,17 @@
-#include "player_sys.sqf"
+class banking {
 
-class geld {
-
-	idd = geld_DIALOG;
-	movingEnable = true;
+	idd = banking_DIALOG;
+	name= "banking";
+	movingEnable = false;
 	enableSimulation = true;
-	onLoad ="[] spawn life_fnc_p_geld;";
+	onLoad ="[] spawn life_fnc_p_banking;";
 
 	class controlsBackground {
 
 		size = 1;
 		color = "#FFFFFF";
 
-		class menu_inventar: life_RscPicture
+		class menu_synced: life_RscPicture
 		{
 			idc = 1200;
 			text = "icons\menu.paa";
@@ -41,30 +40,33 @@ class geld {
 			y = 0.18 + (11 / 250);
 			w = 0.3; h = 0.6;
 		};
-	};
-	class controls
-	{
 
-		class NearPlayers: life_RscListbox
+	};
+
+	class controls {
+
+		class moneyEdit : Life_RscEdit {
+
+		idc = 2702;
+
+		text = "1";
+		sizeEx = 0.030;
+		x = 0.34 * safezoneW + safezoneX;
+		y = 0.58 * safezoneH + safezoneY;
+		w = 0.118594 * safezoneW;
+		h = 0.022 * safezoneH;
+
+		};
+
+		class PlayerList : Life_RscCombo
 		{
-			idc = 2022;
+			idc = 2703;
 			x = 0.34 * safezoneW + safezoneX;
 			y = 0.51 * safezoneH + safezoneY;
 			w = 0.118594 * safezoneW;
-			h = 0.07 * safezoneH;
+			h = 0.022 * safezoneH;
 			sizeEx = 0.030;
 		};
-
-		class moneyEdit: life_RscEdit
-		{
-			idc = 2018;
-			text = "1";
-			x = 0.34 * safezoneW + safezoneX;
-			y = 0.58 * safezoneH + safezoneY;
-			w = 0.118594 * safezoneW;
-			h = 0.022 * safezoneH;
-		};
-
 
 		class inventar_geben: life_RscPicture
 		{
@@ -76,14 +78,15 @@ class geld {
 			h = 0.088 * safezoneH;
 		};
 
-
-		class GebenButton: life_RscButtonMenu
+		class TransferButton : life_RscButtonMenu
 		{
+			idc = -1;
+
 			x = 0.43 * safezoneW + safezoneX;
 			y = 0.615 * safezoneH + safezoneY;
 			w = 0.03 * safezoneW;
 			h = 0.0587 * safezoneH;
-			tooltip = "Geben"; //--- ToDo: Localize;
+			tooltip = "Überweisen"; //--- ToDo: Localize;
 			colorBackground[] = {-1,-1,-1,-1};
 			colorBackgroundFocused[] = {1,1,1,0.12};
 			colorBackground2[] = {0.75,0.75,0.75,0.2};
@@ -92,8 +95,7 @@ class geld {
 			color2[] = {0,0,0,1};
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
-			onButtonClick = "[] call life_fnc_giveMoney";
-
+			onButtonClick = "[] call life_fnc_bankTransfer";
 		};
 
 	};

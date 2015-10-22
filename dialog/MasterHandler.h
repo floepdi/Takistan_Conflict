@@ -38,6 +38,7 @@
 #include "giveItem.hpp"
 #include "giveItem2.hpp"
 #include "reqmedic.hpp"
+#include "banking.hpp"
 
 #include "jail_time.hpp"
 #include "revoke_license.h"
