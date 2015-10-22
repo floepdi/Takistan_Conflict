@@ -7,8 +7,8 @@
 private["_vault","_handle"];
 _vault = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _vault) exitWith {}; //Bad object
-//if(typeOf _vault != "Land_Cargo20_military_green_F") exitWith {hint localize "STR_ISTR_Blast_VaultOnly"};
-if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {hint localize "STR_ISTR_Blast_VaultOnly"};
+if(typeOf _vault != "plp_cts_ContShippingBrown") exitWith {hint localize "STR_ISTR_Blast_VaultOnly"};
+//if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {hint localize "STR_ISTR_Blast_VaultOnly"};
 if(_vault getVariable["chargeplaced",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyPlaced"};
 if(_vault getVariable["safe_open",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyOpen"};
 if(!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
@@ -19,7 +19,7 @@ hint localize "STR_ISTR_Blast_KeepOff";
 _handle = [] spawn life_fnc_demoChargeTimer;
 [[],"life_fnc_demoChargeTimer",west,false] spawn life_fnc_MP;
 sleep 5.0;
-[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+//[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 
 
 waitUntil {scriptDone _handle};
