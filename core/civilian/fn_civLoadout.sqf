@@ -1,7 +1,7 @@
 /*
 	File: fn_civLoadout.sqf
 	Author: Tobias 'Xetoxyc' Sittenauer
-	
+
 	Description:
 	Loads the civs out with the default gear, with randomized clothing.
 */
@@ -9,9 +9,7 @@ private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
-_clothings = ["TRYK_U_B_BLK_T_BK","TRYK_U_B_BLK_T_WH","TRYK_U_B_Denim_T_BK","TRYK_U_B_Denim_T_WH"];
-player addUniform (_clothings select (floor(random (count _clothings))));
-
+player addUniform "TRYK_U_B_Denim_T_BK";
 
 // GEAR
 /*
@@ -41,17 +39,15 @@ player addMagazine "RH_30Rnd_9x19_UZI";
 player addMagazine "RH_30Rnd_9x19_UZI";
 player addMagazine "RH_30Rnd_9x19_UZI";
 */
-
+/*
 //Scorpion
 player addWeapon "hgun_mas_sa61_F";
 player addMagazine "20Rnd_mas_765x17_Mag";
 player addMagazine "20Rnd_mas_765x17_Mag";
-
+*/
 /* ITEMS */
 player addItem "ItemMap";
 player assignItem "ItemMap";
-player addItem "ItemCompass";
-player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
