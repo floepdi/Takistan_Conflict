@@ -69,6 +69,7 @@ if (1 == _paket) then // Jobs für Anfänger
 										life_cash = life_cash + _reward;
 										_level = 100;
 										["Level_Prof",_level,1] call life_fnc_addLevel;
+										["QuestInfo_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 									};
@@ -120,6 +121,7 @@ if (1 == _paket) then // Jobs für Anfänger
 										"Transport_1_2" setMarkerAlphaLocal 0;
 										_level = 200;
 										["Level_Prof",_level,1] call life_fnc_addLevel;
+										["QuestInfo_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 									};
@@ -176,6 +178,7 @@ if (1 == _paket) then // Jobs für Anfänger
 										life_cash = life_cash + _reward;
 										_level = 15;
 										["Level_Prof",_level,1] call life_fnc_addLevel;
+										["QuestInfo_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 15000$ <br /> + 150 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 									};

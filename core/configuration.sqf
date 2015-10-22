@@ -90,6 +90,7 @@ life_questinfo = 0;
 life_payday = 0;
 life_paytime = 0;
 life_abzeichen = 0;
+life_kopf = "";
 __CONST__(life_paycheck_period,50000); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,500);

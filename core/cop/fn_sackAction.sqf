@@ -12,3 +12,6 @@ player SetVariable ["Sack",true,true];
 
 
 titleText["Dir wurde ein Sack ueber den Kopf gezogen.","PLAIN"];
+life_kopf = headgear player;
+player addHeadgear "mgsr_headbag";
+

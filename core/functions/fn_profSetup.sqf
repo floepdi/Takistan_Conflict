@@ -953,3 +953,5 @@ while {true} do
 
 
 };
+
+if (playerSide == west) then {life_level = life_abzeichen;};

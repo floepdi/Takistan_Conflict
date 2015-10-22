@@ -110,7 +110,7 @@ if(_type == "QuestInfo_Prof") then
 
 	if(_vorzeichen == 1) then
 	{
-		 _exp = _amount;
+		 _exp = _exp + _amount;
 		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
 	};
 
