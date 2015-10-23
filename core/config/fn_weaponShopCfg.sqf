@@ -1292,6 +1292,7 @@ case "lagerfight":
                 ["Level 12 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
+                        
                         ["ACE_DeadManSwitch",nil,100],                      
 
                         ["rhsusf_ANPVS_14",nil,100],
@@ -1311,9 +1312,9 @@ case "lagerfight":
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
+                        
                         ["ACE_DeadManSwitch",nil,100],                         
                                                 
-
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
@@ -1331,65 +1332,38 @@ case "lagerfight":
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["ACE_DeadManSwitch",nil,100], 
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
-                    ]
-                ];
-            };
-            case ((life_level == 15) OR (life_level == 16)):
-            {
-                ["Level 15/16 Aufsätze & Equipment",
-                    [
-                        ["optic_ACO_grn",nil,100],
-                        ["FHQ_optic_AC12136",nil,100],
-                        ["ACE_DeadManSwitch",nil,100], 
-
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
-                    ]
-                ];
-            };
-
-            case (life_level == 17):
-            {
-                ["Level 17 Aufsätze & Equipment",
-                    [
-                        ["optic_ACO_grn",nil,100],
-                        ["FHQ_optic_AC12136",nil,100],
+                        
                         ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100], 
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };
+            case ((life_level == 15) OR (life_level == 16) OR (life_level == 17)):
+            {
+                ["Level 15/16/17 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                        ["FHQ_optic_AC12136",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-
-                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        
+                        ["ACE_DeadManSwitch",nil,100], 
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -1410,15 +1384,13 @@ case "lagerfight":
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
                         ["optic_mas_acog",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-
-                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        
+                        ["ACE_DeadManSwitch",nil,100], 
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -1440,15 +1412,13 @@ case "lagerfight":
                         ["FHQ_optic_AC12136",nil,100],
                         ["optic_mas_acog",nil,100],
                         ["optic_mas_PSO_day",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-
-                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        
+			["ACE_DeadManSwitch",nil,100], 
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -1470,15 +1440,14 @@ case "lagerfight":
                         ["FHQ_optic_AC12136",nil,100],
                         ["optic_mas_acog",nil,100],
                         ["optic_mas_PSO_day",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-
-                        ["IEDLandSmall_Remote_Mag",nil,100],
+                        
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -1501,16 +1470,14 @@ case "lagerfight":
                         ["optic_mas_acog",nil,100],
                         ["optic_mas_PSO_day",nil,100],
                         ["optic_mas_PSO_eo",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
 
-                        ["IEDLandSmall_Remote_Mag",nil,100],
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -1524,30 +1491,26 @@ case "lagerfight":
                     ]
                 ];
             };
-            case ((life_level == 22) OR (life_level == 23) OR (life_level == 24)):
+            case ((life_level == 22) OR (life_level == 23)):
             {
-                ["Level 22/23/24 Aufsätze & Equipment",
+                ["Level 22/23 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
                         ["optic_mas_acog",nil,100],
                         ["optic_mas_PSO_day",nil,100],
                         ["optic_mas_PSO_eo",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
                         ["ACE_DeadManSwitch",nil,100],
                         ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
 
+                        ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],
-
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
-
-                        ["IEDLandSmall_Remote_Mag",nil,100],
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
@@ -1559,28 +1522,57 @@ case "lagerfight":
                     ]
                 ];
             };
-            case ((life_level == 25) OR (life_level == 26)):
+ case ((life_level == 24) OR (life_level == 25)):
             {
-                ["Level 25/26 Aufsätze & Equipment",
+                ["Level 24/25 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
                         ["optic_mas_acog",nil,100],
                         ["optic_mas_PSO_day",nil,100],
                         ["optic_mas_PSO_eo",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                                              
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
 
-                        ["IEDLandSmall_Remote_Mag",nil,100],
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
+                        ["ACE_Clacker",nil,100],
+
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,100],
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],
+                        ["FirstAidKit",nil,100],
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };            
+            
+            case (life_level == 26):
+            {
+                ["Level 26 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                        ["FHQ_optic_AC12136",nil,100],
+                        ["optic_mas_acog",nil,100],
+                        ["optic_mas_PSO_day",nil,100],
+                        ["optic_mas_PSO_eo",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_h_Bag",nil,100],
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Tripod_Bag",nil,100],
+
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
+                        ["ACE_Clacker",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],
@@ -1604,11 +1596,6 @@ case "lagerfight":
                         ["optic_mas_acog",nil,100],
                         ["optic_mas_PSO_day",nil,100],
                         ["optic_mas_PSO_eo",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                                                
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100],
@@ -1617,8 +1604,9 @@ case "lagerfight":
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
 
-                        ["IEDLandSmall_Remote_Mag",nil,100],
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
+                        ["ACE_Clacker",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],
@@ -1643,11 +1631,8 @@ case "lagerfight":
                         ["optic_mas_PSO_day",nil,100],
                         ["optic_mas_PSO_eo",nil,100],
                         ["rhs_acc_pso1m2",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                                                
+                        
+                        ["ACE_RangeCard",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100],
@@ -1656,8 +1641,9 @@ case "lagerfight":
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
 
-                        ["IEDLandSmall_Remote_Mag",nil,100],
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
+                        ["ACE_Clacker",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],
@@ -1683,9 +1669,8 @@ case "lagerfight":
                         ["optic_mas_PSO_eo",nil,100],
                         ["rhs_acc_pso1m2",nil,100],
                         ["optic_mas_PSO_nv_day",nil,100],
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
+                        
+                        ["ACE_RangeCard",nil,100],                        
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100],
@@ -1694,8 +1679,9 @@ case "lagerfight":
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
 
-                        ["IEDLandSmall_Remote_Mag",nil,100],
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],
+                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_Cellphone",nil,100],
+                        ["ACE_Clacker",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],
@@ -1721,11 +1707,8 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-                      
-												                       
+			
+                        ["ACE_RangeCard",nil,100], 			
                       
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100],                      
@@ -1734,8 +1717,9 @@ case "lagerfight":
                         ["I_mas_Kord_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],   
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -1763,11 +1747,8 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-                      
-												                    
+			
+			["ACE_RangeCard",nil,100],
                       
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -1778,8 +1759,9 @@ case "lagerfight":
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],   
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -1796,9 +1778,9 @@ case "lagerfight":
                     ]
                 ];
             };           
-            case ((life_level == 35) OR (life_level == 36)):
+            case (life_level == 35):
             {
-                ["Level 35/36 Aufsätze & Equipment",
+                ["Level 35 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
 			["FHQ_optic_AC12136",nil,100],
@@ -1808,13 +1790,9 @@ case "lagerfight":
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
 			["optic_mas_PSO_nv",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
 			
-												                      
-                      
+			["ACE_RangeCard",nil,100],			
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -1824,9 +1802,9 @@ case "lagerfight":
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],                     
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -1842,7 +1820,51 @@ case "lagerfight":
                         ["ACE_DAGR",nil,100]
                     ]
                 ];
-            };               
+            };
+            case (life_level == 36):
+            {
+                ["Level 36 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+			["FHQ_optic_AC12136",nil,100],
+			["optic_mas_acog",nil,100],  
+			["optic_mas_PSO_day",nil,100],
+			["optic_mas_PSO_eo",nil,100], 
+			["rhs_acc_pso1m2",nil,100], 
+			["optic_mas_PSO_nv_day",nil,100],  
+			["optic_mas_PSO_nv",nil,100],
+			
+			["ACE_RangeCard",nil,100],			
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
+                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
+                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_h_Bag",nil,100],    
+                        ["I_mas_DShkM_Gun_Bag",nil,100],
+                        ["I_mas_Kord_Gun_Bag",nil,100],
+                        ["I_mas_M2_Gun_Bag",nil,100],                      
+                      	["I_mas_Tripod_Bag",nil,100],                       
+                      
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
+                      
+                        ["rhs_mag_zarya2",nil,100],                       
+                      
+                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_15",nil,100],                      
+                      	["Binocular",nil,100],     
+                      
+                        ["tf_anprc148jem",nil,100],                      	
+                        ["ACE_CableTie",nil,100],                      
+                        ["ACE_EarPlugs",nil,100],
+                        ["ACE_Flashlight_XL50",nil,100],  
+                        ["FirstAidKit",nil,100],                       
+                        ["ACE_DAGR",nil,100]
+                    ]
+                ];
+            };                  
             case ((life_level == 37) OR (life_level == 38) OR (life_level == 39)):
             {
                 ["Level 37/38/39 Aufsätze & Equipment",
@@ -1854,15 +1876,11 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-											                       
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],			
+			
+			["ACE_RangeCard",nil,100],			
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -1872,9 +1890,10 @@ case "lagerfight":
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -1902,15 +1921,11 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-												                    
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],			
+			
+			["ACE_RangeCard",nil,100],			
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -1918,12 +1933,13 @@ case "lagerfight":
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_M2_Gun_Bag",nil,100],  
-                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
-                      	["I_mas_Tripod_Bag",nil,100],                                              
+                        ["I_mas_SPG9_Gun_Bag",nil,100],  
+                      	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -1951,16 +1967,12 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],   
-			["ACE_optic_LRPS_PIP",nil,100], 
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-												                     
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],
+			["ACE_optic_LRPS_PIP",nil,100],			
+			
+			["ACE_RangeCard",nil,100],			
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -1968,12 +1980,13 @@ case "lagerfight":
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_M2_Gun_Bag",nil,100],  
-                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
-                      	["I_mas_Tripod_Bag",nil,100],                                              
+                        ["I_mas_SPG9_Gun_Bag",nil,100],  
+                      	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -2001,16 +2014,12 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],   
-			["ACE_optic_LRPS_PIP",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-												                    
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],
+			["ACE_optic_LRPS_PIP",nil,100],			
+			
+			["ACE_RangeCard",nil,100],			
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -2018,19 +2027,20 @@ case "lagerfight":
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_M2_Gun_Bag",nil,100],  
-                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
-                      	["I_mas_Tripod_Bag",nil,100],                                              
+                        ["I_mas_SPG9_Gun_Bag",nil,100],  
+                      	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],   
-                      	["Rangefinder",nil,100],                         
+                      	["Binocular",nil,100], 
+                      	["Rangefinder",nil,100], 
                       
                         ["tf_anprc148jem",nil,100],                      	
                         ["ACE_CableTie",nil,100],                      
@@ -2052,17 +2062,14 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],   
-			["ACE_optic_LRPS_PIP",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-											
-			["muzzle_mas_snds_SVD",nil,100],                      
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],
+			["ACE_optic_LRPS_PIP",nil,100],			
+			
+			["ACE_RangeCard",nil,100],
+			
+			["muzzle_mas_snds_SVD",nil,100],
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -2070,19 +2077,20 @@ case "lagerfight":
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_M2_Gun_Bag",nil,100],  
-                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
-                      	["I_mas_Tripod_Bag",nil,100],                                              
+                        ["I_mas_SPG9_Gun_Bag",nil,100],  
+                      	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],   
-                      	["Rangefinder",nil,100],                         
+                      	["Binocular",nil,100], 
+                      	["Rangefinder",nil,100], 
                       
                         ["tf_anprc148jem",nil,100],                      	
                         ["ACE_CableTie",nil,100],                      
@@ -2104,18 +2112,15 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],   
-			["ACE_optic_LRPS_PIP",nil,100],   
-			["optic_ACO_grn_smg",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-											
-			["muzzle_mas_snds_SVD",nil,100],                      
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],
+			["ACE_optic_LRPS_PIP",nil,100],	
+			["optic_ACO_grn_smg",nil,100],				
+			
+			["ACE_RangeCard",nil,100],
+			
+			["muzzle_mas_snds_SVD",nil,100],
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -2123,19 +2128,20 @@ case "lagerfight":
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_M2_Gun_Bag",nil,100],  
-                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
-                      	["I_mas_Tripod_Bag",nil,100],                                              
+                        ["I_mas_SPG9_Gun_Bag",nil,100],  
+                      	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],   
-                      	["Rangefinder",nil,100],                         
+                      	["Binocular",nil,100], 
+                      	["Rangefinder",nil,100], 
                       
                         ["tf_anprc148jem",nil,100],                      	
                         ["ACE_CableTie",nil,100],                      
@@ -2157,18 +2163,15 @@ case "lagerfight":
 			["optic_mas_PSO_eo",nil,100], 
 			["rhs_acc_pso1m2",nil,100], 
 			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],       
-			["optic_KHS_old",nil,100],   
-			["ACE_optic_LRPS_PIP",nil,100],   
-			["optic_ACO_grn_smg",nil,100],
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
-			["ACE_M26_Clacker",nil,100],
-                      
-											
-			["muzzle_mas_snds_SVD",nil,100],                      
-                      
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],
+			["ACE_optic_LRPS_PIP",nil,100],	
+			["optic_ACO_grn_smg",nil,100],				
+			
+			["ACE_RangeCard",nil,100],
+			
+			["muzzle_mas_snds_SVD",nil,100],
+
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
                         ["I_mas_M2_h_Gun_Bag",nil,100],                      
@@ -2176,20 +2179,20 @@ case "lagerfight":
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Kord_Gun_Bag",nil,100],
                         ["I_mas_M2_Gun_Bag",nil,100],  
-                        ["I_mas_SPG9_Gun_Bag",nil,100],                        
-                      	["I_mas_Tripod_Bag",nil,100],                                              
+                        ["I_mas_SPG9_Gun_Bag",nil,100],  
+                      	["I_mas_Tripod_Bag",nil,100],                       
                       
-                        ["IEDLandSmall_Remote_Mag",nil,100], 
-                        ["IEDUrbanSmall_Remote_Mag",nil,100],  
-                        ["IEDLandBig_Remote_Mag",nil,100],   
-                        ["IEDUrbanBig_Remote_Mag",nil,100],                        
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
                         ["rhsusf_ANPVS_14",nil,100],
                         ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],   
-                      	["Rangefinder",nil,100],                         
+                      	["Binocular",nil,100], 
+                      	["Rangefinder",nil,100], 
                       
                         ["tf_anprc148jem",nil,100],                      	
                         ["ACE_CableTie",nil,100],                      
@@ -2273,8 +2276,7 @@ case "lagerfight":
                         ["hgun_mas_sa61_F",nil,1000],
                         ["20Rnd_mas_765x17_Mag",nil,100],
                         ["arifle_mas_aks74u",nil,1000],
-                        ["30Rnd_mas_545x39_mag",nil,100],
-                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],                        
                         ["30Rnd_mas_545x39_mag",nil,100]
                     ]
                 ];
@@ -2291,8 +2293,7 @@ case "lagerfight":
                         ["hgun_mas_sa61_F",nil,1000],
                         ["20Rnd_mas_765x17_Mag",nil,100],
                         ["arifle_mas_aks74u",nil,1000],
-                        ["30Rnd_mas_545x39_mag",nil,100],
-                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],                        
                         ["30Rnd_mas_545x39_mag",nil,100],
                         ["arifle_mas_lee",nil,1000],
                         ["5Rnd_mas_762x51_Stanag",nil,100]
@@ -2672,13 +2673,12 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],                        
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
                         ["arifle_mas_akm",nil,1000],
-                        ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100]
+                        ["30Rnd_mas_762x39_mag",nil,100]
                     ]
                 ];
             };
@@ -2712,16 +2712,13 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],                        
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
                         ["arifle_mas_akm",nil,1000],
                         ["arifle_mas_akm_gl",nil,1000],
-                        ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100]
+                        ["30Rnd_mas_762x39_mag",nil,100]
                     ]
                 ];
             };
@@ -2756,16 +2753,13 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
                         ["arifle_mas_akm",nil,1000],
                         ["arifle_mas_akm_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100]
                     ]
@@ -2801,6 +2795,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -2808,10 +2803,6 @@ case "lagerfight":
                         ["arifle_mas_akm",nil,1000],
                         ["arifle_mas_akm_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100]
                     ]
@@ -2847,21 +2838,17 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
                         ["rhs_rpg7_OG7V_mag","Anti-Personen Munition I",100],
                         ["arifle_mas_akm",nil,1000],
                         ["arifle_mas_akm_gl",nil,1000],
-                        ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["LMG_mas_pkm_F",nil,1000],
-                        ["100Rnd_mas_762x54_mag",nil,100],
                         ["arifle_mas_m70_gl",nil,1000],
-                        ["30Rnd_mas_762x39_mag",nil,100]
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100]
                     ]
                 ];
             };
@@ -2895,21 +2882,17 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
                         ["rhs_rpg7_OG7V_mag","Anti-Personen Munition I",100],
                         ["arifle_mas_akm",nil,1000],
                         ["arifle_mas_akm_gl",nil,1000],
-                        ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["LMG_mas_pkm_F",nil,1000],
-                        ["100Rnd_mas_762x54_mag",nil,100],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
                         ["20Rnd_762x51_Mag",nil,100]
                     ]
@@ -2945,6 +2928,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -2952,15 +2936,10 @@ case "lagerfight":
                         ["rhs_rpg7_PG7VR_mag","Anti-Fahrzeug Munition II",100],
                         ["arifle_mas_akm",nil,1000],
                         ["arifle_mas_akm_gl",nil,1000],
-                        ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["LMG_mas_pkm_F",nil,1000],
-                        ["100Rnd_mas_762x54_mag",nil,100],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
                         ["20Rnd_762x51_Mag",nil,100]
                     ]
@@ -2996,6 +2975,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3005,10 +2985,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
@@ -3048,6 +3024,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3057,10 +3034,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
@@ -3102,6 +3075,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3111,10 +3085,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
@@ -3158,6 +3128,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3167,10 +3138,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
@@ -3215,6 +3182,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3224,10 +3192,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
@@ -3275,6 +3239,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3284,10 +3249,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
@@ -3335,6 +3296,7 @@ case "lagerfight":
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -3345,10 +3307,6 @@ case "lagerfight":
                         ["arifle_mas_akm_gl",nil,1000],
                         ["arifle_mas_m70_gl",nil,1000],
                         ["30Rnd_mas_762x39_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
-                        ["srifle_mas_m91",nil,1000],
-                        ["10Rnd_mas_762x54_mag",nil,100],
                         ["LMG_mas_pkm_F",nil,1000],
                         ["100Rnd_mas_762x54_mag",nil,100],
                         ["srifle_DMR_06_olive_F",nil,1000],
