@@ -21,7 +21,7 @@ if ("schakaleins" == _reihe) then
 	if (_nr == 1) then { // Ein neuer Anfang?
 		if ((side _user) == civilian) then {
 			if (_progress == 0) then{
-				playSound "schakaleins_1_1_0"
+				playSound "schakaleins_1_1_0";
 				"schakaleins_1_1_0" setMarkerAlphaLocal 1;
 				[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang?<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Lass dich als Terrorist anwerben! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 				["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -30,7 +30,7 @@ if ("schakaleins" == _reihe) then
 				if (_progress == 1) then{
 				if (life_quest == 1) then {
 
-					playSound "schakaleins_1_1_1"
+					playSound "schakaleins_1_1_1";
 					"schakaleins_1_1_0" setMarkerAlphaLocal 0;
 					"schakaleins_1_1_1" setMarkerAlphaLocal 1;
 					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang? - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Nachschube freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
@@ -45,7 +45,7 @@ if ("schakaleins" == _reihe) then
 		if ((side _user) == civilian) then {
 			if (_progress == 0) then{
 				if (life_quest == 2) then {
-				playSound "schakaleins_1_2_0"
+				playSound "schakaleins_1_2_0";
 				"schakaleins_1_2_0" setMarkerAlphaLocal 1;
 				[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Nachschub<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Erledige 3 Anfänger-Transporte für mich! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 				["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -55,7 +55,7 @@ if ("schakaleins" == _reihe) then
 				if (_progress == 1) then{
 				if ((life_quest == 3) AND (life_questinfo == 3)) then {
 
-					playSound "schakaleins_1_2_1"
+					playSound "schakaleins_1_2_1";
 					"schakaleins_1_2_0" setMarkerAlphaLocal 0;
 					"schakaleins_1_2_1" setMarkerAlphaLocal 1;
 					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Nachschub - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Questreihe: 69 Blonde Schönheiten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;

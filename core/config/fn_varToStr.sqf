@@ -110,6 +110,7 @@ switch (_var) do
     case "life_inv_depotwaffen": {"Depotwaffen"};
     case "live_inv_information": {"Information"};
     case "life_inv_abhoergeraet": {"Abhörgerät"};
+    case "life_inv_dogtag": {"Dogtag"};
     case "life_inv_sulfuru": {(localize "STR_Item_SulfurU")};
     case "life_inv_sulfurp": {(localize "STR_Item_SulfurP")};
     case "life_inv_nitre": {(localize "STR_Item_Nitre")};

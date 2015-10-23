@@ -100,7 +100,7 @@ switch (_filter) do
 			_return pushBack ["SAA_uniform_medic_o","SAA Uniform",1000];
 		};
 		if(life_level >= 33) then {
-			_return pushBack ["SAA_uniform_officer_o","SAA Uniform Anführer",1000];
+			_return pushBack ["U_O_OfficerUniform_ocamo","Hex Uniform Anführer",1000];
 		};
 		if(life_level >= 35) then {
 			_return pushBack ["TRYK_U_B_PCUGs_gry","Jacke Denim",1000];
