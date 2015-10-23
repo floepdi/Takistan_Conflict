@@ -186,6 +186,15 @@ switch (true) do
         [] spawn life_fnc_lockpick;
     };
 
+    case (_item == "dogtag"):
+    {
+        if {playerSide != civilian} exitWith {hint "Das geht nur als Zivilist!"};
+        ["Level_Prof",25,1] call life_fnc_addLevel;
+        life_cash = life_cash + 50;
+        [format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dogtag umgewandelt! <br /> Belohnung <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50 Erfahrung <br /> + 50 $"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+    };
+
+
     case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","fladenbrot","dattel","burger"]):
     {
         [_item] call life_fnc_eatFood;
@@ -202,8 +211,7 @@ switch (true) do
     };
 };
 
-[] call life_fnc_p_updateMenu;
+
 [] call life_fnc_p_inventar;
-[] call life_fnc_p_geld;
 
 [] call life_fnc_hudUpdate;

@@ -123,6 +123,7 @@ switch (_mode) do
             case "flask": {"life_inv_flask"};
             case "gunpowder": {"life_inv_gunpowder"};
             case "explosive": {"life_inv_explosive"};
+            case "dogtag": {"life_inv_dogtag"};
         };
     };
 
@@ -236,6 +237,7 @@ switch (_mode) do
             case "life_inv_flask": {"flask"};
             case "life_inv_gunpowder":{"gunpowder"};
             case "life_inv_explosive": {"explosive"};
+            case "life_inv_dogtag": {"dogtag"};
         };
     };
 };

@@ -30,9 +30,12 @@ player setVariable["rank",(__GETC__(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-
-
-
+/*
+if (__GETC__(life_coplevel) < 7) then {[true,"dogtag",1] call life_fnc_handleInv; };
+if ((__GETC__(life_coplevel) < 12) AND (__GETC__(life_coplevel) > 6)) then {[true,"dogtag",2] call life_fnc_handleInv; };
+if ((__GETC__(life_coplevel) < 16) AND (life_coplevel > 11)) then {[true,"dogtag",3] call life_fnc_handleInv; };
+if (__GETC__(life_coplevel) > 15) then {[true,"dogtag",4] call life_fnc_handleInv; };
+*/
 switch (__GETC__(life_coplevel)) do {
 
 	default { life_paycheck = 1000; };

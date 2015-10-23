@@ -262,7 +262,8 @@ life_inv_items =
     "life_inv_gunpowder",
     "life_inv_nitroglycerin",
     "life_inv_flask",
-    "life_inv_explosive"
+    "life_inv_explosive",
+    "life_inv_dogtag"
 ];
 
 
@@ -389,7 +390,8 @@ life_illegal_items =
         ["potassiumnitrate",1500],
         ["gunpowder",5000],
         ["nitroglycerin",7500],
-        ["explosive", 12000]
+        ["explosive", 12000],
+        ["dogtag", 12000]
         ];
 
 

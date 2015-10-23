@@ -114,5 +114,6 @@ switch (_item) do
     case "flask": {1};
     case "gunpowder": {6};
     case "explosive": {10};
+    case "dogtag": {3};
     default {1};
 };
