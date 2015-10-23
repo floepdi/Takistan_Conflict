@@ -243,9 +243,6 @@ switch (_filter) do
 		if(life_level >= 9) then {
 			_return pushBack ["B_TacticalPack_oli",nil,5000];
 		};
-		if(life_level >= 10) then {
-			_return pushBack ["rds_uniform_Profiteer1",nil,5000];
-		};
 		if(life_level >= 11) then {
 			_return pushBack ["B_mas_Kitbag_rng",nil,5000];
 		};
