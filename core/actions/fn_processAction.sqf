@@ -54,15 +54,15 @@ _upp = _itemInfo select 3;
 //morevars
 if(_moreVars) then {
   _count = count _itemInfo;
-  if (_count >= 5) {
+  if (_count >= 5) then{
     _item2 = _itemInfo select 5;
     _item2Val = missionNamespace getVariable ([_item2,0] call life_fnc_varHandle);
   };
-  if (_count >= 6) {
+  if (_count >= 6) then{
     _item3 = _itemInfo select 6;
     _item3Val = missionNamespace getVariable ([_item3,0] call life_fnc_varHandle);
   };
-  if (_count >= 7) {
+  if (_count >= 7) then{
     _item4 = _itemInfo select 7;
     _item3Val = missionNamespace getVariable ([_item4,0] call life_fnc_varHandle);
   };
@@ -74,17 +74,17 @@ _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
 // True if amount of Item1 =! amount of Item 2 to prevent processing 20 FuelF with 20x oilp  and 1x iron_r)
-if (_count >= 5) {
+if (_count >= 5) then{
   if(_oldVal !=_item2Val) then {
     _error = true; 
   };
 };
-if (_count >= 6) {
+if (_count >= 6) then{
   if(_oldVal !=_item2Val && _oldVal !=_item3Val) then {
     _error = true; 
   };
 };
-if (_count >= 7) {
+if (_count >= 7) then{
   if(_oldVal !=_item2Val && _oldVal !=_item3Val %% _oldVal != _item4Val) then {
     _error = true;
   };
@@ -107,8 +107,7 @@ _cP = 0.01;
 
 life_is_processing = true;
 
-if(_hasLicense) then
-{
+if(_hasLicense) then {
 while{true} do
 {
 sleep  0.3;
@@ -123,13 +122,13 @@ if(player distance _vendor > 10) exitWith {};
 if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process.."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 
 //Delete additional items
-if (_count >= 5) {
+if (_count >= 5) then {
   ([false,_item2,_item2Val] call life_fnc_handleInv);
 };
-if (_count >= 6) {
+if (_count >= 6) then {
   ([false,_item3,_item3Val] call life_fnc_handleInv);
 };
-if (_count >= 7) {
+if (_count >= 7) then {
   ([false,_item4,_item4Val] call life_fnc_handleInv);
 };
 
