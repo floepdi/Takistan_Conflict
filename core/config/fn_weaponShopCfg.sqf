@@ -40,7 +40,7 @@ switch(_shop) do
                         ["tf_anprc152",nil,500],
                         //["tf_mr3000_multicam",nil,500],
                         ["ACE_DAGR",nil,1000],
-						["ACE_microDAGR",nil,10000],
+			["ACE_microDAGR",nil,10000],
                         ["ToolKit",nil,250],
                         ["FirstAidKit",nil,150],
                         ["Binocular",nil,300],
@@ -50,15 +50,16 @@ switch(_shop) do
                         ["SmokeShellRed",nil,300],
                         ["SmokeShellGreen",nil,300],
                         ["acc_flashlight",nil,100],
-						["ACE_CableTie",nil,100],
-						["ACE_SpareBarrel",nil,100],
-						["ACE_Altimeter",nil,100],
-						["ACE_TacticalLadder_Pack",nil,100],
-						["ACE_EarPlugs",nil,100],
-						["ACE_Flashlight_XL50",nil,100],
-						["ACE_Flashlight_KSF1",nil,1000],
-						["ACE_Flashlight_MX991",nil,1000],
-						["ACE_MapTools",nil,100]
+			["ACE_CableTie",nil,100],
+			["ACE_SpareBarrel",nil,100],
+   			["ACE_Altimeter",nil,100],
+   			["ACE_TacticalLadder_Pack",nil,100],
+			["ACE_EarPlugs",nil,100],
+			["ACE_DefusalKit",nil,100],
+			["ACE_Flashlight_XL50",nil,100],
+			["ACE_Flashlight_KSF1",nil,1000],
+			["ACE_Flashlight_MX991",nil,1000],
+			["ACE_MapTools",nil,100]
                     ]
                 ];
             };
