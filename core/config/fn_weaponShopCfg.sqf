@@ -1264,6 +1264,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
                         ["ACE_DAGR",nil,100]
@@ -1277,6 +1278,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
                         ["FirstAidKit",nil,100],
@@ -1294,6 +1296,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
                         ["FirstAidKit",nil,100],
@@ -1313,6 +1316,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
                         ["FirstAidKit",nil,100],
@@ -1336,6 +1340,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
                         ["FirstAidKit",nil,100],
@@ -1359,6 +1364,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_CableTie",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
@@ -1387,6 +1393,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_CableTie",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
@@ -1415,6 +1422,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_CableTie",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
@@ -1444,6 +1452,7 @@ case "lagerfight":
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
+                        ["tf_anprc148jem",nil,100],
                         ["ACE_CableTie",nil,100],
                         ["ACE_EarPlugs",nil,100],
                         ["ACE_Flashlight_XL50",nil,100],
