@@ -2411,13 +2411,13 @@ class Mission
 				class Item19
 				{
 					position[]={5655.1328,81.918228,8893.7588};
-					azimut=74.986404;
+					azimut=74.986397;
 					special="NONE";
 					id=118;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Gun Store"",life_fnc_weaponShopMenu,""gun""]; removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this;    this addUniform ""IS_uniform_machinegunner_i"";  this addHeadgear ""IS_shemag_black"";  this addVest ""V_BandollierB_blk"";this addAction[""Transport abgeben"",  { [[2,1,2],""life_fnc_Transport"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'life_transport_in_progress'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Waffen"",life_fnc_weaponShopMenu,""gun""]; removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this;    this addUniform ""IS_uniform_machinegunner_i"";  this addHeadgear ""IS_shemag_black"";  this addVest ""V_BandollierB_blk"";this addAction[""Transport abgeben"",  { [[2,1,2],""life_fnc_Transport"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'life_transport_in_progress'];";
 				};
 				class Item20
 				{

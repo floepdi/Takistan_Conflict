@@ -1178,7 +1178,7 @@ case "gun":
                 ];
             };
             
-            case ((life_level == 8) OR (life_level == 9)):
+            case (life_level > 8):
             {
                 ["Level 8/9 Waffenladen",
                     [
