@@ -1107,12 +1107,10 @@ switch(_shop) do
                 ["ACE_DAGR",nil,10000],
                 ["ItemMap",nil,5],
                 ["ItemCompass",nil,5],
-                ["ToolKit",nil,1000],
-                ["FirstAidKit",nil,500],
+                ["ToolKit",nil,10],
                 //["NVGoggles",nil,25000],
                 ["Chemlight_red",nil,300],
                 ["Chemlight_yellow",nil,300],
-		["ACE_CableTie",nil,1000],
 		["ACE_EarPlugs",nil,100],
 		["ACE_MapTools",nil,100]
                 //["EODS_cellphone_02",nil,5000]
@@ -1125,28 +1123,80 @@ case "gun":
         switch(true) do
         {
             case (playerSide != civilian): {"Du bist kein Zivilist!"};
+            case (life_level < 3): {"Hau ab, du Frischling!"};
 
-            default
+            case (life_level == 3):
             {
-                ["Waffenhändler",
+                ["Level 3 Waffenladen",
                     [
-
-                    ["hgun_mas_glocksf_F",nil,1000],
-                    ["12Rnd_mas_45acp_Mag",nil,100],
-
-                    ["hgun_mas_sa61_F",nil,5000],
-                    ["20Rnd_mas_765x17_Mag",nil,500],
-
-                    ["arifle_mas_aks74u",nil,12000],
-                    ["30Rnd_mas_545x39_mag",nil,500],
-
-                    ["acc_flashlight",nil,500]
-
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100]
                     ]
                 ];
             };
-        };
-    };
+            
+             case (life_level == 4):
+            {
+                ["Level 4 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100]
+                    ]
+                ];
+            };
+            
+           case (life_level == 5):
+            {
+                ["Level 5 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100]
+                    ]
+                ];
+            };
+            
+             case ((life_level == 6) OR (life_level == 7)):
+            {
+                ["Level 6/7 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100]
+                    ]
+                ];
+            };
+            
+            case ((life_level == 8) OR (life_level == 9)):
+            {
+                ["Level 8/9 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100]
+                    ]
+                ];
+            };
+            
+          };
+    };   
 
 case "lagerfight":
     {
