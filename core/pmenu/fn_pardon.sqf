@@ -1,7 +1,7 @@
 /*
 	File: fn_pardon.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Pardons the selected player.
 */
@@ -17,4 +17,5 @@ if(typeName _data != "ARRAY") exitWith {};
 if(count _data == 0) exitWith {};
 
 _uid = _data select 1;
+_uid setVariable ["wanted",false,false];
 [[_uid],"life_fnc_wantedPardon",false,false] spawn life_fnc_MP;
