@@ -18,18 +18,18 @@ private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
-[] call life_fnc_profSetup;
 
+[] call life_fnc_profSetup;
 
 switch(_shop) do
 {
+
 	 case "civ_sonstiges":
     {
 		switch(true) do
-		{
+        {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
-            case (life_level > 25):{"Du bist hier falsch!"};
-             case ((life_level == 1) OR (life_level == 2)):
+            case ((life_level == 1) OR (life_level == 2)):
             {
                 ["Level 1/2 Aufsätze & Equipment",
                     [
@@ -356,7 +356,10 @@ switch(_shop) do
                         ["ACE_DAGR",nil,100]
                     ]
                 ];
-            };     
+            }; 
+		
 		};
+
 	};
 };
+

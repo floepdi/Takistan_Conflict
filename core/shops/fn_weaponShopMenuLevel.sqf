@@ -6,7 +6,7 @@
 	Something
 */
 private["_config","_itemInfo","_itemList"];
-uiNamespace setVariable ["Weapon_Shop_Level",_this select 3];
+uiNamespace setVariable ["Weapon_Shop",_this select 3];
 
 disableSerialization;
 if(!(createDialog "life_weapon_shop_level")) exitwith {};
