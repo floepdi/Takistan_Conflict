@@ -309,7 +309,8 @@ class Life_Client_Core
         class startTerritory{};
         class Transport{};
         class quest{};
-
+        class territoryReward{};
+        
     };
 
     class Network
