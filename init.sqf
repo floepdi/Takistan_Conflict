@@ -40,10 +40,10 @@ O_Heli_Transport_04_covered_F disableTIEquipment true;
 StartProgress = true;
 
 // Grass (3.25 most / 50 least)
-setTerrainGrid 50;
+//setTerrainGrid 50;
 
 // Environment (Geräusche, Tiere, etc.)
-enableEnvironment false;
+//enableEnvironment false;
 
 //TaskForceRadio controls
 tf_no_auto_long_range_radio = true;
