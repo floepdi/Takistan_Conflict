@@ -247,9 +247,8 @@ life_inv_items =
     "life_inv_koran",
     "life_inv_kondome",
     "life_inv_sniperkiste",
-    "life_inv_carbomb1",
-    "life_inv_carbomb2",
-    "life_inv_carfernzuender",
+    "life_inv_altpapier",
+    "life_inv_blumenerde",
     "life_inv_golderz",
     "life_inv_goldbarren",
     "life_inv_depotwaffen",
@@ -276,7 +275,6 @@ life_licenses =
     ["license_cop_drone","cop"],
     ["license_cop_swat","cop"],
     ["license_cop_cg","cop"],
-    ["license_cop_uncarbomb","cop"],
     ["license_civ_driver","civ"],
     ["license_civ_air","civ"],
     ["license_civ_air1","civ"],
@@ -306,7 +304,6 @@ life_licenses =
     ["license_civ_schnaps","civ"],
     ["license_civ_pilze","civ"],
     ["license_civ_gold","civ"],
-    ["license_civ_carbomb","civ"],
     ["license_civ_sulfur","civ"],
     ["license_civ_nitre","civ"],
     ["license_civ_gunpowder","civ"],
@@ -378,8 +375,6 @@ life_illegal_items =
         ["uniformen",10000],
         ["kondome",25000],
         ["sniperkiste",50000],
-        ["carbomb1",25000],
-        ["carbomb2",25000],
         ["golderz",2500],
         ["goldbarren",5000],
         ["infomation",10000],
@@ -533,7 +528,9 @@ buy_array =
     ["antenne",2500],
     ["behaelter",5000],
     ["flask",50],
-    ["nitroglycerin",1000]
+    ["nitroglycerin",1000],
+    ["altpapier",50],
+    ["blumenerde",20]
 ];};
 //__CONST__(buy_array,buy_array);
 

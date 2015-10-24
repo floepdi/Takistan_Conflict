@@ -15,7 +15,7 @@ _speed = speed cursorTarget;
 _handled = false;
 _muted = false;
 
-_interactionKey = if(count (actionKeys "User1") == 0) then {41} else {(actionKeys "User1") select 0};
+/* _interactionKey = if(count (actionKeys "User1") == 0) then {41} else {(actionKeys "User1") select 0}; */
 _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
@@ -29,7 +29,7 @@ if(life_action_inUse) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
 	_handled;
 };
-
+/*
 //Hotfix for Interaction key not being able to be bound on some operation systems.
 if(count (actionKeys "User1") != 0 && {(inputAction "User1" > 0)}) exitWith {
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
@@ -45,15 +45,12 @@ if(count (actionKeys "User1") != 0 && {(inputAction "User1" > 0)}) exitWith {
 	};
 	true;
 };
-
+*/
 switch (_code) do
 {
 	//Space key for Jumping
 	case 57:
 	{
-
-
-
 			if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 			if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
 				jumpActionTime = time; //Update the time.
@@ -97,7 +94,6 @@ switch (_code) do
 	{
 		switch (PlayerSide) do
 		{
-		//case west: {[] call life_fnc_wantedMenu;};
 
 		case civilian: {
 
@@ -199,6 +195,7 @@ switch (_code) do
 	};
 	*/
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
+	/*
 	case _interactionKey:
 	{
 		if(!life_action_inUse) then {
@@ -211,6 +208,7 @@ switch (_code) do
 			};
 		};
 	};
+	*/
 /*
 	//Restraining (Shift + R)
 	case 19:
@@ -262,6 +260,7 @@ switch (_code) do
 	};
 */
 	//Knock out, this is experimental and yeah...
+/*
 	case 34:
 	{
 		if(_shift) then {_handled = true;};
@@ -274,12 +273,12 @@ switch (_code) do
 			};
 		};
 	};
-
+*/
 	//T Key (Trunk)
 	case 20:
 	{
 		if(_shift) then {_handled = true;};
-
+		/*
 		if (_shift) then
 		{
 			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
@@ -293,7 +292,7 @@ switch (_code) do
 				};
 			};
 		};
-
+		*/
 		if(!_alt && !_ctrlKey) then
 		{
 			if(vehicle player != player && alive vehicle player) then
@@ -415,7 +414,7 @@ switch (_code) do
 	//Admin
 	case 60:
 	{
-		closeDialog 0;[] spawn life_fnc_openMenu;
+		_handled = true;
 	};
 
 

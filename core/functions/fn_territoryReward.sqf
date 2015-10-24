@@ -20,4 +20,4 @@ if(!_over) then {
   			[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br />+20000$ Du hast das Gebiet erobert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 };
 
-};
+

@@ -106,9 +106,8 @@ switch (_mode) do
             case "koran": {"life_inv_koran"};
             case "kondome": {"life_inv_kondome"};
             case "sniperkiste": {"life_inv_sniperkiste"};
-            case "carbomb1": {"life_inv_carbomb1"};
-            case "carbomb2": {"life_inv_carbomb2"};
-            case "carfernzuender": {"life_inv_carfernzuender"};
+            case "altpapier": {"life_inv_altpapier"};
+            case "blumenerde": {"life_inv_blumenerde"};
             case "golderz": {"life_inv_golderz"};
             case "goldbarren": {"life_inv_goldbarren"};
             case "depotwaffen": {"life_inv_depotwaffen"};
@@ -221,9 +220,8 @@ switch (_mode) do
             case "life_inv_koran": {"koran"};
             case "life_inv_kondome": {"kondome"};
             case "life_inv_sniperkiste": {"sniperkiste"};
-            case "life_inv_carbomb1" : {"carbomb1"};
-            case "life_inv_carbomb2" : {"carbomb2"};
-            case "life_inv_carfernzuender" : {"carfernzuender"};
+            case "life_inv_altpapier" : {"altpapier"};
+            case "life_inv_blumenerde" : {"blumenerde"};
             case "life_inv_golderz": {"golderz"};
             case "life_inv_goldbarren": {"goldbarren"};
             case "life_inv_depotwaffen": {"depotwaffen"};

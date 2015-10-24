@@ -6,6 +6,7 @@
 //::::::::::::  ::::::::::::\\
 
 //#1
+/*
 []spawn
 {
 	if (local player) then
@@ -20,7 +21,7 @@
 				then
 				{
 					true;
-					
+
 					[] call life_fnc_p_openMenu;
 					[] call life_fnc_hudUpdate;
 				};
@@ -42,7 +43,7 @@
 				then
 				{
 					true;
-					
+
 					systemchat 'Hier wird nicht gefingert';
 				};
 		"];
@@ -52,7 +53,7 @@
 					//if(player getVariable 'restrained') exitWith {hint 'Du hast Deine Hände nicht frei!'};
 					//if(player getVariable 'D41_geknueppelt') exitWith {hint 'Du hast Deine Hände nicht frei!'};
 					//if(player getVariable 'surrender') exitWith {hint 'Du hast Deine Hände nicht frei!'};
-
+*/
 //#2
 []spawn
 {

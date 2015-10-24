@@ -21,6 +21,12 @@ switch(playerSide) do
 		ctrlShow[1211,false]; //hide craft button
 		ctrlShow[9800,true]; //Wanted
 		ctrlShow[9801,true]; //Wanted+
+		ctrlShow[9803,false];
+		ctrlShow[1217,false]; //admin ^
+		ctrlShow[9802,false];
+		ctrlShow[1216,false]; //admin+ ^
+		ctrlShow[2425,true];
+		ctrlShow[1215,true];
 	};
 
 	case civilian:
@@ -29,6 +35,12 @@ switch(playerSide) do
 		ctrlShow[9801,false]; //Wanted+
 		ctrlShow[1213,false]; //Wanted
 		ctrlShow[1214,false]; //Wanted+
+		ctrlShow[9803,false];
+		ctrlShow[1217,false]; //admin ^
+		ctrlShow[9802,false];
+		ctrlShow[1216,false]; //admin+ ^
+		ctrlShow[2425,true];
+		ctrlShow[1215,true];
 	};
 
 	case independent:
@@ -41,14 +53,37 @@ switch(playerSide) do
 		ctrlShow[9801,false]; //Wanted+
 		ctrlShow[1213,false]; //Wanted
 		ctrlShow[1214,false]; //Wanted+
+		ctrlShow[9803,false];
+		ctrlShow[1217,false]; //admin ^
+		ctrlShow[9802,false];
+		ctrlShow[1216,false]; //admin+ ^
+		ctrlShow[2425,true];
+		ctrlShow[1215,true];
 	};
 };
 
 if(__GETC__(life_adminlevel) < 1) then
 {
-	ctrlShow[2020,false];
-	ctrlShow[2021,false];
-	ctrlShow[2024,false];
+	ctrlShow[9803,false];
+	ctrlShow[1217,false]; //admin ^
+	ctrlShow[9802,false];
+	ctrlShow[1216,false]; //admin+ ^
+};
+
+if((__GETC__(life_adminlevel) < 3) && (__GETC__(life_adminlevel) >= 1)) then
+{
+	ctrlShow[9803,true];
+	ctrlShow[1216,true]; //admin ^
+	ctrlShow[9802,false];
+	ctrlShow[1217,false]; //admin+ ^
+};
+
+if(__GETC__(life_adminlevel) == 3) then
+{
+	ctrlShow[9803,true];
+	ctrlShow[1217,true]; //admin ^
+	ctrlShow[9802,true];
+	ctrlShow[1216,true]; //admin+ ^
 };
 
 [] call life_fnc_p_updateMenu;

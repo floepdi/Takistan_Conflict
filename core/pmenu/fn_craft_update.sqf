@@ -31,7 +31,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 
 		};
 	};
-} foreach (_config select 1);
+} foreach (_config);
 
 if(_struct == "") then
 {
@@ -42,4 +42,4 @@ _mats ctrlSetStructuredText parseText format["
 <t size='0.8px'>
 %1
 </t>
-",_struct]; 
+",_struct];

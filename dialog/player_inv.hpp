@@ -131,6 +131,36 @@ class playerSettings {
 			h = 0.088 * safezoneH;
 		};
 
+		class settings_icon: life_RscPicture
+		{
+			idc = 1215;
+			text = "icons\settings.paa";
+			x = 0.36 * safezoneW + safezoneX;
+			y = 0.5 * safezoneH + safezoneY;
+			w = 0.0515624 * safezoneW;
+			h = 0.088 * safezoneH;
+		};
+
+		class admin_icon: life_RscPicture
+		{
+			idc = 1216;
+			text = "icons\anadmin.paa";
+			x = 0.33 * safezoneW + safezoneX;
+			y = 0.45 * safezoneH + safezoneY;
+			w = 0.0515624 * safezoneW;
+			h = 0.088 * safezoneH;
+		};
+
+		class adminplus_icon: life_RscPicture
+		{
+			idc = 1217;
+			text = "icons\adminplus.paa";
+			x = 0.36 * safezoneW + safezoneX;
+			y = 0.45 * safezoneH + safezoneY;
+			w = 0.0515624 * safezoneW;
+			h = 0.088 * safezoneH;
+		};
+
 				class moneyStatusInfo : Life_RscStructuredText
 		{
 			idc = 2015;
@@ -278,6 +308,63 @@ class playerSettings {
 			colorText[] = {1,1,1,1};
 			colorDisabled[] = {0,0,0,0.4};
 			onButtonClick = "createDialog ""life_craft"";";
+		};
+
+		class settings_button: Life_RscButtonMenu
+		{
+			idc = 2425;
+			x = 0.37 * safezoneW + safezoneX;
+			y = 0.515 * safezoneH + safezoneY;
+			w = 0.03 * safezoneW;
+			h = 0.0587 * safezoneH;
+			tooltip = "Einstellungen"; //--- ToDo: Localize;
+			colorBackground[] = {-1,-1,-1,-1};
+			colorBackgroundFocused[] = {1,1,1,0.12};
+			colorBackground2[] = {0.75,0.75,0.75,0.2};
+			color[] = {1,1,1,1};
+			colorFocused[] = {0,0,0,1};
+			color2[] = {0,0,0,1};
+			colorText[] = {1,1,1,1};
+			colorDisabled[] = {0,0,0,0.4};
+			onButtonClick = "[] call life_fnc_settingsMenu;";
+		};
+
+		class adminplus_button: Life_RscButtonMenu
+		{
+			idc = 9802;
+			x = 0.37 * safezoneW + safezoneX;
+			y = 0.465 * safezoneH + safezoneY;
+			w = 0.03 * safezoneW;
+			h = 0.0587 * safezoneH;
+			tooltip = "Admin +"; //--- ToDo: Localize;
+			colorBackground[] = {-1,-1,-1,-1};
+			colorBackgroundFocused[] = {1,1,1,0.12};
+			colorBackground2[] = {0.75,0.75,0.75,0.2};
+			color[] = {1,1,1,1};
+			colorFocused[] = {0,0,0,1};
+			color2[] = {0,0,0,1};
+			colorText[] = {1,1,1,1};
+			colorDisabled[] = {0,0,0,0.4};
+			onButtonClick = "[] spawn life_fnc_openMenu;";
+		};
+
+		class admin_button: Life_RscButtonMenu
+		{
+			idc = 9803;
+			x = 0.34 * safezoneW + safezoneX;
+			y = 0.465 * safezoneH + safezoneY;
+			w = 0.03 * safezoneW;
+			h = 0.0587 * safezoneH;
+			tooltip = "Admin"; //--- ToDo: Localize;
+			colorBackground[] = {-1,-1,-1,-1};
+			colorBackgroundFocused[] = {1,1,1,0.12};
+			colorBackground2[] = {0.75,0.75,0.75,0.2};
+			color[] = {1,1,1,1};
+			colorFocused[] = {0,0,0,1};
+			color2[] = {0,0,0,1};
+			colorText[] = {1,1,1,1};
+			colorDisabled[] = {0,0,0,0.4};
+			onButtonClick = "createDialog ""life_admin_menu"";";
 		};
 
 		class Wanted_button: Life_RscButtonMenu

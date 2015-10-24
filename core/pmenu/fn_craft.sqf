@@ -10,7 +10,6 @@ if(!dialog) then { //Verify if the window is open
 };
 disableSerialization; //Disable Serialization
 
-
 if(life_is_processing) exitWith{
 	closeDialog 2001;
 	closeDialog 0;
@@ -22,14 +21,11 @@ _inv = _dialog displayCtrl 669; //find the listbox of items can be created
 lbClear _inv; //clear the listbox
 
 _filter = _dialog displayCtrl 673;
-_filter lbAdd "Weste";
+_filter lbAdd "Bomben";
+_filter lbSetData[(lbSize _filter)-1,"ied"];
+_filter lbAdd "Westen";
 _filter lbSetData[(lbSize _filter)-1,"vest"];
-
-_filter lbAdd "IEDs";
-_filter lbSetData[(lbSize _filter)-1,"ied1"];
-
 _filter lbAdd "Elektronik";
 _filter lbSetData[(lbSize _filter)-1,"funkgeraet"];
-
 
 _filter lbSetCurSel 0;

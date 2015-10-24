@@ -310,7 +310,7 @@ class Life_Client_Core
         class Transport{};
         class quest{};
         class territoryReward{};
-        
+
     };
 
     class Network
@@ -354,7 +354,6 @@ class Life_Client_Core
         class showLicense{};
         class robReserve{};
         class rebTransfer {};
-        class carBomb {};
         class wiretapping{};
     };
 
@@ -415,7 +414,6 @@ class Life_Client_Core
         class showArrestDialog {}; //changed
         class arrestDialog_Arrest {}; //changed
         class copOpener {};
-        class uncarbomb {};
 
 
 

@@ -88,7 +88,9 @@ class Mission
 		"A3_Structures_F_Ind_ReservoirTank",
 		"A3_Structures_F_Civ_SportsGrounds",
 		"maa_uniform",
-		"A3_Modules_F_Events"
+		"A3_Modules_F_Events",
+		"A3_Weapons_F_ItemHolders",
+		"a3_weapons_f"
 	};
 	addOnsAuto[]=
 	{
@@ -166,7 +168,9 @@ class Mission
 		"A3_Structures_F_Ind_WindPowerPlant",
 		"A3_Structures_F_EPC_Civ_Kiosks",
 		"A3_Structures_F_Ind_ReservoirTank",
-		"A3_Structures_F_Civ_SportsGrounds"
+		"A3_Structures_F_Civ_SportsGrounds",
+		"A3_Weapons_F_ItemHolders",
+		"a3_weapons_f"
 	};
 	randomSeed=5316561;
 	class Intel
@@ -3751,7 +3755,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1308;
+		items=1309;
 		class Item0
 		{
 			position[]={2982.0427,61.322456,9913.96};
@@ -15615,7 +15619,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Pallet_MilBoxes_F";
 			skill=0.60000002;
-			text="waffendepot1";
+			text="fed_bank1";
 			init="this allowDamage false; this enableSimulation false; this addAction[""Open Container"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Container reparieren"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
 		};
 		class Item1186
@@ -16831,6 +16835,16 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_LampStreet_small_F";
 			skill=0.60000002;
+		};
+		class Item1308
+		{
+			position[]={12800.334,312.41,-1.1894226};
+			id=1486;
+			side="EMPTY";
+			vehicle="Item_ItemWatch";
+			skill=0.60000002;
+			text="bank_obj";
+			init="this allowDamage false; this enableSimulation false";
 		};
 	};
 	class Markers

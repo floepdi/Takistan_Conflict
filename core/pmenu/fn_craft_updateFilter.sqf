@@ -20,11 +20,17 @@ _struct = "";
 
 _config = [_itemFilter] call life_fnc_craftCfg;
 {
+	if(_itemFilter == "item") then{
+		_str = [_x select 0] call life_fnc_varToStr;
+		_inv lbAdd format["%1",_str]; //add a gun to the listbox
+		_inv lbSetData[(lbSize _inv)-1,_x select 0]; //set the data of the gun
+	} else {
 		_itemInfo = [_x select 0] call life_fnc_fetchCfgDetails;
 		_inv lbAdd format["%1",_itemInfo select 1]; //add a gun to the listbox
 		_inv lbSetData[(lbSize _inv)-1,_itemInfo select 0]; //set the data of the gun
 		_inv lbSetPicture[(lbSize _inv)-1,_itemInfo select 2];
-} foreach (_config select 1);
+	};
+} foreach (_config);
 
 
 _inv lbSetCurSel 0;
@@ -44,7 +50,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 
 		};
 	};
-} foreach (_config select 1);
+} foreach (_config);
 
 
 _mats ctrlSetStructuredText parseText format["
