@@ -65,7 +65,7 @@ switch (_filter) do
 			_return pushBack ["U_BG_Guerilla1_1","Guerilla Guarnment",1000];
 		};
 		if(life_level >= 17) then {
-			_return pushBack ["IS_uniform_squad_leader_o","IS Kampfanzug weiße Hose",1000];
+			_return pushBack ["IS_uniform_squad_leader_o","Kampfanzug weiße Hose",1000];
 		};
 		if(life_level >= 18) then {
 			_return pushBack ["TRYK_U_taki_BLK","Einheimischen Klamotten Schwarz",1000];
