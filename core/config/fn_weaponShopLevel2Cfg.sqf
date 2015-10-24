@@ -18,19 +18,18 @@ private["_shop"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
-[] call life_fnc_profSetup;
 
+[] call life_fnc_profSetup;
 
 switch(_shop) do
 {
 
-	 case "civ_sonstiges2":
+	 case "civ_sonstiges":
     {
 		switch(true) do
-		{
+        {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
-            case (life_level <= 25): {"Du bist hier falsch!"};
-            case (life_level == 26):
+			case (life_level == 26):
             {
                 ["Level 26 Aufsätze & Equipment",
                     [
@@ -631,21 +630,21 @@ switch(_shop) do
             {
                 ["Level 47/48/49/50 Aufsätze & Equipment",
                     [
-						["optic_ACO_grn",nil,100],
-						["FHQ_optic_AC12136",nil,100],
-						["optic_mas_acog",nil,100],  
-						["optic_mas_PSO_day",nil,100],
-						["optic_mas_PSO_eo",nil,100], 
-						["rhs_acc_pso1m2",nil,100], 
-						["optic_mas_PSO_nv_day",nil,100],  
-						["optic_mas_PSO_nv",nil,100],
-						["optic_KHS_old",nil,100],
-						["ACE_optic_LRPS_PIP",nil,100],	
-						["optic_ACO_grn_smg",nil,100],				
-						
-						["ACE_RangeCard",nil,100],
-						
-						["muzzle_mas_snds_SVD",nil,100],
+                        ["optic_ACO_grn",nil,100],
+			["FHQ_optic_AC12136",nil,100],
+			["optic_mas_acog",nil,100],  
+			["optic_mas_PSO_day",nil,100],
+			["optic_mas_PSO_eo",nil,100], 
+			["rhs_acc_pso1m2",nil,100], 
+			["optic_mas_PSO_nv_day",nil,100],  
+			["optic_mas_PSO_nv",nil,100],
+			["optic_KHS_old",nil,100],
+			["ACE_optic_LRPS_PIP",nil,100],	
+			["optic_ACO_grn_smg",nil,100],				
+			
+			["ACE_RangeCard",nil,100],
+			
+			["muzzle_mas_snds_SVD",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -657,10 +656,10 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-						["ACE_DeadManSwitch",nil,100],
-						["ACE_Cellphone",nil,100],
-						["ACE_Clacker",nil,100],    
-						["ACE_M26_Clacker",nil,100],
+			["ACE_DeadManSwitch",nil,100],
+			["ACE_Cellphone",nil,100],
+			["ACE_Clacker",nil,100],    
+			["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -678,6 +677,9 @@ switch(_shop) do
                     ]
                 ];
             };
+		
 		};
+
 	};
 };
+
