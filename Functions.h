@@ -179,6 +179,10 @@ class Life_Client_Core
         class vehShopLicenses {};
         class vehicleAnimate {};
         class weaponShopCfg {};
+        class weaponShopCopCfg {};
+        class weaponShopCop2Cfg {};
+        class weaponShopLevelCfg {};
+        class weaponShopLevel2Cfg {};
         class vehicleWeightCfg {};
         class houseConfig {};
         class vehTypeCfg{};
@@ -451,7 +455,15 @@ class Life_Client_Core
         class vehicleShopLBChange {};
         class vehicleShopBuy {};
         class weaponShopFilter {};
+        class weaponShopFilterCop {};
+        class weaponShopFilterCop2 {};
+        class weaponShopFilterLevel {};
+        class weaponShopFilterLevel2 {};
         class weaponShopMenu {};
+        class weaponShopMenuCop {};
+        class weaponShopMenuCop2 {};
+        class weaponShopMenuLevel {};
+        class weaponShopMenuLevel2 {};
         class weaponShopMenuAbzeichen {};
         class weaponShopSelection {};
         class weaponShopBuySell {};

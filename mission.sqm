@@ -2334,14 +2334,14 @@ class Mission
 				class Item12
 				{
 					position[]={2988.9355,61.367088,9917.5156};
-					azimut=262.45139;
+					azimut=262.45099;
 					special="NONE";
 					id=111;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					skill=0.60000002;
 					text="h1_3_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenu,""army_equipment""];  this addAction[""Waffenspind"",life_fnc_weaponShopMenu,""army_weapon""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenuCop,""army_equipment""];  this addAction[""Mannschafts-Waffenspind"",life_fnc_weaponShopMenuCop,""army_weapon""]; this addAction[""Offiziers-Waffenspind"",life_fnc_weaponShopMenuCop2,""army_weapon2""];";
 				};
 				class Item13
 				{
@@ -2484,7 +2484,7 @@ class Mission
 					vehicle="RDS_Functionary2";
 					skill=0.60000002;
 					text="level";
-					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.6]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Waffenkammer"",life_fnc_weaponShopMenu,""civ_weapon""]; this addAction[""Sonstiges"",life_fnc_weaponShopMenu,""civ_sonstiges""];  this addAction[""Kleidung"",life_fnc_clothingMenu,""levelcloth""]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeVest this; removeHeadgear this; this forceAddUniform ""SAA_uniform_officer_o"";  this addHeadgear ""H_Beret_blk"";  this addGoggles ""G_Squares"";this addAction[""Transporte für Fortgeschrittene"",  { [[2,0,0],""life_fnc_Transport"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'!(life_transport_in_progress) && (life_level >= 10)'];";
+					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0.6]; this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu]; this addAction[""Zubehör bis Level 25"",life_fnc_weaponShopMenuLevel,""civ_sonstiges""]; this addAction[""Zubehör ab Level 25"",life_fnc_weaponShopMenuLevel2,""civ_sonstiges2""];  this addAction[""Kleidung"",life_fnc_clothingMenu,""levelcloth""]; removeallweapons this; removeGoggles this; removeAllAssignedItems this; removeVest this; removeHeadgear this; this forceAddUniform ""SAA_uniform_officer_o"";  this addHeadgear ""H_Beret_blk"";  this addGoggles ""G_Squares"";this addAction[""Transporte für Fortgeschrittene"",  { [[2,0,0],""life_fnc_Transport"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'!(life_transport_in_progress) && (life_level >= 10)'];";
 				};
 				class Item25
 				{
