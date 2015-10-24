@@ -12,7 +12,7 @@ _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
 if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 
-_error = false; // used below check the comment there ;) 
+_error = false; // used below check the comment there ;)
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ...",processing 2Items?, (only for processing with 2) second Item.
 _itemInfo = switch (_type) do
 {
@@ -76,16 +76,16 @@ _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 // True if amount of Item1 =! amount of Item 2 to prevent processing 20 FuelF with 20x oilp  and 1x iron_r)
 if (_count >= 5) then{
   if(_oldVal !=_item2Val) then {
-    _error = true; 
+    _error = true;
   };
 };
 if (_count >= 6) then{
   if(_oldVal !=_item2Val && _oldVal !=_item3Val) then {
-    _error = true; 
+    _error = true;
   };
 };
 if (_count >= 7) then{
-  if(_oldVal !=_item2Val && _oldVal !=_item3Val %% _oldVal != _item4Val) then {
+  if(_oldVal !=_item2Val && _oldVal !=_item3Val && _oldVal != _item4Val) then {
     _error = true;
   };
 };
@@ -166,4 +166,4 @@ if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","
 titleText[format["You have processed %1 into %2 for $%3",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 life_cash = life_cash - _cost;
 life_is_processing = false;
-}; 
+};

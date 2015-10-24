@@ -270,31 +270,7 @@ switch (_shop) do
 	*/
 
 case "civ_car":
-	{
-		_return =
-		[
-			["RDS_Lada_Civ_01",5000],
-			["RDS_Gaz24_Civ_01",6000],
-			["RDS_S1203_Civ_01",7500],
-			["RHS_Ural_Open_Civ_01",8500],
-			["RDS_Ikarus_Civ_02",10000],
-			["O_mas_cars_UAZ_Unarmed",12500],
-			["isc_is_hilux_Unarmed_o",25000],
-			["DAR_4X4",5000]
-		];
-	};
-	
-	case "autolieferung_car":
-	{
-		_return =
-		[
-			["isc_is_hilux_Unarmed_o",5000],
-			["isc_is_hilux_Unarmed_o",6000]
-		];
-	};
-	
-case "level_car":
-	{
+{
 		if(life_level >= 1) then {
 			_return pushBack ["RDS_Lada_Civ_01",5000];
 		};
@@ -319,6 +295,45 @@ case "level_car":
 		if(life_level >= 9) then {
 			_return pushBack ["C_Quadbike_01_F",2000];
 		};
+	};
+	
+	case "autolieferung_car":
+	{
+		_return =
+		[
+			["isc_is_hilux_Unarmed_o",5000],
+			["isc_is_hilux_Unarmed_o",6000]
+		];
+	};
+	
+case "level_car":
+	{
+	/*
+		if(life_level >= 1) then {
+			_return pushBack ["RDS_Lada_Civ_01",5000];
+		};
+		if(life_level >= 2) then {
+			_return pushBack ["RDS_S1203_Civ_01",6000];
+		};
+		if(life_level >= 4) then {
+			_return pushBack ["RDS_Gaz24_Civ_01",7000];
+		};
+		if(life_level >= 5) then {
+			_return pushBack ["rhs_uaz_open_MSV_01",8000];
+		};
+		if(life_level >= 6) then {
+			_return pushBack ["C_Van_01_transport_F",9000];
+		};
+		if(life_level >= 7) then {
+			_return pushBack ["UAZ_Unarmed",10000];
+		};
+		if(life_level >= 8) then {
+			_return pushBack ["RDS_Octavia_Civ_01",12000];
+		};
+		if(life_level >= 9) then {
+			_return pushBack ["C_Quadbike_01_F",2000];
+		};
+		*/
 		if(life_level >= 10) then {
 			_return pushBack ["RDS_Ikarus_Civ_01",10000];
 		};

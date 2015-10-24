@@ -220,10 +220,6 @@ switch (_filter) do
 		{
 			_ret pushBack ["B_Carryall_cbr","Mannschaftsrucksack V",550];
 		};
-		if(__GETC__(life_coplevel) >= 7) then
-		{
-			_ret pushBack ["mas_TitanS","Unteroffiziersrucksack",550];
-		};
 	};
 };
 
