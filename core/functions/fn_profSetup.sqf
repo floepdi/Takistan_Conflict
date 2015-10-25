@@ -835,7 +835,7 @@ while {true} do
     _levelup = (life_level + 1);
     };
     if (_levelup == 6) then {
-    [format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Level aufgestiegen! <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + neue Waffe erhalten <br /> + neue Uniform erhalten <br /> + neuen Rucksack erhalten <br /> + neue Kopfbedeckung erhalten <br /> + neues Fahrzeug erhalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+    [format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Level aufgestiegen! <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + neue Waffe erhalten <br /> + neue Uniform erhalten <br /> + neuen Rucksack erhalten <br /> + neues Equipment erhalten <br /> + neue Kopfbedeckung erhalten <br /> + neues Fahrzeug erhalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
     _levelup = (life_level + 1);
     };
     if (_levelup == 7) then {
@@ -855,7 +855,7 @@ while {true} do
     _levelup = (life_level + 1);
     };
     if (_levelup == 11) then {
-    [format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Level aufgestiegen! <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + neuen Rucksack erhalten <br /> + neue Uniform erhalten <br /> + neues Equipment erhalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+    [format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Level aufgestiegen! <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + neuen Rucksack erhalten <br /> + neue Uniform erhalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
     _levelup = (life_level + 1);
     };
     if (_levelup == 12) then {
