@@ -30,361 +30,389 @@ switch(_shop) do
         {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
 			case ((life_level < 26) && (life_level >= 40)): {"Du bist hier falsch!"};
-			case (life_level == 26):
+
+            case ((life_level == 26) OR (life_level == 27)):
             {
-                ["Level 26 Aufsätze & Equipment",
+                ["Level 26/27 Waffenladen",
                     [
-                        ["optic_ACO_grn",nil,100],
-                        ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100]
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
-
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
                     ]
                 ];
             };
-            case (life_level == 27):
+
+            case ((life_level == 28) OR (life_level == 29)):
             {
-                ["Level 27 Aufsätze & Equipment",
+                ["Level 28/29 Waffenladen",
                     [
-                        ["optic_ACO_grn",nil,100],
-                        ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100]
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
-
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
                     ]
                 ];
             };
-            case (life_level == 28):
+
+            case (life_level == 30):
             {
-                ["Level 28 Aufsätze & Equipment",
+                ["Level 30 Waffenladen",
                     [
-                        ["optic_ACO_grn",nil,100],
-                        ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
-                        ["rhs_acc_pso1m2",nil,100],
-                        
-                        ["ACE_RangeCard",nil,100],
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100]
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
-
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
                     ]
                 ];
             };
-            case (life_level == 29):
+
+            case ((life_level == 31) OR (life_level == 32)):
             {
-                ["Level 29 Aufsätze & Equipment",
+                ["Level 31/32 Waffenladen",
                     [
-                        ["optic_ACO_grn",nil,100],
-                        ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
-                        ["rhs_acc_pso1m2",nil,100],
-                        ["optic_mas_PSO_nv_day",nil,100],
-                        
-                        ["ACE_RangeCard",nil,100],                        
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100]
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
-
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
-
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
                     ]
                 ];
             };
-		 case ((life_level == 30) OR (life_level == 31)):
-            {
-                ["Level 30/31 Aufsätze & Equipment",
-                    [
-                        ["optic_ACO_grn",nil,100],
-						["FHQ_optic_AC12136",nil,100],
-						["optic_mas_acog",nil,100],  
-						["optic_mas_PSO_day",nil,100],
-						["optic_mas_PSO_eo",nil,100], 
-						["rhs_acc_pso1m2",nil,100], 
-						["optic_mas_PSO_nv_day",nil,100],
-			
-                        ["ACE_RangeCard",nil,100], 			
-                      
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_h_Bag",nil,100],    
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_Bag",nil,100],                       
-                      
-						["ACE_DeadManSwitch",nil,100],
-						["ACE_Cellphone",nil,100],
-						["ACE_Clacker",nil,100],
-                      
-                        ["rhs_mag_zarya2",nil,100],                       
-                      
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],     
-                      
-                        ["tf_anprc148jem",nil,100],                      	
-                        ["ACE_CableTie",nil,100],                      
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],  
-                        ["FirstAidKit",nil,100],                       
-                        ["ACE_DAGR",nil,100]
-                    ]
-                ];
-            };            
-            case ((life_level == 32) OR (life_level == 33) OR (life_level == 34)):
-            {
-                ["Level 32/33/34 Aufsätze & Equipment",
-                    [
-                        ["optic_ACO_grn",nil,100],
-						["FHQ_optic_AC12136",nil,100],
-						["optic_mas_acog",nil,100],  
-						["optic_mas_PSO_day",nil,100],
-						["optic_mas_PSO_eo",nil,100], 
-						["rhs_acc_pso1m2",nil,100], 
-						["optic_mas_PSO_nv_day",nil,100],
-						
-						["ACE_RangeCard",nil,100],
-                      
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
-                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_h_Bag",nil,100],    
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_M2_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_Bag",nil,100],                       
-                      
-						["ACE_DeadManSwitch",nil,100],
-						["ACE_Cellphone",nil,100],
-						["ACE_Clacker",nil,100],
-                      
-                        ["rhs_mag_zarya2",nil,100],                       
-                      
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],     
-                      
-                        ["tf_anprc148jem",nil,100],                      	
-                        ["ACE_CableTie",nil,100],                      
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],  
-                        ["FirstAidKit",nil,100],                       
-                        ["ACE_DAGR",nil,100]
-                    ]
-                ];
-            };           
-            case (life_level == 35):
-            {
-                ["Level 35 Aufsätze & Equipment",
-                    [
-                        ["optic_ACO_grn",nil,100],
-						["FHQ_optic_AC12136",nil,100],
-						["optic_mas_acog",nil,100],  
-						["optic_mas_PSO_day",nil,100],
-						["optic_mas_PSO_eo",nil,100], 
-						["rhs_acc_pso1m2",nil,100], 
-						["optic_mas_PSO_nv_day",nil,100],  
-						["optic_mas_PSO_nv",nil,100],
-						
-						["ACE_RangeCard",nil,100],			
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
-                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_h_Bag",nil,100],    
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_M2_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_Bag",nil,100],                       
-                      
-						["ACE_DeadManSwitch",nil,100],
-						["ACE_Cellphone",nil,100],
-						["ACE_Clacker",nil,100],                     
-                      
-                        ["rhs_mag_zarya2",nil,100],                       
-                      
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],     
-                      
-                        ["tf_anprc148jem",nil,100],                      	
-                        ["ACE_CableTie",nil,100],                      
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],  
-                        ["FirstAidKit",nil,100],                       
-                        ["ACE_DAGR",nil,100]
+            case (life_level == 33):
+            {
+                ["Level 33 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100]
                     ]
                 ];
             };
+
+            case ((life_level == 34) OR (life_level == 35)):
+            {
+                ["Level 34/35 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],                        
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100]
+                    ]
+                ];
+            };
+
             case (life_level == 36):
             {
-                ["Level 36 Aufsätze & Equipment",
+                ["Level 36 Waffenladen",
                     [
-                        ["optic_ACO_grn",nil,100],
-						["FHQ_optic_AC12136",nil,100],
-						["optic_mas_acog",nil,100],  
-						["optic_mas_PSO_day",nil,100],
-						["optic_mas_PSO_eo",nil,100], 
-						["rhs_acc_pso1m2",nil,100], 
-						["optic_mas_PSO_nv_day",nil,100],  
-						["optic_mas_PSO_nv",nil,100],
-						
-						["ACE_RangeCard",nil,100],			
-
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
-                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_h_Bag",nil,100],    
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_M2_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_Bag",nil,100],                       
-                      
-						["ACE_DeadManSwitch",nil,100],
-						["ACE_Cellphone",nil,100],
-						["ACE_Clacker",nil,100],    
-						["ACE_M26_Clacker",nil,100],
-                      
-                        ["rhs_mag_zarya2",nil,100],                       
-                      
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],     
-                      
-                        ["tf_anprc148jem",nil,100],                      	
-                        ["ACE_CableTie",nil,100],                      
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],  
-                        ["FirstAidKit",nil,100],                       
-                        ["ACE_DAGR",nil,100]
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],                        
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100]
                     ]
                 ];
-            };                  
-            case ((life_level == 37) OR (life_level == 38) OR (life_level == 39)):
+            };
+
+
+           case (life_level == 37):
             {
-                ["Level 37/38/39 Aufsätze & Equipment",
+                ["Level 37 Waffenladen",
                     [
-                        ["optic_ACO_grn",nil,100],
-						["FHQ_optic_AC12136",nil,100],
-						["optic_mas_acog",nil,100],  
-						["optic_mas_PSO_day",nil,100],
-						["optic_mas_PSO_eo",nil,100], 
-						["rhs_acc_pso1m2",nil,100], 
-						["optic_mas_PSO_nv_day",nil,100],  
-						["optic_mas_PSO_nv",nil,100],
-						["optic_KHS_old",nil,100],			
-						
-						["ACE_RangeCard",nil,100],			
-
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Kord_h_Gun_Bag",nil,100], 
-                        ["I_mas_M2_h_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_h_Bag",nil,100],    
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Kord_Gun_Bag",nil,100],
-                        ["I_mas_M2_Gun_Bag",nil,100],                      
-                      	["I_mas_Tripod_Bag",nil,100],                       
-                      
-						["ACE_DeadManSwitch",nil,100],
-						["ACE_Cellphone",nil,100],
-						["ACE_Clacker",nil,100],    
-						["ACE_M26_Clacker",nil,100],
-                      
-                        ["rhs_mag_zarya2",nil,100],                       
-                      
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],                      
-                      	["Binocular",nil,100],     
-                      
-                        ["tf_anprc148jem",nil,100],                      	
-                        ["ACE_CableTie",nil,100],                      
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],  
-                        ["FirstAidKit",nil,100],                       
-                        ["ACE_DAGR",nil,100]
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100]
                     ]
                 ];
-            };               
+            };
+
+            case (life_level == 38):
+            {
+                ["Level 38 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
+                        ["rhs_rpg7_OG7V_mag","Anti-Personen Munition I",100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100]
+                    ]
+                ];
+            };
+
+            case (life_level == 39):
+            {
+                ["Level 39 Waffenladen",
+                    [
+                        ["hgun_mas_mak_F",nil,1000],
+                        ["8Rnd_mas_9x18_Mag",nil,100],
+                        ["hgun_mas_acp_F",nil,1000],
+                        ["12Rnd_mas_45acp_Mag",nil,100],
+                        ["hgun_mas_sa61_F",nil,1000],
+                        ["20Rnd_mas_765x17_Mag",nil,100],
+                        ["arifle_mas_aks74u",nil,1000],
+                        ["arifle_mas_ak74",nil,1000],
+                        ["arifle_mas_ak_74m",nil,1000],
+                        ["arifle_mas_ak_74m_sf",nil,1000],
+                        ["arifle_mas_ak_74m_gl",nil,1000],
+                        ["arifle_mas_ak_74m_sf_gl",nil,1000],
+                        ["30Rnd_mas_545x39_mag",nil,100],
+                        ["1Rnd_HE_Grenade_shell",nil,100],
+                        ["arifle_mas_lee",nil,1000],
+                        ["5Rnd_mas_762x51_Stanag",nil,100],
+                        ["LMG_mas_rpk_F",nil,1000],
+                        ["100Rnd_mas_545x39_mag",nil,100],
+                        ["srifle_DMR_01_F",nil,1000],
+                        ["10Rnd_762x54_Mag",nil,100],
+                        ["arifle_mas_fal_m203",nil,1000],
+                        ["20Rnd_mas_762x51_Stanag",nil,100],
+                        ["rhs_weap_svdp",nil,1000],
+                        ["rhs_10Rnd_762x54mmR_7N1",nil,100],
+                        ["srifle_mas_svd",nil,1000],
+                        ["srifle_mas_m91",nil,1000],
+                        ["10Rnd_mas_762x54_mag",nil,100],
+                        ["rhs_weap_rpg7",nil,1000],
+                        ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
+                        ["rhs_rpg7_OG7V_mag","Anti-Personen Munition I",100],
+                        ["arifle_mas_akm",nil,1000],
+                        ["arifle_mas_akm_gl",nil,1000],
+                        ["arifle_mas_m70_gl",nil,1000],
+                        ["30Rnd_mas_762x39_mag",nil,100],
+                        ["LMG_mas_pkm_F",nil,1000],
+                        ["100Rnd_mas_762x54_mag",nil,100]
+                    ]
+                ];
+            };              
            
 		
 		};
