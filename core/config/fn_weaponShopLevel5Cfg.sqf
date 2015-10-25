@@ -29,7 +29,7 @@ switch(_shop) do
 		switch(true) do
         {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
-			case ((life_level < 26) && (life_level >= 40)): {"Du bist hier falsch!"};
+			case ((life_level < 26) OR (life_level >= 40)): {"Du bist hier falsch!"};
 
             case ((life_level == 26) OR (life_level == 27)):
             {
@@ -234,7 +234,7 @@ switch(_shop) do
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
-                        ["srifle_mas_m91",nil,1000],                        
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -273,7 +273,7 @@ switch(_shop) do
                         ["rhs_weap_svdp",nil,1000],
                         ["rhs_10Rnd_762x54mmR_7N1",nil,100],
                         ["srifle_mas_svd",nil,1000],
-                        ["srifle_mas_m91",nil,1000],                        
+                        ["srifle_mas_m91",nil,1000],
                         ["10Rnd_mas_762x54_mag",nil,100],
                         ["rhs_weap_rpg7",nil,1000],
                         ["rhs_rpg7_PG7VL_mag","Anti-Fahrzeug Munition I",100],
@@ -412,9 +412,9 @@ switch(_shop) do
                         ["100Rnd_mas_762x54_mag",nil,100]
                     ]
                 ];
-            };              
-           
-		
+            };
+
+
 		};
 
 	};

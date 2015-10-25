@@ -648,18 +648,19 @@ if("abhoeren" == _reihe) then { // Abhören
 				};
 				if(_progress == 1) then {
 					if(life_quest == 666) then {
-						_armyCars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
-						_nearObj = nearObjects [player, ["_armyCars"],50];
+					/*	_armyCars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
+						_nearObj = nearObjects [player,_armyCars,50];
 						if ((count _nearObj)>0) then {
+						*/
 							playSound "abhoeren_1_3_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Langfinger - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_3_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_3_1" setMarkerAlphaLocal 1;
-						} else{
-							hint "Besorg dir das verdammte Auto!";
-						};
+					 //	} else{
+					//		hint "Besorg dir das verdammte Auto!";
+					//	};
 					};
 				};
 			};

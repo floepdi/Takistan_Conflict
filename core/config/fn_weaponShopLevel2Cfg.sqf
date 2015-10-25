@@ -29,7 +29,7 @@ switch(_shop) do
 		switch(true) do
         {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
-			case ((life_level < 26) && (life_level >= 40)): {"Du bist hier falsch!"};
+			case ((life_level < 26) OR (life_level >= 40)): {"Du bist hier falsch!"};
 			case (life_level == 26):
             {
                 ["Level 26 Aufsätze & Equipment",

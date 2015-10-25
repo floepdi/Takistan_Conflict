@@ -24,7 +24,7 @@ if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 switch(_shop) do
 {
 
-	 case "civ_sonstiges2":
+	 case "civ_sonstiges3":
     {
 		switch(true) do
         {
