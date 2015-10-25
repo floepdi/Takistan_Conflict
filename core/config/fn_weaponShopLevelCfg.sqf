@@ -34,8 +34,8 @@ switch(_shop) do
             {
                 ["Level 1/2 Aufsätze & Equipment",
                     [
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -45,49 +45,63 @@ switch(_shop) do
                     [
                         ["Binocular",nil,100],
 
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
-            case ((life_level == 5) OR (life_level == 6) OR (life_level == 7) OR (life_level == 8) OR (life_level == 9)):
+            case (life_level == 5):
             {
-                ["Level 5/6/7/8/9 Aufsätze & Equipment",
+                ["Level 5 Aufsätze & Equipment",
                     [
                         ["Binocular",nil,100],
 
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
-            case (life_level == 10):
+            case ((life_level == 6) OR (life_level == 7) OR (life_level == 8)):
+            {
+                ["Level 6/7/8 Aufsätze & Equipment",
+                    [
+                        ["rhsusf_ANPVS_14",nil,200],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
+                    ]
+                ];
+            };
+            case (life_level == 9):
+            {
+                ["Level 9 Aufsätze & Equipment",
+                    [
+                        ["rhsusf_ANPVS_14",nil,200],
+                        ["Binocular",nil,100],
+
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
+                    ]
+                ];
+            };            
+            case ((life_level == 10) OR (life_level == 11)):
             {
                 ["Level 10 Aufsätze & Equipment",
                     [
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["ACE_DAGR",nil,100]
-                    ]
-                ];
-            };
-            case (life_level == 11):
-            {
-                ["Level 11 Aufsätze & Equipment",
-                    [
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["Binocular",nil,100],
-
-                        ["tf_anprc148jem",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -97,16 +111,16 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
 
-                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -117,16 +131,16 @@ switch(_shop) do
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
 
-                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -137,74 +151,103 @@ switch(_shop) do
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
-            case ((life_level == 15) OR (life_level == 16) OR (life_level == 17)):
+            case ((life_level == 15) OR (life_level == 16)):
             {
-                ["Level 15/16/17 Aufsätze & Equipment",
+                ["Level 15/16 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
+            case (life_level == 17):
+            {
+                ["Level 17 Aufsätze & Equipment",
+                    [
+                        ["optic_ACO_grn",nil,100],
+                        ["FHQ_optic_AC12136",nil,100],
+
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
+
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],                         
+
+                        ["rhsusf_ANPVS_14",nil,200],
+                        ["Binocular",nil,100],
+
+                        ["tf_anprc148jem",nil,100],
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
+                    ]
+                ];
+            };            
+            
             case (life_level == 18):
             {
                 ["Level 18 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
+                        ["optic_mas_acog",nil,150],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],                        
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -214,25 +257,26 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
+                        ["optic_mas_acog",nil,150],
+                        ["optic_mas_PSO_day",nil,200],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-			            ["ACE_DeadManSwitch",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -242,26 +286,26 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
+                        ["optic_mas_acog",nil,150],
+                        ["optic_mas_PSO_day",nil,200],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -271,27 +315,27 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
+                        ["optic_mas_acog",nil,150],
+                        ["optic_mas_PSO_day",nil,200],
+                        ["optic_mas_PSO_eo",nil,250],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],
 
-                        ["rhsusf_ANPVS_14",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -301,28 +345,28 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
+                        ["optic_mas_acog",nil,150],
+                        ["optic_mas_PSO_day",nil,200],
+                        ["optic_mas_PSO_eo",nil,250],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],
 
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
+                        ["rhsusf_ANPVS_15",nil,230],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
@@ -332,29 +376,29 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        ["optic_mas_acog",nil,100],
-                        ["optic_mas_PSO_day",nil,100],
-                        ["optic_mas_PSO_eo",nil,100],
+                        ["optic_mas_acog",nil,150],
+                        ["optic_mas_PSO_day",nil,200],
+                        ["optic_mas_PSO_eo",nil,250],
 
-                        ["I_mas_DShkM_h_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_h_Bag",nil,100],
-                        ["I_mas_DShkM_Gun_Bag",nil,100],
-                        ["I_mas_Tripod_Bag",nil,100],
+                        ["I_mas_DShkM_h_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_h_Bag",nil,150],
+                        ["I_mas_DShkM_Gun_Bag",nil,200],
+                        ["I_mas_Tripod_Bag",nil,150],
 
-                        ["ACE_DeadManSwitch",nil,100],
-                        ["ACE_Cellphone",nil,100],
-                        ["ACE_Clacker",nil,100],
+                        ["ACE_DeadManSwitch",nil,250],
+                        ["ACE_Cellphone",nil,150],
+                        ["ACE_Clacker",nil,400],
 
-                        ["rhsusf_ANPVS_14",nil,100],
-                        ["rhsusf_ANPVS_15",nil,100],
+                        ["rhsusf_ANPVS_14",nil,200],
+                        ["rhsusf_ANPVS_15",nil,230],
                         ["Binocular",nil,100],
 
                         ["tf_anprc148jem",nil,100],
-                        ["ACE_CableTie",nil,100],
-                        ["ACE_EarPlugs",nil,100],
-                        ["ACE_Flashlight_XL50",nil,100],
-                        ["FirstAidKit",nil,100],
-                        ["ACE_DAGR",nil,100]
+                        ["ACE_CableTie",nil,20],
+                        ["ACE_EarPlugs",nil,5],
+                        ["ACE_Flashlight_XL50",nil,20],
+                        ["FirstAidKit",nil,20],
+                        ["ACE_DAGR",nil,15]
                     ]
                 ];
             };
