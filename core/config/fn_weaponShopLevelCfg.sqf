@@ -24,11 +24,12 @@ if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 switch(_shop) do
 {
 
-	 case "civ_sonstiges":
+ case "civ_sonstiges":
     {
 		switch(true) do
         {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
+			case (life_level >= 25): {"Du bist hier falsch!"};
             case ((life_level == 1) OR (life_level == 2)):
             {
                 ["Level 1/2 Aufsätze & Equipment",
@@ -95,8 +96,8 @@ switch(_shop) do
                 ["Level 12 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-                        
-                        ["ACE_DeadManSwitch",nil,100],                      
+
+                        ["ACE_DeadManSwitch",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -115,9 +116,9 @@ switch(_shop) do
                     [
                         ["optic_ACO_grn",nil,100],
                         ["FHQ_optic_AC12136",nil,100],
-                        
-                        ["ACE_DeadManSwitch",nil,100],                         
-                                                
+
+                        ["ACE_DeadManSwitch",nil,100],
+
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
 
@@ -140,7 +141,7 @@ switch(_shop) do
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-                        
+
                         ["ACE_DeadManSwitch",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
@@ -165,8 +166,8 @@ switch(_shop) do
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-                        
-                        ["ACE_DeadManSwitch",nil,100], 
+
+                        ["ACE_DeadManSwitch",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -192,8 +193,8 @@ switch(_shop) do
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-                        
-                        ["ACE_DeadManSwitch",nil,100], 
+
+                        ["ACE_DeadManSwitch",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -220,8 +221,8 @@ switch(_shop) do
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-                        
-			["ACE_DeadManSwitch",nil,100], 
+
+			            ["ACE_DeadManSwitch",nil,100],
 
                         ["rhsusf_ANPVS_14",nil,100],
                         ["Binocular",nil,100],
@@ -248,7 +249,7 @@ switch(_shop) do
                         ["I_mas_Tripod_h_Bag",nil,100],
                         ["I_mas_DShkM_Gun_Bag",nil,100],
                         ["I_mas_Tripod_Bag",nil,100],
-                        
+
                         ["ACE_DeadManSwitch",nil,100],
                         ["ACE_Cellphone",nil,100],
 
@@ -325,7 +326,7 @@ switch(_shop) do
                     ]
                 ];
             };
- case ((life_level == 24) OR (life_level == 25)):
+             case ((life_level == 24) OR (life_level == 25)):
             {
                 ["Level 24/25 Aufsätze & Equipment",
                     [
@@ -356,8 +357,8 @@ switch(_shop) do
                         ["ACE_DAGR",nil,100]
                     ]
                 ];
-            }; 
-		
+            };
+
 		};
 
 	};

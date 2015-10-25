@@ -24,11 +24,12 @@ if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
 switch(_shop) do
 {
 
-	 case "civ_sonstiges":
+	 case "civ_sonstiges2":
     {
 		switch(true) do
         {
             case (playerSide != civilian): {"Finger weg, Soldat!"};
+			case (life_level < 26): {"Du bist hier falsch!"};
 			case (life_level == 26):
             {
                 ["Level 26 Aufsätze & Equipment",
@@ -175,12 +176,12 @@ switch(_shop) do
                 ["Level 30/31 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],
 			
                         ["ACE_RangeCard",nil,100], 			
                       
@@ -191,9 +192,9 @@ switch(_shop) do
                         ["I_mas_Kord_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -215,14 +216,14 @@ switch(_shop) do
                 ["Level 32/33/34 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],
-			
-			["ACE_RangeCard",nil,100],
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],
+						
+						["ACE_RangeCard",nil,100],
                       
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -233,9 +234,9 @@ switch(_shop) do
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -257,15 +258,15 @@ switch(_shop) do
                 ["Level 35 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			
-			["ACE_RangeCard",nil,100],			
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						
+						["ACE_RangeCard",nil,100],			
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -276,9 +277,9 @@ switch(_shop) do
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],                     
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],                     
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -300,15 +301,15 @@ switch(_shop) do
                 ["Level 36 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			
-			["ACE_RangeCard",nil,100],			
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						
+						["ACE_RangeCard",nil,100],			
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -319,10 +320,10 @@ switch(_shop) do
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -344,16 +345,16 @@ switch(_shop) do
                 ["Level 37/38/39 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],			
-			
-			["ACE_RangeCard",nil,100],			
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],			
+						
+						["ACE_RangeCard",nil,100],			
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -364,10 +365,10 @@ switch(_shop) do
                         ["I_mas_M2_Gun_Bag",nil,100],                      
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -389,16 +390,16 @@ switch(_shop) do
                 ["Level 40 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],			
-			
-			["ACE_RangeCard",nil,100],			
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],			
+						
+						["ACE_RangeCard",nil,100],			
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -410,10 +411,10 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -435,17 +436,17 @@ switch(_shop) do
                 ["Level 41 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],
-			["ACE_optic_LRPS_PIP",nil,100],			
-			
-			["ACE_RangeCard",nil,100],			
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],
+						["ACE_optic_LRPS_PIP",nil,100],			
+						
+						["ACE_RangeCard",nil,100],			
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -457,10 +458,10 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -482,17 +483,17 @@ switch(_shop) do
                 ["Level 42/43 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],
-			["ACE_optic_LRPS_PIP",nil,100],			
-			
-			["ACE_RangeCard",nil,100],			
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],
+						["ACE_optic_LRPS_PIP",nil,100],			
+						
+						["ACE_RangeCard",nil,100],			
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -504,10 +505,10 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -530,19 +531,19 @@ switch(_shop) do
                 ["Level 44/45 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],
-			["ACE_optic_LRPS_PIP",nil,100],			
-			
-			["ACE_RangeCard",nil,100],
-			
-			["muzzle_mas_snds_SVD",nil,100],
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],
+						["ACE_optic_LRPS_PIP",nil,100],			
+						
+						["ACE_RangeCard",nil,100],
+						
+						["muzzle_mas_snds_SVD",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -554,11 +555,11 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
-                      
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
+								  
                         ["rhs_mag_zarya2",nil,100],                       
                       
                         ["rhsusf_ANPVS_14",nil,100],
@@ -580,20 +581,20 @@ switch(_shop) do
                 ["Level 46 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],
-			["ACE_optic_LRPS_PIP",nil,100],	
-			["optic_ACO_grn_smg",nil,100],				
-			
-			["ACE_RangeCard",nil,100],
-			
-			["muzzle_mas_snds_SVD",nil,100],
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],
+						["ACE_optic_LRPS_PIP",nil,100],	
+						["optic_ACO_grn_smg",nil,100],				
+						
+						["ACE_RangeCard",nil,100],
+						
+						["muzzle_mas_snds_SVD",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -605,10 +606,10 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       
@@ -631,20 +632,20 @@ switch(_shop) do
                 ["Level 47/48/49/50 Aufsätze & Equipment",
                     [
                         ["optic_ACO_grn",nil,100],
-			["FHQ_optic_AC12136",nil,100],
-			["optic_mas_acog",nil,100],  
-			["optic_mas_PSO_day",nil,100],
-			["optic_mas_PSO_eo",nil,100], 
-			["rhs_acc_pso1m2",nil,100], 
-			["optic_mas_PSO_nv_day",nil,100],  
-			["optic_mas_PSO_nv",nil,100],
-			["optic_KHS_old",nil,100],
-			["ACE_optic_LRPS_PIP",nil,100],	
-			["optic_ACO_grn_smg",nil,100],				
-			
-			["ACE_RangeCard",nil,100],
-			
-			["muzzle_mas_snds_SVD",nil,100],
+						["FHQ_optic_AC12136",nil,100],
+						["optic_mas_acog",nil,100],  
+						["optic_mas_PSO_day",nil,100],
+						["optic_mas_PSO_eo",nil,100], 
+						["rhs_acc_pso1m2",nil,100], 
+						["optic_mas_PSO_nv_day",nil,100],  
+						["optic_mas_PSO_nv",nil,100],
+						["optic_KHS_old",nil,100],
+						["ACE_optic_LRPS_PIP",nil,100],	
+						["optic_ACO_grn_smg",nil,100],				
+						
+						["ACE_RangeCard",nil,100],
+						
+						["muzzle_mas_snds_SVD",nil,100],
 
                         ["I_mas_DShkM_h_Gun_Bag",nil,100],
                         ["I_mas_Kord_h_Gun_Bag",nil,100], 
@@ -656,10 +657,10 @@ switch(_shop) do
                         ["I_mas_SPG9_Gun_Bag",nil,100],  
                       	["I_mas_Tripod_Bag",nil,100],                       
                       
-			["ACE_DeadManSwitch",nil,100],
-			["ACE_Cellphone",nil,100],
-			["ACE_Clacker",nil,100],    
-			["ACE_M26_Clacker",nil,100],
+						["ACE_DeadManSwitch",nil,100],
+						["ACE_Cellphone",nil,100],
+						["ACE_Clacker",nil,100],    
+						["ACE_M26_Clacker",nil,100],
                       
                         ["rhs_mag_zarya2",nil,100],                       
                       

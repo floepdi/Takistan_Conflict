@@ -11,7 +11,7 @@ uiNamespace setVariable ["Weapon_Shop",_this select 3];
 disableSerialization;
 if(!(createDialog "life_weapon_shop_level2")) exitwith {};
 
-_config = [_this select 3] call life_fnc_weaponShopLevelCfg;
+_config = [_this select 3] call life_fnc_weaponShopLevel2Cfg;
 if(typeName _config == "STRING") exitWith {hint _config; closeDialog 0;};
 
 ctrlSetText[38401,_config select 0];
