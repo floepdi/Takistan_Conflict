@@ -319,6 +319,9 @@ class Life_Client_Core
         class quest{};
         class territoryReward{};
 
+        class getKillCount{};
+        class setKillCount{};
+        class bountyReward{};
     };
 
     class Network
