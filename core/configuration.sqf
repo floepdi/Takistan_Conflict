@@ -101,6 +101,7 @@ life_my_gang = ObjNull;
 life_muted = false;
 life_failed = false;
 life_bekanntschaften = [];
+life_kills = 0;
 
 
 life_vehicles = [];
