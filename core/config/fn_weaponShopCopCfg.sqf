@@ -36,7 +36,8 @@ switch(_shop) do
                         ["tf_anprc152",nil,500],
                         //["tf_mr3000_multicam",nil,500],
                         ["ACE_DAGR",nil,1000],
-			["ACE_microDAGR",nil,10000],
+			["ACE_microDAGR",nil,100],
+			["ItemGPS",nil,100],			
                         ["ToolKit",nil,250],
                         ["FirstAidKit",nil,150],
                         ["Binocular",nil,300],
@@ -52,7 +53,6 @@ switch(_shop) do
    			["ACE_TacticalLadder_Pack",nil,100],
 			["ACE_EarPlugs",nil,100],
 			["ACE_DefusalKit",nil,100],
-			["ACE_Flashlight_XL50",nil,100],
 			["ACE_Flashlight_KSF1",nil,1000],
 			["ACE_Flashlight_MX991",nil,1000],
 			["ACE_MapTools",nil,100]
@@ -305,8 +305,8 @@ switch(_shop) do
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
                         ["NVGoggles",nil,1000],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -362,9 +362,10 @@ switch(_shop) do
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
+                        ["Rangefinder",nil,1000],                        
                         ["NVGoggles",nil,1000],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -425,12 +426,13 @@ switch(_shop) do
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -496,6 +498,7 @@ switch(_shop) do
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
+                        ["Rangefinder",nil,1000], 
 			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
 			["ACE_ATragMX",nil,1000],
