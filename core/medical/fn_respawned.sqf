@@ -14,7 +14,8 @@ life_carryWeight = 0;
 life_cash = 0; //Make sure we don't get our cash back.
 life_respawned = false;
 Life_request_timer = false;
-player playMove "amovpercmstpsnonwnondnon";
+life_blood = 100;
+life_bloodmulti = 0;
 
 life_corpse setVariable["Revive",nil,TRUE];
 life_corpse setVariable["name",nil,TRUE];
@@ -22,6 +23,9 @@ life_corpse setVariable["Reviving",nil,TRUE];
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
+ player setVariable ["olddamage", 0 , false];
+ player setVariable ["olddamage2", 0, false];
+ player setVariable ["olddamage3", 0 , false];
 
 life_bekanntschaften = [];
 
@@ -53,6 +57,7 @@ if(!isNull life_corpse) then {
 //Destroy our camera...
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
+"dynamicBlur" ppEffectEnable false;
 
 //Bad boy
 if(life_is_arrested) exitWith {

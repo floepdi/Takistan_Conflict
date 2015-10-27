@@ -21,3 +21,5 @@ if(!_over) then {
 };
 
 
+["QuestInfo_Prof",1,1] call life_fnc_addLevel;
+[] call life_fnc_profSetup;

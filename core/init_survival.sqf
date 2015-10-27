@@ -26,6 +26,7 @@
 		{
 			life_thirst = life_thirst - 10;
 			[] call life_fnc_hudUpdate;
+			if(life_thirst > 20) then {"colorCorrections" ppEffectEnable false;};
 			if(life_thirst < 2) then {player setDamage 1; hint localize "STR_NOTF_DrinkMSG_Death";};
 			switch(life_thirst) do
 			{
@@ -61,7 +62,9 @@
 			life_maxWeight = life_maxWeightT;
 		};
 	};
-
+};
+[] spawn
+{
 	if (playerSide ==  civilian) then
 	{
 	while {true} do
@@ -78,7 +81,7 @@
 	["Level_Prof",2000,1] call life_fnc_addLevel;
 	[] call life_fnc_profSetup;
 	_bonus = (life_payday /5);
-	if (_bonus in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]) then{
+	if (_bonus in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]) then{
 	_stunden =  life_payday;
 	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 20000$ <br /> + 2000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
@@ -98,6 +101,125 @@
 	};
 	};
   	};
+};
+
+[] spawn
+{
+ private["_newDamage","_newDamage2","_bloodmulti"];
+ // 100 HP, 100 Blood
+ player setVariable ["olddamage", 0 , false];
+ player setVariable ["olddamage2", 0, false];
+ player setVariable ["olddamage3", 0 , false];
+  while {true} do
+ {				// 0.1 > 0 							0 == 0
+ 	if (((damage player) > 0) AND ((player getVariable ["olddamage", 0]) == 0) AND (life_blood != 0) AND (life_bloodmulti == 0)) then  // 80 HP, 100 Blood
+	 	{
+	 	life_bloodmulti = 1;
+	 	player setVariable ["olddamage", damage player, false]; //0.2
+	 	player setVariable ["olddamage2", damage player, false]; //0.2
+	 	};
+	 	// 0.2 > 0 					 					0.2 < 0.3
+ 	if (((damage player) > 0) AND ((player getVariable ["olddamage2", 0]) < damage player) AND (player getVariable ["olddamage2", 0]) != 0  AND ((player getVariable ["olddamage2", 0]) > (player getVariable ["olddamage3", 0]) )  AND (life_blood != 0) AND (life_bloodmulti == 1)) then // 70 HP, 100 Blood
+	 	{
+	 	life_bloodmulti = 2;
+	 	player setVariable ["olddamage3", damage player, false]; //0.2
+	 	};
+
+ 	if (((damage player) > 0) AND ((player getVariable ["olddamage3", 0]) < damage player) AND ((player getVariable ["olddamage3", 0]) > 0)  AND (life_blood != 0) AND (life_bloodmulti == 2)) then
+	 	{
+	 	life_bloodmulti = 3;
+	 	};
+ 	if (damage player == 0) then
+ 	{
+ 		life_bloodmulti = 0;
+ 		life_blood = 100;
+ 		player setVariable ["olddamage", 0 , false];
+ 		player setVariable ["olddamage2", 0, false];
+ 		player setVariable ["olddamage3", 0 , false];
+ 	};
+};
+};
+[] spawn
+{
+	while {true} do
+	{
+		while {(life_bloodmulti > 0)} do
+		{
+			if (life_blood <= 0) exitWith {life_blood = 0; life_bloodmulti = 0;};
+			life_blood = (life_blood - (3 * life_bloodmulti));
+			sleep 15;
+		};
+	};
+};
+
+[] spawn
+{
+	while {true} do
+	{
+		while {((life_blood) == 0 AND (alive player))} do
+		{
+			player playMove "AinjPpneMstpSnonWnonDnon";
+			"colorCorrections" ppEffectAdjust [0.7, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.1, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+			"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [5]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
+			player setVariable ["unconscious",true, true];
+			while {player getVariable ["unconscious",false]} do { onEachFrame {if(player getVariable "unconscious") then {player switchCamera "Internal";};};};
+			waitUntil {life_blood > 0};
+			player switchMove "amovppnemstpsraswrfldnon";
+			player setVariable ["unconscious",false, false];
+			player setVariable ["olddamage", 0 , false];
+ 			player setVariable ["olddamage2", 0, false];
+ 			player setVariable ["olddamage3", 0 , false];
+		};
+	};
+
+};
+
+
+
+[] spawn
+{
+	while {true} do
+	{
+	if ((damage player == 0) AND (life_thirst < 20) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	 "colorCorrections" ppEffectAdjust [1, 1, 0, [0.0, 0.0, 0.0, 0.0], [1.8, 1.8, 0.3, 0.7],  [0.199, 0.587, 0.114, 0.0]];  "colorCorrections" ppEffectCommit 0;  "colorCorrections" ppEffectEnable true;
+	};
+	if ((life_blood == 1) AND (damage player == 0.99) AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.1, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [3]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
+	};
+	if ((life_blood > 1) AND (life_blood < 10)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.3, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
+	};
+	if ((life_blood > 10) AND (life_blood < 20)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.6, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
+	};
+	if ((life_blood > 20) AND (life_blood < 30)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [0.6, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 30) AND (life_blood < 40)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [0.7, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 40) AND (life_blood < 50)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [0.9, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 50) AND (life_blood < 60)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.2], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 60) AND (life_blood < 70)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.4], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 70) AND (life_blood < 80)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.6], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 80) AND (life_blood < 90)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.8], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
+	};
+	if ((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	"colorCorrections" ppEffectEnable false;
+	};
+};
 };
 
 /*

@@ -1,7 +1,7 @@
 /*
 	File: fn_revived.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	THANK YOU JESUS I WAS SAVED!
 */
@@ -14,6 +14,7 @@ life_corpse setVariable["realname",nil,true]; //Should correct the double name s
 _dir = getDir life_corpse;
 hint format[localize "STR_Medic_RevivePay",_medic,[(call life_revive_fee)] call life_fnc_numberText];
 "colorCorrections" ppEffectEnable false;
+"dynamicBlur" ppEffectEnable false;
 
 closeDialog 0;
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
@@ -26,6 +27,8 @@ if(life_atmcash > (call life_revive_fee)) then {
 	life_atmcash = 0;
 };
 
+player setDamage 0.75;
+life_blood = 25;
 //Retexturing of units clothing, vanilla files only retexture the EMS unit.
 /*switch(playerSide) do {
 	case independent: {[[player,0,"textures\med_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;};
