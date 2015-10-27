@@ -90,7 +90,9 @@ class Mission
 		"maa_uniform",
 		"A3_Modules_F_Events",
 		"A3_Weapons_F_ItemHolders",
-		"a3_weapons_f"
+		"a3_weapons_f",
+		"ace_hearing",
+		"ace_finger"
 	};
 	addOnsAuto[]=
 	{
@@ -112,6 +114,8 @@ class Mission
 		"ace_interaction",
 		"ace_repair",
 		"ace_nametags",
+		"ace_hearing",
+		"ace_finger",
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Structures_F_EPC_Civ_InfoBoards",
@@ -191,7 +195,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=102;
+		items=103;
 		class Item0
 		{
 			side="WEST";
@@ -3384,44 +3388,20 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13448.015,147.28,13208.878};
+					position[]={13011.124,147.28,13056.336};
 					class args
 					{
-						items=5;
+						items=1;
 						class Item0
 						{
-							value="1";
-							parentCls="ACE_ModuleMap";
-							typeName="MapIllumination";
-						};
-						class Item1
-						{
-							value="1";
-							parentCls="ACE_ModuleMap";
-							typeName="MapGlow";
-						};
-						class Item2
-						{
-							value="1";
-							parentCls="ACE_ModuleMap";
-							typeName="MapShake";
-						};
-						class Item3
-						{
 							value="0";
-							parentCls="ACE_ModuleMap";
-							typeName="MapLimitZoom";
-						};
-						class Item4
-						{
-							value="0";
-							parentCls="ACE_ModuleMap";
-							typeName="MapShowCursorCoordinates";
+							parentCls="ACE_moduleCargoSettings";
+							typeName="enable";
 						};
 					};
 					id=169;
 					side="LOGIC";
-					vehicle="ACE_ModuleMap";
+					vehicle="ACE_moduleCargoSettings";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -3436,35 +3416,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13011.124,147.28,13056.336};
-					class args
-					{
-						items=1;
-						class Item0
-						{
-							value="0";
-							parentCls="ACE_moduleCargoSettings";
-							typeName="enable";
-						};
-					};
-					id=170;
-					side="LOGIC";
-					vehicle="ACE_moduleCargoSettings";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item95
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={13110.502,147.28,13070.977};
+					position[]={13380.649,147.28,13441.391};
 					class args
 					{
 						items=6;
@@ -3505,7 +3457,7 @@ class Mission
 							typeName="SafeZoneRadius";
 						};
 					};
-					id=171;
+					id=170;
 					side="LOGIC";
 					vehicle="ACE_ModuleSwitchUnits";
 					leader=1;
@@ -3514,7 +3466,7 @@ class Mission
 				};
 			};
 		};
-		class Item96
+		class Item95
 		{
 			side="LOGIC";
 			class Vehicles
@@ -3522,7 +3474,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13486.564,150.66194,12777.949};
+					position[]={13374.004,147.28,13093.303};
 					class args
 					{
 						items=3;
@@ -3545,9 +3497,37 @@ class Mission
 							typeName="requireSurrender";
 						};
 					};
-					id=172;
+					id=171;
 					side="LOGIC";
 					vehicle="ace_captives_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item96
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13252.458,147.28,13080.651};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleInteraction";
+							typeName="EnableTeamManagement";
+						};
+					};
+					id=172;
+					side="LOGIC";
+					vehicle="ACE_ModuleInteraction";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -3562,35 +3542,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={13365.02,149.09734,12785.32};
-					class args
-					{
-						items=1;
-						class Item0
-						{
-							value="0";
-							parentCls="ACE_ModuleInteraction";
-							typeName="EnableTeamManagement";
-						};
-					};
-					id=173;
-					side="LOGIC";
-					vehicle="ACE_ModuleInteraction";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item98
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=2;
-				class Item0
-				{
-					position[]={13067.691,169.93437,12691.528};
+					position[]={13130.225,147.28,13074.458};
 					class args
 					{
 						items=9;
@@ -3649,35 +3601,16 @@ class Mission
 							typeName="wheelRepairRequiredItems";
 						};
 					};
-					id=174;
+					id=173;
 					side="LOGIC";
 					vehicle="ACE_moduleRepairSettings";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
 				};
-				class Item1
-				{
-					position[]={13067.691,180.33261,12613.234};
-					class args
-					{
-						items=1;
-						class Item0
-						{
-							value="0";
-							parentCls="ACE_moduleCargoSettings";
-							typeName="enable";
-						};
-					};
-					id=175;
-					side="LOGIC";
-					vehicle="ACE_moduleCargoSettings";
-					lock="UNLOCKED";
-					skill=0.60000002;
-				};
 			};
 		};
-		class Item99
+		class Item98
 		{
 			side="LOGIC";
 			class Vehicles
@@ -3720,7 +3653,7 @@ class Mission
 							typeName="showCursorTagForVehicles";
 						};
 					};
-					id=176;
+					id=174;
 					side="LOGIC";
 					vehicle="ACE_ModuleNameTags";
 					leader=1;
@@ -3729,7 +3662,7 @@ class Mission
 				};
 			};
 		};
-		class Item100
+		class Item99
 		{
 			side="GUER";
 			class Vehicles
@@ -3740,7 +3673,7 @@ class Mission
 					position[]={12576.2,348.2854,125.88107};
 					azimut=185.11099;
 					special="NONE";
-					id=177;
+					id=175;
 					side="GUER";
 					vehicle="I_medic_F";
 					player="PLAY CDG";
@@ -3752,7 +3685,7 @@ class Mission
 				};
 			};
 		};
-		class Item101
+		class Item100
 		{
 			side="CIV";
 			class Vehicles
@@ -3763,12 +3696,86 @@ class Mission
 					position[]={5273.6733,145.78534,6178.7622};
 					azimut=312.875;
 					special="NONE";
-					id=178;
+					id=176;
 					side="CIV";
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Quest annehmen"",  { [[""schakaleins"",0,1],""life_fnc_quest"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_quest == 0) && (life_level >= 1)']; removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this;    this addUniform ""IS_uniform_machinegunner_i"";  this addHeadgear ""IS_shemag_black"";  this addVest ""V_BandollierB_blk"";";
+				};
+			};
+		};
+		class Item101
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13617.944,147.28,13227.53};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="EnableCombatDeafness";
+						};
+						class Item1
+						{
+							value="-1";
+							parentCls="ACE_ModuleHearing";
+							typeName="DisableEarRinging";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="enabledForZeusUnits";
+						};
+					};
+					id=177;
+					side="LOGIC";
+					vehicle="ACE_ModuleHearing";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item102
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={13725.502,147.28,13232.535};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_finger_moduleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="4";
+							parentCls="ace_finger_moduleSettings";
+							typeName="maxRange";
+						};
+					};
+					id=178;
+					side="LOGIC";
+					vehicle="ace_finger_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
 				};
 			};
 		};
