@@ -94,6 +94,7 @@ switch(_shop) do
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
+                        ["Rangefinder",nil,1000], 
 			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
 			["ACE_ATragMX",nil,1000],
@@ -161,19 +162,20 @@ switch(_shop) do
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
 
-						["ACE_RangeCard",nil,1000],
+			["ACE_RangeCard",nil,1000],
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -234,25 +236,26 @@ switch(_shop) do
                         ["FHQ_optic_HWS_G33_tan",nil,500],
                         ["FHQ_optic_ACOG_tan",nil,1000],
                         ["optic_AMS_snd",nil,1000],
-						["rhsusf_acc_ACOG3",nil,1000],
-						["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
+			["rhsusf_acc_ACOG3",nil,1000],
+			["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
 			
-						["ACE_RangeCard",nil,1000],
+			["ACE_RangeCard",nil,1000],
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -315,8 +318,8 @@ switch(_shop) do
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
                         ["FHQ_optic_ACOG_tan",nil,1000],
-						["rhsusf_acc_ACOG3",nil,1000],
-						["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
+			["rhsusf_acc_ACOG3",nil,1000],
+			["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
                         ["optic_AMS_snd",nil,1000],
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
@@ -329,12 +332,13 @@ switch(_shop) do
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -400,27 +404,28 @@ switch(_shop) do
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
                         ["FHQ_optic_ACOG_tan",nil,1000],
-						["rhsusf_acc_ACOG3",nil,1000],
-						["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
+			["rhsusf_acc_ACOG3",nil,1000],
+			["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
                         ["optic_AMS_snd",nil,1000],
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
 
-						["ACE_RangeCard",nil,1000],
+			["ACE_RangeCard",nil,1000],
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Banana",nil,100],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Banana",nil,100],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -492,27 +497,28 @@ switch(_shop) do
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
                         ["FHQ_optic_ACOG_tan",nil,1000],
-						["rhsusf_acc_ACOG3",nil,1000],
-						["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
+			["rhsusf_acc_ACOG3",nil,1000],
+			["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
                         ["optic_AMS_snd",nil,1000],
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
 
-						["ACE_RangeCard",nil,1000],
+			["ACE_RangeCard",nil,1000],
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Banana",nil,100],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Banana",nil,100],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
@@ -587,27 +593,28 @@ switch(_shop) do
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
                         ["FHQ_optic_ACOG_tan",nil,1000],
-						["rhsusf_acc_ACOG3",nil,1000],
-						["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
+			["rhsusf_acc_ACOG3",nil,1000],
+			["rhsusf_acc_LEUPOLDMK4_2",nil,1000],
                         ["optic_AMS_snd",nil,1000],
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
                         ["optic_LRPS",nil,10000],
 
-						["ACE_RangeCard",nil,1000],
+			["ACE_RangeCard",nil,1000],
                         ["MiniGrenade",nil,1000],
                         ["1Rnd_HE_Grenade_shell",nil,1000],
                         ["HandGrenade",nil,1000],
                         ["rhs_mag_mk84",nil,1000],
                         ["bipod_01_F_snd",nil,1000],
                         ["ACE_Vector",nil,1000],
-						["ACE_Yardage450",nil,5000],
+                        ["Rangefinder",nil,1000], 
+			["ACE_Yardage450",nil,5000],
                         ["NVGoggles",nil,1000],
-						["ACE_ATragMX",nil,1000],
-						["ACE_Banana",nil,100],
-						["ACE_Kestrel4500",nil,500],
-						["ACE_HuntIR_monitor",nil,500],
-						["ACE_HuntIR_M203",nil,100]
+			["ACE_ATragMX",nil,1000],
+			["ACE_Banana",nil,100],
+			["ACE_Kestrel4500",nil,500],
+			["ACE_HuntIR_monitor",nil,500],
+			["ACE_HuntIR_M203",nil,100]
                     ]
                 ];
             };
