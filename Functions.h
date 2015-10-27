@@ -322,6 +322,7 @@ class Life_Client_Core
         class getKillCount{};
         class setKillCount{};
         class bountyReward{};
+        class startKillCount{};
     };
 
     class Network

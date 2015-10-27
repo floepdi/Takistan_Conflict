@@ -101,15 +101,15 @@ switch (_shop) do
 	case "civ_air":
 	{
 		if(life_level >= 24) then {
-			_return pushBack ["GR_Bell412_3",5000];
+			_return pushBack ["GR_Bell412_3",7500];
 		};
 		
 		if(life_level >= 32) then {
-			_return pushBack ["GR_Mi8_1",5000];
+			_return pushBack ["GR_Mi8_1",15000];
 		};
 		
 		if(life_level >= 49) then {
-			_return pushBack ["GR_Mi_171_2",5000];
+			_return pushBack ["GR_Mi_171_2",30000];
 		};
 		
 	};
@@ -272,28 +272,28 @@ switch (_shop) do
 case "civ_car":
 {
 		if(life_level >= 1) then {
-			_return pushBack ["RDS_Lada_Civ_01",5000];
+			_return pushBack ["RDS_Lada_Civ_01",150];
 		};
 		if(life_level >= 2) then {
-			_return pushBack ["RDS_S1203_Civ_01",6000];
+			_return pushBack ["RDS_S1203_Civ_01",250];
 		};
 		if(life_level >= 4) then {
-			_return pushBack ["RDS_Gaz24_Civ_01",7000];
+			_return pushBack ["RDS_Gaz24_Civ_01",300];
 		};
 		if(life_level >= 5) then {
-			_return pushBack ["rhs_uaz_open_MSV_01",8000];
+			_return pushBack ["rhs_uaz_open_MSV_01",400];
 		};
 		if(life_level >= 6) then {
-			_return pushBack ["C_Van_01_transport_F",9000];
+			_return pushBack ["C_Van_01_transport_F",500];
 		};
 		if(life_level >= 7) then {
-			_return pushBack ["UAZ_Unarmed",10000];
+			_return pushBack ["UAZ_Unarmed",450];
 		};
 		if(life_level >= 8) then {
-			_return pushBack ["RDS_Octavia_Civ_01",12000];
+			_return pushBack ["RDS_Octavia_Civ_01",500];
 		};
 		if(life_level >= 9) then {
-			_return pushBack ["C_Quadbike_01_F",2000];
+			_return pushBack ["C_Quadbike_01_F",350];
 		};
 	};
 	
@@ -335,65 +335,68 @@ case "level_car":
 		};
 		*/
 		if(life_level >= 10) then {
-			_return pushBack ["RDS_Ikarus_Civ_01",10000];
+			_return pushBack ["RDS_Ikarus_Civ_01",500];
 		};
 		if(life_level >= 13) then {
-			_return pushBack ["B_mas_cars_Hilux_Unarmed",20000];
+			_return pushBack ["B_mas_cars_Hilux_Unarmed",850];
 		};
 		if(life_level >= 15) then {
-			_return pushBack ["B_mas_cars_LR_Unarmed",22000];
+			_return pushBack ["B_mas_cars_LR_Unarmed",1000];
 		};
 		if(life_level >= 16) then {
-			_return pushBack ["rhs_gaz66_ammo_vmf",35000];
-			_return pushBack ["rhs_gaz66_vmf",25000];
+			_return pushBack ["rhs_gaz66_ammo_vmf",1000];
+			_return pushBack ["rhs_gaz66_vmf",1000];
 		};
 		if(life_level >= 18) then {
-			_return pushBack ["I_mas_cars_UAZ_M2",50000];
+			_return pushBack ["I_mas_cars_UAZ_M2",1500];
 		};
 		if(life_level >= 19) then {
-			_return pushBack ["B_mas_cars_Hilux_M2",50000];
+			_return pushBack ["B_mas_cars_Hilux_M2",1750];
 		};
 		if(life_level >= 20) then {
-			_return pushBack ["I_mas_cars_LR_soft_M2",50000];
+			_return pushBack ["I_mas_cars_LR_soft_M2",2000];
 		};
 		if(life_level >= 22) then {
-			_return pushBack ["I_mas_cars_UAZ_MG",50000];
+			_return pushBack ["I_mas_cars_UAZ_MG",2250];
 		};
 		if(life_level >= 23) then {
-			_return pushBack ["B_mas_cars_Hilux_MG",50000];
+			_return pushBack ["B_mas_cars_Hilux_MG",2500];
 		};
+		if(life_level >= 24) then {
+			_return pushBack ["GR_Bell412_3",7500];
+		};		
 		if(life_level >= 26) then {
-			_return pushBack ["RHS_Ural_Open_Civ_01",45000];
+			_return pushBack ["RHS_Ural_Open_Civ_01",2000];
 		};
 		if(life_level >= 27) then {
-			_return pushBack ["RHS_Ural_Fuel_MSV_01",50000];
+			_return pushBack ["RHS_Ural_Fuel_MSV_01",2000];
 		};
 		if(life_level >= 29) then {
-			_return pushBack ["B_G_Offroad_01_armed_F",50000];
+			_return pushBack ["B_G_Offroad_01_armed_F",2000];
 		};
 		if(life_level >= 30) then {
-			_return pushBack ["rhs_tigr_vdv",50000];
+			_return pushBack ["rhs_tigr_vdv",4500];
 		};
 		if(life_level >= 33) then {
-			_return pushBack ["C_Hatchback_01_F",50000];
+			_return pushBack ["C_Hatchback_01_F",2500];
 		};
 		if(life_level >= 36) then {
-			_return pushBack ["C_SUV_01_F",50000];
+			_return pushBack ["C_SUV_01_F",3500];
 		};
 		if(life_level >= 39) then {
-			_return pushBack ["max_Dodge_multy",50000];
+			_return pushBack ["max_Dodge_multy",3750];
 		};
 		if(life_level >= 40) then {
-			_return pushBack ["I_mas_cars_UAZ_SPG9",50000];
+			_return pushBack ["I_mas_cars_UAZ_SPG9",4000];
 		};
 		if(life_level >= 42) then {
-			_return pushBack ["B_mas_cars_Hilux_SPG9",50000];
+			_return pushBack ["B_mas_cars_Hilux_SPG9",4500];
 		};
 		if(life_level >= 44) then {
-			_return pushBack ["O_MRAP_02_F",50000];
+			_return pushBack ["O_MRAP_02_F",5000];
 		};
 		if(life_level >= 47) then {
-			_return pushBack ["B_Truck_01_ammo_F",50000];
+			_return pushBack ["B_Truck_01_ammo_F",3500];
 		};
 
 	};	
