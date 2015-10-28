@@ -34,6 +34,7 @@ if ("schakaleins" == _reihe) then
 					"schakaleins_1_1_0" setMarkerAlphaLocal 0;
 					"schakaleins_1_1_1" setMarkerAlphaLocal 1;
 					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang? - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Nachschube freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+					["Level_Prof",250,1] call life_fnc_addLevel;
 					["Quest_Prof",1,1] call life_fnc_addLevel;
 					[] call life_fnc_profSetup;
 				};
@@ -89,7 +90,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 							};
 					if (_progress == 1) then
 							{
-							if (life_quest == 5) then {
+							if (life_quest == 5) then
 								{
 										 playsound "blond_1_1_1";
 										"blond_1_1_0" setMarkerAlphaLocal 0;
@@ -99,10 +100,9 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Geschichtenerzähler freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
-								}
+								};
 							};
 					};
-				};
 			};
 			if (_nr == 2) then //Geschichtenerzähler
 			{
@@ -154,7 +154,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								playsound "blond_1_3_0";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Paradies<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Gehe zum Imam! <br /> + Questziel markiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Paradies<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Gehe zum Dorfältestenen! <br /> + Questziel markiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"blond_1_2_1" setMarkerAlphaLocal 0;
 								"blond_1_3_0" setMarkerAlphaLocal 1;
@@ -173,7 +173,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Paradies - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 250 Erfahrung <br /> + Quest: Vorbereitungen freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								};
 							};
-					};
+			};
 
 
 			if (_nr == 4) then //Vorbereitungen
@@ -188,7 +188,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								playsound "blond_1_4_0";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Vorbereitungen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ Stelle Sprengstoff her! <br /> + Besorge einen Guertel beim Markt! <br /> + Questziel markiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Vorbereitungen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Stelle Sprengstoff her! <br /> + Besorge einen Guertel beim Markt! <br /> + Questziel markiert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"blond_1_3_1" setMarkerAlphaLocal 0;
 								"blond_1_4_0" setMarkerAlphaLocal 1;
@@ -199,7 +199,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 							_p = _user getVariable "quest";
 								if (life_quest == 11) then
 								{
-										if (([false,"guertel",1] call life_fnc_handleInv) AND ([false,"sprengstoff",1] call life_fnc_handleInv)) then
+										if (([false,"guertel",1] call life_fnc_handleInv) AND ([false,"explosive",1] call life_fnc_handleInv)) then
 										{
 										[true,"sprengstoff",1] call life_fnc_handleInv;
 										[true,"guertel",1] call life_fnc_handleInv;
@@ -234,7 +234,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								playsound "blond_1_5_0";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> 69 Blonde Schönheiten<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ Baue eine Sprengstoffweste! <br /> + Sprenge dich samt eines Soldaten in die Luft!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> 69 Blonde Schönheiten<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Baue eine Sprengstoffweste! <br /> + Sprenge dich samt eines Soldaten in die Luft!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"blond_1_4_1" setMarkerAlphaLocal 0;
 								"blond_1_5_0" setMarkerAlphaLocal 1;
@@ -244,12 +244,6 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 							{
 								if (life_quest == 13) then
 								{
-										if (([false,"guertel",1] call life_fnc_handleInv) AND ([false,"sprengstoff",1] call life_fnc_handleInv)) then
-										{
-										[true,"sprengstoff",1] call life_fnc_handleInv;
-										[true,"guertel",1] call life_fnc_handleInv;
-
-										playsound "blond_1_5_1";
 										//Marker
 										"blond_1_5_0" setMarkerAlphaLocal 0;
 										"blond_1_5_1" setMarkerAlphaLocal 1;
@@ -258,11 +252,6 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										[] call life_fnc_profSetup;
 										life_cash = life_cash + 10000;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> 69 Blonde Schönheiten - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Teil 2 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-										}
-										else
-										{
-										hint "Besorg zuerst einen Guertel und Sprengstoff!";
-										};
 								};
 							};
 					};
@@ -291,7 +280,6 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 					if (life_quest == 15) then {
 						if ([false,"dogtag",2] call life_fnc_handleInv) then
 								{
-								[true,"dogtag",2] call life_fnc_handleInv;
 								playsound "schakalzwei_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -299,7 +287,7 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 								//Marker
 								"schakalzwei_1_1_0" setMarkerAlphaLocal 0;
 								"schakalzwei_1_1_1" setMarkerAlphaLocal 1;
-								}								}
+								}
 								else
 								{
 								hint "Besorg zuerst zwei DogTags!";
@@ -308,8 +296,8 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 					};
 				};
 			};
-};
-
+		};
+	};
 if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 	{
 		if ((side _user) == civilian) then { // nicht modifizieren
@@ -328,6 +316,7 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 				};
 				if (_progress == 1) then {
 					if (life_quest == 17) then {
+								// TO DO
 								playsound "glauben_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -357,6 +346,7 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 				};
 				if (_progress == 1) then {
 					if (life_quest == 19) then {
+						if (("ACE_Flashlight_XL50" in uniformItems player) OR ("ACE_Flashlight_XL50" in vestItems player) OR ("ACE_Flashlight_XL50" in backpackItems player)) then {
 								playsound "glauben_1_2_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -364,9 +354,14 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"glauben_1_2_0" setMarkerAlphaLocal 0;
 								"glauben_1_2_1" setMarkerAlphaLocal 1;
-								};
+							}
+							else
+							{
+								hint "Du hast noch kein Map-Flashlight dabei!";
 							};
+						};
 					};
+				};
 
 
 
@@ -379,7 +374,7 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								playsound "glauben_1_3_0"; // aus Vertonungsdokument nehmen
 								["Quest_Prof",1,1] call life_fnc_addLevel; // nicht modifizieren
 								[] call life_fnc_profSetup; // nicht modifizieren
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dope für den Kampf<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ farme Haschisch und gib es im Terrorlager ab"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dope für den Kampf<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ farme Haschisch und gib es im Terroristenlager ab"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"glauben_1_2_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"glauben_1_3_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
@@ -387,6 +382,8 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 				};
 				if (_progress == 1) then {
 					if (life_quest == 21) then {
+							if ([false,"haschisch",5] call life_fnc_handleInv) then // TO DO MENGE
+								{
 								playsound "glauben_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -394,6 +391,9 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"glauben_1_3_0" setMarkerAlphaLocal 0;
 								"glauben_1_3_1" setMarkerAlphaLocal 1;
+								}
+								else
+								hint "Du hast noch nicht genug Haschisch dabei!";
 								};
 							};
 					};
@@ -421,6 +421,7 @@ if ("propaganda" == _reihe) then // Propagandastudio
 				};
 				if (_progress == 1) then {
 					if (life_quest == 23) then {
+								// TO DO
 								playsound "propaganda_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -450,6 +451,7 @@ if ("propaganda" == _reihe) then // Propagandastudio
 				};
 				if (_progress == 1) then {
 					if (life_quest == 25) then {
+						if (("arifle_mas_ak74" in uniformItems player) OR ("arifle_mas_ak74" in vestItems player) OR ("arifle_mas_ak74" in backpackItems player) OR ("arifle_mas_ak74" in weapons player)) then {
 								playsound "propaganda_1_2_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -457,12 +459,14 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								//Marker
 								"propaganda_1_2_0" setMarkerAlphaLocal 0;
 								"propaganda_1_2_1" setMarkerAlphaLocal 1;
+								}
+								else
+								{
+								hint "Du hast keine AK-74 dabei!";
 								};
-							};
 					};
-
-
-
+				};
+	};
 
 
        if (_nr == 3) then	{ // nicht modifizieren
@@ -480,6 +484,8 @@ if ("propaganda" == _reihe) then // Propagandastudio
 				};
 				if (_progress == 1) then {
 					if (life_quest == 27) then {
+								titleText ["So... bleib stehen... und sprich diesen Text", "PLAIN",3];
+								sleep 10;
 								playsound "propaganda_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
@@ -535,16 +541,17 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								playsound "schakaldrei_1_2_0"; // aus Vertonungsdokument nehmen
 								["Quest_Prof",1,1] call life_fnc_addLevel; // nicht modifizieren
 								[] call life_fnc_profSetup; // nicht modifizieren
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schon wieder Nachschub<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ Erledige 3 Transporte für mich"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schon wieder Nachschub<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ Erledige 3 Transporte für Fortgeschrittene"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakaldrei_1_1_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"schakaldrei_1_2_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
 						};
 				};
 				if (_progress == 1) then {
-					if (life_quest == 31) then {
+					if ((life_quest == 31) AND (life_questinfo == 3)) then {
 								playsound "schakaldrei_1_2_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+								["QuestInfo_Prof",0,0] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schon wieder Nachschub - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Befreiung unserer Städte"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
@@ -572,9 +579,10 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 						};
 				};
 				if (_progress == 1) then {
-					if (life_quest == 33) then {
+					if ((life_quest == 33) AND (life_questinfo == 1)) then {
 								playsound "schakaldrei_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+								["QuestInfo_Prof",0,0] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreiung unserer Städte - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Abhören freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
