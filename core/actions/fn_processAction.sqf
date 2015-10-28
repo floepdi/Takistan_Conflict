@@ -19,6 +19,7 @@ _itemInfo = switch (_type) do
   case "oil": {["oilu","oilp",1000,(localize "STR_Process_Oil"),false];}; //added param (true or false) true if processing with 2 Items.
   case "diamond": {["diamond","diamondc",1000,(localize "STR_Process_Diamond"),false]};
   case "heroin": {["heroinu","heroinp",1000,(localize "STR_Process_Heroin"),false]};
+  case "heroinr": {["heroinp","heroinr",1000,(localize "STR_Process_HeroinR"),false]}; // 
   case "copper": {["copperore","copper_r",500,(localize "STR_Process_Copper"),false]};
   case "iron": {["ironore","iron_r",800,(localize "STR_Process_Iron"),false]};
   case "sand": {["sand","glass",450,(localize "STR_Process_Sand"),false]};
@@ -26,7 +27,8 @@ _itemInfo = switch (_type) do
   case "schnaps": {["peach","schnaps",450,(localize "STR_Process_Schnaps"),true,"apple"]};
   case "bier": {["malz","bier",1000,(localize "STR_Process_Bier"),true,"hopfen"]};
   case "cocaine": {["cocaine","cocainep",1000,(localize "STR_Process_Cocaine"),false]};
-  case "marijuana": {["cannabis","marijuana",800,(localize "STR_Process_Marijuana"),false]};
+  case "cannabis": {["cannabis","marijuana",800,(localize "STR_Process_Marijuana"),false]}; //
+  case "marijuana": {["marijuana","marijuanar",800,(localize "STR_Process_MarijuanaR"),false]}; //
   case "cement": {["rock","cement",650,(localize "STR_Process_Cement"),false]};
   case "coal": {["coalu","coalp",650,(localize "STR_Process_Coal"),false]};
   case "pilze": {["pilze","magicmushrooms",650,(localize "STR_Process_Pilze"),false]};

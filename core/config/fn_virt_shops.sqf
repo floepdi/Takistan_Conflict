@@ -18,7 +18,7 @@ switch (_shop) do
 	case "miliz": {["Miliz",["redgull","fuelF","lockpick"]]};
     case "tankstelle_med": {["Tankstelle",["burger","donuts","cola","redgull","fuelF","lockpick"]]};
     case "bandit": {["Küche",["ziegenmilch","dattel","fladenbrot","redgull","schlafmittel"]]};
-    case "heroin": {["Drogen Dealer",["cocainep","heroinp","marijuana","bluesyn","turtle","magicmushrooms"]]};
+    case "heroin": {["Drogen Dealer",["cocainep","heroinp","heroinr","cannabis","marijuana","bluesyn","turtle","magicmushrooms"]]};
     case "oil": {["Öl Händler",["oilp","pickaxe","fuelF"]]};
     case "cop": {["Mc Fress",["burger","donuts","cola","spikeStrip","redgull","fuelF","strahler","barrier","barricade","lockpick"]]};
     case "gold": {["Goldankauf",["goldbar"]]};

@@ -20,8 +20,10 @@ switch (_var) do
     case "life_inv_plastic": {(localize "STR_Item_Plastic")};
     case "life_inv_heroinu": {(localize "STR_Item_HeroinU")};
     case "life_inv_heroinp": {(localize "STR_Item_HeroinP")};
+    case "life_inv_heroinr": {(localize "STR_Item_HeroinR")};
     case "life_inv_cannabis": {(localize "STR_Item_Cannabis")};
     case "life_inv_marijuana": {(localize "STR_Item_Marijuana")};
+    case "life_inv_marijuanar": {(localize "STR_Item_MarijuanaR")};
     case "life_inv_apple": {(localize "STR_Item_Apple")};
     case "life_inv_rabbit": {(localize "STR_Item_RabbitMeat")};
     case "life_inv_salema": {(localize "STR_Item_SalemaMeat")};
@@ -150,6 +152,7 @@ switch (_var) do
     case "license_civ_bluesyn": {(localize "STR_License_BlueSyn")};
     case "license_civ_air": {(localize "STR_License_Pilot")};
     case "license_civ_heroin": {(localize "STR_License_Heroin")};
+    case "license_civ_heroinr": {(localize "STR_License_HeroinR")};
     case "license_civ_oil": {(localize "STR_License_Oil")};
     case "license_civ_air1": {(localize "STR_License_pilot1")};
     case "license_civ_dive": {(localize "STR_License_Diving")};
@@ -168,6 +171,7 @@ switch (_var) do
     case "license_civ_sand": {(localize "STR_License_Sand")};
     case "license_civ_salt": {(localize "STR_License_Salt")};
     case "license_civ_coke": {(localize "STR_License_Cocaine")};
+    case "license_civ_cannabis": {(localize "STR_License_Cannabis")};
     case "license_civ_marijuana": {(localize "STR_License_Marijuana")};
     case "license_civ_cement": {(localize "STR_License_Cement")};
     case "license_med_air": {(localize "STR_License_Pilot")};

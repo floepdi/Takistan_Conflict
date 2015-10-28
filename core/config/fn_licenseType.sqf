@@ -30,8 +30,9 @@ switch (_mode) do
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
 			case "uncarbomb": {_var = "license_cop_uncarbomb"};
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
-			case "marijuana": {_var = "license_civ_marijuana"}; //Marijuana processing license cost
-			case "medmarijuana": {_var = "license_civ_medmarijuana"}; //Medical Marijuana processing license cost
+			case "heroinr": {_var = "license_civ_heroinr"};
+			case "cannabis": {_var = "license_civ_cannabis"}; //Marijuana processing license cost
+			case "marijuana": {_var = "license_civ_marijuana"}; //Medical Marijuana processing license cost
 			case "gang": {_var = "license_civ_gang"}; //Gang license cost
 			case "rebel": {_var = "license_civ_rebel"}; //Rebel License
 			case "truck":{_var = "license_civ_truck"}; //Truck License
@@ -79,8 +80,9 @@ switch (_mode) do
 			case "license_cop_uncarbomb" : {_var = "uncarbomb"};
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
-			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost
-			case "license_civ_medmarijuana": {_var = "medmarijuana"}; //Medical Marijuana processing license cost
+			case "license_civ_heroinr": {_var = "heroinr"};
+			case "license_civ_cannabis": {_var = "cannabis"}; //Marijuana processing license cost
+			case "license_civ_marijuana": {_var = "marijuana"}; //Medical Marijuana processing license cost
 			case "license_civ_gang": {_var = "gang"}; //Gang license cost
 			case "license_civ_rebel": {_var = "rebel"}; //Rebel License
 			case "license_civ_truck":{_var = "truck"}; //Truck License
