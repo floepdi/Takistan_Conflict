@@ -104,7 +104,7 @@ life_muted = false;
 life_failed = false;
 life_bekanntschaften = [];
 life_kills = 0;
-
+life_ishealing = false;
 
 life_vehicles = [];
 bank_robber = [];
@@ -267,7 +267,10 @@ life_inv_items =
     "life_inv_nitroglycerin",
     "life_inv_flask",
     "life_inv_explosive",
-    "life_inv_dogtag"
+    "life_inv_dogtag",
+    "life_inv_kochsalz",
+    "life_inv_bandage",
+    "life_inv_traumakit"
 ];
 
 

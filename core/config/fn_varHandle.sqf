@@ -125,6 +125,9 @@ switch (_mode) do
             case "gunpowder": {"life_inv_gunpowder"};
             case "explosive": {"life_inv_explosive"};
             case "dogtag": {"life_inv_dogtag"};
+            case "bandage": {"life_inv_bandage"};
+            case "traumakit": {"life_inv_traumakit"};
+            case "kochsalz": {"life_inv_kochsalz"};
         };
     };
 
@@ -240,6 +243,9 @@ switch (_mode) do
             case "life_inv_gunpowder":{"gunpowder"};
             case "life_inv_explosive": {"explosive"};
             case "life_inv_dogtag": {"dogtag"};
+            case "life_inv_bandage":{"bandage"};
+            case "life_inv_traumakit": {"traumakit"};
+            case "life_inv_kochsalz": {"kochsalz"};
         };
     };
 };

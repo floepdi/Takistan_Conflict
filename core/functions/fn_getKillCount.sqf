@@ -5,5 +5,4 @@
 */
 
 _return = [life_kills,player];
-};
 _return;

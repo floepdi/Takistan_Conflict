@@ -26,6 +26,17 @@ if ("schakaleins" == _reihe) then
 				[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang?<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Lass dich als Terrorist anwerben! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 				["Quest_Prof",1,1] call life_fnc_addLevel;
 				[] call life_fnc_profSetup;
+					player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Ein neuer Anfang
+                                                Lass dich als Terrorist anwerben!
+                               ~angenommen~
+								"
+						]
+					];
 				};
 				if (_progress == 1) then{
 				if (life_quest == 1) then {
@@ -33,10 +44,19 @@ if ("schakaleins" == _reihe) then
 					playSound "schakaleins_1_1_1";
 					"schakaleins_1_1_0" setMarkerAlphaLocal 0;
 					"schakaleins_1_1_1" setMarkerAlphaLocal 1;
-					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang? - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Nachschube freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang? - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Nachschub freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 					["Level_Prof",250,1] call life_fnc_addLevel;
 					["Quest_Prof",1,1] call life_fnc_addLevel;
 					[] call life_fnc_profSetup;
+					player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Neue Quest: Nachschub freigeschalten
+								"
+						]
+					];
 				};
 				};
 			};
@@ -51,6 +71,18 @@ if ("schakaleins" == _reihe) then
 				[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Nachschub<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Erledige 3 Anfänger-Transporte für mich! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 				["Quest_Prof",1,1] call life_fnc_addLevel;
 				[] call life_fnc_profSetup;
+									player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Nachschub
+                                                Erledige 3 Anfänger-Transporte für mich!
+                               ~angenommen~
+								"
+						]
+					];
+				};
 				};
 				};
 				if (_progress == 1) then{
@@ -63,7 +95,15 @@ if ("schakaleins" == _reihe) then
 					["Quest_Prof",1,1] call life_fnc_addLevel;
 					["QuestInfo_Prof",0,0] call life_fnc_addLevel;
 					[] call life_fnc_profSetup;
+					player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
 
+             Neue Quest: Der Fremde
+								"
+						]
+					];
 				};
 				};
 			};
@@ -80,7 +120,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 							{
 							if (life_quest == 4) then {
 								playsound "blond_1_1_0";
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde - Abgeschlossen! <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Gehe zum Eremiten! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Gehe zum Eremiten! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakaleins_1_2_1" setMarkerAlphaLocal 0;
 								"blond_1_1_0" setMarkerAlphaLocal 1;
@@ -99,6 +139,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Geschichtenerzähler freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+
 
 								};
 							};
@@ -600,7 +641,7 @@ if("abhoeren" == _reihe) then { // Abhören
 		if((side _user) == civilian) then {
 			if(_nr == 1) then {						//Neues Sortiment
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 34) then {
 						playSound "abhoeren_1_1_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -610,7 +651,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 35) then {
 						playSound "abhoeren_1_1_1";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -622,7 +663,7 @@ if("abhoeren" == _reihe) then { // Abhören
 			};
 			if(_nr == 2) then {						//Besorgungen
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 36) then {
 						playSound "abhoeren_1_2_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -632,7 +673,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 37) then {
 						playSound "abhoeren_1_2_1";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -644,7 +685,7 @@ if("abhoeren" == _reihe) then { // Abhören
 			};
 			if(_nr == 3) then {						//Langfinger
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 38) then {
 						playSound "abhoeren_1_3_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -655,7 +696,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 39) then {
 					/*	_armyCars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
 						_nearObj = nearObjects [player,_armyCars,50];
 						if ((count _nearObj)>0) then {
@@ -674,7 +715,7 @@ if("abhoeren" == _reihe) then { // Abhören
 			};
 			if(_nr == 4) then {						//Pole
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 40) then {
 						playSound "abhoeren_1_4_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -684,7 +725,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 41) then {
 
 						//Schlüssel abfrage
 
@@ -699,7 +740,7 @@ if("abhoeren" == _reihe) then { // Abhören
 			};
 			if(_nr == 5) then {						//Überraschung
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 42) then {
 
 						// Abhörgerätkauf freischalten
 
@@ -712,7 +753,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 43) then {
 							playSound "abhoeren_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
@@ -724,7 +765,7 @@ if("abhoeren" == _reihe) then { // Abhören
 			};
 			if(_nr == 6) then {						//Spion
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 44) then {
 						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "abhoeren_1_6_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -735,7 +776,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 45) then {
 						if([false,"information",10] call life_fnc_handleInv) then {
 							[true,"information",10] call life_fnc_handleInv;
 							playSound "abhoeren_1_5_1";
@@ -755,7 +796,7 @@ if("abhoeren" == _reihe) then { // Abhören
 			};
 			if(_nr == 7) then {						//Das Attentat
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 46) then {
 						playSound "abhoeren_1_7_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -766,7 +807,7 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 47) then {
 						if ([false,"dogtag",4] call life_fnc_handleInv) then {
 							playSound "abhoeren_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -789,7 +830,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 		if((side _user) == civilian) then {
 			if(_nr == 1) then {						//Kein Zurück mehr
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 48) then {
 						waitUntil { (5 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_1_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -800,7 +841,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 49) then {
 						if ([false,"dogtag",1] call life_fnc_handleInv) then {
 							playSound "hoellenfeuer_1_1_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -816,7 +857,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 2) then {						//Uniformiert
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 50) then {
 						playSound "hoellenfeuer_1_2_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -826,7 +867,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 51) then {
 						_unif = uniform player;
 						if(_unif == "IS_uniform_squad_leader_o") then {
 							playSound "hoellenfeuer_1_2_1";
@@ -843,7 +884,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 3) then {						//Wolf im Schafspelz
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 52) then {
 						waitUntil { (1 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_3_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -855,8 +896,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
-						ife_quest == 666) then {
+					if(life_quest == 53) then {
 						if ([false,"burger",1] call life_fnc_handleInv) then {
 							playSound "hoellenfeuer_1_3_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -869,8 +909,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 4) then {						//Ausnutzen
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
-						waitUntil { (6 >= (west countSide playableUnits)) };
+					if(life_quest == 54) then {
 						playSound "hoellenfeuer_1_4_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -880,7 +919,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 55) then {
 						_armyCars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
 						_nearObj = nearObjects [player, ["_armyCars"],50];
 						if ((count _nearObj)>0) then {
@@ -898,7 +937,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 5) then {						//Kreuzzug
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 56) then {
 						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_5_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -909,7 +948,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 57) then {
 						if ([false,"dogtag",5] call life_fnc_handleInv) then {
 							playSound "hoellenfeuer_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -925,7 +964,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 6) then {						//Wocheinkauf
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 58) then {
 						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_6_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -936,7 +975,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 59) then {
 
 						// Zündername?
 
@@ -955,7 +994,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 7) then {						//Pyrotechnik
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 60) then {
 						waitUntil { (2 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_7_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -967,7 +1006,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 61) then {
 						if ([false,"explosive",1] call life_fnc_handleInv) {
 							playSound "hoellenfeuer_1_7_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -984,7 +1023,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 8) then {						//Handwerker
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 62) then {
 						waitUntil { (2 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_8_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -996,7 +1035,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 63) then {
 
 						// Small IED Bug IN Arma oder Z-Item?
 
@@ -1012,7 +1051,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			};
 			if(_nr == 9) then {						//Höllenfeuer
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 64) then {
 						waitUntil { (10 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_9_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -1024,7 +1063,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 65) then {
 
 						//Check Bombe explodiert
 
@@ -1046,7 +1085,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 		if((side _user) == civilian) then {
 			if(_nr == 1) then {						//Kondome für die Alte neben mir und Unsere Heiligen Schriften.
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 66) then {
 
 						//Irgendwelche Missions abschließen?
 
@@ -1059,7 +1098,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 67) then {
 
 						//Irgendwelche Missions abschließen?
 
@@ -1074,7 +1113,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 			};
 			if(_nr == 2) then {						//Die Position festigen
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 68) then {
 						playSound "schakalvier_1_2_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1084,7 +1123,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 69) then {
 						if([false,"dogtag",10] call life_fnc_handleInv){
 							playSound "schakalvier_1_2_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -1100,7 +1139,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 			};
 			if(_nr == 3) then {						//Der Befreiungsschlag
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 70) then {
 						playSound "schakalvier_1_3_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1111,7 +1150,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 71) then {
 
 							//Gewinne 3 Gebietskämpfe Check
 
@@ -1126,7 +1165,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 			};
 			if(_nr == 4) then {						//Schmerzen
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 72) then {
 						playSound "schakalvier_1_4_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1136,7 +1175,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 73) then {
 
 						//20 Soldaten foltern Check
 
@@ -1151,7 +1190,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 			};
 			if(_nr == 5) then {						//Schwäche die Ungläubigen
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 74) then {
 						playSound "abhoeren_1_5_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1161,7 +1200,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 75) then {
 
 						//Waffenlager Check
 
@@ -1176,7 +1215,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 			};
 			if(_nr == 6) then {						//Totaler Krieg
 				if(_progress == 0) then {
-					if(life_quest == 666) then {
+					if(life_quest == 76) then {
 						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "schakalvier_1_6_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -1187,7 +1226,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 666) then {
+					if(life_quest == 77) then {
 
 						//Halte alle 3 Gebiete und elimiere 2 hohe Offiziere. Gib 2 Offizier Dog Tags beim Warlord ab.
 

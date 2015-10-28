@@ -22,7 +22,7 @@ enableCamShake true;
 for "_i" from 0 to 44 do
 {
     "chromAberration" ppEffectAdjust [random 0.25,random 0.25,true];
-    "chromAberration" ppEffectCommit 1;   
+    "chromAberration" ppEffectCommit 1;
    // "radialBlur" ppEffectAdjust  [random 0.02,random 0.02,0.15,0.15];
    // "radialBlur" ppEffectCommit 1;
     addcamShake[random 3, 1, random 3];

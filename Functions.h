@@ -499,6 +499,9 @@ class Life_Client_Core
         class pickaxeUse {};
         class lockpick {};
         class spikeStrip {};
+        class bandage {};
+        class kochsalz {};
+        class trauma {};
         class jerryRefuel {};
         class flashbang {};
         class boltcutter {};

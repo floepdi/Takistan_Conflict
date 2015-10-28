@@ -26,6 +26,7 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Sack überziehen",life_fnc_sack,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable ["ace_captives_isHandcuffed", false]) && !(cursorTarget getVariable "Sack")']];
 		life_actions = life_actions + [player addAction["Sack selber entfernen",life_fnc_sackremove,"",0,false,false,"",'(player getVariable "Sack") && !(player getVariable "restrained")']];
 		life_actions = life_actions + [player addAction["Sack entfernen",life_fnc_sackremove,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable "Sack")']];
+		life_actions = life_actions + [player addAction["<t color ='#FF0000'>Selbst-Bandagieren",life_fnc_bandage,"",0,false,false,"",'(life_blood < 100) && speed player < 5 && (life_bloodmulti > 0) && !(life_ishealing)']];
 	};
 	case independent:
 	{

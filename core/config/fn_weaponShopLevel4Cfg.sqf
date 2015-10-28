@@ -48,7 +48,7 @@ switch(_shop) do
                         ["hgun_mas_mak_F",nil,100],
                         ["8Rnd_mas_9x18_Mag",nil,10],
                         ["hgun_mas_acp_F",nil,125],
-                        ["12Rnd_mas_45acp_Mag",nil,10],
+                        ["12Rnd_mas_45acp_Mag",nil,10]
                     ]
                 ];
             };
