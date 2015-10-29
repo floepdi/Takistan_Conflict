@@ -120,7 +120,9 @@ switch (_var) do
     case "life_inv_flask": {(localize "STR_Item_Flask")};
     case "life_inv_gunpowder":{(localize "STR_Item_Gunpowder")};
     case "life_inv_explosive": {(localize "STR_Item_Explosive")};
-
+    case "life_inv_traumakit": {"Trauma-Kit"};
+    case "life_inv_bandage": {"Bandage"};
+    case "life_inv_kochsalz": {"Kochsalz"};
 
 
     //Prof Block

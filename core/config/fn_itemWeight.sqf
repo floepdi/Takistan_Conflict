@@ -117,5 +117,8 @@ switch (_item) do
     case "gunpowder": {6};
     case "explosive": {10};
     case "dogtag": {3};
+    case "bandage": {1};
+    case "traumakit": {3};
+    case "kochsalz": {2};
     default {1};
 };

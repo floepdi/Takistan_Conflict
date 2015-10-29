@@ -6,7 +6,8 @@ if(player diarySubjectExists "rules")exitwith{};
 player createDiarySubject ["changelog","Change Log"];
 player createDiarySubject ["serverrules","Serverregeln"];
 player createDiarySubject ["hotkeys","Tastenbelegungen"];
-
+player createDiarySubject ["questbuch","Quest-Buch"];
+player createDiarySubject ["transportbuch","Transport-Buch"];
 /*  Example
 	player createDiaryRecord ["", //Container
 		[
@@ -17,8 +18,8 @@ player createDiarySubject ["hotkeys","Tastenbelegungen"];
 		]
 	];
 */
-	
-	
+
+
 	player createDiaryRecord["changelog",
 		[
 			"synced changelog",
@@ -34,14 +35,14 @@ player createDiarySubject ["hotkeys","Tastenbelegungen"];
 				"
 				Unsere Regeln findet ihr auf unserer Homepage: synced-gaming.de <br/>
 				Informationen rund um den Server findet ihr in unserem Wiki: synced.vilayer.me/wiki/
-				
+
 				"
 		]
 	];
-	
-	
-					
-	
+
+
+
+
 	player createDiaryRecord ["hotkeys",
 		[
 			"Tastenbelegung",
@@ -64,4 +65,3 @@ player createDiarySubject ["hotkeys","Tastenbelegungen"];
 	];
 
 
-	
