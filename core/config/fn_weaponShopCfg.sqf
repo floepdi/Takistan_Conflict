@@ -45,7 +45,7 @@ switch(_shop) do
     {
         ["Synced Gemischtwaren",
             [
-                ["ACE_DAGR",nil,15],
+                ["ItemGPS",nil,15],
                 ["ItemMap",nil,10],
                 ["ItemCompass",nil,15],
                 ["ToolKit",nil,100],
