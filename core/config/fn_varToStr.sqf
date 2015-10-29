@@ -106,7 +106,7 @@ switch (_var) do
     case "life_inv_sniperkiste": {"Kiste mit schweren Scharfschützengewehren"};
     case "life_inv_blumenerde": {"Blumenerde"};
     case "life_inv_altpapier": {"Altpapier"};
-    case "life_inv_golderz": {"Golderz"};
+    case "life_inv_goldore": {"Golderz"};
     case "life_inv_goldbarren": {"Goldbarren"};
     case "life_inv_depotwaffen": {"Depotwaffen"};
     case "live_inv_information": {"Information"};

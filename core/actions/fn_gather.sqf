@@ -34,7 +34,7 @@ switch(true) do {
 	case (_zone in ["heroin_1"]): {_gather = "heroinu"; _val = 1;};
 	case (_zone in ["cocaine_1"]): {_gather = "cocaine"; _val = 1;};
 	case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = 1;};
-	case (_zone in ["gold_1"]): {_gather = "golderz"; _val = 1;};
+	case (_zone in ["gold_1"]): {_gather = "goldore"; _val = 1;};
 	case (_zone in ["sulfur_1"]): {_gather = "sulfuru"; _val =1;};
 	case (_zone in ["nitre_1"]): {_gather = "nitre"; _val =1;};
 /*	case (_zone in ["hopfen_1"]): {_karma=1;_gather = "hopfen"; _val = 2;};

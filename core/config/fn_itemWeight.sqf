@@ -68,7 +68,7 @@ switch (_item) do
     case "rock": {5};
     case "schlafmittel": {5};
     case "cement": {4};
-    case "goldbar": {10};
+    case "goldbar": {3};
     case "blastingcharge": {8};
     case "boltcutter": {3};
     case "defusekit": {2};
@@ -103,8 +103,7 @@ switch (_item) do
     case "carbomb1": {5};
     case "carbomb2": {5};
     case "carfernzuender": {2};
-    case "golderz": {5};
-    case "goldbarren": {3};
+    case "goldore": {5};
     case "depotwaffen": {10};
     case "information": {3};
     case "abhoergeraet": {20};
