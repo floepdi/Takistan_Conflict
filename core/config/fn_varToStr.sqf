@@ -123,6 +123,7 @@ switch (_var) do
     case "life_inv_traumakit": {"Trauma-Kit"};
     case "life_inv_bandage": {"Bandage"};
     case "life_inv_kochsalz": {"Kochsalz"};
+    case "life_inv_morphin": {"Morphin"};
 
 
     //Prof Block

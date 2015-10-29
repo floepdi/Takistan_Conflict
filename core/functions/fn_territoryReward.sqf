@@ -11,15 +11,15 @@ private["_pos","_side"];
 _over = _this select 0;
 
 if(!_over) then {
-  			//Minütlich 1000
-  			life_cash = life_cash + 1000;
-  			[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br />+1000$ Mach weiter so!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+  			//Minütlich
+  			life_cash = life_cash + 25;
+  			["Level_Prof",1,25] call life_fnc_addLevel;
+			[] call life_fnc_profSetup;
+  			[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br /> + 25$ <br/> + 25 EXP"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 } else {
-  			//Ende des Territoryfights 20000
-  			life_cash = life_cash + 20000;
-  			[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br />+20000$ Du hast das Gebiet erobert!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+  			//Ende des Territoryfights
+  			life_cash = life_cash + 500;
+  			["Level_Prof",1,500] call life_fnc_addLevel;
+			[] call life_fnc_profSetup;
+  			[format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br /> + 500$ <br/> + 500 EXP"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 };
-
-
-["QuestInfo_Prof",1,1] call life_fnc_addLevel;
-[] call life_fnc_profSetup;

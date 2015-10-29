@@ -17,5 +17,5 @@ titleText ["", "PLAIN"];
 life_bloodmulti = 0;
 player setVariable ["olddamage3", 0, false];
 player setVariable ["olddamage2", 0, false];
-player setVariable ["olddamage", 0, false];
+player setVariable ["olddamage", 2, false];
 };

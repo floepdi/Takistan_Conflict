@@ -26,8 +26,13 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Sack überziehen",life_fnc_sack,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable ["ace_captives_isHandcuffed", false]) && !(cursorTarget getVariable "Sack")']];
 		life_actions = life_actions + [player addAction["Sack selber entfernen",life_fnc_sackremove,"",0,false,false,"",'(player getVariable "Sack") && !(player getVariable "restrained")']];
 		life_actions = life_actions + [player addAction["Sack entfernen",life_fnc_sackremove,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (cursorTarget getVariable "Sack")']];
-		life_actions = life_actions + [player addAction["<t color ='#FF0000'>Selbst-Bandagieren",life_fnc_bandage,"",0,false,false,"",'(life_blood < 100) && speed player < 5 && (life_bloodmulti > 0) && !(life_ishealing)']];
-	};
+		life_actions = life_actions + [player addAction["<img size= '1' image='icons\bandage.paa'/> <t color ='#F5A9A9'>Selbst-Bandagieren",life_fnc_bandage,"",0,false,false,"",'(life_blood < 100) && speed player < 5 && (life_bloodmulti > 0) && !(life_ishealing) && !(player getVariable ["unconscious",false])']];
+		life_actions = life_actions + [player addAction["<img size= '1' image='icons\bandage.paa'/> <t color ='#A9F5BC'>Kamerad bandagieren",life_fnc_bandagemate,"",0,false,false,"",'!isNull cursorTarget && (cursorTarget getVariable ["blood",100] < 100) && (cursorTarget getVariable ["bloodmulti",0] > 0) && speed cursorTarget < 2 && speed player < 5 && !(life_ishealing) && !(player getVariable ["unconscious",false])']];
+		life_actions = life_actions + [player addAction["<img size= '1' image='icons\kochsalz.paa'/> <t color ='#A9F5BC'>Kochsalz verabreichen",life_fnc_kochsalzmate,"",0,false,false,"",'!isNull cursorTarget && (cursorTarget getVariable ["blood",100] < 100)  && speed cursorTarget < 2 && speed player < 5 && !(life_ishealing) && !(player getVariable ["unconscious",false])']];
+		life_actions = life_actions + [player addAction["<img size= '1' image='icons\morphin.paa'/> <t color ='#A9F5BC'>Morphin benutzen",life_fnc_morphin,"",0,false,false,"",'(((damage player > 0) OR (life_blood < 100)) && speed player < 5 && !(life_ishealing) && !(life_morphin_cd)) && !(player getVariable ["unconscious",false])']];
+		 life_actions = life_actions + [player addAction["<img size= '1' image='icons\epi.paa'/> <t color ='##FE2E2E'>Epinephrin-Kit benutzen",life_fnc_epimate,"",0,false,false,"",'!isNull cursorTarget  && (cursorTarget getVariable ["unconscious",false]) && speed cursorTarget < 2 && speed player < 5 && !(life_ishealing)']];
+
+		};
 	case independent:
 	{
 	life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_showLicenseAction,"",0,false,false,"",'

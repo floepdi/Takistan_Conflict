@@ -33,7 +33,6 @@ if ("schakaleins" == _reihe) then
 
              Ein neuer Anfang
                                                 Lass dich als Terrorist anwerben!
-                               ~angenommen~
 								"
 						]
 					];
@@ -53,7 +52,8 @@ if ("schakaleins" == _reihe) then
 							"Quest-Buch",
 								"
 
-             Neue Quest: Nachschub freigeschalten
+             Ein neuer Anfang - Abgeschlossen!
+                                                Neue Quest: Nachschub
 								"
 						]
 					];
@@ -67,24 +67,23 @@ if ("schakaleins" == _reihe) then
 			if (_progress == 0) then{
 				if (life_quest == 2) then {
 				playSound "schakaleins_1_2_0";
+				"schakaleins_1_1_1" setMarkerAlphaLocal 0;
 				"schakaleins_1_2_0" setMarkerAlphaLocal 1;
 				[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Nachschub<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Erledige 3 Anfänger-Transporte für mich! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 				["Quest_Prof",1,1] call life_fnc_addLevel;
 				[] call life_fnc_profSetup;
-									player createDiaryRecord["questbuch",
+					player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
 
              Nachschub
-                                                Erledige 3 Anfänger-Transporte für mich!
-                               ~angenommen~
+                                                Erledige 3 Transporte für mich
 								"
 						]
 					];
 				};
-				};
-				};
+			};
 				if (_progress == 1) then{
 				if ((life_quest == 3) AND (life_questinfo == 3)) then {
 
@@ -100,14 +99,15 @@ if ("schakaleins" == _reihe) then
 							"Quest-Buch",
 								"
 
-             Neue Quest: Der Fremde
+             Nachschub - Abgeschlossen!
+                                                Neue Questreihe: 69 Blonde Schönheiten
 								"
 						]
 					];
 				};
-				};
 			};
 		};
+	};
 };
 
 if ("blond" == _reihe) then // 69 Blonde Schönheiten
@@ -126,6 +126,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								"blond_1_1_0" setMarkerAlphaLocal 1;
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Der Fremde
+                                                Gehe zum Eremiten
+								"
+						]
+					];
 								};
 							};
 					if (_progress == 1) then
@@ -139,7 +149,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Geschichtenerzähler freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
 
+             Der Fremde - Abgeschlossen!
+                                                Neue Quest: Geschichtenerzähler
+								"
+						]
+					];
 
 								};
 							};
@@ -160,6 +179,17 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								//Marker
 								"blond_1_1_1" setMarkerAlphaLocal 0;
 								"blond_1_2_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Geschichtenerzähler
+                                                Bringe dem Eremiten ein Glas Ziegenmilch vom Markt
+								"
+						]
+					];
+
 								};
 							};
 					if (_progress == 1) then //Questabgabe 1 2 1
@@ -179,6 +209,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								else
 								{
 									hint "Besorg zuerst Ziegenmilch für mich!";
+                   player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Geschichtenerzähler - Abgeschlossen!
+                                                Neue Quest: Das Paradies
+								"
+						]
+					];
 								};
 							};
 						};
@@ -199,6 +239,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								//Marker
 								"blond_1_2_1" setMarkerAlphaLocal 0;
 								"blond_1_3_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Das Paradies
+                                                Gehe zum Imam
+								"
+						]
+					];
 								};
 							};
 					if (_progress == 1) then //Questabgabe 1 3 1
@@ -212,6 +262,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Paradies - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 250 Erfahrung <br /> + Quest: Vorbereitungen freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Das Paradies - Abgeschlossen!
+                                                Neue Quest: Vorbereitungen
+								"
+						]
+					];
 								};
 							};
 			};
@@ -233,6 +293,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								//Marker
 								"blond_1_3_1" setMarkerAlphaLocal 0;
 								"blond_1_4_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Vorbereitungen
+                                                Gehe zum Markt und hole einen Gürtel. Besorge dann Sprengstoff.
+								"
+						]
+					];
 								};
 							};
 					if (_progress == 1) then //Questabgabe 1 4 1
@@ -257,6 +327,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										else
 										{
 										hint "Besorg zuerst einen Guertel und Sprengstoff!";
+                    player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Vorbereitungen - Abgeschlossen!
+                                                Neue Quest: 69 Blonde Schönheiten
+								"
+						]
+					];
 										};
 								};
 							};
@@ -279,6 +359,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								//Marker
 								"blond_1_4_1" setMarkerAlphaLocal 0;
 								"blond_1_5_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             69 Blonde Schönheiten
+                                                Baue eine Sprengstoffweste. Wenn du überlebst sprenge dich in die Luft.
+								"
+						]
+					];
 								};
 							};
 					if (_progress == 1) then //Questabgabe 1 5 1
@@ -293,6 +383,16 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										[] call life_fnc_profSetup;
 										life_cash = life_cash + 10000;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> 69 Blonde Schönheiten - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Teil 2 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             69 Blonde Schönheiten - Abgeschlossen!
+                                                Neue Questreihe: Aus dem Leben eines Schakals Part 2
+								"
+						]
+					];
 								};
 							};
 					};
@@ -313,6 +413,16 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 								//Marker
 								"blond_1_5_1" setMarkerAlphaLocal 0;
 								"schakalzwei_1_1_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Befreie uns von der Geißel
+                                                Sammle 2 Nato Dog Tags
+								"
+						]
+					];
 
 
 					};
@@ -332,6 +442,16 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 								else
 								{
 								hint "Besorg zuerst zwei DogTags!";
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Befreie uns von der Geißel - Abgeschlossen!
+                                                Neue Questreihe: Für den Glauben aufrüsten
+								"
+						]
+					];
 								};
 
 					};
@@ -353,6 +473,16 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"schakalzwei_1_1_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"glauben_1_1_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Erweiterung deines Fuhrparks
+                                                Kaufe dir einen GAZ-24
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -365,6 +495,16 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"glauben_1_1_0" setMarkerAlphaLocal 0;
 								"glauben_1_1_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Erweiterung deines Fuhrparks - Abgeschlossen!
+                                                Neue Quest: Dunkles Geheimnis
+								"
+						]
+					];
 								};
 
 					};
@@ -383,6 +523,16 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"glauben_1_1_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"glauben_1_2_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Dunkles Geheimnis
+                                                Besorge dir eine Mapflash
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -399,6 +549,16 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 							else
 							{
 								hint "Du hast noch kein Map-Flashlight dabei!";
+                                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Dunkles Geheimnis - Abgeschlossen!
+                                                Neue Quest: Dope für den Kampf
+								"
+						]
+					];
 							};
 						};
 					};
@@ -419,6 +579,16 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								//Marker
 								"glauben_1_2_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"glauben_1_3_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Dope für den Kampf
+                                                Farme Haschisch und gib es im Terroristenlager ab
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -435,6 +605,16 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								}
 								else
 								hint "Du hast noch nicht genug Haschisch dabei!";
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             DOpe für den Kampf - Abgeschlossen!
+                                                Neue Questreihe: Propagandastudio
+								"
+						]
+					];
 								};
 							};
 					};
@@ -458,6 +638,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								//Marker
 								"glauben_1_3_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"propaganda_1_1_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Filmreif
+                                                Bringe einen UAZ zum Terroristenlager
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -470,6 +660,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								//Marker
 								"propaganda_1_1_0" setMarkerAlphaLocal 0;
 								"propaganda_1_1_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Filmreif - Abgeschlossen!
+                                                Neue Quest: Teures Terroristenleben
+								"
+						]
+					];
 								};
 
 					};
@@ -488,6 +688,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								//Marker
 								"propaganda_1_1_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"propaganda_1_2_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Teures Terroristenleben
+                                                Kaufe eine AK 74
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -504,6 +714,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								else
 								{
 								hint "Du hast keine AK-74 dabei!";
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Teures Terroristenleben - Abgeschlossen!
+                                                Neue Quest: Moviestar
+								"
+						]
+					];
 								};
 					};
 				};
@@ -521,6 +741,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								//Marker
 								"propaganda_1_2_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"propaganda_1_3_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Moviestar
+                                                Stell dich 10 Sekunden vor die Kamera und sprich deine Botschaft
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -534,6 +764,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								//Marker
 								"propaganda_1_3_0" setMarkerAlphaLocal 0;
 								"propaganda_1_3_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Moviestar - Abgeschlossen!
+                                                Neue Questreihe: Aus dem Leben eines Schakals Part 3
+								"
+						]
+					];
 								};
 							};
 					};
@@ -557,6 +797,16 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"propaganda_1_3_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"schakaldrei_1_1_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Aufstieg des Bösen
+                                                Sprich mit dem Warlord
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -568,6 +818,16 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"schakaldrei_1_1_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_1_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Aufstieg des Bösen - Abgeschlossen!
+                                                Neue Quest: Schon wieder Nachschub
+								"
+						]
+					];
 								};
 
 					};
@@ -586,6 +846,16 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"schakaldrei_1_1_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"schakaldrei_1_2_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Schon wieder Nachschub
+                                                Erledige 3 Transporte für mich
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -598,6 +868,16 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"schakaldrei_1_2_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_2_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Schon wieder Nachschub - Abgeschlossen!
+                                                Neue Quest: Befreiung unserer Städte
+								"
+						]
+					];
 								};
 							};
 					};
@@ -617,6 +897,16 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"schakaldrei_1_2_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"schakaldrei_1_3_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Befreiung unserer Städte
+                                                Gewinne einen Gebietskampf
+								"
+						]
+					];
 						};
 				};
 				if (_progress == 1) then {
@@ -629,6 +919,16 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"schakaldrei_1_3_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_3_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Befreiung unserer Städte - Abgeschlossen!
+                                                Neue Questreihe: Abhören
+								"
+						]
+					];
 								};
 							};
 					};
@@ -648,6 +948,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Neues Sortiment <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Gehe zu Abduls Elektronikladen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"schakaldrei_1_3_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_1_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Neues Sortiment
+                                                Gehe zu Abduls Elektronikladen
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -658,6 +968,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Neues Sortiment - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_1_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_1_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Neues Sortiment - Abgeschlossen!
+                                                Neue Quest: Besorgungen
+								"
+						]
+					];
 					};
 				};
 			};
@@ -670,6 +990,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Besorgungen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Gehe ins Terroristenlager"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_1_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_2_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Besorgungen
+                                                Gehe ins Terroristenlager
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -680,6 +1010,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Besorgungen - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_2_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_2_1" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Besorgungen - Abgeschlossen!
+                                                Neue Quest: Langfinger
+								"
+						]
+					];
 					};
 				};
 			};
@@ -693,6 +1033,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						//Marker
 						"abhoeren_1_2_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_3_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Langfinger
+                                                Stiehl ein Army-Fahrzeug und bringe es zu Abduls Elektronikladen
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -710,6 +1060,16 @@ if("abhoeren" == _reihe) then { // Abhören
 					 //	} else{
 					//		hint "Besorg dir das verdammte Auto!";
 					//	};
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Langfinger - Abgeschlossen!
+                                                Neue Quest: Pole
+								"
+						]
+					];
 					};
 				};
 			};
@@ -722,6 +1082,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Knacke das Fahrzeug!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_3_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_4_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Pole
+                                                Knacke das Fahrzeug
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -735,6 +1105,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_4_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_4_1" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Pole - Abgeschlossen!
+                                                Neue Quest: Überraschung
+								"
+						]
+					];
 					};
 				};
 			};
@@ -750,6 +1130,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Überraschung <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Kaufe das Abhörgerät"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_4_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_5_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Überraschung
+                                                Kaufe das Abhörgerät
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -760,6 +1150,16 @@ if("abhoeren" == _reihe) then { // Abhören
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Überraschung - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_5_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_5_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Überraschung - Abgeschlossen!
+                                                Neue Quest: Spion
+								"
+						]
+					];
 					};
 				};
 			};
@@ -773,6 +1173,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Spion <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>Besorge dir 10 Informationen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_5_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_6_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Spion
+                                                Bringe 10 Informationen zum Terroristenlager
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -790,6 +1200,16 @@ if("abhoeren" == _reihe) then { // Abhören
 							"abhoeren_1_6_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Besorge erst 10 Informationen";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Spion - Abgeschlossen!
+                                                Neue Quest: Das Attentat
+								"
+						]
+					];
 						};
 					};
 				};
@@ -804,6 +1224,16 @@ if("abhoeren" == _reihe) then { // Abhören
 						//Marker
 						"abhoeren_1_6_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_7_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Das Attentat
+                                                Gib ein Offiziers-Dogtag im Terroristenlager ab
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -818,6 +1248,16 @@ if("abhoeren" == _reihe) then { // Abhören
 							"abhoeren_1_7_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Besorge erst 4 DogTags";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Das Attentat - Abgeschlossen!
+                                                Neue Questreihe: Höllenfeuer
+								"
+						]
+					];
 						};
 					};
 				};
@@ -838,6 +1278,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kein Zurück mehr <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Beschaffe ein Dog Tag"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_7_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_1_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Kein Zurück mehr
+                                                Beschaffe ein Dog Tag
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -851,6 +1301,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_1_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Besorge erst ein DogTag";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Kein Zurück mehr - Abgeschlossen!
+                                                Neue Quest: Uniformiert
+								"
+						]
+					];
 						};
 					};
 				};
@@ -864,6 +1324,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Uniformiert <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Besorge dir ein IS Kampfanzug Weiße Hose"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"hoellenfeuer_1_1_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_2_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Uniformiert
+                                                Besorge dir eine weiße Hose
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -878,6 +1348,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_2_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Wie siehst du denn aus? Zieh dir die weiße Hose an!"
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Uniformiert - Abgeschlossen!
+                                                Neue Quest: Wolf im Schafspelz
+								"
+						]
+					];
 						};
 					};
 				};
@@ -893,6 +1373,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						//Marker
 						"hoellenfeuer_1_2_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_3_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Wolf im Schafspelz
+                                                Beschaffe dir einen Double Whopper ohne Blutvergießen
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -904,6 +1394,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Wolf im Schafspelz - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"hoellenfeuer_1_3_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_3_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Wolf im Schafspelz - Abgeschlossen!
+                                                Neue Quest: Ausnutzen
+								"
+						]
+					];
 					};
 				};
 			};
@@ -916,6 +1416,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ausnutzen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>Stiehl ein Army Fahrzeug und bring es zum Schwarzmarkt"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"hoellenfeuer_1_3_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_4_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Ausnutzen
+                                                Stiehl ein Army-Fahrzeug und bringe es zum Schwarzmarkt
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -931,6 +1441,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_4_1" setMarkerAlphaLocal 1;
 						} else{
 							hint "Besorg dir das verdammte Auto!";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Ausnutzen - Abgeschlossen!
+                                                Neue Quest: Kreuzzug
+								"
+						]
+					];
 						};
 					};
 				};
@@ -945,6 +1465,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kreuzzug <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Besorge 5 Dog Tags"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"hoellenfeuer_1_4_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_5_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Kreuzzug
+                                                Besorge 5 Dog Tags
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -958,6 +1488,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_5_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Weichei! Schlachte sie und bring mir 5 DogTags!";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Kreuzzug - Abgeschlossen!
+                                                Neue Quest: Wocheneinkauf
+								"
+						]
+					];
 						};
 					};
 				};
@@ -972,6 +1512,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Wocheinkauf <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>Besorge 1x Batterie, 1x Zünder, 1x Behaelter"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"hoellenfeuer_1_5_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_6_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Wocheneinkauf
+                                                Besorge 1x Batterie, 1x Zünder, 1x Behälter
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -988,6 +1538,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_6_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Dir fehlt noch etwas! Ich brauche einen Zünder, einen Behälter und eine Batterie!";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Wocheneinkauf - Abgeschlossen!
+                                                Neue Quest: Pyrotechnik
+								"
+						]
+					];
 						};
 					};
 				};
@@ -1003,6 +1563,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						//Marker
 						"hoellenfeuer_1_6_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_7_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Pyrotechnik
+                                                Besorge 1x Sprengstoff
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1017,6 +1587,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_7_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Mit dem Staub in deiner Tasche kann ich nichts anfangen. Bring mir Sprengstoff!"
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Pyrotechnik - Abgeschlossen!
+                                                Neue Quest: Handwerker
+								"
+						]
+					];
 						};
 					};
 				};
@@ -1032,6 +1612,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						//Marker
 						"hoellenfeuer_1_7_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_8_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Handwerker
+                                                Baue 1x Small IED Dug In
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1046,6 +1636,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							//Marker
 							"hoellenfeuer_1_8_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_8_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Handwerker - Abgeschlossen!
+                                                Neue Quest: Höllenfeuer
+								"
+						]
+					];
 					};
 				};
 			};
@@ -1060,6 +1660,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						//Marker
 						"hoellenfeuer_1_8_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_9_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+            Höllenfeuer
+                                                Sprenge eine IED
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1074,6 +1684,16 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							//Marker
 							"hoellenfeuer_1_9_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_9_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Höllenfeuer - Abgeschlossen!
+                                                Neue Questreihe: Aus dem Leben eines Schakals Part 4
+								"
+						]
+					];
 					};
 				};
 			};
@@ -1095,6 +1715,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kondome für die Alte neben mir und Unsere Heiligen Schriften. <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Gehe zu Abduls Elektronikladen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_7_1" setMarkerAlphaLocal 0;
 						"schakalvier_1_1_0" setMarkerAlphaLocal 1;
+                player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Kondome für die Alte neben mir. Oder unsere Heiligen Schriften.
+                                                Schliesse die Mission Der Heilige Krieg und Niemand möchte Tripper ab.
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1108,6 +1738,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kondome für die Alte neben mir und Unsere Heiligen Schriften. - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"schakalvier_1_1_0" setMarkerAlphaLocal 0;
 						"schakalvier_1_1_1" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Kondome für die Alte neben mir. Oder unsere Heiligen Schriften. - Abgeschlossen!
+                                                Neue Quest: Die Positon festigen
+								"
+						]
+					];
 					};
 				};
 			};
@@ -1120,11 +1760,21 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Die Position festigen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Gehe ins Terroristenlager"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"schakalvier_1_1_1" setMarkerAlphaLocal 0;
 						"schakalvier_1_2_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Die Position festigen
+                                                Besorge 5 Dogtags
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
 					if(life_quest == 69) then {
-						if([false,"dogtag",10] call life_fnc_handleInv){
+						if([false,"dogtag",5] call life_fnc_handleInv){
 							playSound "schakalvier_1_2_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
@@ -1132,7 +1782,17 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 							"schakalvier_1_2_0" setMarkerAlphaLocal 0;
 							"schakalvier_1_2_1" setMarkerAlphaLocal 1;
 						} else {
-							hint "Besorg dir 10 DogTags!";
+							hint "Besorg dir 5 DogTags!";
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Die Position festigen - Abgeschlossen!
+                                                Neue Quest: Der Befreiungsschlag
+								"
+						]
+					];
 						};
 					};
 				};
@@ -1147,6 +1807,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						//Marker
 						"schakalvier_1_2_1" setMarkerAlphaLocal 0;
 						"schakalvier_1_3_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Der Befreiungsschlag
+                                                Gewinne 3 Gebietskämpfe
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1160,6 +1830,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Befreiungsschlag - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"schakalvier_1_3_0" setMarkerAlphaLocal 0;
 							"schakalvier_1_3_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Der Befreiungsschlag - Abgeschlossen!
+                                                Neue Quest: Schmerzen
+								"
+						]
+					];
 					};
 				};
 			};
@@ -1172,6 +1852,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schmerzen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Knacke das Fahrzeug!"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"schakalvier_1_3_1" setMarkerAlphaLocal 0;
 						"schakalvier_1_4_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Schmerzen
+                                                Foltere 20x Armysoldaten
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1185,6 +1875,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schmerzen - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"schakalvier_1_4_0" setMarkerAlphaLocal 0;
 						"schakalvier_1_4_1" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Schmerzen - Abgeschlossen!
+                                                Neue Quest: Schwäche die Ungläubigen
+								"
+						]
+					];
 					};
 				};
 			};
@@ -1197,6 +1897,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schwäche die Ungläubigen <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Kaufe das Abhörgerät"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_4_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_5_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Schwäche die Ungläubigen
+                                                Raube das Waffenlager aus und bringe mir 1x Scharfschützengewehr und 1x Sturmgewehr
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1210,6 +1920,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schwäche die Ungläubigen - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"schakalvier_1_5_0" setMarkerAlphaLocal 0;
 							"schakalvier_1_5_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Schwäche die Ungläubigen - Abgeschlossen!
+                                                Neue Quest: Totaler Krieg
+								"
+						]
+					];
 					};
 				};
 			};
@@ -1223,6 +1943,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Totaler Krieg <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>Besorge dir 10 Informationen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"schakalvier_1_5_1" setMarkerAlphaLocal 0;
 						"schakalvier_1_6_0" setMarkerAlphaLocal 1;
+            player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Totaler Krieg
+                                                Halte alle 3 Gebiete und eliminiere 2 hohe Offiziere. Gib 2 Offizier-Dogtags beim Warlord ab.
+								"
+						]
+					];
 					};
 				};
 				if(_progress == 1) then {
@@ -1236,6 +1966,16 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Totaler Krieg - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"schakalvier_1_6_0" setMarkerAlphaLocal 0;
 							"schakalvier_1_6_1" setMarkerAlphaLocal 1;
+              player createDiaryRecord["questbuch",
+					[
+							"Quest-Buch",
+								"
+
+             Totaler Krieg - Abgeschlossen!
+                                                to be continued
+								"
+						]
+					];
 					};
 				};
 			};

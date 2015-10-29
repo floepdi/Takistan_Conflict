@@ -36,14 +36,7 @@ if (1 == _paket) then // Jobs für Anfänger
 								{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 11, false];
-								[format[" Du bist der Neue, oder?"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Abdul braucht neue Ware in seinem Laden."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Bring ihm diese Pistolen, Bruder!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Laufbursche "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_1_1_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Pistolen erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_1_1" setMarkerAlphaLocal 1;
@@ -62,8 +55,7 @@ if (1 == _paket) then // Jobs für Anfänger
 									{
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
-										[format["sukran Bruder, die hatten mich fast schon leergekauft."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
+										playSound "transport_1_1_1";
 										"Transport_1_1" setMarkerAlphaLocal 0;
 										_reward  = 10000;
 										life_cash = life_cash + _reward;
@@ -92,12 +84,7 @@ if (1 == _paket) then // Jobs für Anfänger
 								{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 12, false];
-								[format[" Diese ungläubigen Hunde haben die Versorgung unserer Familien abgeschnitten."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Loy Manara hungert! Diese Vorräte müssen dort verteilt werden!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Hungersnot "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_1_2_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Nahrungsmitteln erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_1_2" setMarkerAlphaLocal 1;
@@ -116,8 +103,7 @@ if (1 == _paket) then // Jobs für Anfänger
 									{
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
-										[format["Dich muss Allah schicken! Lange hätten wir es nicht mehr ausgehalten."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
+										playSound "transport_1_2_1";
 										"Transport_1_2" setMarkerAlphaLocal 0;
 										_level = 200;
 										["Level_Prof",_level,1] call life_fnc_addLevel;
@@ -143,14 +129,7 @@ if (1 == _paket) then // Jobs für Anfänger
 								{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 13, false];
-								[format[" Der Warlord braucht dringend Munition. Bring ihm diese Kisten umgehend!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Er hasst Unpünktlichkeit, also solltest du in einer halben Stunde da sein, sonst könnte es deiner Familie übel ergehen."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Allahu Akbar, Bruder!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Audienz beim Lord "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_1_3_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Munition erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_1_3" setMarkerAlphaLocal 1;
@@ -169,10 +148,7 @@ if (1 == _paket) then // Jobs für Anfänger
 									{
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
-										[format["Einen guten Mann hat Mehmet mir da geschickt."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
-										[format["Wenn du weiterhin so zuverlässig bist werde ich den ein oder anderen Job für dich haben."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
+										playSound "transport_1_3_1";
 										"Transport_1_3" setMarkerAlphaLocal 0;
 										_reward  = 15000;
 										life_cash = life_cash + _reward;
@@ -214,12 +190,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 21, false];
-								[format[" Abdul, der Waffenhändler, hat frische Kämpfer angeworben und braucht neue Ausrüstung."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Bring ihm ein paar alte AKs, damit unsere Brüder die Besatzer vertreiben können."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Mehr AKs für den Heiligen Krieg "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_2_1_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit AKs erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_2_1" setMarkerAlphaLocal 1;
@@ -240,8 +211,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 										{
 											life_transport_in_progress = false;
 											_user setVariable ["transport", 0, false];
-											[format["Allah segne dich, der heilige Krieg kann nun weitergehen."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-											sleep 6;
+											playSound "transport_2_1_1";
 											"Transport_2_1" setMarkerAlphaLocal 0;
 											_level = 25;
 											["Level_Prof",_level,1] call life_fnc_addLevel;
@@ -281,14 +251,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 22, false];
-								[format[" Meine Jungs haben gestern einen Konvoi der U.S. Army gekapert."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format["Mit diesen Visieren können unsere Kämpfer sicher einige Ungläubige töten."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Bring die Ware ins Lager, aber lass dich nicht erwischen!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Diebesgut "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_2_2_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Visieren erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_2_2" setMarkerAlphaLocal 1;
@@ -304,13 +267,12 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								if (_p == 22) then
 								{
 									_reward = "optic_Aco";
-									if !(player canAddItemtoBackpack _reward) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
+									if (!(player canAddItemtoBackpack _reward) OR !(player canAddITemtoUniform _reward) OR (player canADdItemToVest _rewward)) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 									if ([false,"gestohlenevisiere",1] call life_fnc_handleInv) then
 									{
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
-										[format["Hätte Allah gewollt, dass die Amis die verwenden, würde kein Blut auf der Linse kleben. <br /> Danke, Bruder!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
+										playSound "transport_2_2_1";
 										"Transport_2_2" setMarkerAlphaLocal 0;
 										player addItemToBackpack _reward;
 										_reward  = 20000;
@@ -341,14 +303,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 23, false];
-								[format[" Wer aussieht wie ein räudiger Hund, dem wird niemand folgen."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Ein Offizier muss auch als solcher erkennbar sein."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Bring diese neuen Uniformen zu Feruz, damit er sie umschneidern kann!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Nachschub für unsere Offiziere "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_2_3_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Uniformen erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_2_3" setMarkerAlphaLocal 1;
@@ -368,8 +323,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 									{
 									life_transport_in_progress = false;
 									_user setVariable ["transport", 0, false];
-									[format["Dabei wollte ich grad Feierabend machen..."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-									sleep 6;
+									playSound "transport_2_3_1";
 									"Transport_2_3" setMarkerAlphaLocal 0;
 									_reward  = 30000;
 									life_cash = life_cash + _reward;
@@ -412,12 +366,7 @@ if (3 == _paket) then // Schwere Jobs
 								if ([true,"koran",1] call life_fnc_handleInv) then
 								{
 								_user setVariable ["transport", 31, false];
-								[format[" Naja, da wir ohne Religion keinen Krieg hätten, tun wir wenigstens so als würde uns das hier interessieren. "],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Bring diese Fetzen hier nach Rasman, zum Moschee Turm, damit sie bei der nächsten Bücherverbrennung nicht mit verschwinden."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Der Heiligen Krieg "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_3_1_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Koran erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_3_1" setMarkerAlphaLocal 1;
@@ -437,8 +386,7 @@ if (3 == _paket) then // Schwere Jobs
 										{
 											life_transport_in_progress = false;
 											_user setVariable ["transport", 0, false];
-											[format["Allah dankt dir für das Sichern der Heiligen Schriften!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-											sleep 6;
+											playSound "transport_3_1_1";
 											"Transport_3_1" setMarkerAlphaLocal 0;
 											_reward  = 30000;
 											life_cash = life_cash + _reward;
@@ -466,14 +414,7 @@ if (3 == _paket) then // Schwere Jobs
 							{
 								life_transport_in_progress = true;
 								_user setVariable ["transport", 321, false];
-								[format[" Die Dreilochstute hier neben mir verpasst unseren ganzen Männern Tripper!"],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" wenn die hier schon nur am Vögeln ist, vergewisser dich wenigstens, dass Sie aufhört uns alle damit anzustecken."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Besorg der Natomatratze ein paar Kondome vom Dirty Doc!"],0,0,5,0,0,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
-								[format[" Neue Quest - Niemand möchte Tripper <br /> (Teil 1) "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-								sleep 6;
+								playSound "transport_3_2_0";
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_3_2_1" setMarkerAlphaLocal 1;
@@ -487,14 +428,7 @@ if (3 == _paket) then // Schwere Jobs
 									if ([true,"kondome",1] call life_fnc_handleInv) then
 									{
 										_user setVariable ["transport", 322, false];
-										[format[" In die Bakterienwanne würd ich meine Fleischpeitsche zwar nicht schlagen, "],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
-										[format[" aber wenn dir der Schafsdarm keine Krankheit gibt, dann überlebst du auch das Flittchen."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
-										[format[" Die Verhütungschance liegt übrigens nur bei 40%, also viel Glück mit der Ische."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
-										[format[" Neue Quest - Niemand möchte Tripper <br /> (Teil 2) "],0,0,5,0,0.1,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
+										playSound "transport_3_2_1";
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kondome erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 										"Transport_3_2_1" setMarkerAlphaLocal 0;
 										"Transport_3_2_2" setMarkerAlphaLocal 1;
@@ -519,8 +453,7 @@ if (3 == _paket) then // Schwere Jobs
 									{
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
-										[format["Oh, was ist das denn? Nein, ich benutze keine Kondome, das fühlt sich nicht richtig an."],0,0.8,5,0,0,1] spawn BIS_fnc_dynamicText;
-										sleep 6;
+										playSound "transport_3_2_2";
 										"Transport_3_2_2" setMarkerAlphaLocal 0;
 										_reward  = 50000;
 										life_cash = life_cash + _reward;

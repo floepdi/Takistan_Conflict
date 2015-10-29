@@ -128,6 +128,7 @@ switch (_mode) do
             case "bandage": {"life_inv_bandage"};
             case "traumakit": {"life_inv_traumakit"};
             case "kochsalz": {"life_inv_kochsalz"};
+            case "morphin": {"life_inv_morphin"};
         };
     };
 
@@ -246,6 +247,7 @@ switch (_mode) do
             case "life_inv_bandage":{"bandage"};
             case "life_inv_traumakit": {"traumakit"};
             case "life_inv_kochsalz": {"kochsalz"};
+            case "life_inv_morphin": {"morphin"};
         };
     };
 };

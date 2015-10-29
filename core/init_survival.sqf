@@ -180,27 +180,16 @@
 	if ((life_blood > 80) AND (life_blood < 90)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.8], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if (((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) OR (life_morphin)) then {
 	"colorCorrections" ppEffectEnable false;
 	};
 
 	player setVariable ["blood",life_blood,true];
 	player setVariable ["bloodmulti",life_bloodmulti,true];
 
-	while {((life_blood) == 0 AND (alive player))} do
+	if ((life_blood) == 0 AND (alive player)) then
 	{
-			player playMove "AinjPpneMstpSnonWnonDnon";
-			"colorCorrections" ppEffectAdjust [0.7, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.1, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
-			"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [5]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
-			player setVariable ["unconscious",true, true];
-			while {player getVariable ["unconscious",false]} do { onEachFrame {if(player getVariable "unconscious") then {player switchCamera "Internal";};};};
-			if  (life_blood > 0) then {
-			player switchMove "amovppnemstpsraswrfldnon";
-			player setVariable ["unconscious",false, false];
-			player setVariable ["olddamage", 0 , false];
- 			player setVariable ["olddamage2", 0, false];
- 			player setVariable ["olddamage3", 0 , false];
- 			};
+		 []	call life_fnc_unconscious;
 	};
 };
 };

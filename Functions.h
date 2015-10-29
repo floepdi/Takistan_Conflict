@@ -83,6 +83,7 @@ class Life_Client_Core
         class medicSirenLights {};
         class medicLights {};
         class medicSiren {};
+        class unconscious {};
     };
 
     class Actions
@@ -500,7 +501,9 @@ class Life_Client_Core
         class lockpick {};
         class spikeStrip {};
         class bandage {};
+        class bandagemate {};
         class kochsalz {};
+        class kochsalzmate {};
         class trauma {};
         class jerryRefuel {};
         class flashbang {};
