@@ -30,6 +30,7 @@ switch(true) do {
 /*	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_karma=1;_gather = "apple"; _val = 3;};
 	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_karma=1;_gather = "peach"; _val = 3;};
 */
+	case (_zone in ["oil_1"]): {_gather = "oilu"; _val = 1;};
 	case (_zone in ["heroin_1"]): {_gather = "heroinu"; _val = 1;};
 	case (_zone in ["cocaine_1"]): {_gather = "cocaine"; _val = 1;};
 	case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = 1;};

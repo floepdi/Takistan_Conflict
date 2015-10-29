@@ -38,7 +38,7 @@ _itemInfo = switch (_type) do
   case "sulfur": {["sulfuru","sulfurp",750,(localize "STR_Process_Sulfur"),false]};
   case "nitre": {["nitre","potassiumnitrate",750,(localize "STR_Process_Nitre"),false]};
   case "gunpowder": {["suflurp","gunpowder",1000,(localize "STR_Process_Gunpowder"),true,"potassiumnitrate","coalp"]};
-  case "explosive": {["gunpowder","explosive",1500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
+  case "explosive": {["gunpowder","sprengstoff",1500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
 };
 
 //Error checking
@@ -84,7 +84,7 @@ if (_count >= 5) then{
 if (_count >= 6) then{
   if(_oldVal !=_item2Val && _oldVal !=_item3Val) then {
     _error = true;
-  };
+  }
 };
 if (_count >= 7) then{
   if(_oldVal !=_item2Val && _oldVal !=_item3Val && _oldVal != _item4Val) then {
