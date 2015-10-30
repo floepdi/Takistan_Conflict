@@ -158,7 +158,7 @@ life_masked = [
 "G_Bandanna_beast"
 ];
 
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F","C_Van_01_transport_F","DAR_4X4"];
+life_vShop_rentalOnly = ["C_Van_01_transport_F","rhs_gaz66_ammo_vmf","rhs_gaz66_vmf","RHS_Ural_Open_Civ_01","RHS_Ural_Fuel_MSV_01","B_Truck_01_ammo_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items =
