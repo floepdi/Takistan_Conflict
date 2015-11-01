@@ -23,7 +23,7 @@ if (_mate == player) then {
 
 			if (life_bloodmulti ==1) then {
 			life_bloodmulti = 0;
-			player setVariable ["olddamage", 2, false];
+			player setVariable ["oldolddamage", 0, false];
 			};
 
 			if (life_bloodmulti ==2) then {

@@ -31,7 +31,6 @@ switch (__GETC__(life_donator)) do {
 };
 
 [] call life_fnc_profSetup;
-
 /*
 [] spawn    //basic cop
 {

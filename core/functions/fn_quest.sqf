@@ -23,6 +23,9 @@ if ("schakaleins" == _reihe) then
 			if (_progress == 0) then{
 				playSound "schakaleins_1_1_0";
 				"schakaleins_1_1_0" setMarkerAlphaLocal 1;
+				"Terroristenanwärter_1" setMarkerAlphaLocal 0;
+				"Terroristenanwärter_2" setMarkerAlphaLocal 0;
+				"Terroristenanwärter" setMarkerAlphaLocal 0;
 				[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang?<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Lass dich als Terrorist anwerben! <br /> + Questziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 				["Quest_Prof",1,1] call life_fnc_addLevel;
 				[] call life_fnc_profSetup;
@@ -43,8 +46,9 @@ if ("schakaleins" == _reihe) then
 					playSound "schakaleins_1_1_1";
 					"schakaleins_1_1_0" setMarkerAlphaLocal 0;
 					"schakaleins_1_1_1" setMarkerAlphaLocal 1;
-					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang? - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Nachschub freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-					["Level_Prof",250,1] call life_fnc_addLevel;
+					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Ein neuer Anfang? - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + 100$ <br /> + Quest: Nachschub freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+					["Level_Prof",100,1] call life_fnc_addLevel; // Erfahrung
+          			life_cash = life_cash + 100; // Geld
 					["Quest_Prof",1,1] call life_fnc_addLevel;
 					[] call life_fnc_profSetup;
 					player createDiaryRecord["questbuch",
@@ -85,13 +89,14 @@ if ("schakaleins" == _reihe) then
 				};
 			};
 				if (_progress == 1) then{
-				if ((life_quest == 3) AND (life_questinfo == 3)) then {
+				if (life_quest == 3) then {
 
 					playSound "schakaleins_1_2_1";
 					"schakaleins_1_2_0" setMarkerAlphaLocal 0;
 					"schakaleins_1_2_1" setMarkerAlphaLocal 1;
-					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Nachschub - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Questreihe: 69 Blonde Schönheiten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-					["Quest_Prof",1,1] call life_fnc_addLevel;
+					[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Nachschub - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + AK-74 <br /> + Questreihe: 69 Blonde Schönheiten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+					["Level_Prof",100,1] call life_fnc_addLevel;
+          			["Quest_Prof",1,1] call life_fnc_addLevel;
 					["QuestInfo_Prof",0,0] call life_fnc_addLevel;
 					[] call life_fnc_profSetup;
 					player createDiaryRecord["questbuch",
@@ -145,10 +150,10 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										 playsound "blond_1_1_1";
 										"blond_1_1_0" setMarkerAlphaLocal 0;
 										"blond_1_1_1" setMarkerAlphaLocal 1;
-										["Level_Prof",100,1] call life_fnc_addLevel;
+										["Level_Prof",50,1] call life_fnc_addLevel;
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Geschichtenerzähler freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Der Fremde - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50 Erfahrung <br /> + Quest: Geschichtenerzähler freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
@@ -201,10 +206,10 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										playsound "blond_1_2_1";
 										"blond_1_2_0" setMarkerAlphaLocal 0;
 										"blond_1_2_1" setMarkerAlphaLocal 1;
-										["Level_Prof",100,1] call life_fnc_addLevel;
+										["Level_Prof",50,1] call life_fnc_addLevel;
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Geschichtenerzähler - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Das Paradies freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Geschichtenerzähler - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50 Erfahrung <br /> + Quest: Das Paradies freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 									}
 								else
 								{
@@ -258,10 +263,10 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										playsound "blond_1_3_1";
 										"blond_1_3_0" setMarkerAlphaLocal 0;
 										"blond_1_3_1" setMarkerAlphaLocal 1;
-										["Level_Prof",250,1] call life_fnc_addLevel;
+										["Level_Prof",50,1] call life_fnc_addLevel;
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Paradies - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 250 Erfahrung <br /> + Quest: Vorbereitungen freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Paradies - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50 Erfahrung <br /> + Quest: Vorbereitungen freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
@@ -321,8 +326,8 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										["Level_Prof",250,1] call life_fnc_addLevel;
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
-										life_cash = life_cash + 10000;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Vorbereitungen - Abgeschlossen! <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: 69 Blonde Schönheiten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										life_cash = life_cash + 150;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Vorbereitungen - Abgeschlossen! <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 150$ <br /> + 250 Erfahrung <br /> + Quest: 69 Blonde Schönheiten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 										}
 										else
 										{
@@ -381,8 +386,8 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										["Level_Prof",250,1] call life_fnc_addLevel;
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
-										life_cash = life_cash + 10000;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> 69 Blonde Schönheiten - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Teil 2 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										life_cash = life_cash + 150;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> 69 Blonde Schönheiten - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 150$ <br /> + 250 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Teil 2 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
                     player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
@@ -433,8 +438,10 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 								{
 								playsound "schakalzwei_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",100,1] call life_fnc_addLevel;
+                life_cash = life_cash + 350;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreie uns von der Geißel - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Für den Glauben aufrüsten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreie uns von der Geißel - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 350$ <br /> + 350 Erfahrung <br /> + Questreihe: Für den Glauben aufrüsten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakalzwei_1_1_0" setMarkerAlphaLocal 0;
 								"schakalzwei_1_1_1" setMarkerAlphaLocal 1;
@@ -490,8 +497,9 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								// TO DO
 								playsound "glauben_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",100,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Erweiterung deines Fuhrparks - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Dunkles Geheimnis freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Erweiterung deines Fuhrparks - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Dunkles Geheimnis freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"glauben_1_1_0" setMarkerAlphaLocal 0;
 								"glauben_1_1_1" setMarkerAlphaLocal 1;
@@ -540,8 +548,9 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 						if (("ACE_Flashlight_XL50" in uniformItems player) OR ("ACE_Flashlight_XL50" in vestItems player) OR ("ACE_Flashlight_XL50" in backpackItems player)) then {
 								playsound "glauben_1_2_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",50,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dunkles Geheimnis - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Dope für den Kampf freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dunkles Geheimnis - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50 Erfahrung <br /> + Quest: Dope für den Kampf freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"glauben_1_2_0" setMarkerAlphaLocal 0;
 								"glauben_1_2_1" setMarkerAlphaLocal 1;
@@ -597,8 +606,10 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								{
 								playsound "glauben_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",200,1] call life_fnc_addLevel;
+                life_cash = life_cash + 250;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dope für den Kampf - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Propagandastudio freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dope für den Kampf - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 250$ <br /> + 200 Erfahrung <br /> + Questreihe: Propagandastudio freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"glauben_1_3_0" setMarkerAlphaLocal 0;
 								"glauben_1_3_1" setMarkerAlphaLocal 1;
@@ -655,8 +666,9 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								// TO DO
 								playsound "propaganda_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",100,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Filmreif - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Teures Terroristenleben freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Filmreif - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Teures Terroristenleben freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"propaganda_1_1_0" setMarkerAlphaLocal 0;
 								"propaganda_1_1_1" setMarkerAlphaLocal 1;
@@ -705,8 +717,9 @@ if ("propaganda" == _reihe) then // Propagandastudio
 						if (("arifle_mas_ak74" in uniformItems player) OR ("arifle_mas_ak74" in vestItems player) OR ("arifle_mas_ak74" in backpackItems player) OR ("arifle_mas_ak74" in weapons player)) then {
 								playsound "propaganda_1_2_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",100,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Teures Terroristenleben - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Moviestar freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Teures Terroristenleben - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Moviestar freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"propaganda_1_2_0" setMarkerAlphaLocal 0;
 								"propaganda_1_2_1" setMarkerAlphaLocal 1;
@@ -759,8 +772,10 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								sleep 10;
 								playsound "propaganda_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",75,1] call life_fnc_addLevel;
+                life_cash = life_cash + 100;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Moviestar - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Part 3 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Moviestar - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100$ <br /> + 75 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Part 3 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"propaganda_1_3_0" setMarkerAlphaLocal 0;
 								"propaganda_1_3_1" setMarkerAlphaLocal 1;
@@ -813,8 +828,9 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 					if (life_quest == 29) then {
 								playsound "schakaldrei_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
+                ["Level_Prof",100,1] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Aufstieg der Bösen - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Schon wieder Nachschub freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Aufstieg der Bösen - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100 Erfahrung <br /> + Quest: Schon wieder Nachschub freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakaldrei_1_1_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_1_1" setMarkerAlphaLocal 1;
@@ -864,7 +880,7 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								["QuestInfo_Prof",0,0] call life_fnc_addLevel;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schon wieder Nachschub - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Quest: Befreiung unserer Städte"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Schon wieder Nachschub - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + FN Fal <br /> + Quest: Befreiung unserer Städte"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakaldrei_1_2_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_2_1" setMarkerAlphaLocal 1;
@@ -914,8 +930,10 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								playsound "schakaldrei_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								["QuestInfo_Prof",0,0] call life_fnc_addLevel;
+                ["Level_Prof",250,1] call life_fnc_addLevel;
+                life_cash = life_cash + 500;
 								[] call life_fnc_profSetup;
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreiung unserer Städte - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 250 Erfahrung <br /> + Questreihe: Abhören freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreiung unserer Städte - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 500$ <br /> + 250 Erfahrung <br /> + Questreihe: Abhören freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakaldrei_1_3_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_3_1" setMarkerAlphaLocal 1;
@@ -964,8 +982,9 @@ if("abhoeren" == _reihe) then { // Abhören
 					if(life_quest == 35) then {
 						playSound "abhoeren_1_1_1";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
+            ["Level_Prof",50,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Neues Sortiment - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Neues Sortiment - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 50 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_1_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_1_1" setMarkerAlphaLocal 1;
                 player createDiaryRecord["questbuch",
@@ -1006,8 +1025,9 @@ if("abhoeren" == _reihe) then { // Abhören
 					if(life_quest == 37) then {
 						playSound "abhoeren_1_2_1";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
+            ["Level_Prof",50,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Besorgungen - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Besorgungen - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 50 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_2_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_2_1" setMarkerAlphaLocal 1;
             player createDiaryRecord["questbuch",
@@ -1053,8 +1073,10 @@ if("abhoeren" == _reihe) then { // Abhören
 						*/
 							playSound "abhoeren_1_3_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
+              ["Level_Prof",200,1] call life_fnc_addLevel;
+              life_cash = life_cash + 350;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Langfinger - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Langfinger - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +350$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_3_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_3_1" setMarkerAlphaLocal 1;
 					 //	} else{
@@ -1101,8 +1123,10 @@ if("abhoeren" == _reihe) then { // Abhören
 
 						playSound "abhoeren_1_4_1";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
+            ["Level_Prof",100,1] call life_fnc_addLevel;
+            life_cash = life_cash + 100;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +100$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_4_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_4_1" setMarkerAlphaLocal 1;
             player createDiaryRecord["questbuch",
@@ -1146,8 +1170,10 @@ if("abhoeren" == _reihe) then { // Abhören
 					if(life_quest == 43) then {
 							playSound "abhoeren_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
+              ["Level_Prof",100,1] call life_fnc_addLevel;
+              life_cash = life_cash + 100;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Überraschung - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Überraschung - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +100$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_5_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_5_1" setMarkerAlphaLocal 1;
               player createDiaryRecord["questbuch",
@@ -1191,11 +1217,13 @@ if("abhoeren" == _reihe) then { // Abhören
 							[true,"information",10] call life_fnc_handleInv;
 							playSound "abhoeren_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
+              ["Level_Prof",200,1] call life_fnc_addLevel;
+              life_cash = life_cash + 200;
 							[] call life_fnc_profSetup;
 
 							// Informationspreis also Belohnung
 
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Spion - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Spion - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 200 Erfahrung <br/> +200$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_6_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_6_1" setMarkerAlphaLocal 1;
 						} else {
@@ -1241,8 +1269,10 @@ if("abhoeren" == _reihe) then { // Abhören
 						if ([false,"dogtag",4] call life_fnc_handleInv) then {
 							playSound "abhoeren_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
+              ["Level_Prof",500,1] call life_fnc_addLevel;
+              life_cash = life_cash + 500;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Attentat - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+2000$ <br/> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Attentat - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +500$ <br/> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							//Marker
 							"abhoeren_1_7_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_7_1" setMarkerAlphaLocal 1;

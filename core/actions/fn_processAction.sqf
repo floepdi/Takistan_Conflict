@@ -19,7 +19,7 @@ _itemInfo = switch (_type) do
   case "oil": {["oilu","oilp",100,(localize "STR_Process_Oil"),false];}; //added param (true or false) true if processing with 2 Items.
   case "diamond": {["diamond","diamondc",1000,(localize "STR_Process_Diamond"),false]};
   case "heroin": {["heroinu","heroinp",200,(localize "STR_Process_Heroin"),false]};
-  case "heroinr": {["heroinp","heroinr",200,(localize "STR_Process_HeroinR"),false]}; // 
+  case "heroinr": {["heroinp","heroinr",200,(localize "STR_Process_HeroinR"),false]}; //
   case "copper": {["copperore","copper_r",500,(localize "STR_Process_Copper"),false]};
   case "iron": {["ironore","iron_r",800,(localize "STR_Process_Iron"),false]};
   case "sand": {["sand","glass",450,(localize "STR_Process_Sand"),false]};
@@ -102,7 +102,7 @@ if(_oldVal == 0) exitWith {};
 // Inform army if gold
 if(_type == "gold") then {
   [[5,format["<t size='1.2'><t color='#FFFF00'>Goldschmelze %1</t></t><br/><br/><t size='1'> Jemand schmilzt Gold! <br/> Stoppe ihn! </t>",life_territory_marker]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-}
+};
 
 //Setup our progress bar.
 disableSerialization;

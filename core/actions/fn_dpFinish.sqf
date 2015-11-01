@@ -14,49 +14,48 @@ life_dp_point = nil;
 _dis = round((getPos life_dp_start) distance (getPos _dp));
 if ((_dis < 1001) AND (_dis > 0)) then {
 	_level = 10;
-	[format["<img size= '5' image='textures\reward100.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
-	 _price = 10000;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 10 EXP <br /> + 15$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	 _price = 15;
 	 ["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 2001) AND (_dis > 1002)) then {
-	_level = 15;
-	[format["<img size= '5' image='textures\reward150.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
-	_price = 15000;
-	["Level_Prof",_level,1] call life_fnc_addLevel;
+	_level = 20;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 20 EXP <br /> + 30$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	 _price = 30;
+	 ["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 3001) AND (_dis > 2002)) then {
-	_level = 20;
-	[format["<img size= '5' image='textures\reward200.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
-	_price = 20000;
-	["Level_Prof",_level,1] call life_fnc_addLevel;
+	_level = 30;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 30 EXP <br /> + 45$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	 _price = 45;
+	 ["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 4001) AND (_dis > 3002)) then {
-	_level = 25;
-	[format["<img size= '5' image='textures\reward250.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
-	_price = 25000;
-	["Level_Prof",_level,1] call life_fnc_addLevel;
+	_level = 40;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 40 EXP <br /> + 60$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	 _price = 60;
+	 ["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 if ((_dis < 5001) AND (_dis > 4002)) then {
-	_level = 30; [format["<img size= '5' image='textures\reward300.paa'/>"],0.5,0.3,4,0,0.1,1]
-	spawn BIS_fnc_dynamicText;
-	_price = 30000;
-	["Level_Prof",_level,1] call life_fnc_addLevel;
+	_level = 50;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 50 EXP <br /> + 75$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	 _price = 75;
+	 ["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 
 if (_dis > 5001) then {
-	_level = 35;
-	[format["<img size= '5' image='textures\reward350.paa'/>"],0.5,0.3,4,0,0.1,1] spawn BIS_fnc_dynamicText;
-	_price = 35000;
-	["Level_Prof",_level,1] call life_fnc_addLevel;
+	_level = 60;
+	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 60 EXP <br /> + 90$"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	 _price = 90;
+	 ["Level_Prof",_level,1] call life_fnc_addLevel;
 	life_cash = life_cash + _price;
 };
 
-["DeliverySucceeded",[format[(localize "STR_NOTF_Earned_1"),[_price] call life_fnc_numberText]]] call bis_fnc_showNotification;
 life_cur_task setTaskState "Succeeded";
 player removeSimpleTask life_cur_task;
 [] call life_fnc_profSetup;

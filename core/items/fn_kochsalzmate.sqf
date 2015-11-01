@@ -25,4 +25,4 @@ else
 {
 hint "Du hast kein Kochsalz übrig!";
 };
-life_ishealing = true;
+life_ishealing = false;

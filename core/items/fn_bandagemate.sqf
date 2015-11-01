@@ -21,4 +21,4 @@ else
 {
 hint "Du hast keine Bandage übrig!";
 };
-life_ishealing = true;
+life_ishealing = false;

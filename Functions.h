@@ -317,7 +317,8 @@ class Life_Client_Core
         class Tanke{};
         class startTerritory{};
         class Transport{};
-        class quest{};
+		class quest{};
+        class queststart{};
         class territoryReward{};
 
         class getKillCount{};
@@ -505,6 +506,7 @@ class Life_Client_Core
         class kochsalz {};
         class kochsalzmate {};
         class trauma {};
+        class morphin{};
         class jerryRefuel {};
         class flashbang {};
         class boltcutter {};
