@@ -23,6 +23,7 @@ if(!_over) then {
   			["Level_Prof",1,500] call life_fnc_addLevel;
 			[] call life_fnc_profSetup;
   			[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 500$ <br/> + 500 EXP"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+        if (life_quest == 33) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
 };
 }
 else

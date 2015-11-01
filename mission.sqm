@@ -1,4 +1,4 @@
-﻿version=12;
+version=12;
 class Mission
 {
 	addOns[]=
@@ -133,10 +133,11 @@ class Mission
 		"A3_Structures_F_Mil_Cargo",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Barracks",
-		"aia_misc_e_config",
+		"camisc_e",
 		"A3_Structures_F_Mil_BagBunker",
 		"A3_Structures_F_Mil_Fortification",
-		"CAMisc",
+		"A3_Data_F",
+		"camisc3",
 		"A3_Structures_F_Mil_BagFence",
 		"A3_Structures_F_Bootcamp_Training",
 		"mas_add_FlagCarriers",
@@ -156,6 +157,7 @@ class Mission
 		"A3_Structures_F_Civ_Dead",
 		"a3_trees",
 		"a3_bush",
+		"CAMisc",
 		"A3_Structures_F_EPC_Items_Electronics",
 		"A3_Structures_F_Ind_Shed",
 		"A3_Structures_F_Bootcamp_Civ_Camping",

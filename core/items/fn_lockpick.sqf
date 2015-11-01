@@ -1,7 +1,7 @@
 /*
 	File: fn_lockpick.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for lock-picking.
 */
@@ -77,18 +77,20 @@ if(!_isVehicle) then {
 	_dice = random(100);
 	if(playerSide == west || playerSide == independent) then
 	{
-	
+
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
 		//[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-	
-	
+
+
 	}
 	else
 	{
 	if(_dice < 30) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
+		["QuestInfo_Prof",1,1] call life_fnc_addLevel;
+		[] call life_fnc_profSetup;
 		//[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	} else {
 		//[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;

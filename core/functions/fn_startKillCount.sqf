@@ -5,7 +5,7 @@
 	Lame shit
 */
 
-_victim = this select 0;
-_killer = this select 1;
+_victim = _this select 0;
+_killer = _this select 1;
 
 [[_victim,_killer],"TON_fnc_killControl",false,false] spawn life_fnc_MP;

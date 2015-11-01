@@ -89,7 +89,7 @@ if ("schakaleins" == _reihe) then
 				};
 			};
 				if (_progress == 1) then{
-				if (life_quest == 3) then {
+				if (life_quest == 3 && life_questinfo == 3) then {
 
 					playSound "schakaleins_1_2_1";
 					"schakaleins_1_2_0" setMarkerAlphaLocal 0;
@@ -109,6 +109,10 @@ if ("schakaleins" == _reihe) then
 								"
 						]
 					];
+				}
+				else
+				{
+ 				hint "Erledige erst 3 Transporte!"
 				};
 			};
 		};
@@ -210,11 +214,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										["Quest_Prof",1,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Geschichtenerzähler - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50 Erfahrung <br /> + Quest: Das Paradies freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-									}
-								else
-								{
-									hint "Besorg zuerst Ziegenmilch für mich!";
-                   player createDiaryRecord["questbuch",
+									  player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -224,7 +224,12 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								"
 						]
 					];
-								};
+
+									}
+								else
+								{
+									hint "Besorg zuerst Ziegenmilch für mich!";
+                 				};
 							};
 						};
 					};
@@ -315,10 +320,13 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 							_p = _user getVariable "quest";
 								if (life_quest == 11) then
 								{
-										if (([false,"guertel",1] call life_fnc_handleInv) AND ([false,"explosive",1] call life_fnc_handleInv)) then
+										if ([false,"guertel",1] call life_fnc_handleInv) then
 										{
-										[true,"sprengstoff",1] call life_fnc_handleInv;
 										[true,"guertel",1] call life_fnc_handleInv;
+										if ([false,"explosive",1] call life_fnc_handleInv) then
+										{
+										[true,"explosive",1] call life_fnc_handleInv;
+
 										playsound "blond_1_4_1";
 										//Marker
 										"blond_1_4_0" setMarkerAlphaLocal 0;
@@ -328,11 +336,7 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 										[] call life_fnc_profSetup;
 										life_cash = life_cash + 150;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Vorbereitungen - Abgeschlossen! <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 150$ <br /> + 250 Erfahrung <br /> + Quest: 69 Blonde Schönheiten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-										}
-										else
-										{
-										hint "Besorg zuerst einen Guertel und Sprengstoff!";
-                    player createDiaryRecord["questbuch",
+										 player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -342,12 +346,20 @@ if ("blond" == _reihe) then // 69 Blonde Schönheiten
 								"
 						]
 					];
+										}
+										else
+										{
+										hint "Besorg zuerst Sprengstoff!";
+                  						};
+										}
+										else
+										{
+										hint "Besorg zuerst einen Gürtel";
 										};
-								};
 							};
 					};
 			};
-
+		};
 			if (_nr == 5) then //72 Jungfrauen
 			{
 				if (life_level < 2) exitWith {hint "Diese Quest ist erst ab Level 2 verfügbar!"};
@@ -438,18 +450,14 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 								{
 								playsound "schakalzwei_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
-                ["Level_Prof",100,1] call life_fnc_addLevel;
-                life_cash = life_cash + 350;
+				                ["Level_Prof",100,1] call life_fnc_addLevel;
+				                life_cash = life_cash + 350;
 								[] call life_fnc_profSetup;
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreie uns von der Geißel - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 350$ <br /> + 350 Erfahrung <br /> + Questreihe: Für den Glauben aufrüsten freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakalzwei_1_1_0" setMarkerAlphaLocal 0;
 								"schakalzwei_1_1_1" setMarkerAlphaLocal 1;
-								}
-								else
-								{
-								hint "Besorg zuerst zwei DogTags!";
-                player createDiaryRecord["questbuch",
+								player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -459,7 +467,11 @@ if ("schakalzwei" == _reihe) then // Aus dem Leben eines Schakals Part 2
 								"
 						]
 					];
-								};
+								}
+								else
+								{
+								hint "Besorg zuerst zwei DogTags!";
+     							};
 
 					};
 				};
@@ -494,6 +506,12 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 				};
 				if (_progress == 1) then {
 					if (life_quest == 17) then {
+					_vehiclecount = count life_vehicles;
+					for "_x" from 0 to _vehiclecount do{
+					_currentcar = life_vehicles select _x;
+					if (_currentcar isKindOf "RDS_Gaz24_Civ_01") exitWith {player setVariable ["gazquest",true];};
+					};
+					if (player getVariable ["gazquest",false]) then{
 								// TO DO
 								playsound "glauben_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -517,7 +535,7 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 
 					};
 				};
-
+			};
 
 
         if (_nr == 2) then	{ // nicht modifizieren
@@ -602,21 +620,18 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 				};
 				if (_progress == 1) then {
 					if (life_quest == 21) then {
-							if ([false,"haschisch",5] call life_fnc_handleInv) then // TO DO MENGE
+							if ([false,"marijuana",5] call life_fnc_handleInv) then // TO DO MENGE
 								{
 								playsound "glauben_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
-                ["Level_Prof",200,1] call life_fnc_addLevel;
-                life_cash = life_cash + 250;
+				                ["Level_Prof",200,1] call life_fnc_addLevel;
+				                life_cash = life_cash + 250;
 								[] call life_fnc_profSetup;
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Dope für den Kampf - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 250$ <br /> + 200 Erfahrung <br /> + Questreihe: Propagandastudio freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"glauben_1_3_0" setMarkerAlphaLocal 0;
 								"glauben_1_3_1" setMarkerAlphaLocal 1;
-								}
-								else
-								hint "Du hast noch nicht genug Haschisch dabei!";
-                player createDiaryRecord["questbuch",
+								player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -626,14 +641,17 @@ if ("glauben" == _reihe) then // Für den Glauben aufrüsten
 								"
 						]
 					];
-								};
+								}
+								else
+								{
+								hint "Du hast noch nicht genug Haschisch dabei!";
+                				};
 							};
 					};
 			};
 
+	};
 };
-
-
 
 if ("propaganda" == _reihe) then // Propagandastudio
 	{
@@ -663,6 +681,9 @@ if ("propaganda" == _reihe) then // Propagandastudio
 				};
 				if (_progress == 1) then {
 					if (life_quest == 23) then {
+						_cars = position player nearObjects ["UAZ_Unarmed", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {
 								// TO DO
 								playsound "propaganda_1_1_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -682,11 +703,16 @@ if ("propaganda" == _reihe) then // Propagandastudio
 								"
 						]
 					];
-								};
+
+							}
+							else
+							{
+								hint "Besorg zuerst einen UAZ";
+							};
 
 					};
 				};
-
+			};
 
 
         if (_nr == 2) then	{ // nicht modifizieren
@@ -768,12 +794,13 @@ if ("propaganda" == _reihe) then // Propagandastudio
 				};
 				if (_progress == 1) then {
 					if (life_quest == 27) then {
-								titleText ["So... bleib stehen... und sprich diesen Text", "PLAIN",3];
+								titleText ["So... bleib stehen!", "PLAIN",3];
 								sleep 10;
+								titleText ["","PLAIN",1];
 								playsound "propaganda_1_3_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
-                ["Level_Prof",75,1] call life_fnc_addLevel;
-                life_cash = life_cash + 100;
+				                ["Level_Prof",75,1] call life_fnc_addLevel;
+				                life_cash = life_cash + 100;
 								[] call life_fnc_profSetup;
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Moviestar - Abgeschlossen!<br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 100$ <br /> + 75 Erfahrung <br /> + Questreihe: Aus dem Leben eines Schakals Part 3 freigeschalten"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
@@ -875,7 +902,9 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 						};
 				};
 				if (_progress == 1) then {
-					if ((life_quest == 31) AND (life_questinfo == 3)) then {
+					if ((life_quest == 31) AND (life_questinfo >= 3)) then {
+						_reward = "arifle_mas_fal_m203";
+						if !((player canAddItemtoBackpack _reward) OR (PrimaryWeapon Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 								playsound "schakaldrei_1_2_1";
 								["Quest_Prof",1,1] call life_fnc_addLevel;
 								["QuestInfo_Prof",0,0] call life_fnc_addLevel;
@@ -884,6 +913,18 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								//Marker
 								"schakaldrei_1_2_0" setMarkerAlphaLocal 0;
 								"schakaldrei_1_2_1" setMarkerAlphaLocal 1;
+								if (PrimaryWeapon Player != "") then
+											{
+												player addItemToBackpack _reward;
+												player addItemToUniform "20Rnd_mas_762x51_Stanag";
+												player addItemToUniform "20Rnd_mas_762x51_Stanag";
+											}
+											else
+											{
+												 player addWeapon _reward;
+												 player addItemToUniform "20Rnd_mas_762x51_Stanag";
+												 player addItemToUniform "20Rnd_mas_762x51_Stanag";
+											};
                 player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
@@ -894,6 +935,10 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								"
 						]
 					];
+								}
+								else
+								{
+									hint "Erledige erst 3 Transporte für mich!";
 								};
 							};
 					};
@@ -909,7 +954,7 @@ if ("schakaldrei" == _reihe) then // Aus dem Leben eines Schakals Part 3
 								playsound "schakaldrei_1_3_0"; // aus Vertonungsdokument nehmen
 								["Quest_Prof",1,1] call life_fnc_addLevel; // nicht modifizieren
 								[] call life_fnc_profSetup; // nicht modifizieren
-								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreiung unserer Städte<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ Gewinne einen Gebietskampf"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Befreiung unserer Städte<br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Gewinne einen Gebietskampf"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"schakaldrei_1_2_1" setMarkerAlphaLocal 0; // Marker von letzter Quest
 								"schakaldrei_1_3_0" setMarkerAlphaLocal 1; // Marker von dieser Quest
@@ -1067,31 +1112,49 @@ if("abhoeren" == _reihe) then { // Abhören
 				};
 				if(_progress == 1) then {
 					if(life_quest == 39) then {
-					/*	_armyCars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
-						_nearObj = nearObjects [player,_armyCars,50];
-						if ((count _nearObj)>0) then {
-						*/
+						_cars = position player nearObjects ["rhsusf_m998_d_2dr", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m998_d_4dr", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1152", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m1025_d", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m1025_d_m2", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1165_GMV", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1151", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1151_Deploy", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1167", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m113d_usarmy", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						if (player getVariable ["armyvehquest",false]) then {
 							playSound "abhoeren_1_3_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
-              ["Level_Prof",200,1] call life_fnc_addLevel;
-              life_cash = life_cash + 350;
+              				["Level_Prof",200,1] call life_fnc_addLevel;
+             				 life_cash = life_cash + 350;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Langfinger - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +350$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Langfinger - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 350$ <br/> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_3_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_3_1" setMarkerAlphaLocal 1;
-					 //	} else{
-					//		hint "Besorg dir das verdammte Auto!";
-					//	};
-              player createDiaryRecord["questbuch",
-					[
-							"Quest-Buch",
-								"
+					 	} else{
+						hint "Besorg dir das verdammte Auto!";
+						};
 
-             Langfinger - Abgeschlossen!
-                                                Neue Quest: Pole
-								"
-						]
-					];
 					};
 				};
 			};
@@ -1117,16 +1180,17 @@ if("abhoeren" == _reihe) then { // Abhören
 					};
 				};
 				if(_progress == 1) then {
-					if(life_quest == 41) then {
+					if( (life_quest == 41)  && (life_questinfo > 0))then {
 
 						//Schlüssel abfrage
 
 						playSound "abhoeren_1_4_1";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
-            ["Level_Prof",100,1] call life_fnc_addLevel;
-            life_cash = life_cash + 100;
+						["QuestInfo_Prof",0,0] call life_fnc_addLevel;
+            			["Level_Prof",100,1] call life_fnc_addLevel;
+            			life_cash = life_cash + 100;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +100$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pole - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 100$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_4_0" setMarkerAlphaLocal 0;
 						"abhoeren_1_4_1" setMarkerAlphaLocal 1;
             player createDiaryRecord["questbuch",
@@ -1173,7 +1237,7 @@ if("abhoeren" == _reihe) then { // Abhören
               ["Level_Prof",100,1] call life_fnc_addLevel;
               life_cash = life_cash + 100;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Überraschung - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +100$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Überraschung - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 100$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"abhoeren_1_5_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_5_1" setMarkerAlphaLocal 1;
               player createDiaryRecord["questbuch",
@@ -1192,7 +1256,6 @@ if("abhoeren" == _reihe) then { // Abhören
 			if(_nr == 6) then {						//Spion
 				if(_progress == 0) then {
 					if(life_quest == 44) then {
-						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "abhoeren_1_6_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1214,11 +1277,10 @@ if("abhoeren" == _reihe) then { // Abhören
 				if(_progress == 1) then {
 					if(life_quest == 45) then {
 						if([false,"information",10] call life_fnc_handleInv) then {
-							[true,"information",10] call life_fnc_handleInv;
 							playSound "abhoeren_1_5_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
-              ["Level_Prof",200,1] call life_fnc_addLevel;
-              life_cash = life_cash + 200;
+				            ["Level_Prof",200,1] call life_fnc_addLevel;
+				            life_cash = life_cash + 200;
 							[] call life_fnc_profSetup;
 
 							// Informationspreis also Belohnung
@@ -1248,7 +1310,7 @@ if("abhoeren" == _reihe) then { // Abhören
 						playSound "abhoeren_1_7_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Attentat <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Lösche ein Squad aus! <br/> Besorge 4 DogTags"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Attentat <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Besorge 4 DogTags"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						//Marker
 						"abhoeren_1_6_1" setMarkerAlphaLocal 0;
 						"abhoeren_1_7_0" setMarkerAlphaLocal 1;
@@ -1258,7 +1320,7 @@ if("abhoeren" == _reihe) then { // Abhören
 								"
 
              Das Attentat
-                                                Gib ein Offiziers-Dogtag im Terroristenlager ab
+                                                Gib 4 Dogtags im Terroristenlager ab
 								"
 						]
 					];
@@ -1272,7 +1334,7 @@ if("abhoeren" == _reihe) then { // Abhören
               ["Level_Prof",500,1] call life_fnc_addLevel;
               life_cash = life_cash + 500;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Attentat - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> +500$ <br/> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Das Attentat - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'> + 500$ <br/> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							//Marker
 							"abhoeren_1_7_0" setMarkerAlphaLocal 0;
 							"abhoeren_1_7_1" setMarkerAlphaLocal 1;
@@ -1301,14 +1363,13 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			if(_nr == 1) then {						//Kein Zurück mehr
 				if(_progress == 0) then {
 					if(life_quest == 48) then {
-						waitUntil { (5 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_1_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
 						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kein Zurück mehr <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Beschaffe ein Dog Tag"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"abhoeren_1_7_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_1_0" setMarkerAlphaLocal 1;
-            player createDiaryRecord["questbuch",
+            			player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -1331,7 +1392,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							"hoellenfeuer_1_1_1" setMarkerAlphaLocal 1;
 						} else {
 							hint "Besorge erst ein DogTag";
-              player createDiaryRecord["questbuch",
+           				   player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -1351,7 +1412,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						playSound "hoellenfeuer_1_2_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Uniformiert <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Besorge dir ein IS Kampfanzug Weiße Hose"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Uniformiert <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Besorge dir ein Kampfanzug Weiße Hose"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"hoellenfeuer_1_1_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_2_0" setMarkerAlphaLocal 1;
             player createDiaryRecord["questbuch",
@@ -1376,9 +1437,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Uniformiert - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"hoellenfeuer_1_2_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_2_1" setMarkerAlphaLocal 1;
-						} else {
-							hint "Wie siehst du denn aus? Zieh dir die weiße Hose an!"
-              player createDiaryRecord["questbuch",
+							  player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -1388,14 +1447,15 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 								"
 						]
 					];
-						};
+						} else {
+							hint "Wie siehst du denn aus? Zieh dir die weiße Hose an!"
+           				};
 					};
 				};
 			};
 			if(_nr == 3) then {						//Wolf im Schafspelz
 				if(_progress == 0) then {
 					if(life_quest == 52) then {
-						waitUntil { (1 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_3_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1437,6 +1497,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 			};
+		};
 			if(_nr == 4) then {						//Ausnutzen
 				if(_progress == 0) then {
 					if(life_quest == 54) then {
@@ -1460,9 +1521,37 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				};
 				if(_progress == 1) then {
 					if(life_quest == 55) then {
-						_armyCars = ["rhsusf_m998_d_2dr","rhsusf_m998_d_4dr","DAR_M1152","rhsusf_m1025_d","rhsusf_m1025_d_m2","DAR_M1165_GMV","DAR_M1151","DAR_M1151_Deploy","DAR_M1167","rhsusf_m113d_usarmy"];
-						_nearObj = nearObjects [player, ["_armyCars"],50];
-						if ((count _nearObj)>0) then {
+						_cars = position player nearObjects ["rhsusf_m998_d_2dr", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m998_d_4dr", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1152", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m1025_d", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m1025_d_m2", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1165_GMV", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1151", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1151_Deploy", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["DAR_M1167", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						_cars = position player nearObjects ["rhsusf_m113d_usarmy", 50];
+						_vehiclecount = count _cars;
+						if (_vehiclecount > 0) then {player setVariable ["armyvehquest",true];};
+						if (player getVariable ["armyvehquest",false]) then {
 							playSound "hoellenfeuer_1_4_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
@@ -1488,7 +1577,6 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 			if(_nr == 5) then {						//Kreuzzug
 				if(_progress == 0) then {
 					if(life_quest == 56) then {
-						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_5_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1516,9 +1604,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Kreuzzug - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+5000$ <br/> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"hoellenfeuer_1_5_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_5_1" setMarkerAlphaLocal 1;
-						} else {
-							hint "Weichei! Schlachte sie und bring mir 5 DogTags!";
-              player createDiaryRecord["questbuch",
+							player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -1528,7 +1614,9 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 								"
 						]
 					];
-						};
+						} else {
+							hint "Weichei! Schlachte sie und bring mir 5 DogTags!";
+             			};
 					};
 				};
 			};
@@ -1539,7 +1627,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 						playSound "hoellenfeuer_1_6_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Wocheinkauf <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>Besorge 1x Batterie, 1x Zünder, 1x Behaelter"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Wocheinkauf <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Besorge 1x Batterie und 1x Behaelter"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						"hoellenfeuer_1_5_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_6_0" setMarkerAlphaLocal 1;
             player createDiaryRecord["questbuch",
@@ -1559,16 +1647,14 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 
 						// Zündername?
 
-						if ([false,"battery",1] call life_fnc_handleInv AND [false,"behaelter",1] call life_fnc_handleInv AND [false,"???",1] call life_fnc_handleInv) then {
+						if ([false,"battery",1] call life_fnc_handleInv AND [false,"behaelter",1] call life_fnc_handleInv) then {
 							playSound "hoellenfeuer_1_6_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
 							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Wocheinkauf - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							"hoellenfeuer_1_6_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_6_1" setMarkerAlphaLocal 1;
-						} else {
-							hint "Dir fehlt noch etwas! Ich brauche einen Zünder, einen Behälter und eine Batterie!";
-              player createDiaryRecord["questbuch",
+							player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -1578,14 +1664,15 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 								"
 						]
 					];
-						};
+						} else {
+							hint "Dir fehlt noch etwas! Ich brauche einen Zünder, einen Behälter und eine Batterie!";
+              			};
 					};
 				};
 			};
 			if(_nr == 7) then {						//Pyrotechnik
 				if(_progress == 0) then {
 					if(life_quest == 60) then {
-						waitUntil { (2 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_7_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1607,17 +1694,15 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				};
 				if(_progress == 1) then {
 					if(life_quest == 61) then {
-						if ([false,"explosive",1] call life_fnc_handleInv) {
+						if ([false,"explosive",1] call life_fnc_handleInv) then {
 							playSound "hoellenfeuer_1_7_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
-							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pyrotechnik - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+2000$ <br/> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+							[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Pyrotechnik - Abgeschlossen! <br/> Belohnung erhalten <br /></t><t size='0.6' shadow='1' color='#EFFBEF'>+ 2000$ <br/> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 							//Marker
 							"hoellenfeuer_1_7_0" setMarkerAlphaLocal 0;
 							"hoellenfeuer_1_7_1" setMarkerAlphaLocal 1;
-						} else {
-							hint "Mit dem Staub in deiner Tasche kann ich nichts anfangen. Bring mir Sprengstoff!"
-              player createDiaryRecord["questbuch",
+							player createDiaryRecord["questbuch",
 					[
 							"Quest-Buch",
 								"
@@ -1627,18 +1712,19 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 								"
 						]
 					];
-						};
+						} else {
+							hint "Mit dem Staub in deiner Tasche kann ich nichts anfangen. Bring mir Sprengstoff!"
+         				};
 					};
 				};
 			};
 			if(_nr == 8) then {						//Handwerker
 				if(_progress == 0) then {
 					if(life_quest == 62) then {
-						waitUntil { (2 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_8_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
-						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Handwerker <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Baue 1x Small IED Dug In<br/> Besorge 4 DogTags"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+						[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'> Handwerker <br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> Baue 1x Small IED Dug In"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 						//Marker
 						"hoellenfeuer_1_7_1" setMarkerAlphaLocal 0;
 						"hoellenfeuer_1_8_0" setMarkerAlphaLocal 1;
@@ -1658,7 +1744,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					if(life_quest == 63) then {
 
 						// Small IED Bug IN Arma oder Z-Item?
-
+							if ("IEDLandSmall_Remote_Mag" in items player) then {
 							playSound "hoellenfeuer_1_8_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
@@ -1679,10 +1765,10 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					};
 				};
 			};
+		};
 			if(_nr == 9) then {						//Höllenfeuer
 				if(_progress == 0) then {
 					if(life_quest == 64) then {
-						waitUntil { (10 >= (west countSide playableUnits)) };
 						playSound "hoellenfeuer_1_9_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;
@@ -1705,7 +1791,7 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 				if(_progress == 1) then {
 					if(life_quest == 65) then {
 
-						//Check Bombe explodiert
+						if ("IEDLandSmall_Remote_Mag" in items player) then {
 
 							playSound "hoellenfeuer_1_9_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
@@ -1726,10 +1812,11 @@ if("hoellenfeuer" == _reihe) then { // Höllenfeuer
 					];
 					};
 				};
+				};
 			};
 		};
 };
-
+// Ab hier TO DO
 if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 	if (life_level < 26) exitWith {hint "Diese Quest ist erst ab Level 26 verfügbar"};
 		if((side _user) == civilian) then {
@@ -1804,7 +1891,7 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 				};
 				if(_progress == 1) then {
 					if(life_quest == 69) then {
-						if([false,"dogtag",5] call life_fnc_handleInv){
+						if([false,"dogtag",5] call life_fnc_handleInv) then {
 							playSound "schakalvier_1_2_1";
 							["Quest_Prof",1,1] call life_fnc_addLevel;
 							[] call life_fnc_profSetup;
@@ -1966,7 +2053,6 @@ if("schakalvier" == _reihe) then { // Aus dem Leben eines Schakals part vier
 			if(_nr == 6) then {						//Totaler Krieg
 				if(_progress == 0) then {
 					if(life_quest == 76) then {
-						waitUntil { (6 >= (west countSide playableUnits)) };
 						playSound "schakalvier_1_6_0";
 						["Quest_Prof",1,1] call life_fnc_addLevel;
 						[] call life_fnc_profSetup;

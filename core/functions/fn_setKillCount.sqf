@@ -6,8 +6,8 @@
 
 //Input Arrray [Unit to set killcounter, got killed or not]
 
-_unit = this select 0;
-_killed = this select 1;
+_unit = _this select 0;
+_killed = _this select 1;
 
 //Check if something goes wrong
 if(getPlayerUID player == getPlayerUID _unit) then {

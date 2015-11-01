@@ -42,6 +42,7 @@ _inv = _veh_data select 0;
 
 if(_ctrl == "goldbar" && (life_trunk_vehicle isKindOf "House_F")) exitWith {hint "Du kannst das hier nicht lagern!"};
 if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle")}) exitWith {hint "Du kannst das hier nicht lagern!"};
+if(!(_ctrl == "oilp" OR _ctrl == "oilu") && (life_trunk_vehicle isKindOf "RHS_Ural_Fuel_MSV_01")) exitWith {hint "Du kannst hier nur Öl einlagern!"};
 if(_ctrl == "money") then
 {
 	_index = [_ctrl,_inv] call TON_fnc_index;

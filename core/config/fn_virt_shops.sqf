@@ -25,6 +25,6 @@ switch (_shop) do
     case "mafiacasino": {["Casino Bar",["bier","schnaps","water","coffee","apple","tbacon","redgull"]]};
     case "electrostore": {["Abduls Elektronikbedarf",["battery","fernzuender","gehaeuse","antenne"]]};
     case "blackstore": {["Schwarzmarkt",["sprengsatz","sprengstoff","goldbarren","nitroglycerin","explosive"]]};
-	case "werkstoff": {["Werkstoffe",["sprengsatz","sprengstoff","goldbarren","gunpowder","nitroglycerin","explosive","sulfurp","potassiumnitrate"]]};
+	case "werkstoff": {["Werkstoffe",["goldbarren","gunpowder","nitroglycerin","explosive","sulfurp","potassiumnitrate"]]};
 
 };

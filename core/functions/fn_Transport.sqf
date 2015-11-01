@@ -267,20 +267,21 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								if (_p == 22) then
 								{
 									_reward = "optic_Aco";
-									if (!(player canAddItemtoBackpack _reward) OR !(player canAddITemtoUniform _reward) OR (player canADdItemToVest _rewward)) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
+									if (!(player canAddItemtoBackpack _reward) OR !(player canAddITemtoUniform _reward) OR (player canADdItemToVest _reward)) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 									if ([false,"gestohlenevisiere",1] call life_fnc_handleInv) then
 									{
 										life_transport_in_progress = false;
 										_user setVariable ["transport", 0, false];
 										playSound "transport_2_2_1";
 										"Transport_2_2" setMarkerAlphaLocal 0;
-										player addItemToBackpack _reward;
-										_reward  = 20000;
-										life_cash = life_cash + _reward;
+										player addItem _reward;
+										_rewardcash  = 20000;
+										life_cash = life_cash + _rewardcash;
 										_level = 25;
 										if (life_quest == 31) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
 										["Level_Prof",_level,1] call life_fnc_addLevel;
-										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'>+ ACO (rot) <br /> + 20000$ <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+										[] call life_fnc_profSetup;
+										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + ACO (rot) <br /> + 20000$ <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 									};
 								}
@@ -329,6 +330,7 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 									life_cash = life_cash + _reward;
 									_level = 300;
 									if (life_quest == 31) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
+									[] call life_fnc_profSetup;
 									["Level_Prof",_level,1] call life_fnc_addLevel;
 									[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 30000$ <br /> + 300 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
