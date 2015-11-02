@@ -40,6 +40,16 @@ if (1 == _paket) then // Jobs für Anfänger
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Pistolen erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_1_1" setMarkerAlphaLocal 1;
+						        player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Laufbursche
+                                                Bringe die Kiste mit Pistolen zu Ahmed
+								"
+						]
+								];
 								}
 								else
 								{
@@ -64,7 +74,18 @@ if (1 == _paket) then // Jobs für Anfänger
 										if (life_quest == 3) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 100 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-									};
+										 player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Laufbursche
+                                                Transport abgegeben!
+								"
+						]
+								];
+
+                  };
 								}
 								else
 								{
@@ -88,6 +109,16 @@ if (1 == _paket) then // Jobs für Anfänger
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Nahrungsmitteln erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_1_2" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Hungersnot
+                                                Bringe diese Lebensmittel nach Loy Manara
+								"
+						]
+								];
 								}
 								else
 								{
@@ -110,6 +141,16 @@ if (1 == _paket) then // Jobs für Anfänger
 										if (life_quest == 3) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 200 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Hungersnot
+                                                Transport abgegeben
+								"
+						]
+								];
 									};
 								}
 								else
@@ -133,6 +174,16 @@ if (1 == _paket) then // Jobs für Anfänger
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Munition erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_1_3" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Audienz beim Lord
+                                                Bring die Munition zum Warlord
+								"
+						]
+								];
 								}
 								else
 								{
@@ -157,6 +208,16 @@ if (1 == _paket) then // Jobs für Anfänger
 										if (life_quest == 3) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 15000$ <br /> + 150 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Audienz beim Lord
+                                                Transport abgegeben
+								"
+						]
+								];
 									};
 								}
 								else
@@ -194,6 +255,16 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit AKs erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_2_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Mehr AKs für den Heiligen Krieg
+                                                Bringe diese AKs zum Waffenhändler
+								"
+						]
+								];
 								}
 								else
 								{
@@ -230,6 +301,16 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 												 player addWeapon _reward;
 												 player addItemToUniform "rhs_30Rnd_545x39_AK";
 												 player addItemToUniform "rhs_30Rnd_545x39_AK";
+                      player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Mehr AKs für den Heiligen Krieg
+                                                Transport abgegeben
+								"
+						]
+								];
 											};
 										};
 								}
@@ -255,6 +336,16 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Visieren erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_2_2" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Diebesgut
+                                                Bringe die Visiere zum Terroristenlager
+								"
+						]
+								];
 								}
 								else
 								{
@@ -282,6 +373,16 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 										["Level_Prof",_level,1] call life_fnc_addLevel;
 										[] call life_fnc_profSetup;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + ACO (rot) <br /> + 20000$ <br /> + 250 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Diebesgut
+                                                Transport abgegeben
+								"
+						]
+								];
 
 									};
 								}
@@ -308,6 +409,16 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kiste mit Uniformen erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_2_3" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Nachschub für unsere Offiziere
+                                                 Bringe diese Uniformen zum Kleidungshändler in Feruz
+								"
+						]
+								];
 								}
 								else
 								{
@@ -332,7 +443,16 @@ if (2 == _paket) then // Jobs für Fortgeschrittene
 									if (life_quest == 31) then {["QuestInfo_Prof",1,1] call life_fnc_addLevel;};
 									[] call life_fnc_profSetup;
 									["Level_Prof",_level,1] call life_fnc_addLevel;
-									[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 30000$ <br /> + 300 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+									[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 30000$ <br /> + 300 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText; player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Nachschub für unsere Offiziere
+                                                Transport abgegeben
+								"
+						]
+								];
 
 									};
 								}
@@ -372,6 +492,16 @@ if (3 == _paket) then // Schwere Jobs
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Koran erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_3_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Der Heilige Krieg
+                                                Bringe die heiligen Schriften zum Moschee Turm in Rasman
+								"
+						]
+								];
 								}
 								else
 								{
@@ -396,6 +526,16 @@ if (3 == _paket) then // Schwere Jobs
 											["Level_Prof",_level,1] call life_fnc_addLevel;
 											[] call life_fnc_profSetup;
 											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 30000$ <br /> + 500 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                      player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Der Heilige Krieg
+                                                Transport abgegeben
+								"
+						]
+								];
 
 										};
 								}
@@ -420,6 +560,16 @@ if (3 == _paket) then // Schwere Jobs
 								[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 								//Marker
 								"Transport_3_2_1" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Niemand möchte Tripper
+                                                Hole Kondome beim Dirty Doc
+								"
+						]
+								];
 
 							};
 					if (_progress == 1) then
@@ -434,6 +584,16 @@ if (3 == _paket) then // Schwere Jobs
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Neue Questinfo <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + Kondome erhalten <br /> + Transportziel markiert"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 										"Transport_3_2_1" setMarkerAlphaLocal 0;
 										"Transport_3_2_2" setMarkerAlphaLocal 1;
+                    player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Niemand möchte Tripper
+                                                Bringe die Kondome zu Yahells Frau
+								"
+						]
+								];
 									}
 									else
 									{
@@ -462,6 +622,16 @@ if (3 == _paket) then // Schwere Jobs
 										_level = 350;
 										["Level_Prof",_level,1] call life_fnc_addLevel;
 										[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 50000$ <br /> + 350 Erfahrung"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                    player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Niemand möchte Tripper
+                                                Transport abgegeben
+								"
+						]
+								];
 
 									};
 								}
@@ -502,6 +672,16 @@ if (4 == _paket) then // Schwächung der Nato
 								//Marker
 								"Transport_4_1" setMarkerAlphaLocal 1;
 								"Transport_4_2" setMarkerAlphaLocal 1;
+                player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Schwächung der Nato
+                                                Bringe die Scharfschützengewehre zum Schwarzmarkt
+								"
+						]
+								];
 
 							};
 					if (_progress == 1) then
@@ -525,6 +705,16 @@ if (4 == _paket) then // Schwächung der Nato
 											["Level_Prof",_level,1] call life_fnc_addLevel;
 											[] call life_fnc_profSetup;
 											[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Belohnung erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 30000$ <br /> + 500 Erfahrung <br /> + neue Lackierung verfügbar"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+                      player createDiaryRecord["transportbuch",
+					[
+							"Transport-Buch",
+								"
+
+             Schwächung der Nato
+                                                Transport abgegeben
+								"
+						]
+								];
 
 										};
 								}

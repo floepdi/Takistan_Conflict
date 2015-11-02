@@ -49,7 +49,7 @@ if(count (actionKeys "User1") != 0 && {(inputAction "User1" > 0)}) exitWith {
 switch (_code) do
 {
 	//Space key for Jumping
-	case 57:
+	/*case 57:
 	{
 			if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 			if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
@@ -58,7 +58,7 @@ switch (_code) do
 				[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
 				_handled = true;
 			};
-	};
+	}; */
 	case 79:
 	{
 		if(_ctrlKey) then {
@@ -89,43 +89,6 @@ switch (_code) do
 		};
 
 
-
-	case 2:
-	{
-		switch (PlayerSide) do
-		{
-
-		case civilian: {
-
-		if((!life_action_gathering) && (vehicle player == player) ) then
-		{
-			{
-			_str = [_x] call life_fnc_varToStr;
-			_val = missionNameSpace getVariable _x;
-			if(_val > 0 ) then
-				{
-				if( _str == "Spitzhacke" || _str == "pickaxe" ) then
-					{
-
-
-
-
-							[] spawn life_fnc_pickAxeUse;
-
-
-
-					};
-				};
-
-			} foreach life_inv_items;
-
-		}
-
-
-		};
-		};
-		_handled = true;
-	};
 
 	//TODO SPIKESTRIP
 	case 3:
@@ -411,14 +374,17 @@ switch (_code) do
 	};
 
 
-	//Admin
-	case 60:
+	case 3:
 	{
-		_handled = true;
+	if(playerSide == civilian && !life_action_gathering) then {
+			_handle = [] spawn life_fnc_gather;
+			waitUntil {scriptDone _handle};
+			life_action_gathering = false;
+	};
 	};
 
-
 	//F Key
+
 	case 33:
 	{
 		if(playerSide == independent && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then

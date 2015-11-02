@@ -76,23 +76,23 @@
 
 	if (_paytime >= 60) then
 	{
-	["Payday_Prof",1,1] call life_fnc_addLevel;
-	life_cash = life_cash + 20000;
-	["Level_Prof",2000,1] call life_fnc_addLevel;
-	[] call life_fnc_profSetup;
 	_bonus = (life_payday /5);
 	if (_bonus in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]) then{
 	_stunden =  life_payday;
+	["Payday_Prof",1,1] call life_fnc_addLevel;
+	life_cash = life_cash + 2000;
+	["Level_Prof",2000,1] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
 	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
-	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 20000$ <br /> + 2000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 2000$ <br /> + 2000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 	}
 	else
 	{
 	_stunden =  life_payday;
-	life_cash = life_cash + 10000;
+	life_cash = life_cash + 1000;
 	["Level_Prof",1000,1] call life_fnc_addLevel;
 	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
-	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 	};
 
 	life_paytime = 0;
