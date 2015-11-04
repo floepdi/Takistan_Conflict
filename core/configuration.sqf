@@ -43,13 +43,13 @@ __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Revive constant variables.
 __CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,5000); //Fee for players to pay when revived.
+__CONST__(life_revive_fee,100); //Fee for players to pay when revived.
 
 //House Limit
 __CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
-__CONST__(life_gangPrice,50000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
+__CONST__(life_gangPrice,5000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
 __CONST__(life_gangUpgradeBase,10000); //MASDASDASD
 __CONST__(life_gangUpgradeMultipler,2.5); //BLAH
 
@@ -410,7 +410,7 @@ life_illegal_items =
 */
 sell_array =
 {[
-    ["apple",150],
+    ["apple",0],
     ["heroinu",150],
     ["heroinp",1850],
     ["heroinp",3000],
@@ -497,8 +497,8 @@ sell_array =
 
 buy_array =
 {[
-    ["apple",150],
-    ["rabbit",75],
+    ["apple",3],
+    ["rabbit",4],
     ["coalp", 50],
     ["salema",55],
     ["ornate",50],
@@ -508,21 +508,21 @@ buy_array =
     ["catshark",350],
     ["water",10],
     ["turtlesoup",2500],
-    ["donuts",120],
-    ["coffee",10],
-    ["tbacon",75],
-    ["lockpick",150],
-    ["pickaxe",1200],
-    ["redgull",500],
-    ["fuelF",850],
-    ["peach",150],
-    ["spikeStrip",2500],
-    ["barrier",2500],
-    ["barricade",2500],
-    ["strahler",2500],
-    ["blastingcharge",35000],
-    ["boltcutter",7500],
-    ["defusekit",2500],
+    ["donuts",4],
+    ["coffee",3],
+    ["tbacon",5],
+    ["lockpick",200],
+    ["pickaxe",50],
+    ["redgull",50000000],
+    ["fuelF",50],
+    ["peach",4],
+    ["spikeStrip",10],
+    ["barrier",10],
+    ["barricade",10],
+    ["strahler",10],
+    ["blastingcharge",500],
+    ["boltcutter",500],
+    ["defusekit",10],
     ["Box_IND_Grenades_F",250000],
     ["Box_IND_WpsSpecial_F",500000],
     ["B_supplyCrate_F",2500000],
@@ -530,21 +530,21 @@ buy_array =
     ["zipties",2000],
     ["bier",2000],
     ["sprengstoff",50000],
-    ["guertel",150],
+    ["guertel",50],
     ["schnaps",150],
     ["schlafmittel",20000],
-    ["dattel",100],
-    ["fladenbrot",200],
-    ["ziegenmilch",10],
-    ["burger",50],
+    ["dattel",3],
+    ["fladenbrot",4],
+    ["ziegenmilch",3],
+    ["burger",4],
     ["cola",5],
     ["sprengsatz",50000],
     ["fernzuender",5000],
-    ["battery",1000],
-    ["pipe",2500],
-    ["gehaeuse",1500],
-    ["antenne",2500],
-    ["behaelter",5000],
+    ["battery",50],
+    ["pipe",50],
+    ["gehaeuse",50],
+    ["antenne",50],
+    ["behaelter",50],
     ["flask",50],
     ["nitroglycerin",1000],
     ["altpapier",50],
