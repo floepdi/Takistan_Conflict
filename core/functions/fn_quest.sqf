@@ -90,7 +90,7 @@ if ("schakaleins" == _reihe) then
 			};
 				if (_progress == 1) then{
 				if (life_quest == 3 && life_questinfo == 3) then {
-					_reward = "rhs_weap_ak74m_folded";
+					_reward = "arifle_mas_ak74";
 					if !((player canAddItemtoBackpack _reward) OR (PrimaryWeapon Player == "")) exitWith {hint "Mach zuerst Platz für eine Waffe, um die Belohnung entgegen zu nehmen"};
 					playSound "schakaleins_1_2_1";
 					"schakaleins_1_2_0" setMarkerAlphaLocal 0;
@@ -103,14 +103,14 @@ if ("schakaleins" == _reihe) then
 					if (PrimaryWeapon Player != "") then
 											{
 												player addItemToBackpack _reward;
-												player addItemToUniform "rhs_30Rnd_545x39_AK";
-												player addItemToUniform "rhs_30Rnd_545x39_AK";
+												player addItemToUniform "30Rnd_mas_545x39_mag";
+												player addItemToUniform "30Rnd_mas_545x39_mag";
 											}
 											else
 											{
 												 player addWeapon _reward;
-												 player addItemToUniform "rhs_30Rnd_545x39_AK";
-												 player addItemToUniform "rhs_30Rnd_545x39_AK";
+												 player addItemToUniform "30Rnd_mas_545x39_mag";
+												 player addItemToUniform "30Rnd_mas_545x39_mag";
 											};
 					player createDiaryRecord["questbuch",
 					[

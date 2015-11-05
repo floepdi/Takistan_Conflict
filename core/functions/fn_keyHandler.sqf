@@ -15,7 +15,7 @@ _speed = speed cursorTarget;
 _handled = false;
 _muted = false;
 
-/* _interactionKey = if(count (actionKeys "User1") == 0) then {41} else {(actionKeys "User1") select 0}; */
+_interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
@@ -29,9 +29,9 @@ if(life_action_inUse) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
 	_handled;
 };
-/*
+
 //Hotfix for Interaction key not being able to be bound on some operation systems.
-if(count (actionKeys "User1") != 0 && {(inputAction "User1" > 0)}) exitWith {
+if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	if(!life_action_inUse) then {
 		[] spawn
@@ -45,12 +45,15 @@ if(count (actionKeys "User1") != 0 && {(inputAction "User1" > 0)}) exitWith {
 	};
 	true;
 };
-*/
+
 switch (_code) do
 {
 	//Space key for Jumping
-	/*case 57:
+	case 57:
 	{
+
+
+
 			if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 			if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
 				jumpActionTime = time; //Update the time.
@@ -58,7 +61,7 @@ switch (_code) do
 				[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
 				_handled = true;
 			};
-	}; */
+	};
 	case 79:
 	{
 		if(_ctrlKey) then {
@@ -90,6 +93,44 @@ switch (_code) do
 
 
 
+	case 2:
+	{
+		switch (PlayerSide) do
+		{
+		case west: {[] call life_fnc_wantedMenu;};
+
+		case civilian: {
+
+		if((!life_action_gathering) && (vehicle player == player) ) then
+		{
+			{
+			_str = [_x] call life_fnc_varToStr;
+			_val = missionNameSpace getVariable _x;
+			if(_val > 0 ) then
+				{
+				if( _str == "Spitzhacke" || _str == "pickaxe" ) then
+					{
+
+
+
+
+							[] spawn life_fnc_pickAxeUse;
+
+
+
+					};
+				};
+
+			} foreach life_inv_items;
+
+		}
+
+
+		};
+		};
+		_handled = true;
+	};
+
 	//TODO SPIKESTRIP
 	case 3:
 	{
@@ -117,23 +158,30 @@ switch (_code) do
 		};
 		_handled = true;
 	};
+	case 5:
+	{_handled = true};
+	case 6:
+	{_handled = true};
+	case 7:
+	{_handled = true};
+	case 8:
+	{_handled = true};
+	case 9:
+	{_handled = true};
+	case 10:
+	{_handled = true};
 
 	//Map Key
 	case _mapKey:
-{
+	{
 		switch (playerSide) do
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-			case independent: {
-				if(!visibleMap) then {
-					[] spawn life_fnc_medicMarkers;
-					[] spawn life_fnc_teamMarkers;
-				}
-			};
+			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 			case civilian: {if(!visibleMap) then {[] spawn life_fnc_gangMarkers;}}
 		};
-};
-/*
+	};
+
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -149,16 +197,13 @@ switch (_code) do
 			};
 		};
 	};
-
 	case 11:
 	{
 		[] call life_fnc_toggleSound;
 		_handled = true;
 
 	};
-	*/
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
-	/*
 	case _interactionKey:
 	{
 		if(!life_action_inUse) then {
@@ -171,20 +216,19 @@ switch (_code) do
 			};
 		};
 	};
-	*/
-/*
+
 	//Restraining (Shift + R)
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && (player getVariable "restrained") && speed cursorTarget < 1) then
+		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 		{
 			[] call life_fnc_restrainAction;
 		};
 		if(playerSide == civilian) then
 		{
 
-			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && (player getVariable "restrained") && speed cursorTarget < 1) then
+			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
 			{
 
 
@@ -199,31 +243,9 @@ switch (_code) do
 				};
 			};
 		};
-
-		//MEDIC KANN RESTRAINEN
-		if(playerSide == independent) then
-		{
-
-			if(_shift && playerSide == independent && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-			{
-
-
-				if([false,"zipties",1] call life_fnc_handleInv) then
-				{
-					[] call life_fnc_restrainAction;
-
-				}
-				else
-				{
-					hint "Du hast keine Kabelbinder!";
-				};
-			};
-		};
-
 	};
-*/
+
 	//Knock out, this is experimental and yeah...
-/*
 	case 34:
 	{
 		if(_shift) then {_handled = true;};
@@ -236,12 +258,12 @@ switch (_code) do
 			};
 		};
 	};
-*/
+
 	//T Key (Trunk)
 	case 20:
 	{
 		if(_shift) then {_handled = true;};
-		/*
+
 		if (_shift) then
 		{
 			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
@@ -255,7 +277,7 @@ switch (_code) do
 				};
 			};
 		};
-		*/
+
 		if(!_alt && !_ctrlKey) then
 		{
 			if(vehicle player != player && alive vehicle player) then
@@ -280,37 +302,21 @@ switch (_code) do
 	//L Key?
 	case 38:
 	{
-		if(playerSide in [west]) then
-		{
-			if(!_alt && !_ctrlKey) then
-			{
-				[] call life_fnc_radar;
-			};
-		};
-	};
-
-	case 5:
-	{
 		//If cop run checks for turning lights on.
-		if(playerSide in [west,independent]) then
-		{
-			_veh = vehicle player;
-			if(_veh != player && (typeOf vehicle player) in ["C_Offroad_01_F","C_SUV_01_F"]) then
-			{
-				if(!isNil {_veh getVariable "lights"}) then
-				{
-				titleText ["Leuchtwerk Ein/Aus","PLAIN"];
-				[_veh] call life_fnc_sirenLights;
-				}
-				else
-					{
-						titleText ["Leuchtwerk Aus","PLAIN"];
-						[_veh] call life_fnc_sirenLights;
+		if(_shift && playerSide in [west,independent]) then {
+			if(vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"]) then {
+				if(!isNil {vehicle player getVariable "lights"}) then {
+					if(playerSide == west) then {
+						[vehicle player] call life_fnc_sirenLights;
+					} else {
+						[vehicle player] call life_fnc_medicSirenLights;
 					};
-				_handled = true;
-
+					_handled = true;
+				};
 			};
 		};
+
+		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu
 	case 21:
@@ -320,9 +326,19 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};
-
-
+	case 41:
+	{
+		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
+		{
+			[] call life_fnc_p_openMenu;
+			_handled = true;
+		};
+	};
 	case 59:
+	{
+			_handled = true;
+	};
+		case 60:
 	{
 			_handled = true;
 	};
@@ -361,10 +377,6 @@ switch (_code) do
 	{
 			_handled = true;
 	};
-	case 36:
-	{
-			_handled = true;
-	};
 	case 87:
 	{
 			_handled = true;
@@ -374,17 +386,7 @@ switch (_code) do
 	};
 
 
-	case 3:
-	{
-	if(playerSide == civilian && !life_action_gathering) then {
-			_handle = [] spawn life_fnc_gather;
-			waitUntil {scriptDone _handle};
-			life_action_gathering = false;
-	};
-	};
-
 	//F Key
-
 	case 33:
 	{
 		if(playerSide == independent && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then

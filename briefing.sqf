@@ -22,9 +22,9 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
 
 	player createDiaryRecord["changelog",
 		[
-			"synced changelog",
+			"Changelog",
 				"
-					Aktuelle Änderungen findet ihr in unserem Forum: synced-gaming.de
+					Aktuelle Änderungen findet ihr in unserem Forum: www.synced-gaming.de
 				"
 		]
 	];
@@ -34,8 +34,6 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
 			"Regeln",
 				"
 				Unsere Regeln findet ihr auf unserer Homepage: synced-gaming.de <br/>
-				Informationen rund um den Server findet ihr in unserem Wiki: synced.vilayer.me/wiki/
-
 				"
 		]
 	];
@@ -46,21 +44,28 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
 	player createDiaryRecord ["hotkeys",
 		[
 			"Tastenbelegung",
-				"
-					Aktion 10 : (Win Taste) Farmen und jegliche Spieler/Fahrzeug Interaktionen.<br/>
-					1 : Spitzhacke.<br/>
-					3 : Redgull.<br/>
-					0 : Lautstärke hoch/runter.<br/>
-					STRG+Numpad 1/2 : Liegestütze/Kniebeuge.<br/>
-					Z : Spielermenü<br/>
-					U : Fahrzeug auf/abschließen<br/>
-					T : Kofferraum<br/>
-					Shift + R : Fesseln/Verhaften<br/>
-					Shift + G : Niederschlagen<br/>
-					Shift + H : Waffe holstern.<br/>
-					Strg + H : Waffe ziehen.<br/>
-					Strg + T : Ergeben.
-				"
+			"
+      		Strg + Win Taste : ACE Selbstinteraktionsmenü.<br/>
+      		Win Taste : ACE Interaktionsmenü.<br/>
+      		ACE Selbstinteraktionsmenü : Ergeben.<br/>
+      		ACE Selbstinteraktionsmenü : Ohrstöpsel.<br/>
+      		ACE Interaktionsmenü : Fahrzeug reparieren.<br/>
+          	ACE Interaktionsmenü : Fesseln/Verhaften.<br/>
+			Shift + 3 : Redgull.<br/>
+			0 : Lautstärke hoch/runter.<br/>
+      		8 : Granaten Wurfweite anpassen.<br/>
+      		2-7 : Taktische Handzeichen.<br/>
+      		STRG+Numpad 1/2 : Liegestütze/Kniebeuge.<br/>
+			Z : Spielermenü.<br/>
+			U : Fahrzeug auf/abschließen.<br/>
+			T : Kofferraum.<br/>
+			Shift + H : Waffe holstern.<br/>
+      		Strg + H : Waffe ziehen.<br/>
+      		Entf : Speedlimiter.<br/>
+      		Mausrad Menü : Fahrzeug umdrehen.<br/>
+        	^/Zirkumflex : Mine farmen.<br/>
+      		Alternativ ist es möglich sämtliche ACE Einstellungen selbst anzupassen unter Konfigurieren/Steuerung/Configure Addons.<br/>
+			"
 		]
 	];
 

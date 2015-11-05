@@ -1,7 +1,7 @@
 /*
 	File: fn_gather.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Main functionality for gathering.
 */
@@ -22,14 +22,10 @@ life_action_gathering = true;
 if(_zone == "") exitWith {
 	life_action_inUse = false;
 };
-_karma = 1; //0=neg, 1=pos
 
 //Get the resource that will be gathered from the zone name...
 
 switch(true) do {
-/*	case (_zone in ["apple_1","apple_2","apple_3","apple_4"]): {_karma=1;_gather = "apple"; _val = 3;};
-	case (_zone in ["peaches_1","peaches_2","peaches_3","peaches_4"]): {_karma=1;_gather = "peach"; _val = 3;};
-*/
 	case (_zone in ["oil_1"]): {_gather = "oilu"; _val = 1;};
 	case (_zone in ["heroin_1"]): {_gather = "heroinu"; _val = 1;};
 	case (_zone in ["cocaine_1"]): {_gather = "cocaine"; _val = 1;};
@@ -37,10 +33,6 @@ switch(true) do {
 	case (_zone in ["gold_1"]): {_gather = "goldore"; _val = 1;};
 	case (_zone in ["sulfur_1"]): {_gather = "sulfuru"; _val =1;};
 	case (_zone in ["nitre_1"]): {_gather = "nitre"; _val =1;};
-/*	case (_zone in ["hopfen_1"]): {_karma=1;_gather = "hopfen"; _val = 2;};
-	case (_zone in ["malz_1"]): {_karma=1;_gather = "malz"; _val = 2;};
-	case (_zone in ["pilze_1"]): {_karma=0;_gather = "pilze"; _val = 1;};
-*/	
 	default {""};
 };
 
@@ -53,20 +45,20 @@ life_action_inUse = true;
 
 
 life_action_inUse = true;
- 
+
 _time = 0;
- 
+
 for "_i" from 0 to 2 do
 {
 player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
 sleep _time;
 };
- 
+
 if(([true,_gather,_diff] call life_fnc_handleInv)) then
 {
 _itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 titleText[format[localize "STR_NOTF_Gather_Success",_itemName,_diff],"PLAIN"];
 };
- 
+
 life_action_gathering = false;
