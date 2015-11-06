@@ -77,8 +77,9 @@ switch(_shop) do
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
@@ -151,8 +152,9 @@ switch(_shop) do
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
@@ -160,7 +162,7 @@ switch(_shop) do
                         ["optic_AMS_snd",nil,1000],
                         ["optic_SOS",nil,1000],
                         ["FHQ_optic_LeupoldERT_tan",nil,1000],
-                        ["optic_LRPS",nil,10000],
+                        ["optic_LRPS",nil,1000],
 
 			["ACE_RangeCard",nil,1000],
                         ["MiniGrenade",nil,1000],
@@ -229,8 +231,9 @@ switch(_shop) do
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
@@ -311,9 +314,10 @@ switch(_shop) do
 
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
-
-                        ["FHQ_optic_AC12136",nil,500],
+                        
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
@@ -398,8 +402,9 @@ switch(_shop) do
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
@@ -491,8 +496,9 @@ switch(_shop) do
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
@@ -587,8 +593,9 @@ switch(_shop) do
                         ["hgun_mas_bhp_F",nil,1000],
                         ["15Rnd_mas_9x21_Mag",nil,100],
 
-                        ["FHQ_optic_AC12136",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,500],
                         ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_AimM_TAN",nil,500],
                         ["FHQ_optic_HWS_tan",nil,500],
                         ["FHQ_optic_ACOG",nil, 500],
                         ["FHQ_optic_HWS_G33_tan",nil,500],
