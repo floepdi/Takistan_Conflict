@@ -50,14 +50,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -65,12 +60,12 @@ switch(_shop) do
                         ["srifle_mas_ebr",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["srifle_mas_m24_d",nil,20000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
-
                         ["LMG_mas_mk48_F_d",nil,20000],
                         ["100Rnd_mas_762x51_Stanag",nil,1000],
 
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+    
                         ["rhs_weap_M136_hedp",nil,20000],
                         ["rhs_m136_hedp_mag",nil,1000],
 
@@ -124,14 +119,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -140,11 +130,11 @@ switch(_shop) do
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
 
-                        ["srifle_mas_m24_d",nil,20000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
-
                         ["LMG_mas_mk48_F_d",nil,20000],
                         ["100Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["srifle_mas_m24_d",nil,20000],
+                        ["5Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["rhs_weap_M136_hedp",nil,20000],
                         ["rhs_m136_hedp_mag",nil,1000],
@@ -200,14 +190,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -216,14 +201,14 @@ switch(_shop) do
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
 
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+
                         ["srifle_mas_m24_d",nil,20000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["rhs_weap_XM2010_d",nil,1000],
                         ["rhsusf_5Rnd_300winmag_xm2010",nil,1000],
-
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["rhs_weap_M136_hedp",nil,20000],
                         ["rhs_m136_hedp_mag",nil,1000],
@@ -281,14 +266,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -296,6 +276,9 @@ switch(_shop) do
                         ["srifle_mas_ebr",nil,20000],
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["srifle_mas_m24_d",nil,20000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
@@ -305,9 +288,6 @@ switch(_shop) do
 
                         ["srifle_mas_lrr",nil,1000],
                         ["10Rnd_mas_338_Stanag",nil,1000],
-
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["rhs_weap_M136_hedp",nil,20000],
                         ["rhs_m136_hedp_mag",nil,1000],
@@ -365,14 +345,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -380,6 +355,9 @@ switch(_shop) do
                         ["srifle_mas_ebr",nil,20000],
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["srifle_mas_m24_d",nil,20000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
@@ -389,9 +367,6 @@ switch(_shop) do
 
                         ["srifle_mas_lrr",nil,1000],
                         ["10Rnd_mas_338_Stanag",nil,1000],
-
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["MMG_02_sand_F",nil,20000],
                         ["130Rnd_338_Mag",nil,1000],
@@ -453,14 +428,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -468,6 +438,9 @@ switch(_shop) do
                         ["srifle_mas_ebr",nil,20000],
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["srifle_mas_m24_d",nil,20000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
@@ -483,9 +456,6 @@ switch(_shop) do
 
                         ["srifle_LRR_camo_F",nil,1000],
                         ["7Rnd_408_Mag",nil,1000],
-
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["MMG_02_sand_F",nil,20000],
                         ["130Rnd_338_Mag",nil,1000],
@@ -547,14 +517,9 @@ switch(_shop) do
                         ["hlc_rifle_SAMR",nil,17500],
                         ["30Rnd_556x45_Stanag",nil,100],
 
-                        ["arifle_MX_GL_F",nil,20000],
-                        ["arifle_MXC_F",nil,20000],
-                        ["arifle_MXM_F",nil,20000],
-                        ["30Rnd_65x39_caseless_mag",nil,1000],
-
-                        ["arifle_MX_SW_F",nil,20000],
-                        ["100Rnd_65x39_caseless_mag",nil,1000],
-
+                        ["arifle_mas_g3",nil,20000],
+                        ["arifle_mas_g3_m203",nil,20000],
+                        ["arifle_mas_mk17",nil,20000],
                         ["arifle_mas_mk17_gl",nil,20000],
                         ["srifle_mas_sr25_d",nil,20000],
                         ["arifle_mas_hk417c_d",nil,20000],
@@ -562,6 +527,9 @@ switch(_shop) do
                         ["srifle_mas_ebr",nil,20000],
                         ["srifle_mas_m110",nil,20000],
                         ["20Rnd_mas_762x51_Stanag",nil,1000],
+
+                        ["LMG_mas_mk48_F_d",nil,20000],
+                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["srifle_mas_m24_d",nil,20000],
                         ["5Rnd_mas_762x51_Stanag",nil,1000],
@@ -580,9 +548,6 @@ switch(_shop) do
 
                         ["srifle_DMR_04_Tan_F",nil,1000],
                         ["10Rnd_127x54_Mag",nil,1000],
-
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
 
                         ["MMG_02_sand_F",nil,20000],
                         ["130Rnd_338_Mag",nil,1000],
