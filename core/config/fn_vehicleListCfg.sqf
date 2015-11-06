@@ -362,9 +362,6 @@ case "level_car":
 		if(life_level >= 23) then {
 			_return pushBack ["B_mas_cars_Hilux_MG",2500];
 		};
-		if(life_level >= 24) then {
-			_return pushBack ["GR_Bell412_3",7500];
-		};		
 		if(life_level >= 26) then {
 			_return pushBack ["RHS_Ural_Open_Civ_01",2000];
 		};
