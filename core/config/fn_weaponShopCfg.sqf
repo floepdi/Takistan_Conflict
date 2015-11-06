@@ -49,7 +49,7 @@ switch(_shop) do
                 ["ItemMap",nil,10],
                 ["ItemCompass",nil,15],
                 ["ToolKit",nil,100],
-                //["NVGoggles",nil,25000],
+                ["rhsusf_ANPVS_14",nil,250],
                 ["Chemlight_red",nil,20],
                 ["Chemlight_yellow",nil,20],
 		["ACE_EarPlugs",nil,5],
