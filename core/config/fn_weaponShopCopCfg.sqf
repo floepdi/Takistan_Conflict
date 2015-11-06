@@ -72,7 +72,7 @@ switch(_shop) do
             {
                 ["Recruit Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
 
                         ["30Rnd_mas_556x45_Stanag",nil,100],
 
@@ -86,7 +86,7 @@ switch(_shop) do
             {
                 ["Private Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
 
                         ["30Rnd_mas_556x45_Stanag",nil,100],
@@ -103,7 +103,7 @@ switch(_shop) do
             {
                 ["Private 1st Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
 
@@ -122,7 +122,7 @@ switch(_shop) do
             {
                 ["Specialist Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -147,7 +147,7 @@ switch(_shop) do
             {
                 ["Corporal Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -180,7 +180,7 @@ switch(_shop) do
             {
                 ["Sergeant Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -218,7 +218,7 @@ switch(_shop) do
             {
                 ["Staff Sergeant Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -261,7 +261,7 @@ switch(_shop) do
             {
                 ["Sergeant First Class Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -313,7 +313,7 @@ switch(_shop) do
             {
                 ["Master Sergeant Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -372,7 +372,7 @@ switch(_shop) do
             {
                 ["Sergeant Major Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -439,7 +439,7 @@ switch(_shop) do
             {
                 ["Command Sgt Major Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
