@@ -36,7 +36,7 @@ switch(_shop) do
             {
                 ["Second Lieutenant Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -109,7 +109,7 @@ switch(_shop) do
             {
                 ["First Lieutenant Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -184,7 +184,7 @@ switch(_shop) do
             {
                 ["Captain Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -264,7 +264,7 @@ switch(_shop) do
             {
                 ["Major Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -347,7 +347,7 @@ switch(_shop) do
             {
                 ["Colonel Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -434,7 +434,7 @@ switch(_shop) do
             {
                 ["General Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
@@ -527,7 +527,7 @@ switch(_shop) do
             {
                 ["Commander in Chief Waffenspind",
                     [
-                        ["rhs_weap_m16a4",nil,1000],
+                        ["arifle_mas_m16",nil,1000],
                         ["arifle_mas_m4c",nil,1000],
                         ["arifle_mas_m4",nil,1000],
                         ["arifle_mas_g36c",nil,7500],
