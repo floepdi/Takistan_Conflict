@@ -183,6 +183,7 @@
 	};
 	if (((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) OR (life_morphin)) then {
 	"colorCorrections" ppEffectEnable false;
+	"dynamicBlur" ppEffectEnable false;
 	};
 
 	player setVariable ["blood",life_blood,true];

@@ -12,8 +12,8 @@ _blood = cursorTarget getVariable ["blood",100];
 _bloodmulti = cursorTarget getVariable ["bloodmulti", 0];
 
 if (_bloodmulti == 0) exitWith {hint "Du kannst hier nichts heilen!"};
-
+life_ishealing = true;
 player playActionNow "Medic";
 [[1],"life_fnc_medicbandaged",cursorTarget,false] spawn life_fnc_MP;
-
+sleep 15;
 life_ishealing = false;

@@ -3918,7 +3918,7 @@ STR_Item_StorageBL<?xml version="1.0" encoding="utf-8"?>
 		<Key ID="STR_Item_BCharge">
 			<Original>Blasting Charge</Original>
 			<English>Blasting Charge</English>
-			<German>Sprengladung</German>
+			<German>Tresor-Sprengsatz</German>
 			<French>Charge de dynamite</French>
 			<Italian>Carica Esplosiva</Italian>
 			<Portuguese>Explosivo</Portuguese>

@@ -29,6 +29,9 @@ if(life_atmcash > (call life_revive_fee)) then {
 
 player setDamage 0.75;
 life_blood = 25;
+player setVariable ["olddamage", damage player , false];
+player setVariable ["olddamage2", 0, false];
+player setVariable ["olddamage3", 0, false];
 //Retexturing of units clothing, vanilla files only retexture the EMS unit.
 /*switch(playerSide) do {
 	case independent: {[[player,0,"textures\med_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;};

@@ -19,5 +19,5 @@ life_ishealing = true;
 player playActionNow "Medic";
 sleep 9;
 player playActionNow "Medic";
-sleep 9;
+sleep 21;
 life_ishealing = false;

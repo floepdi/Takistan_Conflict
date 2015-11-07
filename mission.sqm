@@ -2374,14 +2374,14 @@ class Mission
 				class Item16
 				{
 					position[]={10718.514,383.01218,2353.4963};
-					azimut=264.95438;
+					azimut=264.95401;
 					special="NONE";
 					id=115;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					skill=0.60000002;
 					text="h1_3_1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenu,""army_equipment""];  this addAction[""Waffenspind"",life_fnc_weaponShopMenu,""army_weapon""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenuCop,""army_equipment""];  this addAction[""Mannschafts-Waffenspind"",life_fnc_weaponShopMenuCop,""army_weapon""]; this addAction[""Offiziers-Waffenspind"",life_fnc_weaponShopMenuCop2,""army_weapon2""];";
 				};
 				class Item17
 				{

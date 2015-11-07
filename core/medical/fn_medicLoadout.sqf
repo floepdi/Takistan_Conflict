@@ -44,9 +44,6 @@ player addItem "ItemMap";
 player assignItem "ItemMap";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
-player addItem "Medikit";
-player addItem "FirstAidKit";
-player addItem "FirstAidKit";
 player additem "ToolKit";
 
 //[[player,0,"textures\medic_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;

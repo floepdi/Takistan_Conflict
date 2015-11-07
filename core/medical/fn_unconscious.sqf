@@ -9,7 +9,7 @@
 
 
 
-	player playMove "AinjPpneMstpSnonWnonDnon";
+	player switchMove "AinjPpneMstpSnonWnonDnon";
 	player setVariable ["unconscious",true, true];
 	_countdown = 120;
 	life_unconscious = true;
@@ -21,7 +21,7 @@
 			onEachFrame {if(player getVariable "unconscious") then {player switchCamera "Internal"; "dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [5]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;};};
 
 			if  (life_blood > 0) then {
-			player switchMove "amovppnemstpsraswrfldnon";
+		 	player switchMove "amovppnemstpsraswrfldnon";
 			player setVariable ["unconscious",false, false];
 			player setVariable ["olddamage", damage player , false];
  			player setVariable ["olddamage2", 0, false];
@@ -38,5 +38,5 @@
 	 			player setVariable ["olddamage3", 0 , false];
 	 			life_unconscious = false;
  			};
- 		if !(player getVariable "unconscious") exitWith {};
+ 		if !(life_unconscious) exitWith {};
  		};
