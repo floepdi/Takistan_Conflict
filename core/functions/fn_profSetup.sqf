@@ -128,8 +128,9 @@ switch (true) do {
 	case ((_profExp >= _level1) AND (_profExp < _level2)):
 	 {
 		  life_level = 2;
-		  _levelexp = (_profExp - _level1);
-		  _prozentsatz = (_levelexp / _level2);
+		  _levelexp = (_profExp - _level1); //aktuelle EXP
+      _leveldif = (_level2 - _level1);
+		  _prozentsatz = (_levelexp / _leveldif);
 		   if (_prozentsatz == 0) then {
 	    	 life_exp = 1;
 	     	}
@@ -143,7 +144,8 @@ switch (true) do {
 	 {
 		  life_level = 3;
 		  _levelexp = (_profExp - _level2);
-		  _prozentsatz = (_levelexp / _level3);
+		  __leveldif = (_level3 - _level2);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -157,7 +159,8 @@ switch (true) do {
 	 {
 		  life_level = 4;
 		  _levelexp = (_profExp - _level3);
-		  _prozentsatz = (_levelexp / _level4);
+		  _leveldif = (_level4 - _level3);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -171,7 +174,8 @@ switch (true) do {
    {
       life_level = 5;
       _levelexp = (_profExp - _level4);
-      _prozentsatz = (_levelexp / _level5);
+      _leveldif = (_level5 - _level4);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -187,7 +191,8 @@ switch (true) do {
    {
       life_level = 6;
       _levelexp = (_profExp - _level5);
-      _prozentsatz = (_levelexp / _level6);
+      _leveldif = (_level6 - _level5);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -201,7 +206,8 @@ switch (true) do {
    {
       life_level = 7;
       _levelexp = (_profExp - _level6);
-      _prozentsatz = (_levelexp / _level7);
+      _leveldif = (_level7 - _level6);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -215,7 +221,8 @@ switch (true) do {
    {
       life_level = 8;
       _levelexp = (_profExp - _level7);
-      _prozentsatz = (_levelexp / _level8);
+      _leveldif = (_level7 - _level8);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -229,7 +236,8 @@ switch (true) do {
    {
       life_level = 9;
       _levelexp = (_profExp - _level8);
-      _prozentsatz = (_levelexp / _level9);
+      _leveldif = (_level9 - _level8);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -243,7 +251,8 @@ switch (true) do {
    {
       life_level = 10;
       _levelexp = (_profExp - _level9);
-      _prozentsatz = (_levelexp / _level10);
+      _leveldif = (_level10 - _level9);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -257,7 +266,8 @@ switch (true) do {
    {
       life_level = 11;
       _levelexp = (_profExp - _level10);
-      _prozentsatz = (_levelexp / _level11);
+      _leveldif = (_level11 - _level10);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -271,7 +281,8 @@ switch (true) do {
    {
       life_level = 12;
       _levelexp = (_profExp - _level11);
-      _prozentsatz = (_levelexp / _level12);
+      _leveldif = (_level12 - _level11);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -285,7 +296,8 @@ switch (true) do {
    {
       life_level = 13;
       _levelexp = (_profExp - _level12);
-      _prozentsatz = (_levelexp / _level13);
+      _leveldif = (_level13 - _level12);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -299,7 +311,8 @@ switch (true) do {
    {
       life_level = 14;
       _levelexp = (_profExp - _level13);
-      _prozentsatz = (_levelexp / _level14);
+      _leveldif = (_level14 - _level13);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -313,7 +326,8 @@ switch (true) do {
    {
       life_level = 15;
       _levelexp = (_profExp - _level14);
-      _prozentsatz = (_levelexp / _level15);
+      _leveldif = (_level15 - _level14);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -327,7 +341,8 @@ switch (true) do {
    {
       life_level = 16;
       _levelexp = (_profExp - _level15);
-      _prozentsatz = (_levelexp / _level16);
+      _leveldif = (_level16 - _level15);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -341,7 +356,8 @@ switch (true) do {
    {
       life_level = 17;
       _levelexp = (_profExp - _level16);
-      _prozentsatz = (_levelexp / _level17);
+      _leveldif = (_level17 - _level16);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -355,7 +371,8 @@ switch (true) do {
    {
       life_level = 18;
       _levelexp = (_profExp - _level17);
-      _prozentsatz = (_levelexp / _level18);
+      _leveldif = (_level18 - _level17);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -369,7 +386,8 @@ switch (true) do {
    {
       life_level = 19;
       _levelexp = (_profExp - _level18);
-      _prozentsatz = (_levelexp / _level19);
+      _leveldif = (_level19 - _level18);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -383,7 +401,8 @@ switch (true) do {
    {
       life_level = 20;
       _levelexp = (_profExp - _level19);
-      _prozentsatz = (_levelexp / _level20);
+     _leveldif = (_level20 - _level19);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -397,7 +416,8 @@ switch (true) do {
    {
       life_level = 21;
       _levelexp = (_profExp - _level20);
-      _prozentsatz = (_levelexp / _level21);
+      _leveldif = (_level21 - _level20);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -411,7 +431,8 @@ switch (true) do {
    {
       life_level = 22;
       _levelexp = (_profExp - _level21);
-      _prozentsatz = (_levelexp / _level22);
+      _leveldif = (_level22 - _level21);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -425,7 +446,8 @@ switch (true) do {
    {
       life_level = 23;
       _levelexp = (_profExp - _level22);
-      _prozentsatz = (_levelexp / _level23);
+      _leveldif = (_level23 - _level22);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -439,7 +461,8 @@ switch (true) do {
    {
       life_level = 24;
       _levelexp = (_profExp - _level23);
-      _prozentsatz = (_levelexp / _level24);
+      _leveldif = (_level24 - _level23);
+      _prozentsatz = (_levelexp / _leveldif);
          if (_prozentsatz == 0) then {
           life_exp = 1;
         }
@@ -453,7 +476,8 @@ switch (true) do {
 	 {
 		  life_level = 25;
 		  _levelexp = (_profExp - _level24);
-		  _prozentsatz = (_levelexp / _level25);
+		  _leveldif = (_level25 - _level24);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -467,7 +491,8 @@ switch (true) do {
 	 {
 		  life_level = 26;
 		  _levelexp = (_profExp - _level25);
-		  _prozentsatz = (_levelexp / _level26);
+		  _leveldif = (_level26 - _level25);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -481,7 +506,8 @@ switch (true) do {
 	 {
 		  life_level = 27;
 		  _levelexp = (_profExp - _level26);
-		  _prozentsatz = (_levelexp / _level27);
+		  _leveldif = (_level27 - _level26);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -496,7 +522,8 @@ switch (true) do {
 	 {
 		  life_level = 28;
 		  _levelexp = (_profExp - _level27);
-		  _prozentsatz = (_levelexp / _level28);
+		  _leveldif = (_level28 - _level27);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -510,7 +537,8 @@ switch (true) do {
 	 {
 		  life_level = 29;
 		  _levelexp = (_profExp - _level28);
-		  _prozentsatz = (_levelexp / _level29);
+		  _leveldif = (_level29 - _level28);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -524,7 +552,8 @@ switch (true) do {
 	 {
 		  life_level = 30;
 		  _levelexp = (_profExp - _level29);
-		  _prozentsatz = (_levelexp / _level30);
+		  _leveldif = (_level30 - _level29);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -538,7 +567,8 @@ switch (true) do {
 	 {
 		  life_level = 31;
 		  _levelexp = (_profExp - _level30);
-		  _prozentsatz = (_levelexp / _level31);
+		  _leveldif = (_level31 - _level30);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -552,7 +582,8 @@ switch (true) do {
 	 {
 		  life_level = 32;
 		  _levelexp = (_profExp - _level31);
-		  _prozentsatz = (_levelexp / _level32);
+		  _leveldif = (_level32 - _level31);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -566,7 +597,8 @@ switch (true) do {
 	 {
 		  life_level = 33;
 		  _levelexp = (_profExp - _level32);
-		  _prozentsatz = (_levelexp / _level33);
+		  _leveldif = (_level33 - _level32);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -580,7 +612,8 @@ switch (true) do {
 	 {
 		  life_level = 34;
 		  _levelexp = (_profExp - _level33);
-		  _prozentsatz = (_levelexp / _level34);
+		  _leveldif = (_level34 - _level33);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -594,7 +627,8 @@ switch (true) do {
 	 {
 		  life_level = 35;
 		  _levelexp = (_profExp - _level34);
-		  _prozentsatz = (_levelexp / _level35);
+		  _leveldif = (_level35 - _level34);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -608,7 +642,8 @@ switch (true) do {
 	 {
 		  life_level = 36;
 		  _levelexp = (_profExp - _level35);
-		  _prozentsatz = (_levelexp / _level36);
+		  _leveldif = (_level36 - _level35);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -622,7 +657,8 @@ switch (true) do {
 	 {
 		  life_level = 37;
 		  _levelexp = (_profExp - _level36);
-		  _prozentsatz = (_levelexp / _level37);
+		  _leveldif = (_level37 - _level36);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -636,7 +672,8 @@ switch (true) do {
 	 {
 		  life_level = 38;
 		  _levelexp = (_profExp - _level37);
-		  _prozentsatz = (_levelexp / _level38);
+		  _leveldif = (_level38 - _level37);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -650,7 +687,8 @@ switch (true) do {
 	 {
 		  life_level = 39;
 		  _levelexp = (_profExp - _level38);
-		  _prozentsatz = (_levelexp / _level39);
+		  _leveldif = (_level39 - _level38);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -664,7 +702,8 @@ switch (true) do {
 	 {
 		  life_level = 40;
 		  _levelexp = (_profExp - _level39);
-		  _prozentsatz = (_levelexp / _level40);
+		  _leveldif = (_level40 - _level39);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -678,7 +717,8 @@ switch (true) do {
 	 {
 		  life_level = 41;
 		  _levelexp = (_profExp - _level40);
-		  _prozentsatz = (_levelexp / _level41);
+		  _leveldif = (_level41 - _level40);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -692,7 +732,8 @@ switch (true) do {
 	 {
 		  life_level = 42;
 		  _levelexp = (_profExp - _level41);
-		  _prozentsatz = (_levelexp / _level42);
+		  _leveldif = (_level42 - _level41);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -706,7 +747,8 @@ switch (true) do {
 	 {
 		  life_level = 43;
 		  _levelexp = (_profExp - _level42);
-		  _prozentsatz = (_levelexp / _level43);
+		  _leveldif = (_level43 - _level42);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -720,7 +762,8 @@ switch (true) do {
 	 {
 		  life_level = 44;
 		  _levelexp = (_profExp - _level43);
-		  _prozentsatz = (_levelexp / _level44);
+		  _leveldif = (_level44 - _level43);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -734,7 +777,8 @@ switch (true) do {
 	 {
 		  life_level = 45;
 		  _levelexp = (_profExp - _level44);
-		  _prozentsatz = (_levelexp / _level45);
+		  _leveldif = (_level45 - _level44);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -748,7 +792,8 @@ switch (true) do {
 	 {
 		  life_level = 46;
 		  _levelexp = (_profExp - _level45);
-		  _prozentsatz = (_levelexp / _level46);
+		  _leveldif = (_level46 - _level45);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -762,7 +807,8 @@ switch (true) do {
 	 {
 		  life_level = 47;
 		  _levelexp = (_profExp - _level46);
-		  _prozentsatz = (_levelexp / _level47);
+		  _leveldif = (_level47 - _level46);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
@@ -776,8 +822,9 @@ switch (true) do {
 	 {
 		  life_level = 48;
 		  _levelexp = (_profExp - _level47);
-		  _prozentsatz = (_levelexp / _level48);
-  			 if (_prozentsatz == 0) then {
+		  _leveldif = (_level48 - _level47);
+      _prozentsatz = (_levelexp / _leveldif);
+      if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
      		else
@@ -789,8 +836,9 @@ switch (true) do {
 			case ((_profExp >= _level48) AND (_profExp < _level49)):
 	 {
 		  life_level = 49;
-		  _levelexp = (_profExp - _level47);
-		  _prozentsatz = (_levelexp / _level48);
+		  _levelexp = (_profExp - _level48);
+		  _leveldif = (_level49 - _level48);
+      _prozentsatz = (_levelexp / _leveldif);
   			 if (_prozentsatz == 0) then {
    			  life_exp = 1;
     		}
