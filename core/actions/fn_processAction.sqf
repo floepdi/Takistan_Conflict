@@ -17,28 +17,14 @@ _error = false; // used below check the comment there ;)
 _itemInfo = switch (_type) do
 {
   case "oil": {["oilu","oilp",100,(localize "STR_Process_Oil"),false];}; //added param (true or false) true if processing with 2 Items.
-  case "diamond": {["diamond","diamondc",1000,(localize "STR_Process_Diamond"),false]};
   case "heroin": {["heroinu","heroinp",200,(localize "STR_Process_Heroin"),false]};
   case "heroinr": {["heroinp","heroinr",200,(localize "STR_Process_HeroinR"),false]}; //
-  case "copper": {["copperore","copper_r",500,(localize "STR_Process_Copper"),false]};
-  case "iron": {["ironore","iron_r",800,(localize "STR_Process_Iron"),false]};
-  case "sand": {["sand","glass",450,(localize "STR_Process_Sand"),false]};
-  case "salt": {["salt","salt_r",450,(localize "STR_Process_Salt"),false]};
-  case "schnaps": {["peach","schnaps",450,(localize "STR_Process_Schnaps"),true,"apple"]};
-  case "bier": {["malz","bier",1000,(localize "STR_Process_Bier"),true,"hopfen"]};
-  case "cocaine": {["cocaine","cocainep",200,(localize "STR_Process_Cocaine"),false]};
   case "cannabis": {["cannabis","marijuana",150,(localize "STR_Process_Marijuana"),false]}; //
   case "marijuana": {["marijuana","marijuanar",200,(localize "STR_Process_MarijuanaR"),false]}; //
-  case "cement": {["rock","cement",650,(localize "STR_Process_Cement"),false]};
-  case "coal": {["coalu","coalp",650,(localize "STR_Process_Coal"),false]};
-  case "pilze": {["pilze","magicmushrooms",650,(localize "STR_Process_Pilze"),false]};
-  case "steel": {["iron_r","steel",650,(localize "STR_Process_Steel"),true,"coalp"]};
-  case "plastic": {["oilp","plastic",650,(localize "STR_Process_Plastic"),true,"coalp"]};
-  case "bluesyn": {["cocainep","bluesyn",650,(localize "STR_Process_BlueSyn"),true,"heroinp"]};
   case "sulfur": {["sulfuru","sulfurp",250,(localize "STR_Process_Sulfur"),false]};
   case "nitre": {["nitre","potassiumnitrate",250,(localize "STR_Process_Nitre"),false]};
   case "gunpowder": {["suflurp","gunpowder",400,(localize "STR_Process_Gunpowder"),true,"potassiumnitrate","coalp"]};
-  case "explosive": {["gunpowder","sprengstoff",500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
+  case "explosive": {["gunpowder","explosive",500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
   case "gold": {["goldore","goldbar",200,(localize "STR_Process_Gold"),true,"coalp"];};
 };
 
