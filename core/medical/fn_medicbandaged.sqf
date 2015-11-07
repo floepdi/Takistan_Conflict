@@ -21,7 +21,7 @@ if (_mate == 1) then
 
 
 		life_bloodmulti = 0;
-		player setVariable ["olddamage", 2, false];
+		player setVariable ["olddamage", damage player , false];
 		player setVariable ["olddamage2", 0, false];
 		player setVariable ["olddamage3", 0, false];
 		titleText ["Ein Medic hat alle Blutung gestoppt!", "PLAIN",1];

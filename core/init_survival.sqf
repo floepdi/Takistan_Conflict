@@ -113,7 +113,7 @@
  player setVariable ["olddamage3", 0 , false];
   while {true} do
  {				// 0.1 > 0 							0 == 0
- 	if (((damage player) > 0) AND (((player getVariable ["olddamage", 1]) == 1) OR ((player getVariable ["oldolddamage", 1]) != 0)) AND (life_blood != 0) AND (life_bloodmulti == 0)) then  // 80 HP, 100 Blood
+ 	if (((damage player) > 0) AND (life_blood != 0) AND (life_bloodmulti == 0) AND (damage player > (player getVariable ["olddamage", 0]))) then  // 80 HP, 100 Blood
 	 	{
 	 	life_bloodmulti = 1;
 	 	player setVariable ["olddamage", damage player, false]; //0.2
@@ -134,7 +134,7 @@
  	{
  		life_bloodmulti = 0;
  		life_blood = 100;
- 		player setVariable ["olddamage", 1, false];
+ 		player setVariable ["olddamage", 0, false];
  		player setVariable ["olddamage2", 0, false];
  		player setVariable ["olddamage3", 0 , false];
  	};
@@ -192,6 +192,7 @@
 	{
 		 []	call life_fnc_unconscious;
 	};
+	[] call life_fnc_hudUpdate
 };
 };
 

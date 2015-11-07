@@ -4,6 +4,7 @@
 #define IDC_LIFE_BAR_WATER 2201
 #define IDC_LIFE_BAR_HEALTH 2202
 #define IDC_LIFE_BAR_EXP 2204
+#define IDC_LIFE_BAR_BLOOD 2206
 #define IDC_LIFE_MAIN_DISP 2203
 #define IDC_LIFE_MAIN_DISP2 2205
 #define IDC_LIFE_PICTURE_FOOD 1200
@@ -15,6 +16,7 @@
 #define IDC_LIFE_HEALTH_TEXT 1002
 #define IDC_LIFE_EXP_TEXT 1003
 #define IDC_LIFE_LEVEL_TEXT 1004
+#define IDC_LIFE_BLOOD_TEXT 1006
 #define IDC_LIFE_LEVEL_TEXT2 1005
 /*
         Name: Dillon "Itsyuka" Modine-Thuen
@@ -37,6 +39,7 @@ class playerHUD {
              //    LIFE_BAR_WATER,
                //  LIFE_BAR_HEALTH,
                 LIFE_BAR_EXP,
+                LIFE_BAR_BLOOD,
                 LIFE_PICTURE_FOOD,
                 LIFE_PICTURE_WATER,
                 LIFE_PICTURE_HEALTH,
@@ -44,6 +47,7 @@ class playerHUD {
                 LIFE_FOOD_TEXT,
                 LIFE_WATER_TEXT,
                 LIFE_HEALTH_TEXT,
+                LIFE_BLOOD_TEXT,
               //   LIFE_EXP_TEXT,
                 LIFE_LEVEL_TEXT,
               //  LIFE_LEVEL_TEXT2
@@ -106,6 +110,16 @@ class playerHUD {
                 w = 0.16 * safezoneW;
                 h = 0.016 * safezoneH;
         };
+        class LIFE_BAR_BLOOD: Life_RscProgress
+        {
+                idc = IDC_LIFE_BAR_BLOOD;
+                colorBar[] = {0.8352941176470588,0.0941176470588235,0.0941176470588235,1};
+                x = safezoneX + (0.16 * safezoneW);
+                y = safezoneY;
+                w = 0.025 * safezoneW;
+                h = 0.045 * safezoneH;
+        };
+
  
         /* Text */
  
@@ -155,6 +169,16 @@ class playerHUD {
                 text = "";
                 colorText[] = {1,0.67,0,1};
                 x = 0.013 * safezoneW + safezoneX;
+                y = 0.005 * safezoneH + safezoneY;
+                w = 0.020625 * safezoneW;
+                h = 0.011 * safezoneH;
+        };
+        class LIFE_BLOOD_TEXT: Life_RscText
+        {
+                idc = IDC_LIFE_BLOOD_TEXT;
+                text = "";
+                colorText[] = {0,0,0,1};
+                x = safezoneX + (0.16 * safezoneW);
                 y = 0.005 * safezoneH + safezoneY;
                 w = 0.020625 * safezoneW;
                 h = 0.011 * safezoneH;
