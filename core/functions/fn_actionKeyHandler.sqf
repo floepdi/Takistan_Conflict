@@ -63,12 +63,12 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 //(_curTarget getVariable["restrained",false]) &&
 
 if(isPlayer _curTarget && _curTarget isKindOf "Man" && player distance _curTarget < 5) then {
-	if(!dialog && playerSide == west) then {
+/*	if(!dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
 	if(!dialog && (playerSide == civilian || playerSide == independent)) then {
 		[_curTarget] call life_fnc_civInteractionMenu;
-	};
+	}; */
 }
 else {
 	//OK, it wasn't a player so what is it?
@@ -80,11 +80,11 @@ else {
 
 	//It's a vehicle! open the vehicle interaction key!
 	if(_isVehicle) then {
-		if(!dialog) then {
+	/*	if(!dialog) then {
 			if(player distance _curTarget < ((boundingBox _curTarget select 1) select 0) + 2) then {
 				[_curTarget] call life_fnc_vInteractionMenu;
 			};
-		};
+		}; */
 	} else {
 		//Is it a animal type?
 		if((typeOf _curTarget) in _animalTypes) then {

@@ -102,7 +102,7 @@
 	};
   	};
 };
-/*
+
 
 [] spawn
 {
@@ -113,7 +113,7 @@
  player setVariable ["olddamage3", 0 , false];
   while {true} do
  {				// 0.1 > 0 							0 == 0
- 	if (((damage player) > 0) AND (((player getVariable ["olddamage", 1]) == 1) OR ((player getVariable ["oldolddamage", 1]) == 0)) AND (life_blood != 0) AND (life_bloodmulti == 0)) then  // 80 HP, 100 Blood
+ 	if (((damage player) > 0) AND (((player getVariable ["olddamage", 1]) == 1) OR ((player getVariable ["oldolddamage", 1]) != 0)) AND (life_blood != 0) AND (life_bloodmulti == 0)) then  // 80 HP, 100 Blood
 	 	{
 	 	life_bloodmulti = 1;
 	 	player setVariable ["olddamage", damage player, false]; //0.2
@@ -188,54 +188,14 @@
 	player setVariable ["blood",life_blood,true];
 	player setVariable ["bloodmulti",life_bloodmulti,true];
 
-	if ((life_blood) == 0 AND (alive player)) then
+	if ((life_blood) == 0 AND (alive player) AND !(life_unconscious)) then
 	{
 		 []	call life_fnc_unconscious;
 	};
 };
 };
 
-/*
-[] spawn
-{
-	if (playerSide ==  civilian) then
-	{
-	while {true} do
-	{
-	sleep 300;
-	["Paytime_Prof",5,1] call life_fnc_addLevel;
-	[] call life_fnc_profSetup;
-	_paytime = life_paytime;
 
-	if (_paytime >= 60) then
-	{
-	["Payday_Prof",1,1] call life_fnc_addLevel;
-	life_cash = life_cash + 20000;
-	["Level_Prof",2000,1] call life_fnc_addLevel;
-	[] call life_fnc_profSetup;
-	_bonus = (life_payday /5);
-	if (_bonus in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40]) then{
-	_stunden =  life_payday;
-	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
-	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 20000$ <br /> + 2000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-	}
-	else
-	{
-	_stunden =  life_payday;
-	life_cash = life_cash + 10000;
-	["Level_Prof",1000,1] call life_fnc_addLevel;
-	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
-	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 10000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-	};
-
-	life_paytime = 0;
-	["Paytime_Prof",0,0] call life_fnc_addLevel;
-	[] call life_fnc_profSetup;
-	};
-	};
-  };
-};
-*/
 /*
 [] spawn
 {

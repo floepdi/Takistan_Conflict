@@ -1,9 +1,9 @@
 /*
-    File: fn_bandage
+    File: fn_medictrans
     Author: Phil
 
     Description:
-    füllt Blut bei einem Kollegen
+    Bluttrans bei Medic
 */
 private ["_blood","_bloodmulti"];
 
@@ -13,17 +13,11 @@ _bloodmulti = cursorTarget getVariable ["bloodmulti", 0];
 
 if (_blood == 100) exitWith {hint "Du kannst hier nichts heilen!"};
 if (cursorTarget getVariable ["unconscious",false]) exitWith {hint "Dieser Patient ist bewusstlos!"};
-if ([false,"kochsalz",1] call life_fnc_handleInv) then {
 
-[[],"life_fnc_kochsalz",cursorTarget,false] spawn life_fnc_MP;
+[[],"life_fnc_medictransed",cursorTarget,false] spawn life_fnc_MP;
 life_ishealing = true;
 player playActionNow "Medic";
 sleep 9;
 player playActionNow "Medic";
 sleep 9;
-}
-else
-{
-hint "Du hast kein Kochsalz übrig!";
-};
 life_ishealing = false;

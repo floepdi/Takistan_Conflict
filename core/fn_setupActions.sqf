@@ -38,6 +38,10 @@ switch (playerSide) do
 	{
 	life_actions = life_actions + [player addAction["Ausweis zeigen",life_fnc_showLicenseAction,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget']];
+	life_actions = life_actions + [player addAction["<img size= '1' image='icons\bandage.paa'/> <t color ='#A9F5BC'>Patient bandagieren",life_fnc_medicbandage,"",0,false,false,"",'!isNull cursorTarget && (cursorTarget getVariable ["blood",100] < 100) && (cursorTarget getVariable ["bloodmulti",0] > 0) && speed cursorTarget < 2 && speed player < 5 && !(life_ishealing) && !(player getVariable ["unconscious",false])']];
+	life_actions = life_actions + [player addAction["<img size= '1' image='icons\kochsalz.paa'/> <t color ='#A9F5BC'>Transfusion verabreichen",life_fnc_medictrans,"",0,false,false,"",'!isNull cursorTarget && (cursorTarget getVariable ["blood",100] < 100)  && speed cursorTarget < 2 && speed player < 5 && !(life_ishealing) && !(player getVariable ["unconscious",false])']];
+	life_actions = life_actions + [player addAction["<img size= '1' image='icons\morphin.paa'/> <t color ='#A9F5BC'>Surgical-Kit benutzen",life_fnc_medicsurgical,"",0,false,false,"",'(((damage cursorTarget <= 55) OR (life_blood < 100)) && speed player < 5 && !(life_ishealing)) && !(player getVariable ["unconscious",false])']];
+	life_actions = life_actions + [player addAction["<img size= '1' image='icons\epi.paa'/> <t color ='#FE2E2E'>Epinephrin-Kit benutzen",life_fnc_medichlw,"",0,false,false,"",'!isNull cursorTarget  && (cursorTarget getVariable ["unconscious",false]) && speed cursorTarget < 2 && speed player < 5 && !(life_ishealing)']];
 	};
 
 	case west: {

@@ -83,6 +83,14 @@ class Life_Client_Core
         class medicSirenLights {};
         class medicLights {};
         class medicSiren {};
+        class medicbandage {};
+        class medicbandaged {};
+        class medichlw {};
+        class medichlwed {};
+        class medicsurgical {};
+        class medicsurgicaled {};
+        class medictrans {};
+        class medictransed {};
         class unconscious {};
     };
 
@@ -91,6 +99,7 @@ class Life_Client_Core
         file = "core\actions";
         class buyLicense {};
         class healHospital {};
+        class healme {};
         class pushVehicle {};
         class repairTruck {};
         class craftAction {};
@@ -503,6 +512,7 @@ class Life_Client_Core
         class lockpick {};
         class spikeStrip {};
         class bandage {};
+        class bandaged {};
         class bandagemate {};
         class kochsalz {};
         class kochsalzmate {};
@@ -524,6 +534,8 @@ class Life_Client_Core
         class barricade{};
         class strahler{};
         class depotwaffen{};
+        class epi {};
+        class epimate {};
     };
 
     class Dialog_Controls

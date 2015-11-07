@@ -9,7 +9,9 @@
 private["_pos","_side"];
 
 _over = _this select 0;
+_side = _this select 1;
 
+if (playerside != _side) exitWith {};
 if (playerSide == civilian) then {
 if(!_over) then {
   			//Minütlich

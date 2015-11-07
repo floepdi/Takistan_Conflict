@@ -12,18 +12,20 @@ _blood = cursorTarget getVariable ["blood",100];
 _bloodmulti = cursorTarget getVariable ["bloodmulti", 0];
 
 if (playerSide == west) then {
-	    ["Abzeichen_Prof",1,5] call life_fnc_addLevel;
+	    ["Abzeichen_Prof",1,1] call life_fnc_addLevel;
         [] call life_fnc_profSetup;
         [format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br /> + 1 Abzeichen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 };
 
-if (cursorTarget getVariable ["unconscious",false]) exitWith {hint "Du kannst hier nichts heilen!"};
+if (!(cursorTarget getVariable ["unconscious",false])) exitWith {hint "Du kannst hier nichts heilen!"};
 if ([false,"epikit",1] call life_fnc_handleInv) then {
 life_ishealing = true;
+[[],"life_fnc_epi",cursorTarget,false] spawn life_fnc_MP;
 player playActionNow "Medic";
 sleep 9;
-[[],"life_fnc_epi",cursorTarget,false] spawn life_fnc_MP;
+player playActionNow "Medic";
+sleep 9;
 }
 else
 {

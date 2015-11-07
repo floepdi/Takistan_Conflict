@@ -95,6 +95,7 @@ life_blood = 100;
 life_bloodmulti = 0;
 life_morphin = false;
 life_morphin_cd = false;
+life_unconscious = false;
 __CONST__(life_paycheck_period,50000); //Five minutes
 life_cash = 0;
 __CONST__(life_impound_car,500);
@@ -273,7 +274,8 @@ life_inv_items =
     "life_inv_kochsalz",
     "life_inv_bandage",
     "life_inv_traumakit",
-    "life_inv_morphin"
+    "life_inv_morphin",
+    "life_inv_epikit"
 ];
 
 

@@ -7,7 +7,7 @@
 */
 if(isNil "life_action_gathering") then {life_action_gathering = false;};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = [""];
+_resourceZones = ["heroin_1","oil_1","cocaine_1","weed_1","gold_1","sulfur_1","nitre_1"];
 _zone = "";
 
 if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
@@ -44,9 +44,7 @@ if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 life_action_inUse = true;
 
 
-life_action_inUse = true;
-
-_time = 0;
+_time = 2;
 
 for "_i" from 0 to 2 do
 {

@@ -15,7 +15,7 @@ _speed = speed cursorTarget;
 _handled = false;
 _muted = false;
 
-_interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0};
+_interactionKey = if(count (actionKeys "User10") == 0) then {29} else {(actionKeys "User10") select 0};
 _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
@@ -324,14 +324,6 @@ switch (_code) do
 		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
 		{
 			[] call life_fnc_p_openMenu;
-		};
-	};
-	case 41:
-	{
-		if(!_alt && !_ctrlKey && !dialog && !life_action_gathering) then
-		{
-			[] call life_fnc_p_openMenu;
-			_handled = true;
 		};
 	};
 	case 59:

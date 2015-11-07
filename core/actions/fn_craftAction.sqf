@@ -51,14 +51,14 @@ if(_itemFilter == "uniform" && uniform player != "") exitWith{
 if(_itemFilter == "vest" && vest player != "") exitWith{
 		hint "Du hast bereits eine Weste an!";
 };
-
+/*
 if(_itemFilter == "item") then {
 	_weight = ([_item] call life_fnc_itemWeight);
 };
 if(_itemFilter == "item" && (life_carryWeight + _weight) > life_maxWeight) exitWith {
 	hint localize "STR_NOTF_NoRoom";
 };
-
+*/
 if(_itemFilter == "weapon" && !(player canAdd _newItem) || currentWeapon player != "") exitWith {
 	hint localize "STR_NOTF_NoRoom";
 };
@@ -151,6 +151,16 @@ if(_itemFilter == "ied") then{
 		life_is_processing = false;
 	};
 };
+
+if(_itemFilter == "funkgeraet") then{
+	if((player canAddItemtoBackpack _newItem) OR (player canAddItemtoUniform _newItem) OR (player canAddItemtoVest _newItem)) then{
+		player addItem  _newItem;
+	}else{
+		hint "Du hast keinen Platz dafür!!";
+		life_is_processing = false;
+	};
+};
+
 
 if(_itemFilter == "weapon") then{
 
