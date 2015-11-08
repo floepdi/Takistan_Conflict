@@ -13,7 +13,7 @@ switch (_shop) do
 {
 
     case "market": {["Bürgerladen",["ziegenmilch","dattel","fladenbrot","guertel","pipe","behaelter","flask","bandage","kochsalz","morphin","epikit","coalp"]]};
-    case "tankstelle": {["ziegenmilch","dattel","fladenbrot","fuelF"]]};
+    case "tankstelle": {["Tankstelle",["ziegenmilch","dattel","fladenbrot","fuelF"]]};
     case "bandit": {["Küche",["ziegenmilch","dattel","fladenbrot","bandage","kochsalz","morphin","epikit"]]};
     case "heroin": {["Drogen Dealer",["marijuanar","marijuana","heroinp","herionr"]]};
     case "dirtydoc": {["Dirty Doc",["bandage","kochsalz","morphin","epikit"]]};

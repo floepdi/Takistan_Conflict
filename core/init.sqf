@@ -113,7 +113,6 @@ life_fnc_garageRefund = compileFinal
 [] execVM "core\init_survival.sqf";
 
 if (playerSide == civilian) then {[] spawn life_fnc_queststart};
-__CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 
 player enableFatigue (__GETC__(life_enableFatigue));
 enableRadio false;
