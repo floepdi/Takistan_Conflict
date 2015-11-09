@@ -37,7 +37,6 @@ switch(_shop) do
                         //["tf_mr3000_multicam",nil,500],
                         ["ItemGPS",nil,1000],	
                         ["ToolKit",nil,250],
-                        ["FirstAidKit",nil,150],
                         ["Binocular",nil,300],
                         ["Chemlight_green",nil,300],
                         ["Chemlight_blue",nil,300],
