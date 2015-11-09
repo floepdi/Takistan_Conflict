@@ -502,9 +502,9 @@ buy_array =
     ["altpapier",50],
     ["blumenerde",20],
     ["epikit",100],
-    ["bandage",25],
+    ["bandage",20],
     ["kochsalz",50],
-    ["morphin",100]
+    ["morphin",150]
 ];};
 //__CONST__(buy_array,buy_array);
 
