@@ -114,10 +114,10 @@ class playerHUD {
         {
                 idc = IDC_LIFE_BAR_BLOOD;
                 colorBar[] = {0.8352941176470588,0.0941176470588235,0.0941176470588235,1};
-                x = safezoneX + (0.16 * safezoneW);
-                y = safezoneY;
-                w = 0.025 * safezoneW;
-                h = 0.045 * safezoneH;
+                x = safezoneX;
+                y = 0.045 * safezoneH + safezoneY;
+                w = 0.16 * safezoneW;
+                h = 0.016 * safezoneH;
         };
 
  
@@ -177,11 +177,12 @@ class playerHUD {
         {
                 idc = IDC_LIFE_BLOOD_TEXT;
                 text = "";
-                colorText[] = {0,0,0,1};
-                x = safezoneX + (0.16 * safezoneW);
-                y = 0.005 * safezoneH + safezoneY;
-                w = 0.020625 * safezoneW;
-                h = 0.011 * safezoneH;
+                colorText[] = {0.8352941176470588,0.0941176470588235,0.0941176470588235,1};
+                sizeEx = 0.040;
+                x = 0.035 * safezoneW + safezoneX;
+                y = 0.063 * safezoneH + safezoneY;
+                w = 0.1 * safezoneW;
+                h = 0.02 * safezoneH;
         };
 /*
     class LIFE_LEVEL_TEXT2: Life_RscText

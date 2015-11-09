@@ -23,7 +23,7 @@ _itemInfo = switch (_type) do
   case "marijuana": {["marijuana","marijuanar",200,(localize "STR_Process_MarijuanaR"),false]}; //
   case "sulfur": {["sulfuru","sulfurp",250,(localize "STR_Process_Sulfur"),false]};
   case "nitre": {["nitre","potassiumnitrate",250,(localize "STR_Process_Nitre"),false]};
-  case "gunpowder": {["suflurp","gunpowder",400,(localize "STR_Process_Gunpowder"),true,"potassiumnitrate","coalp"]};
+  case "gunpowder": {["sulfurp","gunpowder",400,(localize "STR_Process_Gunpowder"),true,"potassiumnitrate","coalp"]};
   case "explosive": {["gunpowder","explosive",500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
   case "gold": {["goldore","goldbar",200,(localize "STR_Process_Gold"),true,"coalp"];};
 };
@@ -43,17 +43,17 @@ _upp = _itemInfo select 3;
 //morevars
 if(_moreVars) then {
   _count = count _itemInfo;
-  if (_count >= 5) then{
+  if (_count == 5) then{
     _item2 = _itemInfo select 5;
     _item2Val = missionNamespace getVariable ([_item2,0] call life_fnc_varHandle);
   };
-  if (_count >= 6) then{
+  if (_count == 6) then{
     _item3 = _itemInfo select 6;
     _item3Val = missionNamespace getVariable ([_item3,0] call life_fnc_varHandle);
   };
-  if (_count >= 7) then{
+  if (_count == 7) then{
     _item4 = _itemInfo select 7;
-    _item3Val = missionNamespace getVariable ([_item4,0] call life_fnc_varHandle);
+    _item4Val = missionNamespace getVariable ([_item4,0] call life_fnc_varHandle);
   };
 };
 

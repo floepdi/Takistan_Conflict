@@ -22,6 +22,7 @@ if (life_morphin_cd) exitWith {};
 			sleep 600;
 			_damageback = 300;
 			life_morphin = false;
+			if (player getVariable ["unconscious",false]) exitWith {};
 			while {(_damageback > 0)} do {
 				player setDamage (damage player - 0.0016);
 				sleep 1;

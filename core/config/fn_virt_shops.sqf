@@ -11,7 +11,6 @@ _level = [] call life_fnc_getLevel;
 
 switch (_shop) do
 {
-
     case "market": {["Bürgerladen",["ziegenmilch","dattel","fladenbrot","guertel","pipe","behaelter","flask","bandage","kochsalz","morphin","epikit","coalp"]]};
     case "tankstelle": {["Tankstelle",["ziegenmilch","dattel","fladenbrot","fuelF"]]};
     case "bandit": {["Küche",["ziegenmilch","dattel","fladenbrot","bandage","kochsalz","morphin","epikit"]]};

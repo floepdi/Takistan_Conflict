@@ -10,7 +10,7 @@
 			if ([false,"bandage",1] call life_fnc_handleInv) then {
 			life_ishealing = true;
 			if (life_bloodmulti >=1) then {
-			titleText ["Diese Bandage heilt eine Blutung", "PLAIN",5];
+			titleText ["Diese Bandage verringert deine Blutung", "PLAIN",5];
 			player playActionNow "Medic";
 			sleep 10;
 			titleText ["", "PLAIN",5];
@@ -33,7 +33,7 @@
 			};
 
 
-			titleText ["Du hast eine Blutung gestoppt", "PLAIN",5];
+			titleText ["Du hast deine Blutung verringert!", "PLAIN",5];
 			sleep 2;
 			titleText ["", "PLAIN",5];
 			life_ishealing = false;

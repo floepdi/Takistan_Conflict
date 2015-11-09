@@ -26,6 +26,7 @@ player setVariable["Reviving",nil,TRUE];
  player setVariable ["olddamage", 0 , false];
  player setVariable ["olddamage2", 0, false];
  player setVariable ["olddamage3", 0 , false];
+  player setVariable ["sack", false, false];
 
 life_bekanntschaften = [];
 

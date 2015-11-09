@@ -37,5 +37,5 @@ LIFEctrl(IDC_LIFE_WATER_TEXT) ctrlsetText format["%1", life_thirst];
 LIFEctrl(IDC_LIFE_HEALTH_TEXT) ctrlsetText format["%1", round((1 - (damage player)) * 100)];
 LIFEctrl(IDC_LIFE_EXP_TEXT) ctrlsetText format["%1", life_exp];
 LIFEctrl(IDC_LIFE_LEVEL_TEXT) ctrlsetText format["%1", life_level];
-LIFEctrl(IDC_LIFE_BLOOD_TEXT) ctrlsetText format["%1x", life_bloodmulti];
+LIFEctrl(IDC_LIFE_BLOOD_TEXT) ctrlsetText format["%1", life_bloodstatus];
 LIFEctrl(IDC_LIFE_LEVEL_TEXT2) ctrlsetText format["%1", (life_level + 1)];

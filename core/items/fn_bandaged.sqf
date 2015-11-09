@@ -34,7 +34,7 @@ if (_mate == 1) then
 		life_bloodmulti = 2;
 		player setVariable ["olddamage3", 0, false];
 		};
-		titleText ["Dein Kamerad hat eine Blutung gestoppt!", "PLAIN",1];
+		titleText ["Dein Kamerad hat deine Blutung verringert!", "PLAIN",1];
 		sleep 5;
 		titleText ["", "PLAIN",5];
 		};

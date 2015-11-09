@@ -15,5 +15,5 @@ if (damage cursorTarget == 0) exitWith {hint "Du kannst hier nichts heilen!"};
 life_ishealing = true;
 player playActionNow "Medic";
 [[],"life_fnc_medicsurgicaled",cursorTarget,false] spawn life_fnc_MP;
-sleep 15;
+sleep 30;
 life_ishealing = false;

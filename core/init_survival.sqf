@@ -145,40 +145,40 @@
 	sleep 1;
 	};
 
-	if ((damage player == 0) AND (life_thirst < 20) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((damage player == 0) AND (life_thirst < 20) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false])) then {
 	 "colorCorrections" ppEffectAdjust [1, 1, 0, [0.0, 0.0, 0.0, 0.0], [1.8, 1.8, 0.3, 0.7],  [0.199, 0.587, 0.114, 0.0]];  "colorCorrections" ppEffectCommit 0;  "colorCorrections" ppEffectEnable true;
 	};
-	if ((life_blood == 1) AND (damage player == 0.99) AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood == 1) AND (damage player == 0.99) AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.1, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [3]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
 	};
-	if ((life_blood > 1) AND (life_blood < 10)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 1) AND (life_blood < 10)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.3, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
 	};
-	if ((life_blood > 10) AND (life_blood < 20)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 10) AND (life_blood < 20)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.6, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [1]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
 	};
-	if ((life_blood > 20) AND (life_blood < 30)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 20) AND (life_blood < 30)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [0.6, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 30) AND (life_blood < 40)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 30) AND (life_blood < 40)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [0.7, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 40) AND (life_blood < 50)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 40) AND (life_blood < 50)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [0.9, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 50) AND (life_blood < 60)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 50) AND (life_blood < 60)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.2], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 60) AND (life_blood < 70)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 60) AND (life_blood < 70)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.4], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 70) AND (life_blood < 80)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 70) AND (life_blood < 80)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.6], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if ((life_blood > 80) AND (life_blood < 90)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) then {
+	if ((life_blood > 80) AND (life_blood < 90)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.8], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
 	if (((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) OR (life_morphin)) then {
@@ -193,7 +193,12 @@
 	{
 		 []	call life_fnc_unconscious;
 	};
+	if (life_bloodmulti == 0) then {life_bloodstatus = "";};
+	if (life_bloodmulti == 1) then {life_bloodstatus = "einfache Blutung";};
+	if (life_bloodmulti == 2) then {life_bloodstatus = "mittlere Blutung";};
+	if (life_bloodmulti == 3) then {life_bloodstatus = "schwere Blutung";};
 	[] call life_fnc_hudUpdate
+
 };
 };
 

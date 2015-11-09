@@ -111,6 +111,7 @@ life_ishealing = false;
 
 life_vehicles = [];
 bank_robber = [];
+life_bloodstatus = "";
 switch (playerSide) do
 {
     case west:
@@ -122,12 +123,12 @@ switch (playerSide) do
     {
         life_atmcash = 500; //Starting Bank Money
         life_cash= 100;    //Starting Cash Money
-        
+
     };
 
     case independent: {
         life_atmcash = 10000;
-        
+
     };
 };
 
@@ -499,7 +500,11 @@ buy_array =
     ["flask",100],
     ["nitroglycerin",200],
     ["altpapier",50],
-    ["blumenerde",20]
+    ["blumenerde",20],
+    ["epikit",100],
+    ["bandage",25],
+    ["kochsalz",50],
+    ["morphin",100]
 ];};
 //__CONST__(buy_array,buy_array);
 
@@ -535,8 +540,8 @@ life_garage_prices =
     ["I_mas_cars_UAZ_SPG9",250],
     ["B_mas_cars_Hilux_SPG9",260],
     ["O_MRAP_02_F",300]
-    
-    
+
+
 
 ];
 
