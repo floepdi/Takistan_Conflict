@@ -57,31 +57,31 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_return pushBack ["rhsusf_m998_d_2dr",550];
+			_return pushBack ["rhsusf_m998_d_2dr",200];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_return pushBack ["rhsusf_m998_d_4dr",550];
+			_return pushBack ["rhsusf_m998_d_4dr",250];
 		};
 		if(__GETC__(life_coplevel) > 4) then
 		{
-			_return pushBack ["DAR_M1152",550];
+			_return pushBack ["DAR_M1152",300];
 		};
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_return pushBack ["rhsusf_m1025_d",550];
+			_return pushBack ["rhsusf_m1025_d",350];
 		};
 		if(__GETC__(life_coplevel) > 6) then
 		{
-			_return pushBack ["rhsusf_m1025_d_m2",550];
+			_return pushBack ["rhsusf_m1025_d_m2",400];
 		};
 		if(__GETC__(life_coplevel) > 7) then
 		{
-			_return pushBack ["DAR_M1165_GMV",550];
+			_return pushBack ["DAR_M1165_GMV",450];
 		};
 		if(__GETC__(life_coplevel) > 9) then
 		{
-			_return pushBack ["DAR_M1151",550];
+			_return pushBack ["DAR_M1151",500];
 		};
 		if(__GETC__(life_coplevel) > 11) then
 		{
@@ -89,11 +89,11 @@ switch (_shop) do
 		};
 		if(__GETC__(life_coplevel) > 13) then
 		{
-			_return pushBack ["DAR_M1167",550];
+			_return pushBack ["DAR_M1167",600];
 		};
 		if(__GETC__(life_coplevel) > 16) then
 		{
-			_return pushBack ["rhsusf_m113d_usarmy",550];
+			_return pushBack ["rhsusf_m113d_usarmy",650];
 		};
 	};
 
@@ -119,23 +119,23 @@ switch (_shop) do
 	{
 		if(__GETC__(life_coplevel) > 5) then
 		{
-			_return pushBack ["GR_UH1H_6",10000];
+			_return pushBack ["GR_UH1H_6",1000];
 		};
 		if(__GETC__(life_coplevel) > 6) then
 		{
-			_return pushBack ["GR_UH1H_3",15000];
+			_return pushBack ["GR_UH1H_3",2000];
 		};
 		if(__GETC__(life_coplevel) > 8) then
 		{
-			_return pushBack  ["GR_UH1H_2",20000];
+			_return pushBack  ["GR_UH1H_2",3000];
 		};
 		if(__GETC__(life_coplevel) > 9) then
 		{
-			_return pushBack ["GR_AW101_1",20000];
+			_return pushBack ["GR_AW101_1",5000];
 		};
 		if(__GETC__(life_coplevel) > 10) then
 		{
-			_return pushBack ["GR_UH60_1",20000];
+			_return pushBack ["GR_UH60_1",6000];
 		};
 		if(__GETC__(life_coplevel) > 16) then
 		{
