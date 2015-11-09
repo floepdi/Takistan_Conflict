@@ -12,6 +12,11 @@ disableSerialization;
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 _coplevel = (__GETC__(life_coplevel));
+
+//Call bounty script
+[[_unit,_killer],"TON_fnc_killControl",false,false] spawn life_fnc_MP;
+
+
 //Set some vars
 _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
 _unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
