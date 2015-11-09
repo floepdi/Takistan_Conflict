@@ -32,27 +32,27 @@ switch(_shop) do
             {
                 ["Army Equipment",
                     [
-                        ["tf_rf7800str",nil,500],
-                        ["tf_anprc152",nil,500],
-                        //["tf_mr3000_multicam",nil,500],
-                        ["ItemGPS",nil,1000],	
-                        ["ToolKit",nil,250],
-                        ["Binocular",nil,300],
-                        ["Chemlight_green",nil,300],
-                        ["Chemlight_blue",nil,300],
-                        ["SmokeShell",nil,300],
-                        ["SmokeShellRed",nil,300],
-                        ["SmokeShellGreen",nil,300],
-                        ["acc_flashlight",nil,100],
-			["ACE_CableTie",nil,100],
-			["ACE_SpareBarrel",nil,100],
-   			["ACE_Altimeter",nil,100],
-   			["ACE_TacticalLadder_Pack",nil,100],
-			["ACE_EarPlugs",nil,100],
-			["ACE_DefusalKit",nil,100],
-			["ACE_Flashlight_KSF1",nil,1000],
-			["ACE_Flashlight_MX991",nil,1000],
-			["ACE_MapTools",nil,100]
+                        ["tf_rf7800str",nil,10],
+                        ["tf_anprc152",nil,10],
+                        //["tf_mr3000_multicam",nil,10],
+                        ["ItemGPS",nil,10],	
+                        ["ToolKit",nil,10],
+                        ["Binocular",nil,10],
+                        ["Chemlight_green",nil,10],
+                        ["Chemlight_blue",nil,10],
+                        ["SmokeShell",nil,10],
+                        ["SmokeShellRed",nil,10],
+                        ["SmokeShellGreen",nil,10],
+                        ["acc_flashlight",nil,10],
+			["ACE_CableTie",nil,10],
+			["ACE_SpareBarrel",nil,10],
+   			["ACE_Altimeter",nil,10],
+   			["ACE_TacticalLadder_Pack",nil,10],
+			["ACE_EarPlugs",nil,10],
+			["ACE_DefusalKit",nil,10],
+			["ACE_Flashlight_KSF1",nil,10],
+			["ACE_Flashlight_MX991",nil,10],
+			["ACE_MapTools",nil,10]
                     ]
                 ];
             };
@@ -71,11 +71,11 @@ switch(_shop) do
             {
                 ["Recruit Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
+                        ["arifle_mas_m16",nil,200],
 
-                        ["30Rnd_mas_556x45_Stanag",nil,100],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500]
+                        ["FHQ_optic_MicroCCO_tan",nil,50]
                         
                     ]
                 ];
@@ -85,15 +85,15 @@ switch(_shop) do
             {
                 ["Private Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
 
-                        ["30Rnd_mas_556x45_Stanag",nil,100],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
 
-                        ["NVGoggles",nil,1000]
+                        ["NVGoggles",nil,10]
                     ]
                 ];
             };
@@ -102,18 +102,18 @@ switch(_shop) do
             {
                 ["Private 1st Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
 
-                        ["30Rnd_mas_556x45_Stanag",nil,100],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
 
-                        ["NVGoggles",nil,1000]
+                        ["NVGoggles",nil,50]
                     ]
                 ];
             };
@@ -122,23 +122,23 @@ switch(_shop) do
             {
                 ["Specialist Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["30Rnd_mas_556x45_Stanag",nil,100],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
 
-                        ["MiniGrenade",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["MiniGrenade",nil,50],
+                        ["NVGoggles",nil,50]
                     ]
                 ];
             };
@@ -148,30 +148,30 @@ switch(_shop) do
             {
                 ["Corporal Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
 
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["NVGoggles",nil,50]
 
 
                     ]
@@ -182,36 +182,36 @@ switch(_shop) do
             {
                 ["Sergeant Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["arifle_mas_mk16_l_gl",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["arifle_mas_mk16_l_gl",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
+                        ["hlc_rifle_SAMR",nil,200],
+                        ["30Rnd_556x45_Stanag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
-                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
+                        ["optic_SOS",nil,50],
 
-                        ["ACE_RangeCard",nil,1000],
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_RangeCard",nil,50],
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["NVGoggles",nil,50]
                     ]
                 ];
             };
@@ -221,42 +221,42 @@ switch(_shop) do
             {
                 ["Staff Sergeant Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["arifle_mas_mk16_l_gl",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["arifle_mas_mk16_l_gl",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
+                        ["hlc_rifle_SAMR",nil,200],
+                        ["30Rnd_556x45_Stanag",nil,10],
 
-                        ["arifle_mas_g3",nil,20000],
-                        ["arifle_mas_g3_m203",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,20000],
+                        ["arifle_mas_g3",nil,200],
+                        ["arifle_mas_g3_m203",nil,200],
+                        ["20Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
-                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
+                        ["optic_SOS",nil,50],
 
-                        ["ACE_RangeCard",nil,1000],                              
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["HandGrenade",nil,1000],
-                        ["ACE_Vector",nil,1000],
-                        ["NVGoggles",nil,1000]
+                        ["ACE_RangeCard",nil,50],                              
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["HandGrenade",nil,50],
+                        ["ACE_Vector",nil,50],
+                        ["NVGoggles",nil,50]
                     ]
                 ];
             };
@@ -265,49 +265,49 @@ switch(_shop) do
             {
                 ["Sergeant First Class Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["arifle_mas_mk16_l_gl",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["arifle_mas_mk16_l_gl",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
+                        ["hlc_rifle_SAMR",nil,200],
+                        ["30Rnd_556x45_Stanag",nil,10],
 
-                        ["arifle_mas_g3",nil,20000],
-                        ["arifle_mas_g3_m203",nil,20000],
-                        ["arifle_mas_mk17",nil,20000],
-                        ["arifle_mas_mk17_gl",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+                        ["arifle_mas_g3",nil,200],
+                        ["arifle_mas_g3_m203",nil,200],
+                        ["arifle_mas_mk17",nil,200],
+                        ["arifle_mas_mk17_gl",nil,200],
+                        ["20Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
-                        ["optic_AMS_snd",nil,1000],
-                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
+                        ["optic_AMS_snd",nil,50],
+                        ["optic_SOS",nil,50],
 
-			["ACE_RangeCard",nil,1000],
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["HandGrenade",nil,1000],
-                        ["rhs_mag_mk84",nil,1000],
-                        ["bipod_01_F_snd",nil,1000],
-                        ["ACE_Vector",nil,1000],
-                        ["NVGoggles",nil,1000],
-			["ACE_HuntIR_monitor",nil,500],
-			["ACE_HuntIR_M203",nil,100]
+			["ACE_RangeCard",nil,50],
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["HandGrenade",nil,50],
+                        ["rhs_mag_mk84",nil,50],
+                        ["bipod_01_F_snd",nil,50],
+                        ["ACE_Vector",nil,50],
+                        ["NVGoggles",nil,50],
+			["ACE_HuntIR_monitor",nil,50],
+			["ACE_HuntIR_M203",nil,50]
                     ]
                 ];
             };
@@ -316,54 +316,54 @@ switch(_shop) do
             {
                 ["Master Sergeant Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["arifle_mas_mk16_l_gl",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["arifle_mas_mk16_l_gl",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
+                        ["hlc_rifle_SAMR",nil,200],
+                        ["30Rnd_556x45_Stanag",nil,10],
 
-                        ["arifle_mas_g3",nil,20000],
-                        ["arifle_mas_g3_m203",nil,20000],
-                        ["arifle_mas_mk17",nil,20000],
-                        ["arifle_mas_mk17_gl",nil,20000],
-                        ["srifle_mas_sr25_d",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+                        ["arifle_mas_g3",nil,200],
+                        ["arifle_mas_g3_m203",nil,200],
+                        ["arifle_mas_mk17",nil,200],
+                        ["arifle_mas_mk17_gl",nil,200],
+                        ["srifle_mas_sr25_d",nil,200],
+                        ["20Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+                        ["LMG_mas_mk48_F_d",nil,200],
+                        ["100Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
-                        ["optic_AMS_snd",nil,1000],
-                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
+                        ["optic_AMS_snd",nil,50],
+                        ["optic_SOS",nil,50],
 
-			["ACE_RangeCard",nil,1000],
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["HandGrenade",nil,1000],
-                        ["rhs_mag_mk84",nil,1000],
-                        ["bipod_01_F_snd",nil,1000],
-                        ["ACE_Vector",nil,1000],
-                        ["Rangefinder",nil,1000],                        
-                        ["NVGoggles",nil,1000],
-			["ACE_HuntIR_monitor",nil,500],
-			["ACE_HuntIR_M203",nil,100]
+			["ACE_RangeCard",nil,50],
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["HandGrenade",nil,50],
+                        ["rhs_mag_mk84",nil,50],
+                        ["bipod_01_F_snd",nil,50],
+                        ["ACE_Vector",nil,50],
+                        ["Rangefinder",nil,50],                        
+                        ["NVGoggles",nil,50],
+			["ACE_HuntIR_monitor",nil,50],
+			["ACE_HuntIR_M203",nil,50]
                     ]
                 ];
             };
@@ -372,61 +372,61 @@ switch(_shop) do
             {
                 ["Sergeant Major Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["arifle_mas_mk16_l_gl",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["arifle_mas_mk16_l_gl",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
+                        ["hlc_rifle_SAMR",nil,200],
+                        ["30Rnd_556x45_Stanag",nil,10],
 
-                        ["arifle_mas_g3",nil,20000],
-                        ["arifle_mas_g3_m203",nil,20000],
-                        ["arifle_mas_mk17",nil,20000],
-                        ["arifle_mas_mk17_gl",nil,20000],
-                        ["srifle_mas_sr25_d",nil,20000],
-                        ["arifle_mas_hk417c_d",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+                        ["arifle_mas_g3",nil,200],
+                        ["arifle_mas_g3_m203",nil,200],
+                        ["arifle_mas_mk17",nil,200],
+                        ["arifle_mas_mk17_gl",nil,200],
+                        ["srifle_mas_sr25_d",nil,200],
+                        ["arifle_mas_hk417c_d",nil,200],
+                        ["20Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+                        ["LMG_mas_mk48_F_d",nil,200],
+                        ["100Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["rhs_weap_M136_hedp",nil,20000],
-                        ["rhs_m136_hedp_mag",nil,1000],
+                        ["rhs_weap_M136_hedp",nil,200],
+                        ["rhs_m136_hedp_mag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
-                        ["optic_AMS_snd",nil,1000],
-                        ["optic_SOS",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
+                        ["optic_AMS_snd",nil,50],
+                        ["optic_SOS",nil,50],
 
-                        ["ACE_RangeCard",nil,1000],
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["HandGrenade",nil,1000],
-                        ["rhs_mag_mk84",nil,1000],
-                        ["bipod_01_F_snd",nil,1000],
-                        ["ACE_Vector",nil,1000],
-                        ["Rangefinder",nil,1000], 
-			["ACE_Yardage450",nil,5000],
-                        ["NVGoggles",nil,1000],
-			["ACE_ATragMX",nil,1000],
-			["ACE_Kestrel4500",nil,500],
-			["ACE_HuntIR_monitor",nil,500],
-			["ACE_HuntIR_M203",nil,100]
+                        ["ACE_RangeCard",nil,50],
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["HandGrenade",nil,50],
+                        ["rhs_mag_mk84",nil,50],
+                        ["bipod_01_F_snd",nil,50],
+                        ["ACE_Vector",nil,50],
+                        ["Rangefinder",nil,50], 
+			["ACE_Yardage450",nil,50],
+                        ["NVGoggles",nil,50],
+			["ACE_ATragMX",nil,50],
+			["ACE_Kestrel4500",nil,50],
+			["ACE_HuntIR_monitor",nil,50],
+			["ACE_HuntIR_M203",nil,50]
                     ]
                 ];
             };
@@ -435,66 +435,66 @@ switch(_shop) do
             {
                 ["Command Sgt Major Waffenspind",
                     [
-                        ["arifle_mas_m16",nil,1000],
-                        ["arifle_mas_m4c",nil,1000],
-                        ["arifle_mas_m4",nil,1000],
-                        ["arifle_mas_g36c",nil,7500],
-                        ["arifle_mas_m4_m203_d",nil,15000],
-                        ["arifle_mas_mk16_l_gl",nil,15000],
-                        ["30Rnd_mas_556x45_Stanag",nil,500],
+                        ["arifle_mas_m16",nil,200],
+                        ["arifle_mas_m4c",nil,200],
+                        ["arifle_mas_m4",nil,200],
+                        ["arifle_mas_g36c",nil,200],
+                        ["arifle_mas_m4_m203_d",nil,200],
+                        ["arifle_mas_mk16_l_gl",nil,200],
+                        ["30Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["LMG_mas_M249_F",nil,7500],
-                        ["200Rnd_mas_556x45_Stanag",nil,1000],
+                        ["LMG_mas_M249_F",nil,200],
+                        ["200Rnd_mas_556x45_Stanag",nil,10],
 
-                        ["hlc_rifle_SAMR",nil,17500],
-                        ["30Rnd_556x45_Stanag",nil,100],
+                        ["hlc_rifle_SAMR",nil,200],
+                        ["30Rnd_556x45_Stanag",nil,10],
 
-                        ["arifle_mas_g3",nil,20000],
-                        ["arifle_mas_g3_m203",nil,20000],
-                        ["arifle_mas_mk17",nil,20000],
-                        ["arifle_mas_mk17_gl",nil,20000],
-                        ["srifle_mas_sr25_d",nil,20000],
-                        ["arifle_mas_hk417c_d",nil,20000],
-                        ["srifle_mas_hk417_d",nil,20000],
-                        ["20Rnd_mas_762x51_Stanag",nil,1000],
+                        ["arifle_mas_g3",nil,200],
+                        ["arifle_mas_g3_m203",nil,200],
+                        ["arifle_mas_mk17",nil,200],
+                        ["arifle_mas_mk17_gl",nil,200],
+                        ["srifle_mas_sr25_d",nil,200],
+                        ["arifle_mas_hk417c_d",nil,200],
+                        ["srifle_mas_hk417_d",nil,200],
+                        ["20Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["LMG_mas_mk48_F_d",nil,20000],
-                        ["100Rnd_mas_762x51_Stanag",nil,1000],
+                        ["LMG_mas_mk48_F_d",nil,200],
+                        ["100Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["srifle_mas_m24_d",nil,20000],
-                        ["5Rnd_mas_762x51_Stanag",nil,1000],
+                        ["srifle_mas_m24_d",nil,200],
+                        ["5Rnd_mas_762x51_Stanag",nil,10],
 
-                        ["rhs_weap_M136_hedp",nil,20000],
-                        ["rhs_m136_hedp_mag",nil,1000],
+                        ["rhs_weap_M136_hedp",nil,200],
+                        ["rhs_m136_hedp_mag",nil,10],
 
-                        ["hgun_mas_bhp_F",nil,1000],
-                        ["15Rnd_mas_9x21_Mag",nil,100],
+                        ["hgun_mas_bhp_F",nil,200],
+                        ["15Rnd_mas_9x21_Mag",nil,10],
 
-                        ["FHQ_optic_MicroCCO_tan",nil,500],
-                        ["FHQ_optic_AIM_tan",nil,500],
-                        ["FHQ_optic_AimM_TAN",nil,500],
-                        ["FHQ_optic_HWS_tan",nil,500],
-                        ["FHQ_optic_ACOG",nil, 500],
-                        ["FHQ_optic_HWS_G33_tan",nil,500],
-                        ["FHQ_optic_ACOG_tan",nil,1000],
-                        ["optic_AMS_snd",nil,1000],
-                        ["optic_SOS",nil,1000],
-                        ["FHQ_optic_LeupoldERT_tan",nil,1000],
+                        ["FHQ_optic_MicroCCO_tan",nil,50],
+                        ["FHQ_optic_AIM_tan",nil,50],
+                        ["FHQ_optic_AimM_TAN",nil,50],
+                        ["FHQ_optic_HWS_tan",nil,50],
+                        ["FHQ_optic_ACOG",nil, 50],
+                        ["FHQ_optic_HWS_G33_tan",nil,50],
+                        ["FHQ_optic_ACOG_tan",nil,50],
+                        ["optic_AMS_snd",nil,50],
+                        ["optic_SOS",nil,50],
+                        ["FHQ_optic_LeupoldERT_tan",nil,50],
 
-                        ["ACE_RangeCard",nil,1000],
-                        ["MiniGrenade",nil,1000],
-                        ["1Rnd_HE_Grenade_shell",nil,1000],
-                        ["HandGrenade",nil,1000],
-                        ["rhs_mag_mk84",nil,1000],
-                        ["bipod_01_F_snd",nil,1000],
-                        ["ACE_Vector",nil,1000],
-                        ["Rangefinder",nil,1000], 
-			["ACE_Yardage450",nil,5000],
-                        ["NVGoggles",nil,1000],
-			["ACE_ATragMX",nil,1000],
-			["ACE_Kestrel4500",nil,500],
-			["ACE_HuntIR_monitor",nil,500],
-			["ACE_HuntIR_M203",nil,100]
+                        ["ACE_RangeCard",nil,50],
+                        ["MiniGrenade",nil,50],
+                        ["1Rnd_HE_Grenade_shell",nil,50],
+                        ["HandGrenade",nil,50],
+                        ["rhs_mag_mk84",nil,50],
+                        ["bipod_01_F_snd",nil,50],
+                        ["ACE_Vector",nil,50],
+                        ["Rangefinder",nil,50], 
+			["ACE_Yardage450",nil,50],
+                        ["NVGoggles",nil,50],
+			["ACE_ATragMX",nil,50],
+			["ACE_Kestrel4500",nil,50],
+			["ACE_HuntIR_monitor",nil,50],
+			["ACE_HuntIR_M203",nil,50]
                     ]
                 ];
             };
