@@ -31,7 +31,6 @@ switch(_shop) do
         [
 
         ["ToolKit",nil,100],
-        ["FirstAidKit",nil,20],
         ["ACE_Flashlight_XL50",nil,20],        
 	["ACE_EarPlugs",nil,5]
 
