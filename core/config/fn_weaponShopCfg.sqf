@@ -30,7 +30,7 @@ switch(_shop) do
     ["Tankstellenshop",
         [
 
-        ["ToolKit",nil,100],
+        ["ToolKit",nil,150],
         ["ACE_Flashlight_XL50",nil,20],        
 	["ACE_EarPlugs",nil,5]
 
