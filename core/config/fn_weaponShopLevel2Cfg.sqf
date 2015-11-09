@@ -57,7 +57,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -91,7 +90,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -128,7 +126,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -166,7 +163,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -206,7 +202,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -248,7 +243,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -291,7 +285,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -335,7 +328,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
@@ -380,7 +372,6 @@ switch(_shop) do
                         ["ACE_CableTie",nil,20],
                         ["ACE_EarPlugs",nil,5],
                         ["ACE_Flashlight_XL50",nil,20],
-                        ["FirstAidKit",nil,20],
                         ["ACE_DAGR",nil,15]
                     ]
                 ];
