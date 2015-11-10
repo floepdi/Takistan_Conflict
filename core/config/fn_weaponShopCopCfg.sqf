@@ -32,9 +32,7 @@ switch(_shop) do
             {
                 ["Army Equipment",
                     [
-                        ["tf_rf7800str",nil,10],
                         ["tf_anprc152",nil,10],
-                        //["tf_mr3000_multicam",nil,10],
                         ["ItemGPS",nil,10],
                         ["ItemCompass",nil,10], 
                         ["ToolKit",nil,10],
