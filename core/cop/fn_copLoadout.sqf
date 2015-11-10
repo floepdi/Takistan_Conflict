@@ -23,6 +23,8 @@ player addItem "ItemCompass";
 player assignItem "ItemCompass";
 player addItem "tf_anprc152";
 player assignItem "tf_anprc152";
+player addItem "ItemGPS";
+player assignItem "ItemGPS";
 
 [] call life_fnc_saveGear;
 

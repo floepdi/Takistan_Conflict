@@ -24,7 +24,7 @@ if(life_blacklisted) exitWith
 		sleep 35;
 	};
 
-
+player join grpNull;
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
