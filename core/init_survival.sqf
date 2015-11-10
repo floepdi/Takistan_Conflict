@@ -52,12 +52,29 @@
 		_bp = backpack player;
 		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
 		_load = round(_cfg / 8);
+		if (backpack player == "rhs_sidor") then { _load = 10 ; };
+    	if (backpack player == "B_AssaultPack_khk") then { _load = 14; };
+   		if (backpack player == "B_FieldPack_khk") then { _load = 18; };// LARGO HIER - 40 ist die zusätzliche Größe, also + 24 Standart = 64
+		if (backpack player == "B_TacticalPack_oli") then { _load = 25; };
+		if (backpack player == "B_mas_Kitbag_rng") then { _load = 28; };
+		if (backpack player == "TRYK_B_Coyotebackpack_OD") then { _load = 33; };
+		if (backpack player == "B_Carryall_khk") then { _load = 40; };
+		if (backpack player == "B_mas_AssaultPack_rng_AT4") then { _load = 55; };
+
+    //Army Backpacks
+		if (backpack player == "B_AssaultPack_cbr") then { _load = 16; };
+		if (backpack player == "TRYK_B_AssaultPack_MARPAT_Desert") then { _load = 22; };
+		if (backpack player == "B_mas_Kitbag_des") then { _load = 28; };
+		if (backpack player == " TRYK_B_Coyotebackpack") then { _load = 35; };
+    	if (backpack player == "B_Carryall_cbr") then { _load = 42; };
+
+
 		life_maxWeight = life_maxWeightT + _load;
-		if(playerSide == independent) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
-		if(playerSide == west) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
-		if(playerSide == civilian && __GETC__(life_mafialevel)>= 1) then {(unitBackpack player) setObjectTextureGlobal [1,""];};
 		waitUntil {backpack player != _bp};
-		if(backpack player == "") then
+
+
+
+    if(backpack player == "") then
 		{
 			life_maxWeight = life_maxWeightT;
 		};
@@ -80,7 +97,7 @@
 	if (_bonus in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]) then{
 	_stunden =  life_payday;
 	["Payday_Prof",1,1] call life_fnc_addLevel;
-	life_cash = life_atmcash + 2000;
+	life_atmcash = life_atmcash + 2000;
 	["Level_Prof",2000,1] call life_fnc_addLevel;
 	[] call life_fnc_profSetup;
 	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
@@ -89,8 +106,9 @@
 	else
 	{
 	_stunden =  life_payday;
-	life_cash = life_atmcash + 1000;
+	life_atmcash = life_atmcash + 1000;
 	["Level_Prof",1000,1] call life_fnc_addLevel;
+	["Payday_Prof",1,1] call life_fnc_addLevel;
 	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 	};
@@ -181,7 +199,7 @@
 	if ((life_blood > 80) AND (life_blood < 90)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0.8], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
-	if (((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) OR (life_morphin)) then {
+	if (((life_blood > 90) AND (life_blood <= 100)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500)) OR (life_morphin)  AND !(player getVariable ["Sack",false])) then {
 	"colorCorrections" ppEffectEnable false;
 	"dynamicBlur" ppEffectEnable false;
 	};

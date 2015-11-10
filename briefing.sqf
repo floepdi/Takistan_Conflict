@@ -51,7 +51,6 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
       		ACE Selbstinteraktionsmenü : Ohrstöpsel.<br/>
       		ACE Interaktionsmenü : Fahrzeug reparieren.<br/>
           	ACE Interaktionsmenü : Fesseln/Verhaften.<br/>
-			Shift + 3 : Redgull.<br/>
 			0 : Lautstärke hoch/runter.<br/>
       		8 : Granaten Wurfweite anpassen.<br/>
       		2-7 : Taktische Handzeichen.<br/>

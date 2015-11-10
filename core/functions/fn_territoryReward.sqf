@@ -6,7 +6,7 @@
 
 // _pos, Spieler von Gewinnerseite
 
-private["_pos","_side"];
+private["_over","_side"];
 
 _over = _this select 0;
 _side = _this select 1;

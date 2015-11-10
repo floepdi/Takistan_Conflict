@@ -140,36 +140,6 @@ switch (_code) do
 		};
 	{_handled = true};
 	};
-	case 4:
-	{
-		if(([false,"redgull",1] call life_fnc_handleInv)) then
-		{
-			life_thirst = 100;
-			player setFatigue 0;
-			[] spawn
-			{
-				life_redgull_effect = time;
-				titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
-				player enableFatigue false;
-				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
-				player enableFatigue true;
-
-			};
-		};
-		_handled = true;
-	};
-	case 5:
-	{_handled = true};
-	case 6:
-	{_handled = true};
-	case 7:
-	{_handled = true};
-	case 8:
-	{_handled = true};
-	case 9:
-	{_handled = true};
-	case 10:
-	{_handled = true};
 
 	//Map Key
 	case _mapKey:
