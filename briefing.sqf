@@ -51,18 +51,15 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
       		ACE Selbstinteraktionsmenü : Ohrstöpsel.<br/>
       		ACE Interaktionsmenü : Fahrzeug reparieren.<br/>
           	ACE Interaktionsmenü : Fesseln/Verhaften.<br/>
-			0 : Lautstärke hoch/runter.<br/>
       		8 : Granaten Wurfweite anpassen.<br/>
       		2-7 : Taktische Handzeichen.<br/>
       		STRG+Numpad 1/2 : Liegestütze/Kniebeuge.<br/>
 			Z : Spielermenü.<br/>
 			U : Fahrzeug auf/abschließen.<br/>
 			T : Kofferraum.<br/>
-			Shift + H : Waffe holstern.<br/>
-      		Strg + H : Waffe ziehen.<br/>
       		Entf : Speedlimiter.<br/>
       		Mausrad Menü : Fahrzeug umdrehen.<br/>
-        	^/Zirkumflex : Mine farmen.<br/>
+        	Links STRG : Mine farmen.<br/>
       		Alternativ ist es möglich sämtliche ACE Einstellungen selbst anzupassen unter Konfigurieren/Steuerung/Configure Addons.<br/>
 			"
 		]
