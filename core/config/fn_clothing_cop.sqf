@@ -116,7 +116,7 @@ switch (_filter) do
 			_ret pushBack ["TRYK_H_Helmet_3C","Unteroffiziershelm I",10];
       			_ret pushBack ["H_Beret_blk","Unteroffiziersbarett",10];
 
-		}
+		};
 		if(__GETC__(life_coplevel) >= 9) then
 		{
 			_ret pushBack ["TRYK_H_ghillie_top_headless","Ghillie nur Oberkörper",10];
