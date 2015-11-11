@@ -68,8 +68,10 @@ player EnableSimulationGlobal true;
 		if (backpack player == "B_AssaultPack_cbr") then { _load = 16; };
 		if (backpack player == "TRYK_B_AssaultPack_MARPAT_Desert") then { _load = 22; };
 		if (backpack player == "B_mas_Kitbag_des") then { _load = 28; };
-		if (backpack player == " TRYK_B_Coyotebackpack") then { _load = 35; };
-    	if (backpack player == "B_Carryall_cbr") then { _load = 42; };
+		if (backpack player == "TRYK_B_Coyotebackpack") then { _load = 35; };
+		if (backpack player == "B_mas_Kitbag_black") then { _load = 40; };
+		if (backpack player == "B_TacticalPack_blk") then { _load = 40; };
+    		if (backpack player == "B_Carryall_cbr") then { _load = 42; };
 
 
 		life_maxWeight = life_maxWeightT + _load;
