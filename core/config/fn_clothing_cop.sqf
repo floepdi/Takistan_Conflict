@@ -116,17 +116,27 @@ switch (_filter) do
 			_ret pushBack ["TRYK_H_Helmet_3C","Unteroffiziershelm I",10];
       			_ret pushBack ["H_Beret_blk","Unteroffiziersbarett",10];
 
+		}
+		if(__GETC__(life_coplevel) >= 9) then
+		{
+			_ret pushBack ["TRYK_H_ghillie_top_headless","Ghillie nur Oberkörper",10];
+
 		};
 		if(__GETC__(life_coplevel) >= 10) then
 		{
 			_ret pushBack ["TRYK_H_AOR1","Unteroffiziershelm II",10];
+			_ret pushBack ["TRYK_H_ghillie_top","Ghillie Oberkörper&Kopf",10];
 
 		};
+		if(__GETC__(life_coplevel) >= 11) then
+		{
+			_ret pushBack ["TRYK_H_ghillie_over","Ghillie Ganzkörper",10];
 
+		};
 		if(__GETC__(life_coplevel) >= 12) then
 		{
 			_ret pushBack ["H_Beret_02","Offiziersbarett",10];
-      _ret pushBack ["TRYK_H_Helmet_MARPAT_Desert","Offiziershelm I",10];
+			 _ret pushBack ["TRYK_H_Helmet_MARPAT_Desert","Offiziershelm I",10];
 
 		};
 		if(__GETC__(life_coplevel) >= 15) then
@@ -150,7 +160,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["G_mas_wpn_gog_m","Taktische Brille",10];
 			_ret pushBack ["SFG_Tac_moustacheD","Taktischer Bart",10];
@@ -160,15 +170,15 @@ switch (_filter) do
 			_ret pushBack ["SFG_Tac_smallBeardD","Taktischer Bart",10];
 			_ret pushBack ["SFG_Tac_smallBeardB","Taktischer Bart",10];
 		};
-		if(__GETC__(life_coplevel) > 3) then
+		if(__GETC__(life_coplevel) >= 3) then
 		{
 			_ret pushBack ["G_mas_wpn_mask","Taktische Maske",10];
 		};
-		if(__GETC__(life_coplevel) > 4) then
+		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["TRYK_Shemagh_ESS","Taktisches Shemag",10];
 		};
-		if(__GETC__(life_coplevel) > 17) then
+		if(__GETC__(life_coplevel) >= 17) then
 		{
 			_ret pushBack ["G_Aviator","Fliegerbrille für Moertini",10];
 			_ret pushBack ["TRYK_kio_balaclava_BLK","Balaclava Schwarz",10];
@@ -249,6 +259,11 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 6) then
 		{
 			_ret pushBack ["B_Carryall_cbr","Mannschaftsrucksack V",10];
+		};
+		if(__GETC__(life_coplevel) >= 14) then
+		{
+			_ret pushBack ["B_mas_Kitbag_black","Leitungsrucksack I",10];
+			_ret pushBack ["B_TacticalPack_blk","Leitungsrucksack II",10];
 		};
 	};
 };

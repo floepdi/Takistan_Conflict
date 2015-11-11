@@ -33,18 +33,18 @@ switch(_shop) do
         ["hlc_smg_mp5a3",nil,15],
         ["hlc_30Rnd_9x19_B_MP5",nil,1],
         
-        ["hlc_rifle_SAMR",nil,50],
+        ["hlc_rifle_samr2",nil,50],
         ["30Rnd_556x45_Stanag",nil,1],
         
         ["arifle_mas_hk416",nil,25],
         ["arifle_mas_l119",nil,25],
         ["30Rnd_mas_556x45_Stanag",nil,1],
         
-        ["arifle_mas_g3",nil,65],
+        ["arifle_mas_g3s",nil,65],
         ["srifle_mas_hk417",nil,75],
         ["20Rnd_mas_762x51_Stanag",nil,1],
         
-        ["srifle_mas_m24_d",nil,100],
+        ["srifle_mas_m24",nil,100],
         ["5Rnd_mas_762x51_Stanag",nil,1],
         
         ["LMG_mas_M249_F",nil,50],
