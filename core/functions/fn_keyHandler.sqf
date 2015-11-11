@@ -93,45 +93,7 @@ switch (_code) do
 
 
 
-	case 2:
-	{
-		switch (PlayerSide) do
-		{
-		case west: {[] call life_fnc_wantedMenu;};
-
-		case civilian: {
-
-		if((!life_action_gathering) && (vehicle player == player) ) then
-		{
-			{
-			_str = [_x] call life_fnc_varToStr;
-			_val = missionNameSpace getVariable _x;
-			if(_val > 0 ) then
-				{
-				if( _str == "Spitzhacke" || _str == "pickaxe" ) then
-					{
-
-
-
-
-							[] spawn life_fnc_pickAxeUse;
-
-
-
-					};
-				};
-
-			} foreach life_inv_items;
-
-		}
-
-
-		};
-		};
-		_handled = true;
-	};
-
-	//TODO SPIKESTRIP
+		//TODO SPIKESTRIP
 	case 3:
 	{
 			if(([false,"spikeStrip",1] call life_fnc_handleInv)) then
