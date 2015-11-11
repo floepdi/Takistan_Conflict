@@ -507,6 +507,7 @@ buy_array =
     ["nitroglycerin",200],
     ["altpapier",50],
     ["blumenerde",20],
+    ["defusekit",100],
     ["epikit",100],
     ["bandage",20],
     ["kochsalz",50],
