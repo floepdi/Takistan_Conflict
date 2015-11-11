@@ -31,8 +31,7 @@ _itemInfo = switch (_type) do
 //Error checking
 if(count _itemInfo == 0) exitWith {};
 
-//Setup vars.
-_moreVars = _itemInfo select 4;  // true if process action is with 2 Items and false if processing with 1 Item.
+_morevars = _itemInfo select 4;  // true if process action is with 2 Items and false if processing with 1 Item.
 _oldItem = _itemInfo select 0;
 _newItem = _itemInfo select 1;
 _cost = _itemInfo select 2;
@@ -40,50 +39,29 @@ _upp = _itemInfo select 3;
 
 
 
-//morevars
-if(_moreVars) then {
-  _count = count _itemInfo;
-  if (_count == 5) then{
-    _item2 = _itemInfo select 5;
-    _item2Val = missionNamespace getVariable ([_item2,0] call life_fnc_varHandle);
-  };
-  if (_count == 6) then{
-    _item3 = _itemInfo select 6;
-    _item3Val = missionNamespace getVariable ([_item3,0] call life_fnc_varHandle);
-  };
-  if (_count == 7) then{
-    _item4 = _itemInfo select 7;
-    _item4Val = missionNamespace getVariable ([_item4,0] call life_fnc_varHandle);
-  };
-};
 
 
-_hasLicense = missionNamespace getVariable (([_type,0] call life_fnc_licenseType) select 0);
+
+//2vars
+if(_morevars) then { _oldItem2 = _itemInfo select 5; }; //set Itemname if (processing with 2 Items = true)
+
+;
 _itemName = [([_newItem,0] call life_fnc_varHandle)] call life_fnc_varToStr;
 _oldVal = missionNamespace getVariable ([_oldItem,0] call life_fnc_varHandle);
 
-// True if amount of Item1 =! amount of Item 2 to prevent processing 20 FuelF with 20x oilp  and 1x iron_r)
-if (_count >= 5) then{
-  if(_oldVal !=_item2Val) then {
-    _error = true;
-  };
-};
-if (_count >= 6) then{
-  if(_oldVal !=_item2Val && _oldVal !=_item3Val) then {
-    _error = true;
-  }
-};
-if (_count >= 7) then{
-  if(_oldVal !=_item2Val && _oldVal !=_item3Val && _oldVal != _item4Val) then {
-    _error = true;
-  };
+//2vars
+if(_morevars) then { _oldVal2 = missionNamespace getVariable ([_oldItem2,0] call life_fnc_varHandle); }; //calculate the amount of the second Item (for example Iron)
+
+if(_morevars) then {
+       if(_oldVal !=_oldVal2) then {
+              _error = true; // True if amount of Item1 =! amount of Item 2 to prevent processing 20 FuelF with 20x oilp  and 1x iron_r)
+       };
 };
 if(_error) exitWith{hint "please use equal amounts"};
 
 _cost = _cost * _oldVal;
 //Some more checks
 if(_oldVal == 0) exitWith {};
-
 
 // Inform army if gold
 if(_type == "gold") then {
@@ -115,17 +93,6 @@ if(player distance _vendor > 10) exitWith {};
 
 
 if(player distance _vendor > 10) exitWith {hint "You need to stay within 10m to process.."; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-
-//Delete additional items
-if (_count >= 5) then {
-  ([false,_item2,_item2Val] call life_fnc_handleInv);
-};
-if (_count >= 6) then {
-  ([false,_item3,_item3Val] call life_fnc_handleInv);
-};
-if (_count >= 7) then {
-  ([false,_item4,_item4Val] call life_fnc_handleInv);
-};
 
 
 if(!([false,_oldItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","PLAIN"]; life_is_processing = false;};

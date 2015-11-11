@@ -19,5 +19,6 @@ switch (_shop) do
     case "oil": {["Öl Händler",["oilp"]]};
     case "cop": {["Mc Fress",["burger","donuts","cola","spikeStrip","fuelF","strahler","barrier","barricade","lockpick","bandage","kochsalz","morphin","epikit"]]};
     case "electrostore": {["Abduls Elektronikbedarf",["battery","fernzuender","gehaeuse","antenne"]]};
-    case "blackstore": {["Schwarzmarkt",["lockpick","blastingcharge","depotwaffen","goldbarren"]]};
+    case "blackstore": {["Schwarzmarkt",["lockpick","blastingcharge","depotwaffen","nitroglycerin"]]};
+    case "hehler": {["Schwarzmarkt",["goldbar","information"]]};
 };

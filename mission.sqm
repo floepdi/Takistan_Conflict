@@ -2429,7 +2429,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="schwarzmarkt";
-					init="this setPos [(getPos this) select 0, (getPos this) select 1, 1.1];this enableSimulation false; this allowDamage false; removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this; this addUniform ""IS_uniform_machinegunner_i""; this addHeadgear ""IS_shemag_black""; this addVest ""V_BandollierB_blk"";this addAction[""Transport abgeben"",  { [[4,1,1],""life_fnc_Transport"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'life_transport_in_progress'];this addAction[""Quest abgeben"",  { [[""hoellenfeuer"",1,4],""life_fnc_quest"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_quest == 55) && (life_level >= 18)'];";
+					init="this setPos [(getPos this) select 0, (getPos this) select 1, 1.1];this enableSimulation false; this allowDamage false; removeallweapons this;  removeGoggles this;  removeHeadgear this;  removeVest this;  removeUniform this;  removeAllAssignedItems this; this addUniform ""IS_uniform_machinegunner_i""; this addHeadgear ""IS_shemag_black""; this addVest ""V_BandollierB_blk"";this addAction[""Transport abgeben"",  { [[4,1,1],""life_fnc_Transport"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'life_transport_in_progress'];this addAction[""Quest abgeben"",  { [[""hoellenfeuer"",1,4],""life_fnc_quest"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_quest == 55) && (life_level >= 18)'];this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""blackstore""];";
 				};
 				class Item21
 				{
@@ -3102,7 +3102,7 @@ class Mission
 						items=3;
 						class Item0
 						{
-							value="0";
+							value="2";
 							parentCls="ACE_ModuleCheckPBOs";
 							typeName="Action";
 						};
@@ -3843,7 +3843,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false;this enableSimulation false; this allowDamage false; this addAction[""Goldschmelze"",life_fnc_processAction,""gold"",0,false,false,"""",' life_inv_goldu > 0 && !life_is_processing'];";
+					init="this setPos [(getPos this) select 0, (getPos this) select 1, 0];this enableSimulation false; this allowDamage false; this addAction[""Goldschmelze"",life_fnc_processAction,""gold"",0,false,false,"""",' life_inv_goldore > 0 && !life_is_processing'];";
 				};
 				class Item5
 				{
@@ -3855,7 +3855,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false;removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla3_1"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""TRYK_H_woolhat"";  this addGoggles ""G_mas_wpn_shemag"";          this setFace ""AsianHead_A3_01"";  this setSpeaker ""ACE_NoVoice"";  this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""blackstore""];";
+					init="this allowDamage false; this enableSimulation false;removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""U_BG_Guerilla3_1"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""TRYK_H_woolhat"";  this addGoggles ""G_mas_wpn_shemag"";          this setFace ""AsianHead_A3_01"";  this setSpeaker ""ACE_NoVoice"";  this addAction[""Hehler"",life_fnc_virt_menu,""hehler""];";
 				};
 				class Item6
 				{
@@ -3879,7 +3879,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""rds_uniform_citizen4"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""rds_worker_cap1"";  this addGoggles ""G_Squares_Tinted"";            this setFace ""PersianHead_A3_01"";  this setSpeaker ""ACE_NoVoice"";  this addAction[""Schwarzmarkt"",life_fnc_virt_menu,""blackstore""];";
+					init="this allowDamage false; this enableSimulation false; removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;      this forceAddUniform ""rds_uniform_citizen4"";  this addItemToUniform ""FirstAidKit"";  this addHeadgear ""rds_worker_cap1"";  this addGoggles ""G_Squares_Tinted"";            this setFace ""PersianHead_A3_01"";  this setSpeaker ""ACE_NoVoice"";  this addAction[""Hehler"",life_fnc_virt_menu,""hehler""];";
 				};
 				class Item8
 				{
