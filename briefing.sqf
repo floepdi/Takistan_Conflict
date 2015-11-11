@@ -53,6 +53,7 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
           	ACE Interaktionsmenü : Fesseln/Verhaften.<br/>
       		8 : Granaten Wurfweite anpassen.<br/>
       		2-7 : Taktische Handzeichen.<br/>
+      		0 : Waffe holstern/ziehen.<br/>
       		STRG+Numpad 1/2 : Liegestütze/Kniebeuge.<br/>
 			Z : Spielermenü.<br/>
 			U : Fahrzeug auf/abschließen.<br/>
