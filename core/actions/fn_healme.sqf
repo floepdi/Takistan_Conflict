@@ -8,4 +8,3 @@
 player setdamage 0;
 life_blood = 100;
 life_bloodmulti = 0;
-life_cash = life_cash - 25;

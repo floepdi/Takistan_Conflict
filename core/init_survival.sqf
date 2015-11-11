@@ -1,5 +1,6 @@
 #include <macro.h>
 "colorCorrections" ppEffectEnable false;
+player EnableSimulationGlobal true;
 [] spawn  {
 
 	private["_fnc_food","_fnc_water"];
@@ -98,8 +99,8 @@ if (playerSide == civilian) then
 		{
 		_counter = _counter + 1;
 		if (_counter == 30) then {
-		life_cash = life_cash  + 300;
-		["Level_Prof",150,1] call life_fnc_addLevel;
+		life_cash = life_cash  + 150;
+		["Level_Prof",75,1] call life_fnc_addLevel;
 		};
 		}
 		else
@@ -112,6 +113,7 @@ if (playerSide == civilian) then
 };
 };
 
+/*
 [] spawn
 {
 while {true} do
@@ -120,6 +122,8 @@ if !(call TFAR_fnc_isTeamSpeakPluginEnabled) then {endMission "NOTFAR";};
 sleep 10;
 };
 };
+*/
+
 [] spawn
 {
 	if (playerSide ==  civilian) then
@@ -142,6 +146,10 @@ sleep 10;
 	[] call life_fnc_profSetup;
 	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 2000$ <br /> + 2000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+
+	life_paytime = 0;
+	["Paytime_Prof",0,0] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
 	}
 	else
 	{
@@ -151,14 +159,18 @@ sleep 10;
 	["Payday_Prof",1,1] call life_fnc_addLevel;
 	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-	};
 
 	life_paytime = 0;
 	["Paytime_Prof",0,0] call life_fnc_addLevel;
 	[] call life_fnc_profSetup;
 	};
 	};
+	};
   	};
+ };
+ [] spawn
+{
+
   	if (playerSide ==  west) then
 	{
 	while {true} do
@@ -179,6 +191,10 @@ sleep 10;
 	[] call life_fnc_profSetup;
 	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 2000$ <br /> + 2 Abzeichen <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+
+	life_paytimearmy = 0;
+	["PaytimeArmy_Prof",0,0] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
 	}
 	else
 	{
@@ -188,11 +204,12 @@ sleep 10;
 	["Payday_Prof",1,1] call life_fnc_addLevel;
 	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1 Abzeichen <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
-	};
 
 	life_paytimearmy = 0;
 	["PaytimeArmy_Prof",0,0] call life_fnc_addLevel;
 	[] call life_fnc_profSetup;
+
+	};
 	};
 	};
   	};
@@ -206,6 +223,7 @@ sleep 10;
  player setVariable ["olddamage", 1 , false];
  player setVariable ["olddamage2", 0, false];
  player setVariable ["olddamage3", 0 , false];
+ player SetVariable ["unconscious",false,true];
   while {true} do
  {				// 0.1 > 0 							0 == 0
  	if (((damage player) > 0) AND (life_blood != 0) AND (life_bloodmulti == 0) AND (damage player > (player getVariable ["olddamage", 0]))) then  // 80 HP, 100 Blood
@@ -246,6 +264,7 @@ sleep 10;
 	if ((life_blood == 1) AND (damage player == 0.99) AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.1, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	"dynamicBlur" ppEffectEnable true; "dynamicBlur" ppEffectAdjust [3]; "dynamicBlur" ppEffectCommit 2; enableCamShake true;
+	player SetVariable ["unconscious",false,true];
 	};
 	if ((life_blood > 1) AND (life_blood < 10)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [1, 1, 0, [1, 1, 1, 0], [1, 1, 1, 0], [0.3, 0, 0, 1.0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
@@ -258,6 +277,7 @@ sleep 10;
 	if ((life_blood > 20) AND (life_blood < 30)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [0.6, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};
+	player SetVariable ["unconscious",false,true];
 	if ((life_blood > 30) AND (life_blood < 40)  AND (alive player) AND (((position player) distance (getMarkerPos "spawnzone")) > 500) AND !(player getVariable ["Sack",false]) AND ! (life_morphin)) then {
 	"colorCorrections" ppEffectAdjust [0.7, 1, 0, [0, 0, 0, 0], [1, 1, 1, 0], [0.299, 0.587, 0.114, 0]];  "colorCorrections" ppEffectCommit 1;  "colorCorrections" ppEffectEnable TRUE;
 	};

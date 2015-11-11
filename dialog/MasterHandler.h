@@ -10,6 +10,7 @@
 #include "bank.hpp"
 #include "veh_shop.hpp"
 #include "shops.hpp"
+#include "shops_abzeichen.hpp"
 #include "shops_cop.hpp"
 #include "shops_cop2.hpp"
 #include "shops_level.hpp"

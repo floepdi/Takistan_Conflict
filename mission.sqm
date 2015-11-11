@@ -2322,7 +2322,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					skill=0.60000002;
 					text="h1_3_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenuCop,""army_equipment""];  this addAction[""Mannschafts-Waffenspind"",life_fnc_weaponShopMenuCop,""army_weapon""]; this addAction[""Offiziers-Waffenspind"",life_fnc_weaponShopMenuCop2,""army_weapon2""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""cop""]; this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""cop""];  this addAction[""Army Equipment"",life_fnc_weaponShopMenuCop,""army_equipment""];  this addAction[""Mannschafts-Waffenspind"",life_fnc_weaponShopMenuCop,""army_weapon""]; this addAction[""Offiziers-Waffenspind"",life_fnc_weaponShopMenuCop2,""army_weapon2""]; this addAction[""Abzeichen-Waffenspind"",life_fnc_weaponShopMenuAbzeichen,""abzeichen""];";
 				};
 				class Item12
 				{

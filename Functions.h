@@ -190,6 +190,7 @@ class Life_Client_Core
         class vehShopLicenses {};
         class vehicleAnimate {};
         class weaponShopCfg {};
+        class weaponShopAbzeichenCfg {};
         class weaponShopCopCfg {};
         class weaponShopCop2Cfg {};
         class weaponShopLevelCfg {};
@@ -475,6 +476,7 @@ class Life_Client_Core
         class vehicleShopLBChange {};
         class vehicleShopBuy {};
         class weaponShopFilter {};
+        class weaponShopFilterAbzeichen {};
         class weaponShopFilterCop {};
         class weaponShopFilterCop2 {};
         class weaponShopFilterLevel {};
@@ -494,8 +496,9 @@ class Life_Client_Core
         class weaponShopMenuLevel6 {};
         class weaponShopMenuAbzeichen {};
         class weaponShopSelection {};
+        class weaponShopSelectionAbzeichen {};
         class weaponShopBuySell {};
-        class weaponShopBuySell_Abzeichen {};
+        class weaponShopBuySellAbzeichen {};
         class virt_buy {};
         class virt_menu {};
         class virt_update {};

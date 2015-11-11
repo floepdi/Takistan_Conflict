@@ -8,8 +8,11 @@
 	private["_countdown"];
 
 
-
+	while {(animationState player != "AinjPpneMstpSnonWnonDnon" )} do
+	{
 	player switchMove "AinjPpneMstpSnonWnonDnon";
+	};
+	player EnableSimulationGlobal false;
 	player setVariable ["unconscious",true, true];
 	_countdown = 120;
 	life_unconscious = true;
@@ -26,6 +29,7 @@
 			player setVariable ["olddamage", damage player , false];
  			player setVariable ["olddamage2", 0, false];
  			player setVariable ["olddamage3", 0 , false];
+ 			player EnableSimulationGlobal true;
  			life_unconscious = false;
  			};
  			_countdown = _countdown - 1;
