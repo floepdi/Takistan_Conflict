@@ -173,7 +173,7 @@ switch (_filter) do
 			_ret pushBack ["G_Aviator","Fliegerbrille für Moertini",10];
 			_ret pushBack ["TRYK_kio_balaclava_BLK","Balaclava Schwarz",10];
 			_ret pushBack ["TRYK_kio_balaclavas","Balaclava Geist",10];
-			
+
 		};
 	};
 

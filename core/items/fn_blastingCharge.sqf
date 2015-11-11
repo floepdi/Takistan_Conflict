@@ -19,7 +19,7 @@ hint localize "STR_ISTR_Blast_KeepOff";
 _handle = [] spawn life_fnc_demoChargeTimer;
 [[],"life_fnc_demoChargeTimer",west,false] spawn life_fnc_MP;
 sleep 5.0;
-//[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 
 
 waitUntil {scriptDone _handle};

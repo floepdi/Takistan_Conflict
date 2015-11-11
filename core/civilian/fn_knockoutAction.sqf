@@ -1,7 +1,7 @@
 /*
 	File: fn_knockoutAction.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Knocks out the target.
 */
@@ -17,5 +17,5 @@ life_knockout = true;
 sleep 0.08;
 [[_target,profileName],"life_fnc_knockedOut",_target,false] spawn life_fnc_MP;
 
-sleep 3;
+sleep 60;
 life_knockout = false;

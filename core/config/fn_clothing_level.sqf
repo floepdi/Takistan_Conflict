@@ -181,7 +181,7 @@ switch (_filter) do
 		if(life_level >= 5) then {
 			_return pushBack ["SFG_Tac_BeardD",nil,50];
 			_return pushBack ["SFG_Tac_BeardO",nil,50];
-		};	  
+		};
 		if(life_level >= 10) then {
 			_return pushBack ["rhs_scarf",nil,25];
 		};

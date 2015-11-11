@@ -1,7 +1,7 @@
 /*
     File: fn_loadGear.sqf
     Author: Bryan "Tonic" Boardwine
-    
+
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
@@ -18,7 +18,7 @@ if(count _itemArray == 0) exitWith
         case west: {
             [] call life_fnc_copLoadout;
         };
-        
+
         case civilian: {
             [] call life_fnc_civLoadout;
         };
@@ -67,7 +67,7 @@ life_maxWeight = 100;
     _item = [_x,1] call life_fnc_varHandle;
     [true,_item,1] call life_fnc_handleInv;
 } foreach (_yItems);
-life_maxWeight = 24;
+life_maxWeight = 10;
 
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if(_prim != "") then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};

@@ -89,6 +89,8 @@ life_quest = 0;
 life_questinfo = 0;
 life_payday = 0;
 life_paytime = 0;
+life_paydayarmy = 0;
+life_paytimearmy = 0;
 life_abzeichen = 0;
 life_kopf = "";
 life_blood = 100;
@@ -341,7 +343,9 @@ life_prof =
 ["QuestInfo_Prof","civ"],
 ["Payday_Prof","civ"],
 ["Paytime_Prof","civ"],
-["Abzeichen_Prof","cop"]
+["Abzeichen_Prof","cop"],
+["PaydayArmy_Prof","cop"],
+["PaytimeArmy_Prof","cop"]
 /*
 ["Mafia_Prof","civ"],
 ["Oil_Prof","civ"],

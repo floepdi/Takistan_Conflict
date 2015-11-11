@@ -44,7 +44,9 @@
 		sleep 250;
 		[] call _fnc_food;
 	};
-
+};
+[] spawn
+{
 	private["_bp","_load","_cfg"];
 	while{true} do
 	{
@@ -79,6 +81,44 @@
 			life_maxWeight = life_maxWeightT;
 		};
 	};
+};
+
+
+[] spawn
+{
+if (playerSide == civilian) then
+ {
+ 	_counter = 0;
+ 	while {true} do
+ 	{
+
+ 	_hideout1 = (nearestObjects[getMarkerPos "gang_area_1",["FlagPole_F"],25]) select 0;
+ 	_hideoutOwner1 = _hideout1 getVariable ["gangOwner",grpNull];
+	if ((group player == _hideoutOwner1) && ({side _x == civilian} count playableUnits >= 30)) then
+		{
+		_counter = _counter + 1;
+		if (_counter == 30) then {
+		life_cash = life_cash  + 300;
+		["Level_Prof",150,1] call life_fnc_addLevel;
+		};
+		}
+		else
+		{
+			_counter = 0;
+		};
+	sleep 60;
+ };
+
+};
+};
+
+[] spawn
+{
+while {true} do
+{
+if !(call TFAR_fnc_isTeamSpeakPluginEnabled) then {endMission "NOTFAR";};
+sleep 10;
+};
 };
 [] spawn
 {
@@ -115,6 +155,43 @@
 
 	life_paytime = 0;
 	["Paytime_Prof",0,0] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
+	};
+	};
+  	};
+  	if (playerSide ==  west) then
+	{
+	while {true} do
+	{
+	sleep 300;
+	["PaytimeArmy_Prof",5,1] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
+	_paytime = life_paytimearmy;
+
+	if (_paytime >= 60) then
+	{
+	_bonus = (life_paydayarmy /5);
+	if (_bonus in [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80]) then{
+	_stunden =  life_paydayarmy;
+	["PaydayArmy_Prof",1,1] call life_fnc_addLevel;
+	life_cop_atmcash = life_cop_atmcash + 2000;
+	["Abzeichen_Prof",2,1] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
+	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
+	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 2000$ <br /> + 2 Abzeichen <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	}
+	else
+	{
+	_stunden =  life_paydayarmy;
+	life_cop_atmcash = life_atmcash + 1000;
+	["Abzeichen_Prof",1,1] call life_fnc_addLevel;
+	["Payday_Prof",1,1] call life_fnc_addLevel;
+	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
+	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1 Abzeichen <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+	};
+
+	life_paytimearmy = 0;
+	["PaytimeArmy_Prof",0,0] call life_fnc_addLevel;
 	[] call life_fnc_profSetup;
 	};
 	};
@@ -257,8 +334,18 @@
 				player forceWalk false;
 			};
 		};
-	};
 };
+};
+
+[] spawn
+{
+		while {alive player} do {
+   		if(cameraView == "GROUP") then {
+        vehicle player switchCamera "EXTERNAL";
+         };
+   		 };
+};
+
 /*
 [] spawn
 {

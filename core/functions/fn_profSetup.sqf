@@ -100,6 +100,16 @@ if (_profText == "payday") then {
   life_payday = _profExp;
 };
 
+if (_profText == "paytimearmy") then {
+
+  life_paytimearmy = _profExp;
+};
+
+if (_profText == "paydayarmy") then {
+
+  life_paydayarmy = _profExp;
+};
+
 if (_profText == "quest") then {
 
   life_quest = _profExp;

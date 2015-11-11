@@ -1,6 +1,6 @@
 /*
 	File: fn_arrestAction.sqf
-	
+
 	Description:
 	Arrests the targeted person.
 */
@@ -16,7 +16,9 @@ if(!(_unit getVariable "restrained")) exitWith {}; //He's not restrained.
 if(side _unit != civilian) exitWith {}; //Not a civ
 if(isNull _unit) exitWith {}; //Not valid
 if(_time < 1) exitwith {}; //Not Valid
-
+["Abzeichen_Prof",2,1] call life_fnc_addLevel;
+[] call life_fnc_profSetup;
+[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 2 Abzeichen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 [[_unit,player,false],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
 

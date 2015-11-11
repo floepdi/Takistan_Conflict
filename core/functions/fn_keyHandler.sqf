@@ -48,20 +48,6 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 
 switch (_code) do
 {
-	//Space key for Jumping
-	case 57:
-	{
-
-
-
-			if(isNil "jumpActionTime") then {jumpActionTime = 0;};
-			if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
-				jumpActionTime = time; //Update the time.
-				[player,true] spawn life_fnc_jumpFnc; //Local execution
-				[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution
-				_handled = true;
-			};
-	};
 	case 79:
 	{
 		if(_ctrlKey) then {
@@ -114,27 +100,6 @@ switch (_code) do
 		};
 	};
 
-	//Holster / recall weapon.
-	case 35:
-	{
-		if(_shift && !_ctrlKey && currentWeapon player != "") then {
-			life_curWep_h = currentWeapon player;
-			player action ["SwitchWeapon", player, player, 100];
-			player switchcamera cameraView;
-		};
-
-		if(!_shift && _ctrlKey && !isNil "life_curWep_h" && {(life_curWep_h != "")}) then {
-			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
-				player selectWeapon life_curWep_h;
-			};
-		};
-	};
-	case 11:
-	{
-		[] call life_fnc_toggleSound;
-		_handled = true;
-
-	};
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -149,33 +114,6 @@ switch (_code) do
 		};
 	};
 
-	//Restraining (Shift + R)
-	case 19:
-	{
-		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-		{
-			[] call life_fnc_restrainAction;
-		};
-		if(playerSide == civilian) then
-		{
-
-			if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent,west]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && animationState cursorTarget == "Incapacitated" && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-			{
-
-
-				if([false,"zipties",1] call life_fnc_handleInv) then
-				{
-					[] call life_fnc_restrainAction;
-
-				}
-				else
-				{
-					hint "Du hast keine Kabelbinder!";
-				};
-			};
-		};
-	};
 
 	//Knock out, this is experimental and yeah...
 	case 34:
@@ -195,20 +133,6 @@ switch (_code) do
 	case 20:
 	{
 		if(_shift) then {_handled = true;};
-
-		if (_shift) then
-		{
-			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
-			{
-				if (player getVariable ["surrender", false]) then
-				{
-					player setVariable ["surrender", false, true];
-				} else
-				{
-					[] spawn life_fnc_surrender;
-				};
-			};
-		};
 
 		if(!_alt && !_ctrlKey) then
 		{

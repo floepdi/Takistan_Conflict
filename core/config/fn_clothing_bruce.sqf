@@ -46,7 +46,7 @@ switch (_filter) do
 		if(life_level >= 9) then {
 			_return pushBack ["TRYK_OVERALL_flesh","Overall",75];
 		};
-		
+
 		/*
 		if(life_level >= 10) then {
 			_return pushBack ["rds_uniform_Profiteer1","Billiganzug",1000];
@@ -160,7 +160,7 @@ switch (_filter) do
 		if(life_level >= 9) then {
 			_return pushBack ["H_Bandanna_camo",nil,35];
 		};
-		
+
 		/*
 		if(life_level >= 12) then {
 			_return pushBack ["H_ShemagOpen_tan",nil,100];
@@ -181,7 +181,7 @@ switch (_filter) do
 	};
 
 
-        
+
 	//Glasses
 	/*
 	case 2:
@@ -230,7 +230,7 @@ switch (_filter) do
 		if(life_level >= 8) then {
 			_return pushBack ["V_HarnessO_brn",nil,200];
 		};
-		 
+
 		 /*
 		if(life_level >= 13) then {
 			_return pushBack ["V_TacVest_khk",nil,2500];
@@ -245,7 +245,7 @@ switch (_filter) do
 	case 4:
 	 {
 		if(life_level >= 1) then {
-			_return pushBack ["rhs_sidor",nil,25];
+				_return pushBack ["rhs_sidor",nil,25];
 		};
 		if(life_level >= 3) then {
 			_return pushBack ["B_AssaultPack_khk",nil,50];
@@ -256,7 +256,7 @@ switch (_filter) do
 		if(life_level >= 9) then {
 			_return pushBack ["B_TacticalPack_oli",nil,100];
 		};
-		
+
 		/*
 		if(life_level >= 11) then {
 			_return pushBack ["B_mas_Kitbag_rng",nil,5000];

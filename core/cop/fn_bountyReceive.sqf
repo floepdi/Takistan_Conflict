@@ -20,6 +20,6 @@ if(_val == _total) then
 
 life_atmcash = life_atmcash + _val;
 
-["Abzeichen_Prof",1,2] call life_fnc_addLevel;
+["Abzeichen_Prof",2,1] call life_fnc_addLevel;
 [] call life_fnc_profSetup;
 [format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> + 2 Abzeichen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
