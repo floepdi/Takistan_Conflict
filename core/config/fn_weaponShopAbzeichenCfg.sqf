@@ -30,9 +30,49 @@ switch(_shop) do
     ["Abzeichen-Shop",
         [
 
-        ["hlc_smg_mp5a3",nil,1],
-        ["arifle_mas_hk416",nil,2],
-	    ["srifle_mas_hk417",nil,3]
+        ["hlc_smg_mp5a3",nil,15],
+        ["hlc_30Rnd_9x19_B_MP5",nil,1],
+        
+        ["hlc_rifle_SAMR",nil,50],
+        ["30Rnd_556x45_Stanag",nil,1],
+        
+        ["arifle_mas_hk416",nil,25],
+        ["arifle_mas_l119",nil,25],
+        ["30Rnd_mas_556x45_Stanag",nil,1],
+        
+        ["arifle_mas_g3",nil,65],
+        ["srifle_mas_hk417",nil,75],
+        ["20Rnd_mas_762x51_Stanag",nil,1],
+        
+        ["srifle_mas_m24_d",nil,100],
+        ["5Rnd_mas_762x51_Stanag",nil,1],
+        
+        ["LMG_mas_M249_F",nil,50],
+	["200Rnd_mas_556x45_Stanag",nil,1],
+	
+	["LMG_mas_mk48_F",nil,100],
+	["100Rnd_mas_762x51_Stanag",nil,1],
+	
+	["rhs_weap_M136_hedp",nil,50],
+	["rhs_m136_hedp_mag",nil,1],
+	
+	["FHQ_optic_AimM_TAN",nil,3],
+	["FHQ_optic_ACOG",nil,5],
+	["optic_SOS",nil,20],
+	["optic_LRPS",nil,35],
+	
+	["NVGoggles",nil,2],
+	["MiniGrenade",nil,3],
+	["Rangefinder",nil,4],
+	
+	["TRYK_V_ArmorVest_Delta",nil,25],
+	["TRYK_V_ArmorVest_Ranger",nil,25],
+	["TRYK_V_tacv1_BK",nil,20],
+	["G_Bandanna_beast",nil,2],
+	["G_mas_wpn_wrap_gog_c",nil,2]
+	
+	
+	
         ]
 
     ];
