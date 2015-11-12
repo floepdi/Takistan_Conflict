@@ -147,6 +147,7 @@ sleep 10;
 	["Level_Prof",2000,1] call life_fnc_addLevel;
 	[] call life_fnc_profSetup;
 	["Paycheck",["Bonus-Payday erhalten.",5]] call bis_fnc_showNotification;
+	[] call life_fnc_profSetup;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Bonus-Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 2000$ <br /> + 2000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 	life_paytime = 0;
@@ -160,6 +161,7 @@ sleep 10;
 	["Level_Prof",1000,1] call life_fnc_addLevel;
 	["Payday_Prof",1,1] call life_fnc_addLevel;
 	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
+	[] call life_fnc_profSetup;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1000 Erfahrung <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 
 	life_paytime = 0;
@@ -203,7 +205,7 @@ sleep 10;
 	_stunden =  life_paydayarmy;
 	life_cop_atmcash = life_atmcash + 1000;
 	["Abzeichen_Prof",1,1] call life_fnc_addLevel;
-	["Payday_Prof",1,1] call life_fnc_addLevel;
+	["PaydayArmy_Prof",1,1] call life_fnc_addLevel;
 	["Paycheck",["Payday erhalten.",5]] call bis_fnc_showNotification;
 	[format ["<t align='left'><t size='0.8'  shadow='1'><t color='#A9F5A9'><br /> Payday erhalten <br /></t><t size='0.6'  shadow='1' color='#EFFBEF'> + 1000$ <br /> + 1 Abzeichen <br/> + Gesamtspielzeit: %1 Stunden",_stunden],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 

@@ -36,7 +36,7 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 0) then {
 		hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
 		["Abzeichen_Prof",_price,0] call life_fnc_addLevel;
 		[_item,true] spawn life_fnc_handleItem;
-		//[[format ["4|%1 Waffe gekauft: %2",player getVariable["realname",name player],_iteminfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
+		[[format ["%1 Waffe gekauft: %2 Abzeichen",player getVariable["realname",name player],_iteminfo select 1]],"Arma3Log",false,false] call life_fnc_MP;
 		[] call life_fnc_profSetup;
 		};
 [] call life_fnc_saveGear;

@@ -15,6 +15,7 @@ if (playerSide == west) then {
 	    ["Abzeichen_Prof",1,1] call life_fnc_addLevel;
         [] call life_fnc_profSetup;
         [format ["<t align='left'><t size='0.6' shadow='1'><t color='#F78181'><br /> + 1 Abzeichen"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
+        [[format ["%1 Epi bei %2 benutzt.",player getVariable["realname",name player],cursorTarget getVariable["realname",name player]]],"Arma3Log",false,false] call life_fnc_MP;
 
 };
 

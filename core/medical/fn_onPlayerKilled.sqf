@@ -88,7 +88,7 @@ _unit spawn
 //Make the killer wanted
 if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then {
 
-	//[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
+	[[format ["2|%1 wurde von Spieler %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
 	if(vehicle _killer isKindOf "LandVehicle") then {
 		//[_killer getVariable["realname",name _killer]],"life_fnc_copShowMurder",false,false] spawn life_fnc_MP;
 		//Get rid of this if you don't want automatic vehicle license removal.
@@ -110,7 +110,7 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 if(side _killer == west && playerSide != west) then {
 
 	[[_coplevel],"life_fnc_rebTransfer",_killer,false] spawn life_fnc_MP;
-	//[[format ["2|%1 wurde von Cop %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
+	[[format ["2|%1 wurde von Cop %2 getötet",player getVariable["realname",name player],_killer getVariable["realname",name _killer]]],"Arma3Log",false,false] call life_fnc_MP;
 	//Did I rob the federal reserve?
 	if(!life_use_atm && {life_cash > 0}) then {
 		[format[localize "STR_Cop_RobberDead",[life_cash] call life_fnc_numberText],"life_fnc_broadcast",true,false] call life_fnc_MP;
