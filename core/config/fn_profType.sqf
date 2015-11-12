@@ -22,6 +22,7 @@ case "paytime": {_profName = "Paytime_Prof"; };
 case "abzeichen": {_profName = "Abzeichen_Prof"; };
 case "paytimearmy": {_profName = "PaytimeArmy_Prof"; };
 case "paydayarmy": {_profName = "PaydayArmy_Prof"; };
+case "agb": {_profName = "AGB_Prof"; };
 /*
 case "mafia": { _profName = "Mafia_Prof";};
 case "heroin": {_profName = "Heroin_Prof"; };
@@ -58,6 +59,7 @@ case "Paytime_Prof": {_profName = "paytime";};
 case "Abzeichen_Prof": {_profName = "abzeichen";};
 case "PaydayArmy_Prof": {_profName = "paydayarmy";};
 case "PaytimeArmy_Prof": {_profName = "paytimearmy";};
+case "AGB_Prof": { _profName = "agb";};
 /*
 case "Mafia_Prof": {_profName = "Mafia"; };
 case "Heroin_Prof": {_profName = "Heroin"; };

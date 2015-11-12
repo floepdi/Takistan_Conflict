@@ -115,6 +115,11 @@ if (_profText == "quest") then {
   life_quest = _profExp;
 };
 
+if (_profText == "agb") then {
+
+  life_agb = _profExp;
+};
+
 if (_profText == "questinfo") then {
 
   life_questinfo = _profExp;

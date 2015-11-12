@@ -32,6 +32,7 @@
 #include "deathScreen.h"
 #include "vehicleShop.h"
 #include "settings.h"
+#include "agb.hpp"
 #include "federalReserve.h"
 #include "inventar.hpp"
 #include "geld.hpp"

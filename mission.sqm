@@ -2566,13 +2566,13 @@ class Mission
 				class Item32
 				{
 					position[]={8289.7441,296.04001,2134.0676};
-					azimut=596.25366;
+					azimut=596.25403;
 					special="NONE";
 					id=131;
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""USAF Item Shop"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""USAF HQ""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false; this addAction[""Essenausgabe"",life_fnc_virt_menu,""medic""]; this addAction[""USAF Item Shop"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Vehicle Shop"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""USAF HQ""]];  this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_3""; life_garage_type = ""Car"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  this addAction[""Kleidungsspind"",life_fnc_clothingMenu,""mafia""];";
 				};
 				class Item33
 				{

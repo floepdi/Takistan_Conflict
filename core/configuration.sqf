@@ -92,6 +92,7 @@ life_paytime = 0;
 life_paydayarmy = 0;
 life_paytimearmy = 0;
 life_abzeichen = 0;
+life_agb = 0;
 life_kopf = "";
 life_blood = 100;
 life_bloodmulti = 0;
@@ -340,6 +341,7 @@ life_prof =
 
 ["Level_Prof","civ"],
 ["Quest_Prof","civ"],
+["AGB_Prof","civ"],
 ["QuestInfo_Prof","civ"],
 ["Payday_Prof","civ"],
 ["Paytime_Prof","civ"],

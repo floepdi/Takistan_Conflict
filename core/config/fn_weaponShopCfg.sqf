@@ -31,7 +31,7 @@ switch(_shop) do
         [
 
         ["ToolKit",nil,150],
-        ["ACE_Flashlight_XL50",nil,20],        
+        ["ACE_Flashlight_XL50",nil,20],
 	["ACE_EarPlugs",nil,5]
 
 
@@ -62,12 +62,13 @@ case "med_basic":
     	switch(true) do
         {
             case (playerSide != independent): {"Du bist kein Medic!"};
+            case (__GETC__(life_mediclevel) > 0):
             {
         	["PJ Ausrüstung",
         	   [
                 	["tf_anprc152",nil,10],
                         ["ItemGPS",nil,10],
-                        ["ItemCompass",nil,10], 
+                        ["ItemCompass",nil,10],
                         ["ToolKit",nil,10],
                         ["Binocular",nil,10],
                         ["Chemlight_green",nil,10],
@@ -82,8 +83,8 @@ case "med_basic":
 			["ACE_Flashlight_MX991",nil,10],
 			["ACE_MapTools",nil,10]
             ]
-        ];
-    };
+            ];
+        };
    };
   };
 
@@ -103,7 +104,7 @@ case "gun":
                     ]
                 ];
             };
-            
+
              case (life_level == 4):
             {
                 ["Level 4 Waffenladen",
@@ -115,7 +116,7 @@ case "gun":
                     ]
                 ];
             };
-            
+
            case (life_level == 5):
             {
                 ["Level 5 Waffenladen",
@@ -129,7 +130,7 @@ case "gun":
                     ]
                 ];
             };
-            
+
              case ((life_level == 6) OR (life_level == 7)):
             {
                 ["Level 6/7 Waffenladen",
@@ -145,7 +146,7 @@ case "gun":
                     ]
                 ];
             };
-            
+
             case (life_level >= 8):
             {
                 ["Level 8/9 Waffenladen",
@@ -162,8 +163,8 @@ case "gun":
                     ]
                 ];
             };
-            
+
           };
-    };   
+    };
 
 };

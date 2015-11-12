@@ -31,6 +31,23 @@ switch (__GETC__(life_donator)) do {
 };
 
 [] call life_fnc_profSetup;
+
+// AGB
+if (life_agb == 0) then
+ {
+diag_log "::Life Client:: Kein Agreement gefunden";
+diag_log "::Life Client:: Erstelle User Agreement Dialog";
+rulesok = false;
+if(!createDialog "agb") exitWith {};
+waitUntil{!isNull (findDisplay 32154)}; //Wait for the spawn selection to be open.
+waitUntil{isNull (findDisplay 32154)}; //Wait for the spawn selection to be done.
+if(!rulesok)then {
+        player enableSimulation false;
+        ["agb",false,true] call BIS_fnc_endMission;
+        sleep 35;
+};
+rulesok = nil;
+};
 /*
 [] spawn    //basic cop
 {

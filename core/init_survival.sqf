@@ -116,7 +116,7 @@ if (playerSide == civilian) then
 };
 };
 
-/*
+
 [] spawn
 {
 while {true} do
@@ -125,7 +125,7 @@ if !(call TFAR_fnc_isTeamSpeakPluginEnabled) then {endMission "NOTFAR";};
 sleep 10;
 };
 };
-*/
+
 
 [] spawn
 {

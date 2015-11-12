@@ -138,6 +138,16 @@ if(_type == "Quest_Prof") then
 	};
 };
 
+if(_type == "AGB_Prof") then
+{
+
+	if(_vorzeichen == 1) then
+	{
+		 _exp = 1;
+		missionNamespace setVariable [_type,[(_profData select 0),(_exp)]];
+	};
+};
+
 if(_type == "QuestInfo_Prof") then
 {
 
