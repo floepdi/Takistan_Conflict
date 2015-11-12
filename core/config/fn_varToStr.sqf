@@ -125,6 +125,10 @@ switch (_var) do
     case "life_inv_kochsalz": {"Kochsalz"};
     case "life_inv_morphin": {"Morphin"};
     case "life_inv_epikit": {"Epinephrin-Kit"};
+    case "life_inv_getreide": {"Getreide"};
+    case "life_inv_mehl": {"Mehl"};
+    case "life_inv_wasser": {"Wasser für Pide"};
+    case "life_inv_fladen": {"Pide"};
 
 
 

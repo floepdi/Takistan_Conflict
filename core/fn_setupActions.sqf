@@ -47,7 +47,7 @@ switch (playerSide) do
 	case west: {
     // ...
     //Seize PlayerWeapons
-    life_actions = life_actions + [player addAction["Ins Gefängnis stecken",life_fnc_showArrestDialog,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget == WEST) && (cursorTarget getVariable ["ace_captives_isHandcuffed", false]) && (!((player distance (getMarkerPos "jailrange") < 100) OR  (player distance (getMarkerPos "police_hq_x") < 30) OR (player distance (getMarkerPos "cop_spawn_x") < 30) OR (player distance (getMarkerPos "cop_spawn_x") < 30)))']];
+    life_actions = life_actions + [player addAction["Ins Gefängnis stecken",life_fnc_showArrestDialog,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && !(side cursorTarget == WEST) && (cursorTarget getVariable ["ace_captives_isHandcuffed", false]) && (!((player distance (getMarkerPos "jailrange") < 100) OR  (player distance (getMarkerPos "police_hq_x") < 30) OR (player distance (getMarkerPos "cop_spawn_x") < 30) OR (player distance (getMarkerPos "cop_spawn_x") < 30)))']];
      life_actions = life_actions + [player addAction["Person durchsuchen",life_fnc_searchAction,cursorTarget,0,false,false,"",'!isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && !(side cursorTarget == WEST) && (cursorTarget getVariable ["ace_captives_isHandcuffed", false])']];
 
     //...

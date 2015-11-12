@@ -8,3 +8,4 @@
 player setdamage 0;
 life_blood = 100;
 life_bloodmulti = 0;
+titleText["Du wurdest behandelt.","PLAIN"];

@@ -23,8 +23,8 @@ _itemInfo = switch (_type) do
   case "marijuana": {["marijuana","marijuanar",200,(localize "STR_Process_MarijuanaR"),false]}; //
   case "sulfur": {["sulfuru","sulfurp",250,(localize "STR_Process_Sulfur"),false]};
   case "nitre": {["nitre","potassiumnitrate",250,(localize "STR_Process_Nitre"),false]};
-  case "gunpowder": {["sulfurp","gunpowder",400,(localize "STR_Process_Gunpowder"),true,"potassiumnitrate","coalp"]};
-  case "explosive": {["gunpowder","explosive",500,(localize "STR_Process_Explosive"),true,"nitroglycerin","flask"]};
+  case "getreide": {["getreide","mehl",250,(localize "STR_Process_Getreide"),false]};
+  case "fladen": {["mehl","fladen",250,(localize "STR_Process_Fladen"),true,"wasser"]};
   case "gold": {["goldore","goldbar",200,(localize "STR_Process_Gold"),true,"coalp"];};
 };
 
@@ -65,7 +65,7 @@ if(_oldVal == 0) exitWith {};
 
 // Inform army if gold
 if(_type == "gold") then {
-  [[5,format["<t size='1.2'><t color='#FFFF00'>Goldschmelze %1</t></t><br/><br/><t size='1'> Jemand schmilzt Gold! <br/> Stoppe ihn! </t>",life_territory_marker]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+  [[5,format["<t size='1.2'><t color='#FFFF00'>Goldschmelze</t></t><br/><br/><t size='1'> Jemand schmilzt Gold! <br/> Stoppe ihn! </t>"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 };
 
 //Setup our progress bar.
@@ -80,7 +80,6 @@ _cP = 0.01;
 
 life_is_processing = true;
 
-if(_hasLicense) then {
 while{true} do
 {
 sleep  0.3;
@@ -100,12 +99,6 @@ if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","
 5 cutText ["","PLAIN"];
 titleText[format["You have processed %1 into %2.",_oldVal,_itemName],"PLAIN"];
 life_is_processing = false;
-
-}
-else
-{
-if(life_cash < _cost) exitWith {hint format["You need $%1 to process without a license!",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
-
 
 while{true} do
 {
@@ -128,4 +121,3 @@ if(!([true,_newItem,_oldVal] call life_fnc_handleInv)) exitWith {5 cutText ["","
 titleText[format["You have processed %1 into %2 for $%3",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 life_cash = life_cash - _cost;
 life_is_processing = false;
-};

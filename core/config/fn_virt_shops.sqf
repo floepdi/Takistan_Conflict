@@ -11,7 +11,7 @@ _level = [] call life_fnc_getLevel;
 
 switch (_shop) do
 {
-    case "market": {["Bürgerladen",["ziegenmilch","dattel","fladenbrot","guertel","pipe","behaelter","flask","bandage","kochsalz","morphin","epikit","coalp"]]};
+    case "market": {["Bürgerladen",["ziegenmilch","dattel","fladenbrot","guertel","pipe","behaelter","flask","bandage","kochsalz","morphin","epikit","coalp","mehl"]]};
     case "tankstelle": {["Tankstelle",["ziegenmilch","dattel","fladenbrot","fuelF"]]};
     case "bandit": {["Küche",["ziegenmilch","dattel","fladenbrot","bandage","kochsalz","morphin","epikit"]]};
     case "heroin": {["Drogen Dealer",["marijuanar","marijuana","heroinp","herionr"]]};
@@ -22,4 +22,5 @@ switch (_shop) do
     case "electrostore": {["Abduls Elektronikbedarf",["battery","fernzuender","gehaeuse","antenne"]]};
     case "blackstore": {["Schwarzmarkt",["lockpick","blastingcharge","depotwaffen","nitroglycerin"]]};
     case "hehler": {["Schwarzmarkt",["goldbar","information"]]};
+    case "fladen": {["Bäckerei",["fladen"]]};
 };

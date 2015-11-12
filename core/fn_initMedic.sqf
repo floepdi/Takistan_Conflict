@@ -2,7 +2,7 @@
 /*
 	File: fn_initMedic.sqf
 	Author: Bryan "Tonic" Boardwine
-	
+
 	Description:
 	Initializes the medic..
 */
@@ -20,9 +20,9 @@ switch (__GETC__(life_donator)) do {
 
 	case 1: {life_paycheck = life_paycheck + 1500;};
 
-	
-};
 
+};
+player setVariable["medicrank",(__GETC__(life_mediclevel)),true];
 0 setFog [0, 0.01, 0];
 
 [] call life_fnc_spawnMenu;

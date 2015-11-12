@@ -25,7 +25,7 @@ if(count life_spawn_point == 0) then
 
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
-	/*
+
 	switch (playerSide) do {
     	case west: {
 			player say2d "welcomeblue";
@@ -35,8 +35,7 @@ if(life_firstSpawn) then {
     	};
 	};
 		[] execVM "scripts\spawncam.sqf";
-	*/
-	[] call life_fnc_welcomeNotification;
+
 };
 
 [] call life_fnc_hudSetup;

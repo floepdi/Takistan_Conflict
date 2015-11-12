@@ -7,7 +7,7 @@
 */
 if(isNil "life_action_gathering") then {life_action_gathering = false;};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = ["heroin_1","oil_1","cocaine_1","weed_1","gold_1","sulfur_1","nitre_1"];
+_resourceZones = ["heroin_1","oil_1","cocaine_1","weed_1","gold_1","sulfur_1","nitre_1","getreide_1"];
 _zone = "";
 
 if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
@@ -33,6 +33,7 @@ switch(true) do {
 	case (_zone in ["gold_1"]): {_gather = "goldore"; _val = 1;};
 	case (_zone in ["sulfur_1"]): {_gather = "sulfuru"; _val =1;};
 	case (_zone in ["nitre_1"]): {_gather = "nitre"; _val =1;};
+	case (_zone in ["getreide_1"]): {_gather = "getreide"; _val =1;};
 	default {""};
 };
 

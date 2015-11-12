@@ -87,7 +87,21 @@ _units = _units - [player];
 					case 18: {"icons\18COA.paa"};
 					default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
 					},_x getVariable ["realname",name _x]]};
-				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#58ACFA'  size ='0.6' shadow='1'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["name","Unknown Player"]]};
+				case (!isNil {(_x getVariable "medicrank")}): {format["     <t size='0.9'> %1 </t> <br /> <img image='%2' size='1.5'></img> %3",
+				switch ((_x getVariable "medicrank")) do {
+					case 1: {"PJ-Recruit"};
+					case 2: {"PJ"};
+					case 3: {"PJ-Major"};
+					case 4: {"PJ-General"};
+					default {"unknown"};
+					}
+				,switch ((_x getVariable "medicrank")) do {
+					case 1: {"icons\medic1.paa"};
+					case 2: {"icons\medic2.paa"};
+					case 3: {"icons\medic3.paa"};
+					case 4: {"icons\medic4.paa"};
+					default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+					},_x getVariable ["realname",name _x]]};
 				default {
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
 						format["%1<br/><t color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];

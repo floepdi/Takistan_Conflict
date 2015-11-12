@@ -103,11 +103,14 @@ class Life_Client_Core
         class pushVehicle {};
         class repairTruck {};
         class craftAction {};
+        class craftGunpowder {};
+        class craftExplosive {};
         class serviceChopper {};
         class catchFish {};
         class catchTurtle {};
         class dpFinish {};
         class flipaction {};
+        class getWasser {};
         class dropFishingNet {};
         class getDPMission {};
         class postBail {};

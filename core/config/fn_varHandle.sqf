@@ -129,7 +129,11 @@ switch (_mode) do
             case "traumakit": {"life_inv_traumakit"};
             case "kochsalz": {"life_inv_kochsalz"};
             case "morphin": {"life_inv_morphin"};
-             case "epikit": {"life_inv_epikit"};
+            case "epikit": {"life_inv_epikit"};
+            case "getreide": {"life_inv_getreide"};
+            case "mehl": {"life_inv_mehl"};
+            case "wasser": {"life_inv_wasser"};
+            case "fladen": {"life_inv_fladen"};
         };
     };
 
@@ -250,6 +254,10 @@ switch (_mode) do
             case "life_inv_kochsalz": {"kochsalz"};
             case "life_inv_morphin": {"morphin"};
             case "life_inv_epikit": {"epikit"};
+            case "life_inv_getreide": {"getreide"};
+            case "life_inv_mehl": {"mehl"};
+            case "life_inv_wasser": {"wasser"};
+            case "life_inv_fladen": {"fladen"};
         };
     };
 };

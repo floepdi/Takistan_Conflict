@@ -102,8 +102,8 @@ if (playerSide == civilian) then
 		{
 		_counter = _counter + 1;
 		if (_counter == 30) then {
-		life_cash = life_cash  + 150;
-		["Level_Prof",75,1] call life_fnc_addLevel;
+		life_cash = life_cash  + 250;
+		["Level_Prof",150,1] call life_fnc_addLevel;
 		};
 		}
 		else

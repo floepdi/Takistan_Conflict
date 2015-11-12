@@ -4666,6 +4666,16 @@
 			<Portuguese>Processando Oleo</Portuguese>
 			</Key>
 
+
+			<Key ID="STR_Process_Gold">
+			<Original>Processing Gold</Original>
+			<English>Processing Gold</English>
+			<German>Gold wird verarbeitet</German>
+			<French>Raffinage de Gold</French>
+			<Italian>Processando l'Gold</Italian>
+			<Portuguese>Processando Gold</Portuguese>
+			</Key>
+
 			<Key ID="STR_Process_Bier">
 			<Original>Beer Steel</Original>
 			<English>Beer Steel</English>
@@ -4810,6 +4820,24 @@
 			<French>pulvériser soufre</French>
 			<Italian>Processando Cemento</Italian>
 			<Portuguese>Pulverize Sulfur</Portuguese>
+			</Key>
+
+			<Key ID="STR_Process_Getreide">
+			<Original>Processing Getreide</Original>
+			<English>Processing Getreide</English>
+			<German>Getreide wird gemahlen</German>
+			<French>Traitement de Getreide</French>
+			<Italian>Processando Getreide</Italian>
+			<Portuguese>Processando Erva</Portuguese>
+			</Key>
+
+			<Key ID="STR_Process_Fladen">
+			<Original>Processing Fladen</Original>
+			<English>Processing Fladen</English>
+			<German>Fladen wird hergestellt</German>
+			<French>Traitement de Fladen</French>
+			<Italian>Processando Fladen</Italian>
+			<Portuguese>Processando Erva</Portuguese>
 			</Key>
 
 			<Key ID="STR_Process_Nitre">
