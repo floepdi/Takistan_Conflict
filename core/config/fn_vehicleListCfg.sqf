@@ -41,16 +41,41 @@ switch (_shop) do
 	
 	case "med_shop":
 	{
-		_return = [
-			
-		];
+		if(__GETC__(life_mediclevel) > 1) then
+		{
+			_return pushBack ["RDS_S1203_Civ_02",200];
+		};
+		if(__GETC__(life_mediclevel) > 2) then
+		{
+			_return pushBack ["B_mas_cars_Hilux_Unarmed",200];
+			_return pushBack ["rhs_gaz66_ap2_vmf",200];
+		};
+		if(__GETC__(life_mediclevel) > 3) then
+		{
+			_return pushBack ["UAZ_Unarmed",200];
+			_return pushBack ["B_mas_cars_LR_Unarmed",200];
+		};
+		if(__GETC__(life_mediclevel) > 4) then
+		{
+			_return pushBack ["B_mas_HMMWV_UNA_des",200];
+		};
 	};
 
-	case "med_air_hs1": {
-		_return = [
+	case "med_air_hs1": 
+	{
+		if(__GETC__(life_mediclevel) > 2) then
+		{
+			_return pushBack ["GR_Bell412_1",500];
+		};
+		if(__GETC__(life_mediclevel) > 3) then
+		{
+			_return pushBack ["DAR_M1151",750];
+		};
+		if(__GETC__(life_mediclevel) > 4) then
+		{
+			_return pushBack ["RHS_UH60M_MEV_d",1000];
+		};
 
-			["RHS_UH60M_MEV",5000]
-		];
 	};
 	
 	case "cop_car":
