@@ -20,7 +20,7 @@ switch (_shop) do
     case "cop": {["Essenausgabe",["burger","donuts","cola","spikeStrip","fuelF","strahler","barrier","barricade","lockpick","bandage","kochsalz","morphin","epikit","defusekit"]]};
     case "medic": {["Essenausgabe",["donuts","cola","fuelF","strahler","barrier","barricade","lockpick"]]};
     case "electrostore": {["Abduls Elektronikbedarf",["battery","fernzuender","gehaeuse","antenne"]]};
-    case "blackstore": {["Schwarzmarkt",["lockpick","blastingcharge","depotwaffen","nitroglycerin"]]};
+    case "blackstore": {["Schwarzmarkt",["lockpick","blastingcharge","depotwaffen","nitroglycerin","boltcutter"]]};
     case "hehler": {["Schwarzmarkt",["goldbar","information"]]};
     case "fladen": {["Bäckerei",["fladen"]]};
 };

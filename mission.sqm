@@ -22662,7 +22662,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_StallWater_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;this addAction[""Schwarzpulver einfüllen"",  { [[1],""life_fnc_craftExplosive"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_inv_gunpowder) > 0 && !(player getVariable [""explosivefill1"",false])&& !life_is_processing'];this addAction[""Nitroglyzerin einfüllen"",  { [[2],""life_fnc_craftExplosive"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'!(player getVariable [""explosivefill2"",false]) && !life_is_processing'];this addAction[""Behälter anbringen"",  { [[3],""life_fnc_craftExplosive"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_inv_behaelter) > 0 && !(player getVariable [""explosivefill3"",false])  && (player getVariable [""explosivefill2"",false])  && (player getVariable [""explosivefill1"",false]) && !life_is_processing'];";
+			init="this allowDamage false; this enableSimulation false;this addAction[""Schwarzpulver einfüllen"",  { [[1],""life_fnc_craftExplosive"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_inv_gunpowder) > 0 && !(player getVariable [""explosivefill1"",false])&& !life_is_processing'];this addAction[""Nitroglyzerin einfüllen"",  { [[2],""life_fnc_craftExplosive"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'!(player getVariable [""explosivefill2"",false]) && !life_is_processing'];this addAction[""Behälter anbringen"",  { [[3],""life_fnc_craftExplosive"",player,false] spawn life_fnc_MP;},"""",0,false,false,"""",'(life_inv_behaelter) > 0 && !(player getVariable [""explosivefill3"",false])  && (player getVariable [""explosivefill2"",false])  && (player getVariable [""explosivefill1"",false]) && !life_is_processing'];  ";
 		};
 		class Item1748
 		{
@@ -27660,7 +27660,7 @@ class Mission
 		};
 		class Item637
 		{
-			position[]={7139.1284,129.41711,8697.3193};
+			position[]={7139.3232,129.42862,8696.8584};
 			name="hier";
 			type="Empty";
 		};
@@ -27765,8 +27765,5 @@ class OutroLoose
 		minute=20;
 		startFogDecay=0.0049999999;
 		forecastFogDecay=0.0049999999;
-	};
-};
-recastFogDecay=0.0049999999;
 	};
 };

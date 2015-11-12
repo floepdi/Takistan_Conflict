@@ -933,7 +933,7 @@ class CfgNotifications
 	};
 
 };
-
+/*
 class CfgUnitInsignia
 {
     class recruit
@@ -1145,3 +1145,4 @@ class InventoryOpticsItem_Base_F; // ItemInfo base class
 };
 
 
+*/
