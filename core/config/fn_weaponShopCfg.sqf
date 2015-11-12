@@ -57,6 +57,36 @@ switch(_shop) do
         ];
     };
 
+case "med_basic":
+    {
+    	switch(true) do
+        {
+            case (playerSide != independent): {"Du bist kein Medic!"};
+            {
+        	["PJ Ausrüstung",
+        	   [
+                	["tf_anprc152",nil,10],
+                        ["ItemGPS",nil,10],
+                        ["ItemCompass",nil,10], 
+                        ["ToolKit",nil,10],
+                        ["Binocular",nil,10],
+                        ["Chemlight_green",nil,10],
+                        ["Chemlight_blue",nil,10],
+                        ["SmokeShell",nil,10],
+                        ["SmokeShellRed",nil,10],
+                        ["SmokeShellGreen",nil,10],
+                        ["acc_flashlight",nil,10],
+   			["ACE_TacticalLadder_Pack",nil,10],
+			["ACE_EarPlugs",nil,10],
+			["ACE_Flashlight_KSF1",nil,10],
+			["ACE_Flashlight_MX991",nil,10],
+			["ACE_MapTools",nil,10]
+            ]
+        ];
+    };
+   };
+  };
+
 case "gun":
     {
         switch(true) do
