@@ -3,7 +3,7 @@
     Author: Bryan "Tonic" Boardwine
     Full Gear/Y-Menu Save by Vampire
     Edited: Itsyuka
-    
+
     Description:
     Saves the players gear for syncing to the database for persistence..
 */
@@ -147,49 +147,28 @@ if(count (handGunItems player) > 0) then
         };
     };
 } forEach [
-    ["life_inv_apple", life_inv_apple],
-    ["life_inv_rabbit", life_inv_rabbit],
-    ["life_inv_salema", life_inv_salema],
-    ["life_inv_ornate", life_inv_ornate],
-	["life_inv_barrier", life_inv_barrier],
-	["life_inv_barricade", life_inv_barricade],
-	["life_inv_strahler", life_inv_strahler],
-    ["life_inv_mackerel", life_inv_mackerel],
-    ["life_inv_tuna", life_inv_tuna],
-    ["life_inv_mullet", life_inv_mullet],
-    ["life_inv_catshark", life_inv_catshark],
-    ["life_inv_fishingpoles", life_inv_fishingpoles],
+    ["life_inv_barrier", life_inv_barrier],
+    ["life_inv_barricade", life_inv_barricade],
+    ["life_inv_strahler", life_inv_strahler],
     ["life_inv_water", life_inv_water],
     ["life_inv_donuts", life_inv_donuts],
-    ["life_inv_turtlesoup", life_inv_turtlesoup],
     ["life_inv_coffee", life_inv_coffee],
     ["life_inv_fuelF", life_inv_fuelF],
-    ["life_inv_fuelE", life_inv_fuelE],
-    ["life_inv_pickaxe", life_inv_pickaxe],
-    ["life_inv_tbacon", life_inv_tbacon],
     ["life_inv_lockpick", life_inv_lockpick],
-    ["life_inv_redgull", life_inv_redgull],
-    ["life_inv_peach", life_inv_peach],
     ["life_inv_spikeStrip", life_inv_spikeStrip],
     ["life_inv_defusekit", life_inv_defusekit],
-	["life_inv_zipties", life_inv_zipties],
-    ["life_inv_Box_IND_AmmoVeh_F", life_inv_Box_IND_AmmoVeh_F],
-	["life_inv_Box_IND_WpsSpecial_F", life_inv_Box_IND_WpsSpecial_F],
-	["life_inv_Box_IND_Grenades_F", life_inv_Box_IND_Grenades_F],
-    ["life_inv_B_supplyCrate_F", life_inv_B_supplyCrate_F],	
-	["life_inv_gehaeuse", life_inv_gehaeuse],
-	["life_inv_antenne", life_inv_antenne],
-	["life_inv_pipe", life_inv_pipe],
-	["life_inv_battery", life_inv_battery],
-	["life_inv_fernzuender", life_inv_fernzuender],
-	["life_inv_sprengsatz", life_inv_sprengsatz],
-	["life_inv_cola", life_inv_cola],
-	["life_inv_ziegenmilch", life_inv_ziegenmilch],
-	["life_inv_burger", life_inv_burger],	
-	["life_inv_dattel", life_inv_dattel],	
-	["life_inv_fladenbrot", life_inv_fladenbrot],	
-	["life_inv_guertel", life_inv_guertel],	
-	["life_inv_sprengstoff", life_inv_sprengstoff]
+    ["life_inv_cola", life_inv_cola],
+    ["life_inv_ziegenmilch", life_inv_ziegenmilch],
+    ["life_inv_burger", life_inv_burger],
+    ["life_inv_dattel", life_inv_dattel],
+    ["life_inv_fladenbrot", life_inv_fladenbrot],
+    ["life_inv_bandage", life_inv_bandage],
+    ["life_inv_kochsalz", life_inv_kochsalz],
+    ["life_inv_morphin", life_inv_morphin],
+    ["life_inv_epikit", life_inv_epikit],
+    ["life_inv_blastingcharge", life_inv_blastingcharge],
+    ["life_inv_explosive", life_inv_explosive]
+
 ];
 
 _return pushBack _uItems;

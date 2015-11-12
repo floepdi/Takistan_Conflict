@@ -71,6 +71,7 @@ player EnableSimulationGlobal true;
 		if (backpack player == "TRYK_B_Coyotebackpack") then { _load = 35; };
 		if (backpack player == "B_mas_Kitbag_black") then { _load = 40; };
 		if (backpack player == "B_TacticalPack_blk") then { _load = 40; };
+		if (backpack player == "TRYK_B_Medbag_BK") then { _load = 40; };
     		if (backpack player == "B_Carryall_cbr") then { _load = 42; };
 
 
