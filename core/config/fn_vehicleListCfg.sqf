@@ -69,7 +69,7 @@ switch (_shop) do
 		};
 		if(__GETC__(life_mediclevel) > 3) then
 		{
-			_return pushBack ["DAR_M1151",750];
+			_return pushBack ["GR_UH1H_4",750];
 		};
 		if(__GETC__(life_mediclevel) > 4) then
 		{
