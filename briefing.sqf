@@ -61,6 +61,7 @@ player createDiarySubject ["transportbuch","Transport-Buch"];
       		Entf : Speedlimiter.<br/>
       		Mausrad Menü : Fahrzeug umdrehen.<br/>
         	Links STRG : Mine farmen.<br/>
+        	STRG + T : Items aufheben.<br/>
       		Alternativ ist es möglich sämtliche ACE Einstellungen selbst anzupassen unter Konfigurieren/Steuerung/Configure Addons.<br/>
 			"
 		]
