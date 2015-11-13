@@ -68,6 +68,9 @@ if ((player getVariable ["explosivefill1",false]) && (player getVariable ["explo
 	_pos = getMarkerPos "hier";
 	_behaelter = _pos nearestObject "plp_cts_CanisterBlue";
 	deleteVehicle _behaelter;
+	["Level_Prof",100,1] call life_fnc_addLevel;
+	[] call life_fnc_profSetup;
+  	[format ["<t align='left'><t size='0.6' shadow='1'><t color='#9FF781'><br /> Sprengstoff hergestellt! <br/> + 100 EXP"],-0.7,0.5,15,0,0,1] spawn BIS_fnc_dynamicText;
 	life_is_processing = false;
 	};
 };

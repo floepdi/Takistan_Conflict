@@ -14,7 +14,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 50;
+	maxPlayers = 95;
 };
 
 wreckLimit = 3;
@@ -25,13 +25,12 @@ corpseRemovalMinTime = 999;
 corpseRemovalMaxTime = 9999;
 
 #include "dialog\MasterHandler.h"
-
+#include "AS_AdminMenu\spectating.hpp"
 class RscTitles
 {
 	#include "dialog\ui.hpp"
 	#include "dialog\progress.hpp"
 	#include "dialog\hud_nameTags.h"
-	#include "AS_AdminMenu\spectating.hpp"
 };
 
 class CfgFunctions

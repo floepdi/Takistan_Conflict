@@ -119,7 +119,7 @@ switch (playerSide) do
 {
     case west:
     {
-        life_cop_atmcash = 10000; //Starting Bank Money
+        life_atmcash = 5000; //Starting Bank Money
         life_cash= 100;    //Starting Cash Money
     };
     case civilian:
@@ -130,7 +130,7 @@ switch (playerSide) do
     };
 
     case independent: {
-        life_atmcash = 10000;
+        life_atmcash = 5000;
 
     };
 };
