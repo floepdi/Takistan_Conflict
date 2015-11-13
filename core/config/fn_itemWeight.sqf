@@ -77,5 +77,9 @@ switch (_item) do
     case "kochsalz": {2};
     case "morphin": {3};
     case "epikit": {3};
+    case "fladen": {2};
+    case "wasser": {1};
+    case "mehl": {1};
+    case "getreide": {2};
     default {1};
 };
