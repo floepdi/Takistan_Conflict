@@ -61,6 +61,6 @@ switch (__GETC__(life_donator)) do {
 
 [] call life_fnc_profSetup;
 
-{_x setMarkerAlphaLocal 0} foreach ["oil_1","cocaine_1","Ölverarbeitung","Cannabisverarbeitung","Mohnverfeinerung","Hehler Nord","Hehler Süd","Cannabisverfeinerung","Drogendealer","Mohnverarbeitung","heroin_1","Goldschmelze","weed_1","Ölhändler","gold_1","Schwefelverarbeiter","Pulvermühle","Salpeterverarbeiter","illegale Chemieküche","Chemielabor","sulfur_1","nitre_1","gang_area_1"];
+{_x setMarkerAlphaLocal 0} foreach ["oil_1","cocaine_1","Ölverarbeitung","Cannabisverarbeitung","Mohnverfeinerung","Hehler Nord","Hehler Süd","Cannabisverfeinerung","Drogendealer","Mohnverarbeitung","heroin_1","Goldschmelze","weed_1","Ölhändler","gold_1","Schwefelverarbeiter","Pulvermühle","Salpeterverarbeiter","illegale Chemieküche","Chemielabor","sulfur_1","nitre_1","gang_area_1","Bäckerei","Mühle","Bäcker","brunnen"];
 // [[format ["0|%1 logged something. His position is %2.",player getVariable["realname",name player],getPosATL player]],"Arma3Log",false,false] call life_fnc_MP;
 

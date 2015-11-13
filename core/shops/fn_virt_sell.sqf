@@ -29,7 +29,9 @@ _Haschoel = [
 _Gold = [
 		"goldbarren"
 		];
-
+_Fladen = [
+		"fladen"
+		];
 
 
 _amount = ctrlText 2405;
@@ -49,6 +51,12 @@ _exp = (_amount * 4);
 };
 if (_type in _Gold) then {
 _exp = (_amount * 8);
+["Level_Prof",_exp,1] call life_fnc_addLevel; // Erfahrung
+[] call life_fnc_profSetup;
+};
+
+if (_type in _Fladen) then {
+_exp = (_amount * 2);
 ["Level_Prof",_exp,1] call life_fnc_addLevel; // Erfahrung
 [] call life_fnc_profSetup;
 };

@@ -13,20 +13,14 @@ sleep 15; //Wait in seconds before the credits start after player is in-game
 
 _role1 = "Willkommen auf dem Takistan Server von:";
 _role1names = ["synced-gaming.de"];
-_role2 = "Administration";
-_role2names = ["Phil","Largo","Jester"];
-_role3 = "Entwickler";
-_role3names = ["Phil","Jester","xydra"];
-_role4 = "Koordination";
-_role4names = ["Largo","Sechmoo","steini","di Mentana"];
-_role5 = "Support";
-_role5names = ["-Joe-","Harris","Yahell","Ben"];
-_role6 = "Website:";
-_role6names = ["www.synced-gaming.de"];
-_role7 = "Teamspeak:";
-_role7names = ["ts3.synced-gaming.de"];
-_role8 = "Regeln:";
-_role8names = ["Lest die Regeln unter synced-gaming.de!"];
+_role2 = "Website:";
+_role2names = ["www.synced-gaming.de"];
+_role3 = "Teamspeak:";
+_role3names = ["ts3.synced-gaming.de"];
+_role4 = "Regeln:";
+_role4names = ["Lest die Regeln unter synced-gaming.de!"];
+_role5 = "Tutorials:";
+_role5names = ["www.synced-gaming.enjin.com"];
 /*
 _role8 = "Wiki:";
 _role7names = ["Alle Informationen unter synced-gaming.enjin.com/wiki/"];
@@ -54,8 +48,5 @@ sleep (_onScreenTime);
 [_role2, _role2names],
 [_role3, _role3names],
 [_role4, _role4names],
-[_role5, _role5names],
-[_role6, _role6names],
-[_role7, _role7names],
-[_role8, _role8names]
+[_role5, _role5names]
 ];

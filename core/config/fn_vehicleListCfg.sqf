@@ -38,7 +38,7 @@ switch (_shop) do
 		];
 	};
 	*/
-	
+
 	case "med_shop":
 	{
 		if(__GETC__(life_mediclevel) > 1) then
@@ -61,7 +61,7 @@ switch (_shop) do
 		};
 	};
 
-	case "med_air_hs1": 
+	case "med_air_hs1":
 	{
 		if(__GETC__(life_mediclevel) > 2) then
 		{
@@ -77,7 +77,7 @@ switch (_shop) do
 		};
 
 	};
-	
+
 	case "cop_car":
 	{
 		if(__GETC__(life_coplevel) > 1) then
@@ -122,23 +122,23 @@ switch (_shop) do
 		};
 	};
 
-	
+
 	case "civ_air":
 	{
 		if(life_level >= 24) then {
 			_return pushBack ["GR_Bell412_3",7500];
 		};
-		
+
 		if(life_level >= 32) then {
 			_return pushBack ["GR_Mi8_1",15000];
 		};
-		
+
 		if(life_level >= 49) then {
 			_return pushBack ["GR_Mi_171_2",30000];
 		};
-		
+
 	};
-	
+
 
 	case "cop_air":
 	{
@@ -174,7 +174,7 @@ switch (_shop) do
 		};
 		*/
 	};
-	
+
 	case "cop_drone":
 	{
 		if(__GETC__(life_coplevel) >= 8) then
@@ -321,7 +321,7 @@ case "civ_car":
 			_return pushBack ["C_Quadbike_01_F",350];
 		};
 	};
-	
+
 	case "autolieferung_car":
 	{
 		_return =
@@ -330,7 +330,7 @@ case "civ_car":
 			["isc_is_hilux_Unarmed_o",6000]
 		];
 	};
-	
+
 case "level_car":
 	{
 	/*
@@ -405,9 +405,6 @@ case "level_car":
 		if(life_level >= 36) then {
 			_return pushBack ["C_SUV_01_F",3500];
 		};
-		if(life_level >= 39) then {
-			_return pushBack ["max_Dodge_multy",3750];
-		};
 		if(life_level >= 40) then {
 			_return pushBack ["I_mas_cars_UAZ_SPG9",4000];
 		};
@@ -421,9 +418,9 @@ case "level_car":
 			_return pushBack ["B_Truck_01_ammo_F",3500];
 		};
 
-	};	
+	};
 
-	
+
 };
 
 _return;
